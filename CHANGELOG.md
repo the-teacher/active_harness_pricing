@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.3] - 2026-06-15
+
+### Changed
+- `Pricing` facade trimmed: removed `update`, `reload!`, `cache_file`, `available_providers` — these are `ModelsDev` implementation details, not public API; `find`, `all`, `providers`, `for_provider`, `provider_names`, `preload!` remain
+- Facade comment updated to explain why `ModelsDev` is the default general source and when `OpenRouter` is consulted separately
+
+### Fixed
+- Corrected stale "24h cache" comments in `pricing.rb` and `models_dev.rb` — TTL has always been 72h (`3 * 86_400`), only the comments were wrong
+
 ## [0.1.2] - 2026-06-15
 
 ### Fixed
