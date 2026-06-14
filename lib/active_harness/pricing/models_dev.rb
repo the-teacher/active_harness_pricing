@@ -9,7 +9,7 @@ module ActiveHarness
     # Fallback pricing source — fetches model data from models.dev.
     #
     # Data source:
-    #   {project_root}/tmp/active_harness/pricing_models_dev.json — fetched cache (24h TTL)
+    #   {project_root}/tmp/active_harness/pricing_models_dev.json — fetched cache (72h TTL)
     #   Returns nil/empty if cache is missing and network is unavailable.
     #
     # Usage:

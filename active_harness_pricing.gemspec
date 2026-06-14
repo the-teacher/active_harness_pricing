@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "active_harness_pricing"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.authors       = ["the-teacher"]
   spec.email         = ["the-teacher@github.com"]
   spec.homepage      = "https://github.com/the-teacher/active_harness"

@@ -4,8 +4,8 @@ module ActiveHarness
   # Pricing namespace — shared types and a facade over pricing source modules.
   #
   # Sources (in priority order):
-  #   Pricing::OpenRouter  — live data from OpenRouter API  (image models, 24h cache)
-  #   Pricing::ModelsDev   — live data from models.dev API  (all providers, 24h cache)
+  #   Pricing::OpenRouter  — live data from OpenRouter API  (all modalities, 72h cache)
+  #   Pricing::ModelsDev   — live data from models.dev API  (all providers,  72h cache)
   #
   # Public facade delegates to ModelsDev (used as the general fallback):
   #   Pricing.find("gpt-4o")       → ModelPrice or nil
@@ -102,11 +102,18 @@ module ActiveHarness
     end
 
     # ---------------------------------------------------------------------------
-    # Facade — delegates to ModelsDev (general fallback source)
+    # Public facade
+    #
+    # ModelsDev is the general source — covers all major providers (openai,
+    # anthropic, gemini, …) and is the right default for provider-agnostic
+    # lookups. OpenRouter is a specialised source for OpenRouter-routed model
+    # IDs (e.g. "openai/gpt-4o") and is consulted separately where needed.
+    #
+    # preload! is the only method that touches both sources.
     # ---------------------------------------------------------------------------
     class << self
-      # Eagerly fetch all pricing sources and load them into memory.
-      # Called at Rails startup. Network failures are silently ignored.
+      # Eagerly load both pricing sources into memory.
+      # Called at Rails startup via Railtie. Network failures are silently ignored.
       def preload!
         ModelsDev.preload!
         OpenRouter.preload!
@@ -130,22 +137,6 @@ module ActiveHarness
 
       def provider_names
         ModelsDev.provider_names
-      end
-
-      def update
-        ModelsDev.update
-      end
-
-      def reload!
-        ModelsDev.reload!
-      end
-
-      def cache_file
-        ModelsDev.cache_file
-      end
-
-      def available_providers
-        ModelsDev.available_providers
       end
     end
   end

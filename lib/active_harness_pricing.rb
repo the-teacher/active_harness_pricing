@@ -3,5 +3,5 @@ require_relative "active_harness/pricing/models_dev"
 require_relative "active_harness/pricing/openrouter"
 
 module ActiveHarnessPricing
-  VERSION = "0.1.2"
+  VERSION = "0.1.3"
 end
