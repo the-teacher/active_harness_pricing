@@ -164,8 +164,8 @@ module ActiveHarness
             next [] unless ah_provider && allowed.include?(ah_provider)
 
             models_hash = provider_data.is_a?(Hash) ? (provider_data[:models] || {}) : {}
-            models_hash.values.filter_map do |m|
-              next unless m.is_a?(Hash) && m[:id]
+            models_hash.values.map do |m|
+              next nil unless m.is_a?(Hash) && m[:id]
 
               cost     = m[:cost] || {}
               standard = {
@@ -186,7 +186,7 @@ module ActiveHarness
                 output_modalities: Array(mods[:output]),
                 pricing:           standard.any? ? { text_tokens: { standard: standard } } : {}
               }
-            end
+            end.compact
           end
         end
 

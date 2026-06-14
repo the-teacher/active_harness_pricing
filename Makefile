@@ -2,6 +2,16 @@ GEM_NAME    = active_harness_pricing
 GEM_VERSION = $(shell ruby -e "load 'active_harness_pricing.gemspec'; puts Gem::Specification.load('active_harness_pricing.gemspec').version")
 GEM_FILE    = $(GEM_NAME)-$(GEM_VERSION).gem
 
+get:
+	@ruby -I lib -r active_harness_pricing -e " \
+	  puts 'Fetching models.dev ...'; \
+	  n = ActiveHarness::Pricing::ModelsDev.update; \
+	  puts \"  cached #{n} models → #{ActiveHarness::Pricing::ModelsDev.cache_file}\"; \
+	  puts 'Fetching OpenRouter ...'; \
+	  n = ActiveHarness::Pricing::OpenRouter.update; \
+	  puts \"  cached #{n} models → #{ActiveHarness::Pricing::OpenRouter.cache_file}\" \
+	"
+
 build:
 	gem build $(GEM_NAME).gemspec
 

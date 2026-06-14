@@ -48,7 +48,7 @@ module ActiveHarness
 
         def all
           ensure_fresh_registry
-          registry.filter_map { |raw| build_price(raw) }
+          registry.map { |raw| build_price(raw) }.compact
         end
 
         def preload!
