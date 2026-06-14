@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] - 2026-06-15
+
+### Fixed
+- `load_registry` now rescues `StandardError` instead of only `JSON::ParserError` — prevents crash on `Errno::ENOENT` / `Errno::EACCES` (race condition or permission error on the cache file); affects both `ModelsDev` and `OpenRouter`; fixes uncaught exception in `preload!` `ensure` block during Rails boot when the cache file is inaccessible
+
 ## [0.1.1] - 2026-06-14
 
 ### Fixed

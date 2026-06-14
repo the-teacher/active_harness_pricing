@@ -109,7 +109,7 @@ module ActiveHarness
           return [] unless File.exist?(cache_file)
           data = JSON.parse(File.read(cache_file), symbolize_names: true)
           data.is_a?(Array) ? data : []
-        rescue JSON::ParserError
+        rescue StandardError
           []
         end
 
