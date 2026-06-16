@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+# Fetches all models from pricepertoken.com MCP API and writes to data/pricepertoken.json.
+# On failure exits with code 1 — GitHub Actions will skip the commit step.
+#
+# Usage: ruby bin/fetch_pricepertoken
+
+require "net/http"
+require "uri"
+require "json"
+require "fileutils"
+
+MCP_URL  = "https://api.pricepertoken.com/mcp/mcp"
+OUT_FILE = File.expand_path("../data/pricepertoken.json", __dir__)
+
+def mcp_call(uri, payload)
+  Net::HTTP.start(uri.host, uri.port, use_ssl: true,
+                  open_timeout: 15, read_timeout: 30) do |http|
+    req = Net::HTTP::Post.new(uri.request_uri)
+    req["Content-Type"] = "application/json"
+    req["Accept"]       = "application/json"
+    req.body = payload.to_json
+    res = http.request(req)
+    raise "HTTP #{res.code}" unless %w[200 202].include?(res.code)
+    JSON.parse(res.body)
+  end
+end
+
+uri = URI(MCP_URL)
+
+mcp_call(uri, {
+  jsonrpc: "2.0", id: 1, method: "initialize",
+  params: {
+    protocolVersion: "2024-11-05",
+    capabilities:    {},
+    clientInfo:      { name: "active-harness-pricing", version: "1.0" }
+  }
+})
+
+mcp_call(uri, { jsonrpc: "2.0", method: "notifications/initialized", params: {} }) rescue nil
+
+resp = mcp_call(uri, {
+  jsonrpc: "2.0", id: 2, method: "tools/call",
+  params: { name: "get_all_models", arguments: { limit: 1000 } }
+})
+
+text   = resp.dig("result", "content", 0, "text")
+models = JSON.parse(text)
+raise "Empty model list" if models.empty?
+
+FileUtils.mkdir_p(File.dirname(OUT_FILE))
+File.write(OUT_FILE, JSON.pretty_generate(models))
+
+puts "OK: #{models.size} models written to #{OUT_FILE}"
