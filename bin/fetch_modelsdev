@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+# Fetches all models from models.dev API and writes to data/modelsdev.json.
+# On failure exits with code 1 — GitHub Actions will skip the commit step.
+#
+# Usage: ruby bin/fetch_modelsdev
+
+require "net/http"
+require "uri"
+require "json"
+require "fileutils"
+
+URL      = "https://models.dev/api.json"
+OUT_FILE = File.expand_path("../data/modelsdev.json", __dir__)
+
+uri  = URI(URL)
+resp = Net::HTTP.start(uri.host, uri.port, use_ssl: true,
+                       open_timeout: 15, read_timeout: 30) do |http|
+  http.get(uri.request_uri)
+end
+
+raise "models.dev returned HTTP #{resp.code}" unless resp.code == "200"
+
+data = JSON.parse(resp.body)
+raise "Empty response" if data.empty?
+
+FileUtils.mkdir_p(File.dirname(OUT_FILE))
+File.write(OUT_FILE, JSON.pretty_generate(data))
+
+total = data.values.sum { |v| v.is_a?(Hash) ? (v["models"]&.size || 0) : 0 }
+puts "OK: #{data.keys.size} providers, ~#{total} models written to #{OUT_FILE}"
