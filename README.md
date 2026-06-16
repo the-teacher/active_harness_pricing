@@ -1,6 +1,6 @@
 # ActiveHarnessPricing
 
-LLM model pricing data for Ruby. Fetches and caches pricing from **models.dev** and **OpenRouter**, exposes a unified `ActiveHarness::Pricing` namespace.
+LLM model pricing data for Ruby. Bundles pricing from three sources — **pricepertoken.com**, **models.dev**, and **OpenRouter** — as JSON files updated daily via GitHub Actions. No network calls at runtime.
 
 Used as a dependency by [active_harness](https://github.com/the-teacher/active_harness), but works standalone too.
 
@@ -10,76 +10,140 @@ Used as a dependency by [active_harness](https://github.com/the-teacher/active_h
 gem "active_harness_pricing"
 ```
 
-## Usage
+## Data Files
+
+Three bundled files in `data/`, all sharing the same format:
+
+| File | Source | Models | Notes |
+|---|---|---|---|
+| `data/pricepertoken.json` | [pricepertoken.com](https://pricepertoken.com) | ~550 | Includes TPS and TTFT performance data |
+| `data/modelsdev.json` | [models.dev](https://models.dev) | ~1600 | Broadest provider coverage |
+| `data/openrouter.json` | [openrouter.ai](https://openrouter.ai) | ~290 | Routing prices via OpenRouter |
+
+See [`data/README.md`](data/README.md) for the full format specification.
+
+## Primary API — PriceResolver
+
+The main entry point. Queries all three bundled sources by canonical model key and returns pricing from each.
 
 ```ruby
 require "active_harness_pricing"
 
-# Find pricing for a specific model
-price = ActiveHarness::Pricing.find("gpt-4o")
-# => #<ModelPrice id="gpt-4o" provider="openai" input=$2.5/M output=$10.0/M ctx=128000>
+PR = ActiveHarness::Pricing::PriceResolver
 
-price.input_per_million   # => 2.5
-price.output_per_million  # => 10.0
-price.context_window      # => 128000
-price.categories          # => ["vision"]
+# Pricing from all sources at once
+PR.resolve("mistralai/mistral-nemo")
+# => {
+#   modelsdev:  #<PricingData source=modelsdev  key="mistral-nemo" in=$0.02/M out=$0.04/M>,
+#   openrouter: #<PricingData source=openrouter key="mistral-nemo" in=$0.02/M out=$0.03/M>
+# }
 
-# All models
-ActiveHarness::Pricing.all              # => Array<ModelPrice>
+# Cost from each source (USD)
+PR.costs(model_id: "mistralai/mistral-nemo", tokens_input: 10_000, tokens_output: 2_000)
+# => { modelsdev: 0.000280, openrouter: 0.000260 }
 
-# By provider
-ActiveHarness::Pricing.providers.openai       # => Array<ModelPrice>
-ActiveHarness::Pricing.providers["anthropic"] # => Array<ModelPrice>
-ActiveHarness::Pricing.providers.list         # => ["anthropic", "azure", "gemini", ...]
+# Highest cost across sources — conservative upper bound
+PR.max_cost(model_id: "mistralai/mistral-nemo", tokens_input: 10_000, tokens_output: 2_000)
+# => { cost: 0.000280, source: :modelsdev, all: { modelsdev: 0.000280, openrouter: 0.000260 } }
 
-# OpenRouter (separate source, covers all OR-routed models)
+# Lowest cost across sources — optimistic lower bound
+PR.min_cost(model_id: "mistralai/mistral-nemo", tokens_input: 10_000, tokens_output: 2_000)
+# => { cost: 0.000260, source: :openrouter, all: { modelsdev: 0.000280, openrouter: 0.000260 } }
+
+# When provider_cost is given it takes priority over all lookups (in both max and min)
+PR.max_cost(model_id: "gpt-4o", tokens_input: 10_000, tokens_output: 2_000, provider_cost: 0.001234)
+# => { cost: 0.001234, source: :provider, all: { provider: 0.001234 } }
+```
+
+### Usage with ActiveHarness agent results
+
+Pass a result or agent object directly — all fields are extracted automatically:
+
+```ruby
+result = MyAgent.call(input: "...")
+
+# Short form — pass result or agent object directly
+cost = ActiveHarness::Pricing::PriceResolver.max_cost(result)
+cost = ActiveHarness::Pricing::PriceResolver.max_cost(agent)
+
+# Equivalent explicit form
+cost = ActiveHarness::Pricing::PriceResolver.max_cost(
+  model_id:      result.model.name,
+  tokens_input:  result.usage.tokens.input,
+  tokens_output: result.usage.tokens.output,
+  provider_cost: result.usage.cost.total
+)
+
+cost&.dig(:cost)    # => 0.000280  (USD)
+cost&.dig(:source)  # => :modelsdev
+```
+
+`costs` and `min_cost` accept the same short form.
+
+Resolved results are **cached in memory** (TTL: 24 h). In production, only a handful of models are typically used — the first call per model pays the lookup cost; every subsequent call returns from cache instantly. Call `PriceResolver.clear_cache!` to reset manually.
+
+## Normalizer
+
+Converts any raw provider model ID to the canonical lookup key used in the data files.
+
+```ruby
+N = ActiveHarness::Pricing::Normalizer
+
+N.to_key("mistralai/mistral-nemo")                           # => "mistral-nemo"
+N.to_key("gpt-4o")                                           # => "gpt-4o"
+N.to_key("claude-3-5-haiku-20241022")                        # => "claude-3-5-haiku"
+N.to_key("global.anthropic.claude-haiku-4-5-20251001-v1:0") # => "claude-haiku-4-5"
+N.to_key("models/gemini-2.5-flash")                          # => "gemini-2-5-flash"
+```
+
+Rules: strip `author/` prefix, remove date/version suffixes (`-20241022`, `-v2:0`), normalize separators.
+
+## Source
+
+Reads a single data file. Useful when you want to query one specific source.
+
+```ruby
+src = ActiveHarness::Pricing::Source.new("data/openrouter.json", :openrouter)
+
+src.find("mistral-nemo")   # exact match   → PricingData or nil
+src.find("mistral-nemo-instruct-2407")  # prefix fallback → same PricingData
+src.all                    # → Array<PricingData>
+```
+
+`PricingData` fields: `key`, `name`, `source`, `input_per_1m`, `output_per_1m`, `context_window`, `cache_read_per_1m`, `tokens_per_second`, `time_to_first_token`.
+
+## Legacy API
+
+The original live-fetch modules are still available for cases that require real-time data:
+
+```ruby
+# models.dev — fetches on first access, caches for 3 days in tmp/
+ActiveHarness::Pricing.find("gpt-4o")          # => ModelPrice or nil
+ActiveHarness::Pricing.all                      # => Array<ModelPrice>
+ActiveHarness::Pricing.providers.openai         # => Array<ModelPrice>
+ActiveHarness::Pricing.update                   # force refresh
+
+# OpenRouter — fetches all modalities (text, image, audio, embed, …)
 ActiveHarness::Pricing::OpenRouter.find("openai/gpt-4o")  # => ModelPrice or nil
 ActiveHarness::Pricing::OpenRouter.all                    # => Array<ModelPrice>
-
-# Force refresh cache
-ActiveHarness::Pricing.update   # refreshes models.dev cache
-ActiveHarness::Pricing.preload! # fetches both sources (used at Rails boot)
+ActiveHarness::Pricing::OpenRouter.update                 # force refresh
 ```
 
-## Data sources
+## Updating Bundled Data
 
-| Source | Coverage | Cache file |
-|--------|----------|------------|
-| `Pricing::ModelsDev` | All major providers via [models.dev](https://models.dev) | `tmp/active_harness/models_dev_pricing.json` |
-| `Pricing::OpenRouter` | All OpenRouter-routed models (text, image, audio, embed, …) | `tmp/active_harness/openrouter_pricing.json` |
+The data files are refreshed automatically every day at 06:00 UTC via GitHub Actions. To update locally:
 
-Cache TTL is **3 days**. On first access the cache is fetched automatically; network failures are silently ignored and the last cached data is used.
-
-## ModelPrice fields
-
-```ruby
-price.id                            # "gpt-4o"
-price.name                          # "GPT-4o"
-price.provider                      # "openai"
-price.input_per_million             # USD per 1M input tokens
-price.output_per_million            # USD per 1M output tokens
-price.cache_read_input_per_million  # prompt cache read rate
-price.cache_write_input_per_million # prompt cache write rate
-price.context_window                # max context tokens
-price.max_output_tokens             # max output tokens
-price.input_modalities              # ["text", "image", ...]
-price.output_modalities             # ["text", ...]
-price.image_input_per_million       # vision input rate
-price.image_output_per_million      # image generation rate
-price.audio_input_per_million       # audio input rate
-price.audio_output_per_million      # TTS output rate
-price.web_search_per_request        # per web-search call in USD
-price.categories                    # ["vision", "imggen", "audio", ...]
+```bash
+ruby bin/fetch_pricepertoken   # refresh data/pricepertoken.json
+ruby bin/fetch_modelsdev       # refresh data/modelsdev.json
+ruby bin/fetch_openrouter      # refresh data/openrouter.json
 ```
 
-## Filtering providers
+## Adding a New Source
 
-By default all providers from `MODELS_DEV_PROVIDER_MAP` are fetched. To restrict:
-
-```ruby
-ActiveHarness::Pricing::ModelsDev.available_providers = %w[openai anthropic gemini]
-ActiveHarness::Pricing.update  # rebuild cache with the new filter
-```
+1. Write `bin/fetch_<source>` — fetches data, normalizes names with `Normalizer.to_key`, writes to `data/<source>.json`
+2. Add a step to `.github/workflows/update_pricing_data.yml`
+3. Add one line to `PriceResolver::SOURCES` in `lib/active_harness/pricing/price_resolver.rb`
 
 ## Rails
 

@@ -3,6 +3,7 @@ require "json"
 module ActiveHarness
   module Pricing
     # Reads a standardized pricing data file and looks up models by canonical key.
+    # Data is loaded lazily on first access and reloaded automatically after CACHE_TTL.
     #
     # Data file format (JSON hash):
     #   {
@@ -21,6 +22,8 @@ module ActiveHarness
     #   src.find("mistral-nemo")           # exact
     #   src.find("mistral-nemo-instruct")  # prefix fallback
     class Source
+      CACHE_TTL = 86_400  # 24 hours
+
       PricingData = Struct.new(
         :key,
         :name,
@@ -65,16 +68,25 @@ module ActiveHarness
       end
 
       def reload!
-        @data = nil
+        @data      = nil
+        @loaded_at = nil
       end
 
       private
 
       def data
+        expire_if_stale
         @data ||= load_data
       end
 
+      def expire_if_stale
+        return unless @loaded_at && (Time.now - @loaded_at) >= CACHE_TTL
+        @data      = nil
+        @loaded_at = nil
+      end
+
       def load_data
+        @loaded_at = Time.now
         return {} unless File.exist?(@data_file)
         JSON.parse(File.read(@data_file))
       rescue StandardError

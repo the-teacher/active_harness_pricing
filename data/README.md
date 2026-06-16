@@ -114,7 +114,7 @@ Common reasons for differences:
 - Sources update at different frequencies and may carry stale data
 - OpenRouter adds a small markup over the underlying provider price
 
-`PriceResolver.best_cost` selects the **highest** price across all sources as a conservative cost estimate.
+`PriceResolver.max_cost` selects the **highest** price across all sources as a conservative cost estimate; `PriceResolver.min_cost` selects the lowest.
 
 ---
 
