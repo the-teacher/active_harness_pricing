@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-# Fetches all models from pricepertoken.com MCP API and writes to data/pricepertoken.json.
-# On failure exits with code 1 — GitHub Actions will skip the commit step.
+# Fetches all models from pricepertoken.com via MCP and writes data/pricepertoken.json
+# in the standard pricing format: { canonical_key => { name, input_per_1m, ... } }
 #
 # Usage: ruby bin/fetch_pricepertoken
 
@@ -9,8 +9,10 @@ require "uri"
 require "json"
 require "fileutils"
 
-MCP_URL  = "https://api.pricepertoken.com/mcp/mcp"
 OUT_FILE = File.expand_path("../data/pricepertoken.json", __dir__)
+MCP_URL  = "https://api.pricepertoken.com/mcp/mcp"
+
+require_relative "../lib/active_harness/pricing/normalizer"
 
 def mcp_call(uri, payload)
   Net::HTTP.start(uri.host, uri.port, use_ssl: true,
@@ -29,25 +31,52 @@ uri = URI(MCP_URL)
 
 mcp_call(uri, {
   jsonrpc: "2.0", id: 1, method: "initialize",
-  params: {
-    protocolVersion: "2024-11-05",
-    capabilities:    {},
-    clientInfo:      { name: "active-harness-pricing", version: "1.0" }
-  }
+  params: { protocolVersion: "2024-11-05", capabilities: {},
+            clientInfo: { name: "active-harness-pricing", version: "1.0" } }
 })
-
 mcp_call(uri, { jsonrpc: "2.0", method: "notifications/initialized", params: {} }) rescue nil
 
-resp = mcp_call(uri, {
+resp   = mcp_call(uri, {
   jsonrpc: "2.0", id: 2, method: "tools/call",
   params: { name: "get_all_models", arguments: { limit: 1000 } }
 })
-
 text   = resp.dig("result", "content", 0, "text")
 models = JSON.parse(text)
 raise "Empty model list" if models.empty?
 
-FileUtils.mkdir_p(File.dirname(OUT_FILE))
-File.write(OUT_FILE, JSON.pretty_generate(models))
+result   = {}
+skipped  = 0
 
-puts "OK: #{models.size} models written to #{OUT_FILE}"
+models.each do |m|
+  name = m["model_name"].to_s.strip
+  next if name.empty?
+
+  key = ActiveHarness::Pricing::Normalizer.to_key(name)
+  next if key.empty?
+
+  if result.key?(key)
+    skipped += 1
+    next
+  end
+
+  entry = { "name" => name }
+  entry["input_per_1m"]        = m["input_per_1m"]        if m["input_per_1m"]
+  entry["output_per_1m"]       = m["output_per_1m"]       if m["output_per_1m"]
+  entry["context_window"]      = m["context_length"]       if m["context_length"]
+  entry["tokens_per_second"]   = m["tokens_per_second"]   if m["tokens_per_second"].to_f > 0
+  entry["time_to_first_token"] = m["time_to_first_token"] if m["time_to_first_token"].to_f > 0
+
+  result[key] = entry
+end
+
+raise "Result suspiciously small (#{result.size})" if result.size < 100
+
+existing_size = File.exist?(OUT_FILE) ? JSON.parse(File.read(OUT_FILE)).size : 0
+if existing_size > 0 && result.size < existing_size / 2
+  warn "Result (#{result.size}) is less than half of existing (#{existing_size}) — keeping old file"
+  exit 1
+end
+
+FileUtils.mkdir_p(File.dirname(OUT_FILE))
+File.write(OUT_FILE, JSON.pretty_generate(result.sort.to_h))
+puts "OK: #{result.size} models written (#{skipped} key-collisions skipped) → #{OUT_FILE}"

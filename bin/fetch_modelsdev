@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
-# Fetches all models from models.dev API and writes to data/modelsdev.json.
-# On failure exits with code 1 — GitHub Actions will skip the commit step.
+# Fetches all models from models.dev API and writes data/modelsdev.json
+# in the standard pricing format: { canonical_key => { name, input_per_1m, ... } }
+#
+# Processes all providers; for duplicate canonical keys, the entry with lower
+# input price wins (direct-provider API prices beat aggregator prices).
 #
 # Usage: ruby bin/fetch_modelsdev
 
@@ -9,22 +12,94 @@ require "uri"
 require "json"
 require "fileutils"
 
-URL      = "https://models.dev/api.json"
 OUT_FILE = File.expand_path("../data/modelsdev.json", __dir__)
+URL      = "https://models.dev/api.json"
+
+require_relative "../lib/active_harness/pricing/normalizer"
+
+# Rounds a price to eliminate floating-point representation noise.
+# Adapts precision to the magnitude: $10 → 2dp, $1 → 3dp, $0.1 → 4dp, etc.
+def round_price(value)
+  return nil unless value
+  magnitude = value.abs
+  decimals = if    magnitude >= 10   then 2
+             elsif magnitude >= 1    then 3
+             elsif magnitude >= 0.1  then 4
+             elsif magnitude >= 0.01 then 5
+             else                         6
+             end
+  value.round(decimals)
+end
 
 uri  = URI(URL)
 resp = Net::HTTP.start(uri.host, uri.port, use_ssl: true,
                        open_timeout: 15, read_timeout: 30) do |http|
   http.get(uri.request_uri)
 end
-
 raise "models.dev returned HTTP #{resp.code}" unless resp.code == "200"
 
-data = JSON.parse(resp.body)
-raise "Empty response" if data.empty?
+raw = JSON.parse(resp.body)
+raise "Empty response" if raw.empty?
+
+result   = {}
+skipped  = 0
+no_price = 0
+
+raw.each do |_provider_key, provider_data|
+  next unless provider_data.is_a?(Hash)
+
+  models_hash = provider_data["models"] || {}
+  next unless models_hash.is_a?(Hash)
+
+  models_hash.each_value do |m|
+    next unless m.is_a?(Hash)
+
+    name = m["name"].to_s.strip
+    next if name.empty?
+
+    cost = m["cost"] || {}
+    input_price  = round_price(cost["input"])
+    output_price = round_price(cost["output"])
+
+    unless input_price && output_price
+      no_price += 1
+      next
+    end
+
+    key = ActiveHarness::Pricing::Normalizer.to_key(name)
+    next if key.empty?
+
+    if result.key?(key)
+      existing_price = result[key]["input_per_1m"] || 0
+      # Update only when: new price is positive AND (existing is 0 OR new is lower)
+      if input_price > 0 && (existing_price == 0 || input_price < existing_price)
+        result[key]["input_per_1m"]   = input_price
+        result[key]["output_per_1m"]  = output_price
+        result[key]["context_window"] = m.dig("limit", "context") if m.dig("limit", "context")
+      end
+      skipped += 1
+      next
+    end
+
+    # Skip zero-price entries on first encounter too — they will be revisited if a paid entry comes later
+    next if input_price == 0 && output_price == 0
+
+    entry = { "name" => name, "input_per_1m" => input_price, "output_per_1m" => output_price }
+    entry["context_window"]    = m.dig("limit", "context")       if m.dig("limit", "context")
+    entry["cache_read_per_1m"] = round_price(cost["cache_read"]) if cost["cache_read"]
+
+    result[key] = entry
+  end
+end
+
+raise "Result suspiciously small (#{result.size})" if result.size < 50
+
+existing_size = File.exist?(OUT_FILE) ? JSON.parse(File.read(OUT_FILE)).size : 0
+if existing_size > 0 && result.size < existing_size / 2
+  warn "Result (#{result.size}) is less than half of existing (#{existing_size}) — keeping old file"
+  exit 1
+end
 
 FileUtils.mkdir_p(File.dirname(OUT_FILE))
-File.write(OUT_FILE, JSON.pretty_generate(data))
-
-total = data.values.sum { |v| v.is_a?(Hash) ? (v["models"]&.size || 0) : 0 }
-puts "OK: #{data.keys.size} providers, ~#{total} models written to #{OUT_FILE}"
+File.write(OUT_FILE, JSON.pretty_generate(result.sort.to_h))
+puts "OK: #{result.size} models written (#{skipped} cheaper duplicates merged, #{no_price} without pricing skipped) → #{OUT_FILE}"

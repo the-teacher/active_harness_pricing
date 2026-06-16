@@ -1,0 +1,91 @@
+#!/usr/bin/env ruby
+# Fetches all models from OpenRouter API and writes data/openrouter.json
+# in the standard pricing format: { canonical_key => { name, input_per_1m, ... } }
+#
+# OpenRouter stores prices as per-token strings (e.g. "0.0000025" = $2.5/M).
+# No API key required for the public models endpoint.
+#
+# Usage: ruby bin/fetch_openrouter
+
+require "net/http"
+require "uri"
+require "json"
+require "fileutils"
+
+OUT_FILE = File.expand_path("../data/openrouter.json", __dir__)
+API_BASE = "https://openrouter.ai/api/v1/models"
+
+require_relative "../lib/active_harness/pricing/normalizer"
+
+# Converts a per-token price string to per-million float.
+# Returns nil for zero or blank values.
+def to_per_million(value)
+  return nil if value.nil? || value.to_s.strip.empty?
+  f = value.to_f
+  return nil if f <= 0
+  (f * 1_000_000).round(6)
+end
+
+def fetch_json(url)
+  uri  = URI(url)
+  resp = Net::HTTP.start(uri.host, uri.port, use_ssl: true, read_timeout: 20) do |h|
+    h.get(uri.request_uri)
+  end
+  raise "OpenRouter API #{resp.code} for #{url}" unless resp.code == "200"
+  JSON.parse(resp.body)
+end
+
+# Strip "Author: " prefix OpenRouter adds to display names.
+# "Mistral: Mistral Nemo" → "Mistral Nemo"
+# "OpenAI: GPT-4o"        → "GPT-4o"
+def clean_name(name)
+  name.to_s.sub(/\A[^:]+:\s*/, "").strip
+end
+
+data   = fetch_json(API_BASE)
+models = data["data"] || []
+raise "Empty model list" if models.empty?
+
+result  = {}
+skipped = 0
+
+models.each do |m|
+  id      = m["id"].to_s.strip
+  name    = clean_name(m["name"])
+  pricing = m["pricing"] || {}
+
+  next if id.empty? || id.start_with?("~")  # skip internal/alias entries
+
+  input_price  = to_per_million(pricing["prompt"])
+  output_price = to_per_million(pricing["completion"])
+
+  # Skip models with no text pricing (embeddings, rerank, free models, etc.)
+  next unless input_price && output_price
+
+  # Canonical key from the model ID (most reliable: "mistralai/mistral-nemo" → "mistral-nemo")
+  key = ActiveHarness::Pricing::Normalizer.to_key(id)
+  next if key.empty?
+
+  if result.key?(key)
+    skipped += 1
+    next
+  end
+
+  entry = { "name" => name, "input_per_1m" => input_price, "output_per_1m" => output_price }
+  entry["context_window"]    = m["context_length"]              if m["context_length"].to_i > 0
+  entry["cache_read_per_1m"] = to_per_million(pricing["input_cache_read"])  if pricing["input_cache_read"]
+
+  result[key] = entry
+end
+
+raise "Result suspiciously small (#{result.size})" if result.size < 50
+
+existing_size = File.exist?(OUT_FILE) ? JSON.parse(File.read(OUT_FILE)).size : 0
+if existing_size > 0 && result.size < existing_size / 2
+  warn "Result (#{result.size}) is less than half of existing (#{existing_size}) — keeping old file"
+  exit 1
+end
+
+FileUtils.mkdir_p(File.dirname(OUT_FILE))
+File.write(OUT_FILE, JSON.pretty_generate(result.sort.to_h))
+puts "OK: #{result.size} models written (#{skipped} key-collisions skipped) → #{OUT_FILE}"
