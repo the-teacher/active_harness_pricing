@@ -233,8 +233,8 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.098,
-    "output_per_1m": 0.196,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
     "cache_read_per_1m": 0.02
   },
@@ -460,6 +460,13 @@
     "output_per_1m": 3.08,
     "context_window": 202752,
     "cache_read_per_1m": 0.182
+  },
+  "glm-5-2": {
+    "name": "GLM 5.2",
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.26
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -909,10 +916,10 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.75,
+    "input_per_1m": 0.74,
     "output_per_1m": 3.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.16
+    "cache_read_per_1m": 0.15
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1264,9 +1271,9 @@
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
     "input_per_1m": 0.5,
-    "output_per_1m": 2.5,
+    "output_per_1m": 2.2,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.1
   },
   "nova-2-lite": {
     "name": "Nova 2 Lite",

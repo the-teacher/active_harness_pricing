@@ -2115,8 +2115,8 @@
   "devstral-small-2-24b-instruct-2512": {
     "name": "Devstral Small 2 24B Instruct 2512",
     "input_per_1m": 0.12,
-    "output_per_1m": 0.35,
-    "context_window": 262128
+    "output_per_1m": 0.47,
+    "context_window": 32768
   },
   "devstral-small-2505": {
     "name": "Devstral Small 2505",
@@ -3420,6 +3420,13 @@
     "output_per_1m": 3.38,
     "context_window": 200000,
     "cache_read_per_1m": 0.1831
+  },
+  "glm-5-2": {
+    "name": "GLM 5.2",
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.26
   },
   "glm-5-fast": {
     "name": "GLM 5 Fast",
@@ -4930,7 +4937,7 @@
   },
   "kimi-k2-7-code-fast": {
     "name": "Kimi K2.7 Code Fast",
-    "input_per_1m": 2,
+    "input_per_1m": 1.9,
     "output_per_1m": 8,
     "context_window": 262000,
     "cache_read_per_1m": 0.38
