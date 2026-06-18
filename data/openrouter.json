@@ -300,6 +300,12 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.125
   },
+  "gemini-3-1-flash-image": {
+    "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.0,
+    "context_window": 131072
+  },
   "gemini-3-1-flash-image-preview": {
     "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
     "input_per_1m": 0.5,
@@ -347,6 +353,13 @@
     "output_per_1m": 3.0,
     "context_window": 1048576,
     "cache_read_per_1m": 0.05
+  },
+  "gemini-3-pro-image": {
+    "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+    "input_per_1m": 2.0,
+    "output_per_1m": 12.0,
+    "context_window": 65536,
+    "cache_read_per_1m": 0.2
   },
   "gemini-3-pro-image-preview": {
     "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
@@ -1069,13 +1082,6 @@
     "output_per_1m": 0.87,
     "context_window": 1048576,
     "cache_read_per_1m": 0.0036
-  },
-  "mimo-v2-flash": {
-    "name": "MiMo-V2-Flash",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.01
   },
   "minimax-01": {
     "name": "MiniMax-01",

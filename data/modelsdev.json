@@ -1950,9 +1950,9 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.098,
-    "output_per_1m": 0.196,
-    "context_window": 1048575,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.0028
   },
   "deepseek-v4-flash-6bit": {
@@ -4930,7 +4930,7 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.75,
+    "input_per_1m": 0.74,
     "output_per_1m": 3.5,
     "context_window": 262144,
     "cache_read_per_1m": 0.19
