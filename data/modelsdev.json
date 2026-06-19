@@ -36,6 +36,18 @@
     "output_per_1m": 3,
     "context_window": 150000
   },
+  "agi-01-frontier": {
+    "name": "AGI-01 Frontier",
+    "input_per_1m": 4.5,
+    "output_per_1m": 22,
+    "context_window": 300000
+  },
+  "agi-01-swift": {
+    "name": "AGI-01 Swift",
+    "input_per_1m": 2.5,
+    "output_per_1m": 15,
+    "context_window": 300000
+  },
   "agnes-1-5-lite": {
     "name": "Agnes 1.5 Lite",
     "input_per_1m": 0.12,
@@ -3092,7 +3104,7 @@
     "context_window": 64000
   },
   "glm-4-32b-0414": {
-    "name": "THUDM/GLM-4-32B-0414",
+    "name": "GLM 4 32B 0414",
     "input_per_1m": 0.2,
     "output_per_1m": 0.2,
     "context_window": 128000
@@ -3225,8 +3237,8 @@
   },
   "glm-4-7": {
     "name": "GLM 4.7",
-    "input_per_1m": 0.12,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.8,
     "context_window": 200000,
     "cache_read_per_1m": 2.25
   },
@@ -3307,10 +3319,10 @@
     "context_window": 200000
   },
   "glm-4-9b-0414": {
-    "name": "THUDM/GLM-4-9B-0414",
-    "input_per_1m": 0.086,
-    "output_per_1m": 0.086,
-    "context_window": 33000
+    "name": "GLM 4 9B 0414",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.2,
+    "context_window": 32000
   },
   "glm-4-air": {
     "name": "GLM-4 Air",
@@ -3423,8 +3435,8 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.2,
     "context_window": 1000000,
     "cache_read_per_1m": 0.26
   },
@@ -3495,16 +3507,16 @@
     "context_window": 200000
   },
   "glm-z1-32b-0414": {
-    "name": "THUDM/GLM-Z1-32B-0414",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.57,
-    "context_window": 131000
+    "name": "GLM Z1 32B 0414",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.2,
+    "context_window": 128000
   },
   "glm-z1-9b-0414": {
-    "name": "THUDM/GLM-Z1-9B-0414",
-    "input_per_1m": 0.086,
-    "output_per_1m": 0.086,
-    "context_window": 131000
+    "name": "GLM Z1 9B 0414",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.2,
+    "context_window": 32000
   },
   "glm-z1-air": {
     "name": "GLM Z1 Air",
@@ -4280,19 +4292,19 @@
     "context_window": 229376,
     "cache_read_per_1m": 0.01
   },
-  "greg-1-normal": {
-    "name": "Greg 1 Normal",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 229376,
-    "cache_read_per_1m": 0.02
-  },
-  "greg-1-super": {
-    "name": "Greg 1 Super",
-    "input_per_1m": 1,
+  "greg-2-super": {
+    "name": "Greg 2 Super",
+    "input_per_1m": 1.5,
     "output_per_1m": 5,
     "context_window": 229376,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.25
+  },
+  "greg-2-ultra": {
+    "name": "Greg 2 Ultra",
+    "input_per_1m": 3,
+    "output_per_1m": 10,
+    "context_window": 229376,
+    "cache_read_per_1m": 0.5
   },
   "greg-roleplay": {
     "name": "Greg (Roleplay)",
@@ -4611,11 +4623,11 @@
     "context_window": 24000
   },
   "hy3-preview": {
-    "name": "Hy3 Preview",
-    "input_per_1m": 0.063,
-    "output_per_1m": 0.21,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.021
+    "name": "Hy3 preview",
+    "input_per_1m": 0.066,
+    "output_per_1m": 0.26,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.058
   },
   "ibm-granite-4-0-h-micro": {
     "name": "IBM Granite 4.0 H Micro",
@@ -4930,8 +4942,8 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.74,
-    "output_per_1m": 3.5,
+    "input_per_1m": 0.55,
+    "output_per_1m": 2.25,
     "context_window": 262144,
     "cache_read_per_1m": 0.19
   },
@@ -6704,6 +6716,12 @@
     "output_per_1m": 60,
     "context_window": 65536
   },
+  "nano-banana-2-gemini-3-1-flash-image": {
+    "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+    "input_per_1m": 0.5,
+    "output_per_1m": 3,
+    "context_window": 65536
+  },
   "nano-banana-gemini-2-5-flash-image": {
     "name": "Nano Banana (Gemini 2.5 Flash Image)",
     "input_per_1m": 0.3,
@@ -6795,7 +6813,7 @@
   },
   "nemotron-super": {
     "name": "Nemotron Super",
-    "input_per_1m": 0.06,
+    "input_per_1m": 0.3,
     "output_per_1m": 0.75,
     "context_window": 202800,
     "cache_read_per_1m": 0.06
@@ -9479,13 +9497,6 @@
     "output_per_1m": 0.8,
     "context_window": 8192
   },
-  "raptor-mini": {
-    "name": "Raptor mini",
-    "input_per_1m": 0.25,
-    "output_per_1m": 2,
-    "context_window": 400000,
-    "cache_read_per_1m": 0.025
-  },
   "reka-edge": {
     "name": "Reka Edge",
     "input_per_1m": 0.1,
@@ -10012,7 +10023,7 @@
     "input_per_1m": 0.95,
     "output_per_1m": 4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.19
   },
   "umans-flash": {
     "name": "Umans Flash",

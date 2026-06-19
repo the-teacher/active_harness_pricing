@@ -476,10 +476,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
+    "input_per_1m": 1.2,
+    "output_per_1m": 4.1,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.2
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -791,7 +791,7 @@
     "input_per_1m": 0.075,
     "output_per_1m": 0.3,
     "context_window": 131072,
-    "cache_read_per_1m": 0.037
+    "cache_read_per_1m": 0.0375
   },
   "granite-4-0-h-micro": {
     "name": "Granite 4.0 Micro",
@@ -922,10 +922,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.68,
-    "output_per_1m": 3.41,
+    "input_per_1m": 0.67,
+    "output_per_1m": 3.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.34
+    "cache_read_per_1m": 0.2
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -963,6 +963,20 @@
     "input_per_1m": 0.04,
     "output_per_1m": 0.05,
     "context_window": 8192
+  },
+  "laguna-m-1": {
+    "name": "Laguna M.1",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.4,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.1
+  },
+  "laguna-xs-2": {
+    "name": "Laguna XS.2",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.05
   },
   "lfm-2-24b-a2b": {
     "name": "LFM2-24B-A2B",
@@ -1508,8 +1522,7 @@
     "name": "Qwen3.5-35B-A3B",
     "input_per_1m": 0.14,
     "output_per_1m": 1.0,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "context_window": 262144
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
@@ -1543,10 +1556,9 @@
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
-    "input_per_1m": 0.15,
+    "input_per_1m": 0.14,
     "output_per_1m": 1.0,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "context_window": 262144
   },
   "qwen3-6-flash": {
     "name": "Qwen3.6 Flash",
