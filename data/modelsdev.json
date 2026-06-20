@@ -3438,7 +3438,7 @@
     "input_per_1m": 0.5,
     "output_per_1m": 2.2,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.3
   },
   "glm-5-fast": {
     "name": "GLM 5 Fast",
@@ -4774,7 +4774,7 @@
   },
   "kat-coder-pro": {
     "name": "KAT-Coder-Pro V1",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.3,
     "output_per_1m": 1.2,
     "context_window": 256000,
     "cache_read_per_1m": 0.06
@@ -5054,13 +5054,15 @@
     "name": "Laguna M.1",
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.1
   },
   "laguna-xs-2": {
     "name": "Laguna XS.2",
     "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 128000
+    "output_per_1m": 0.2,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.05
   },
   "lfm2-24b-a2b": {
     "name": "LFM2-24B-A2B",
@@ -6406,7 +6408,7 @@
   "mistral-nemo": {
     "name": "Mistral Nemo",
     "input_per_1m": 0.02,
-    "output_per_1m": 0.04,
+    "output_per_1m": 0.03,
     "context_window": 131072
   },
   "mistral-nemo-12b-instruct": {
@@ -6532,9 +6534,9 @@
   },
   "mistral-small-latest": {
     "name": "Mistral Small (latest)",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 256000
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.3,
+    "context_window": 32000
   },
   "mistral-voxtral-small-24b-2507": {
     "name": "Mistral: Voxtral Small 24B 2507",
@@ -6611,9 +6613,9 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.68,
-    "output_per_1m": 3.41,
-    "context_window": 262142,
+    "input_per_1m": 0.67,
+    "output_per_1m": 3.5,
+    "context_window": 262144,
     "cache_read_per_1m": 0.14
   },
   "moonshotai-kimi-k2-0711": {
@@ -9893,7 +9895,8 @@
     "name": "StepFun 3.5 Flash",
     "input_per_1m": 0.09,
     "output_per_1m": 0.3,
-    "context_window": 262114
+    "context_window": 262114,
+    "cache_read_per_1m": 0.02
   },
   "stepfun-step-3-5-flash": {
     "name": "StepFun: Step 3.5 Flash",

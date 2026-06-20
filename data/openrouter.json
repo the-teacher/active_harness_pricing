@@ -866,10 +866,10 @@
   },
   "hy3-preview": {
     "name": "Hy3 preview",
-    "input_per_1m": 0.066,
-    "output_per_1m": 0.26,
+    "input_per_1m": 0.063,
+    "output_per_1m": 0.21,
     "context_window": 262144,
-    "cache_read_per_1m": 0.029
+    "cache_read_per_1m": 0.021
   },
   "inflection-3-pi": {
     "name": "Inflection 3 Pi",
@@ -929,10 +929,10 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.74,
-    "output_per_1m": 3.5,
+    "input_per_1m": 0.612,
+    "output_per_1m": 3.069,
     "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.1296
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1039,12 +1039,6 @@
     "input_per_1m": 0.4,
     "output_per_1m": 0.4,
     "context_window": 131072
-  },
-  "llama-3-70b-instruct": {
-    "name": "Llama 3 70B Instruct",
-    "input_per_1m": 0.51,
-    "output_per_1m": 0.74,
-    "context_window": 8192
   },
   "llama-3-8b-instruct": {
     "name": "Llama 3 8B Instruct",
