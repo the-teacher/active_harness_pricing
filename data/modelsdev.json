@@ -2508,6 +2508,13 @@
     "output_per_1m": 1,
     "context_window": 128000
   },
+  "fugu-ultra": {
+    "name": "Fugu Ultra",
+    "input_per_1m": 5,
+    "output_per_1m": 30,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.5
+  },
   "gemini-1-5-flash": {
     "name": "Gemini 1.5 Flash",
     "input_per_1m": 0.0748,
@@ -6628,8 +6635,8 @@
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
     "input_per_1m": 0.66,
-    "output_per_1m": 3.5,
-    "context_window": 262142,
+    "output_per_1m": 3.41,
+    "context_window": 262144,
     "cache_read_per_1m": 0.14
   },
   "moonshotai-kimi-k2-0711": {
@@ -6858,6 +6865,13 @@
     "input_per_1m": 0.27,
     "output_per_1m": 1,
     "context_window": 131072
+  },
+  "nex-n2-pro": {
+    "name": "Nex-N2-Pro",
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.5,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.25
   },
   "nous-hermes-3-405b-instruct": {
     "name": "Nous: Hermes 3 405B Instruct",
@@ -8784,7 +8798,7 @@
     "context_window": 262144
   },
   "qwen3-5-122b-a10b": {
-    "name": "Qwen3.5-122B-A10B",
+    "name": "Qwen3.5 122B-A10B",
     "input_per_1m": 0.115,
     "output_per_1m": 0.917,
     "context_window": 262144
@@ -8802,7 +8816,7 @@
     "context_window": 260096
   },
   "qwen3-5-27b": {
-    "name": "Qwen3.5-27B",
+    "name": "Qwen3.5 27B",
     "input_per_1m": 0.086,
     "output_per_1m": 0.688,
     "context_window": 262144
@@ -9000,7 +9014,7 @@
     "context_window": 262144
   },
   "qwen3-5-35b-a3b": {
-    "name": "Qwen3.5-35B-A3B",
+    "name": "Qwen3.5 35B-A3B",
     "input_per_1m": 0.057,
     "output_per_1m": 0.459,
     "context_window": 262144
@@ -9112,7 +9126,7 @@
     "context_window": 260096
   },
   "qwen3-6-35b-a3b": {
-    "name": "Qwen3.6 35B A3B",
+    "name": "Qwen3.6 35B-A3B",
     "input_per_1m": 0.112,
     "output_per_1m": 0.8,
     "context_window": 262144
@@ -9875,8 +9889,7 @@
     "name": "Step 3.5 Flash",
     "input_per_1m": 0.09,
     "output_per_1m": 0.3,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.02
+    "context_window": 262144
   },
   "step-3-5-flash-2603": {
     "name": "Step 3.5 Flash 2603",

@@ -24,13 +24,6 @@
     "output_per_1m": 1.6,
     "context_window": 32768
   },
-  "claude-3-5-haiku": {
-    "name": "Claude 3.5 Haiku",
-    "input_per_1m": 0.8,
-    "output_per_1m": 4.0,
-    "context_window": 200000,
-    "cache_read_per_1m": 0.08
-  },
   "claude-3-haiku": {
     "name": "Claude 3 Haiku",
     "input_per_1m": 0.25,
@@ -476,16 +469,23 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 1.2,
-    "output_per_1m": 4.1,
+    "input_per_1m": 0.98,
+    "output_per_1m": 3.08,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.182
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
     "input_per_1m": 1.2,
     "output_per_1m": 4.0,
     "context_window": 262144,
+    "cache_read_per_1m": 0.24
+  },
+  "glm-5v-turbo": {
+    "name": "GLM 5V Turbo",
+    "input_per_1m": 1.2,
+    "output_per_1m": 4.0,
+    "context_window": 202752,
     "cache_read_per_1m": 0.24
   },
   "gpt-3-5-turbo": {
@@ -923,16 +923,16 @@
   "kimi-k2-6": {
     "name": "Kimi K2.6",
     "input_per_1m": 0.66,
-    "output_per_1m": 3.5,
+    "output_per_1m": 3.41,
     "context_window": 262144,
-    "cache_read_per_1m": 0.33
+    "cache_read_per_1m": 0.144
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.612,
-    "output_per_1m": 3.069,
+    "input_per_1m": 0.68,
+    "output_per_1m": 3.41,
     "context_window": 262144,
-    "cache_read_per_1m": 0.1296
+    "cache_read_per_1m": 0.144
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1288,6 +1288,13 @@
     "output_per_1m": 2.2,
     "context_window": 1000000,
     "cache_read_per_1m": 0.1
+  },
+  "nex-n2-pro": {
+    "name": "Nex-N2-Pro",
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.5,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.25
   },
   "nova-2-lite": {
     "name": "Nova 2 Lite",
