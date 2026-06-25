@@ -2873,12 +2873,6 @@
     "output_per_1m": 0.65,
     "context_window": 8192
   },
-  "gemma-2-27b-it": {
-    "name": "Gemma 2 27B IT",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.08,
-    "context_window": 8192
-  },
   "gemma-3-12b": {
     "name": "Gemma 3 12B",
     "input_per_1m": 0.05,
@@ -2890,12 +2884,6 @@
     "input_per_1m": 0.03,
     "output_per_1m": 0.1,
     "context_window": 131072
-  },
-  "gemma-3-1b-it": {
-    "name": "Gemma 3 1B IT",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.3,
-    "context_window": 1000000
   },
   "gemma-3-27b": {
     "name": "Gemma 3 27B",
@@ -4384,7 +4372,7 @@
     "cache_read_per_1m": 0.75
   },
   "grok-4-0709": {
-    "name": "Grok 4 (0709)",
+    "name": "grok-4-0709",
     "input_per_1m": 2.7,
     "output_per_1m": 13.5,
     "context_window": 256000
@@ -4863,7 +4851,7 @@
     "input_per_1m": 0.4,
     "output_per_1m": 2.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "cache_read_per_1m": 0.5
   },
   "kimi-k2-0711": {
     "name": "Kimi K2 0711",
@@ -5474,7 +5462,7 @@
     "name": "Llama 4 Scout 17B Instruct",
     "input_per_1m": 0.17,
     "output_per_1m": 0.66,
-    "context_window": 8192
+    "context_window": 131072
   },
   "llama-4-scout-17b-instruct-us": {
     "name": "Llama 4 Scout 17B Instruct (US)",
@@ -5901,9 +5889,9 @@
   },
   "minimax-m2-1": {
     "name": "MiniMax M2.1",
-    "input_per_1m": 0.28,
-    "output_per_1m": 1.2,
-    "context_window": 196608,
+    "input_per_1m": 0.27,
+    "output_per_1m": 1.1,
+    "context_window": 204800,
     "cache_read_per_1m": 0.03
   },
   "minimax-m2-1-lightning": {
@@ -6822,7 +6810,7 @@
     "name": "Nemotron 3 Ultra 550B A55B",
     "input_per_1m": 0.5,
     "output_per_1m": 2.5,
-    "context_window": 1000000,
+    "context_window": 262144,
     "cache_read_per_1m": 0.15
   },
   "nemotron-cascade-2-30b-a3b": {
@@ -8586,12 +8574,6 @@
     "output_per_1m": 0.1087,
     "context_window": 32768
   },
-  "qwen2-5-coder-7b": {
-    "name": "Qwen2.5 Coder 7B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.05,
-    "context_window": 131072
-  },
   "qwen2-5-coder-7b-fast": {
     "name": "Qwen2.5 Coder 7B fast",
     "input_per_1m": 0.03,
@@ -8630,9 +8612,9 @@
   },
   "qwen2-5-vl-72b-instruct": {
     "name": "Qwen2.5-VL 72B Instruct",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.75,
-    "context_window": 128000
+    "input_per_1m": 0.13,
+    "output_per_1m": 0.4,
+    "context_window": 32768
   },
   "qwen2-5-vl-72b-tee": {
     "name": "Qwen2.5 VL 72B TEE",
@@ -8674,7 +8656,7 @@
     "name": "Qwen3 235B A22B FP8",
     "input_per_1m": 0.2,
     "output_per_1m": 0.8,
-    "context_window": 131072
+    "context_window": 40960
   },
   "qwen3-235b-a22b-instruct": {
     "name": "Qwen3 235B A22B Instruct",
@@ -8769,12 +8751,6 @@
     "output_per_1m": 0.6,
     "context_window": 16384
   },
-  "qwen3-32b-fp8": {
-    "name": "Qwen3 32B FP8",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.1,
-    "context_window": 131072
-  },
   "qwen3-32b-tee": {
     "name": "Qwen3 32B TEE",
     "input_per_1m": 0.08,
@@ -8792,7 +8768,7 @@
     "name": "Qwen3 4B FP8",
     "input_per_1m": 0.03,
     "output_per_1m": 0.03,
-    "context_window": 131072
+    "context_window": 128000
   },
   "qwen3-5-122b": {
     "name": "Qwen3.5-122B",
@@ -9104,7 +9080,7 @@
     "cache_read_per_1m": 0.04
   },
   "qwen3-6-27b": {
-    "name": "Qwen3.6-27B",
+    "name": "Qwen3.6 27B",
     "input_per_1m": 0.2,
     "output_per_1m": 1.5,
     "context_window": 262144
@@ -9463,10 +9439,10 @@
   },
   "qwen3-vl-flash": {
     "name": "Qwen3 VL Flash",
-    "input_per_1m": 0.022,
-    "output_per_1m": 0.215,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.0044
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.4,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.01
   },
   "qwen3-vl-instruct": {
     "name": "Qwen3 VL Instruct",

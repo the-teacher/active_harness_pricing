@@ -226,10 +226,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.089,
+    "output_per_1m": 0.224,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.0266
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
