@@ -2132,12 +2132,6 @@
     "output_per_1m": 0.3,
     "context_window": 256000
   },
-  "devstral-small-2-24b-instruct-2512": {
-    "name": "Devstral Small 2 24B Instruct 2512",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.47,
-    "context_window": 32768
-  },
   "devstral-small-2505": {
     "name": "Devstral Small 2505",
     "input_per_1m": 0.05,
@@ -2322,8 +2316,8 @@
   },
   "e5-multi-lingual-large-embeddings-0-6b": {
     "name": "E5 Multi-Lingual Large Embeddings 0.6B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.12,
+    "input_per_1m": 0.114,
+    "output_per_1m": 0.114,
     "context_window": 512
   },
   "embed": {
@@ -3443,6 +3437,19 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.3
   },
+  "glm-5-2-fast": {
+    "name": "GLM 5.2 Fast",
+    "input_per_1m": 3,
+    "output_per_1m": 10.25,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.5
+  },
+  "glm-5-2-short": {
+    "name": "GLM 5.2 short",
+    "input_per_1m": 1.45,
+    "output_per_1m": 4.5,
+    "context_window": 200000
+  },
   "glm-5-fast": {
     "name": "GLM 5 Fast",
     "input_per_1m": 1.1,
@@ -4215,8 +4222,8 @@
   },
   "gpt-oss-120b": {
     "name": "GPT-OSS-120B",
-    "input_per_1m": 0.039,
-    "output_per_1m": 0.19,
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.15,
     "context_window": 131072
   },
   "gpt-oss-120b-cs": {
@@ -4817,8 +4824,8 @@
   },
   "kb-whisper": {
     "name": "KB Whisper",
-    "input_per_1m": 0.00236,
-    "output_per_1m": 0.00236,
+    "input_per_1m": 0.0023,
+    "output_per_1m": 0.0023,
     "context_window": 448
   },
   "kilo-auto-balanced": {
@@ -5462,7 +5469,7 @@
     "name": "Llama 4 Scout 17B Instruct",
     "input_per_1m": 0.17,
     "output_per_1m": 0.66,
-    "context_window": 131072
+    "context_window": 3500000
   },
   "llama-4-scout-17b-instruct-us": {
     "name": "Llama 4 Scout 17B Instruct (US)",
@@ -5559,12 +5566,6 @@
     "input_per_1m": 0.5,
     "output_per_1m": 1.5,
     "context_window": 128000
-  },
-  "magistral-small-1-2-24b": {
-    "name": "Magistral Small 1.2 24B",
-    "input_per_1m": 0.59,
-    "output_per_1m": 2.36,
-    "context_window": 131072
   },
   "magistral-small-2506": {
     "name": "Magistral Small 2506",
@@ -5770,9 +5771,9 @@
   },
   "mimo": {
     "name": "MiMo V2.5",
-    "input_per_1m": 0.14,
+    "input_per_1m": 0.105,
     "output_per_1m": 0.28,
-    "context_window": 1000000,
+    "context_window": 32000,
     "cache_read_per_1m": 0.0028
   },
   "mimo-m2-5": {
@@ -5942,8 +5943,8 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax-M2.7",
-    "input_per_1m": 0.24,
-    "output_per_1m": 0.96,
+    "input_per_1m": 0.18,
+    "output_per_1m": 0.72,
     "context_window": 196608,
     "cache_read_per_1m": 0.06
   },
@@ -5985,7 +5986,7 @@
     "name": "MiniMax M3 (3x usage)",
     "input_per_1m": 0.1,
     "output_per_1m": 0.4,
-    "context_window": 512000,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.02
   },
   "minimax-m3-preview": {
@@ -6740,7 +6741,7 @@
     "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
     "input_per_1m": 0.5,
     "output_per_1m": 3,
-    "context_window": 65536
+    "context_window": 131072
   },
   "nano-banana-gemini-2-5-flash-image": {
     "name": "Nano Banana (Gemini 2.5 Flash Image)",
@@ -6795,8 +6796,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super 120B A12B",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.45,
+    "input_per_1m": 0.085,
+    "output_per_1m": 0.4,
     "context_window": 262144
   },
   "nemotron-3-ultra": {
@@ -7756,12 +7757,6 @@
     "output_per_1m": 0.14,
     "context_window": 16384
   },
-  "phi-4-15b": {
-    "name": "Phi-4 15B",
-    "input_per_1m": 0.24,
-    "output_per_1m": 0.47,
-    "context_window": 32000
-  },
   "phi-4-mini": {
     "name": "Phi-4-mini",
     "input_per_1m": 0.075,
@@ -8702,12 +8697,6 @@
     "context_window": 8000,
     "cache_read_per_1m": 0.05
   },
-  "qwen3-30b-2507": {
-    "name": "Qwen3 30B 2507",
-    "input_per_1m": 0.35,
-    "output_per_1m": 1.42,
-    "context_window": 64000
-  },
   "qwen3-30b-a3b": {
     "name": "Qwen3-30B-A3B",
     "input_per_1m": 0.06,
@@ -9164,9 +9153,9 @@
   },
   "qwen3-7-plus": {
     "name": "Qwen3.7 Plus",
-    "input_per_1m": 0.32,
-    "output_per_1m": 1.28,
-    "context_window": 1000000,
+    "input_per_1m": 0.282,
+    "output_per_1m": 1.128,
+    "context_window": 991000,
     "cache_read_per_1m": 0.05
   },
   "qwen3-7-plus-thinking": {
@@ -9349,9 +9338,9 @@
   },
   "qwen3-reranker-4b": {
     "name": "Qwen3-Reranker-4B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.12,
-    "context_window": 32768
+    "input_per_1m": 0.0575,
+    "output_per_1m": 0,
+    "context_window": 32000
   },
   "qwen3-vl-235b": {
     "name": "Qwen3-VL 235B",
@@ -9385,8 +9374,8 @@
   },
   "qwen3-vl-30b": {
     "name": "Qwen3 VL 30B",
-    "input_per_1m": 0.24,
-    "output_per_1m": 0.94,
+    "input_per_1m": 0.23,
+    "output_per_1m": 0.92,
     "context_window": 100000
   },
   "qwen3-vl-30b-a3b": {
@@ -9572,6 +9561,12 @@
     "input_per_1m": 0.15,
     "output_per_1m": 0.15,
     "context_window": 128000
+  },
+  "roc": {
+    "name": "roc",
+    "input_per_1m": 2.875,
+    "output_per_1m": 11.52,
+    "context_window": 262144
   },
   "rocinante-12b": {
     "name": "Rocinante 12B",
@@ -9879,8 +9874,8 @@
   },
   "step-3-7-flash": {
     "name": "Step 3.7 Flash",
-    "input_per_1m": 0.2,
-    "output_per_1m": 1.15,
+    "input_per_1m": 0.19,
+    "output_per_1m": 1.13,
     "context_window": 256000,
     "cache_read_per_1m": 0.04
   },
@@ -10121,8 +10116,8 @@
   },
   "voxtral-small-24b": {
     "name": "Voxtral Small 24B",
-    "input_per_1m": 0.00236,
-    "output_per_1m": 0.00236,
+    "input_per_1m": 0.0023,
+    "output_per_1m": 0.0023,
     "context_window": 32000
   },
   "voxtral-small-24b-2507": {
@@ -10151,8 +10146,8 @@
   },
   "whisper-3-large": {
     "name": "Whisper 3 Large",
-    "input_per_1m": 0.00236,
-    "output_per_1m": 0.00236,
+    "input_per_1m": 0.0023,
+    "output_per_1m": 0.0023,
     "context_window": 448
   },
   "whisper-large": {
@@ -10160,6 +10155,12 @@
     "input_per_1m": 0.003,
     "output_per_1m": 0,
     "context_window": 0
+  },
+  "whisper-large-v3-turbo": {
+    "name": "Whisper Large v3 Turbo",
+    "input_per_1m": 0.0023,
+    "output_per_1m": 0.0023,
+    "context_window": 448
   },
   "wizardlm-2-8x22b": {
     "name": "Wizardlm 2 8x22B",
