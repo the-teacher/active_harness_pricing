@@ -183,7 +183,8 @@
     "name": "DeepSeek V3.2",
     "input_per_1m": 0.2288,
     "output_per_1m": 0.3432,
-    "context_window": 131072
+    "context_window": 131072,
+    "cache_read_per_1m": 0.02288
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
@@ -1552,7 +1553,7 @@
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
     "input_per_1m": 0.2885,
-    "output_per_1m": 3.17,
+    "output_per_1m": 2.65,
     "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
