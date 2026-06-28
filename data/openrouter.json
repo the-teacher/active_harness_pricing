@@ -1552,8 +1552,8 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.2885,
-    "output_per_1m": 2.65,
+    "input_per_1m": 0.2596,
+    "output_per_1m": 2.385,
     "context_window": 262144
   },
   "qwen3-6-35b-a3b": {

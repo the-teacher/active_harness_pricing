@@ -1803,15 +1803,15 @@
   },
   "deepseek-r1-distill-qwen-14b": {
     "name": "DeepSeek R1 Distill Qwen 14B",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.1,
-    "context_window": 131000
+    "input_per_1m": 0.144,
+    "output_per_1m": 0.431,
+    "context_window": 32768
   },
   "deepseek-r1-distill-qwen-32b": {
     "name": "DeepSeek R1 Distill Qwen 32B",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.18,
-    "context_window": 131000
+    "input_per_1m": 0.287,
+    "output_per_1m": 0.861,
+    "context_window": 32768
   },
   "deepseek-r1-distill-qwen-7b": {
     "name": "DeepSeek R1 Distill Qwen 7B",
@@ -2057,12 +2057,6 @@
     "output_per_1m": 5.25,
     "context_window": 800000,
     "cache_read_per_1m": 0.15
-  },
-  "deepseek-vl2": {
-    "name": "deepseek-ai/deepseek-vl2",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.15,
-    "context_window": 4000
   },
   "devstral-2": {
     "name": "Devstral 2",
@@ -3138,9 +3132,9 @@
   },
   "glm-4-5v": {
     "name": "GLM 4.5V",
-    "input_per_1m": 0.14,
+    "input_per_1m": 0.29,
     "output_per_1m": 0.86,
-    "context_window": 66000,
+    "context_window": 64000,
     "cache_read_per_1m": 0.11
   },
   "glm-4-5v-thinking": {
@@ -4789,12 +4783,6 @@
     "context_window": 256000,
     "cache_read_per_1m": 0.06
   },
-  "kat-dev": {
-    "name": "Kwaipilot/KAT-Dev",
-    "input_per_1m": 0.2,
-    "output_per_1m": 0.6,
-    "context_window": 128000
-  },
   "kb-whisper": {
     "name": "KB Whisper",
     "input_per_1m": 0.0023,
@@ -4980,9 +4968,9 @@
   },
   "kimi-k2-instruct-0905": {
     "name": "Kimi-K2-Instruct-0905",
-    "input_per_1m": 0.4,
-    "output_per_1m": 2,
-    "context_window": 262000
+    "input_per_1m": 1,
+    "output_per_1m": 3,
+    "context_window": 262144
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -8501,15 +8489,15 @@
   },
   "qwen2-5-14b-instruct": {
     "name": "Qwen2.5 14B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.1,
-    "context_window": 33000
+    "input_per_1m": 0.144,
+    "output_per_1m": 0.431,
+    "context_window": 131072
   },
   "qwen2-5-32b-instruct": {
     "name": "Qwen2.5 32B Instruct",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.18,
-    "context_window": 33000
+    "input_per_1m": 0.287,
+    "output_per_1m": 0.861,
+    "context_window": 131072
   },
   "qwen2-5-72b": {
     "name": "Qwen2.5 72B",
@@ -8523,12 +8511,6 @@
     "output_per_1m": 0.231,
     "context_window": 33000
   },
-  "qwen2-5-72b-instruct-128k": {
-    "name": "Qwen/Qwen2.5-72B-Instruct-128K",
-    "input_per_1m": 0.59,
-    "output_per_1m": 0.59,
-    "context_window": 131000
-  },
   "qwen2-5-7b-instruct": {
     "name": "Qwen2.5 7B Instruct",
     "input_per_1m": 0.04,
@@ -8537,9 +8519,9 @@
   },
   "qwen2-5-coder-32b-instruct": {
     "name": "Qwen2.5-Coder 32B Instruct",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.18,
-    "context_window": 33000
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.2,
+    "context_window": 32768
   },
   "qwen2-5-coder-7b-fast": {
     "name": "Qwen2.5 Coder 7B fast",
@@ -8572,7 +8554,7 @@
     "context_window": 32768
   },
   "qwen2-5-vl-32b-instruct": {
-    "name": "Qwen/Qwen2.5-VL-32B-Instruct",
+    "name": "Qwen2.5 VL 32B Instruct",
     "input_per_1m": 0.2,
     "output_per_1m": 0.6,
     "context_window": 16384
@@ -8591,9 +8573,9 @@
   },
   "qwen2-5-vl-7b-instruct": {
     "name": "Qwen2.5-VL 7B Instruct",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.05,
-    "context_window": 33000
+    "input_per_1m": 0.287,
+    "output_per_1m": 0.717,
+    "context_window": 131072
   },
   "qwen25-vl-72b": {
     "name": "Qwen25 VL 72b",
@@ -8695,10 +8677,11 @@
     "context_window": 262000
   },
   "qwen3-30b-a3b-thinking-2507": {
-    "name": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "name": "Qwen3 30B A3B Thinking 2507",
     "input_per_1m": 0.08,
     "output_per_1m": 0.4,
-    "context_window": 131072
+    "context_window": 131072,
+    "cache_read_per_1m": 0.08
   },
   "qwen3-32b": {
     "name": "Qwen3 32B",
@@ -9265,23 +9248,17 @@
     "context_window": 8000,
     "cache_read_per_1m": 0.015
   },
-  "qwen3-omni-30b-a3b-captioner": {
-    "name": "Qwen/Qwen3-Omni-30B-A3B-Captioner",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
-    "context_window": 66000
-  },
   "qwen3-omni-30b-a3b-instruct": {
     "name": "Qwen3 Omni 30B A3B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
-    "context_window": 66000
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.97,
+    "context_window": 65536
   },
   "qwen3-omni-30b-a3b-thinking": {
     "name": "Qwen3 Omni 30B A3B Thinking",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
-    "context_window": 66000
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.97,
+    "context_window": 65536
   },
   "qwen3-omni-flash": {
     "name": "Qwen3-Omni Flash",
@@ -9380,7 +9357,7 @@
     "context_window": 131072
   },
   "qwen3-vl-8b-thinking": {
-    "name": "Qwen/Qwen3-VL-8B-Thinking",
+    "name": "Qwen3 VL 8B Thinking",
     "input_per_1m": 0.117,
     "output_per_1m": 1.365,
     "context_window": 131072
@@ -9430,9 +9407,9 @@
   },
   "qwq-32b": {
     "name": "QwQ 32B",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.58,
-    "context_window": 131000
+    "input_per_1m": 0.287,
+    "output_per_1m": 0.861,
+    "context_window": 131072
   },
   "qwq-plus": {
     "name": "QwQ Plus",
