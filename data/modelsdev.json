@@ -1156,11 +1156,11 @@
     "cache_read_per_1m": 0.55
   },
   "claude-opus-4-6-fast": {
-    "name": "Claude Opus 4.6 Fast",
+    "name": "Claude Opus 4.6 (Fast)",
     "input_per_1m": 30,
     "output_per_1m": 150,
     "context_window": 1000000,
-    "cache_read_per_1m": 3.6
+    "cache_read_per_1m": 3
   },
   "claude-opus-4-6-global": {
     "name": "Claude Opus 4.6 (Global)",
@@ -3359,13 +3359,13 @@
   },
   "glm-5-1-fast": {
     "name": "GLM 5.1 Fast",
-    "input_per_1m": 1.1,
-    "output_per_1m": 3.6,
-    "context_window": 202736,
+    "input_per_1m": 2.8,
+    "output_per_1m": 8.8,
+    "context_window": 202800,
     "cache_read_per_1m": 0.52
   },
   "glm-5-1-fp8": {
-    "name": "GLM 5.1 FP8",
+    "name": "GLM-5.1 FP8",
     "input_per_1m": 0.85,
     "output_per_1m": 3.3,
     "context_window": 202752
@@ -3406,16 +3406,45 @@
   },
   "glm-5-2-fast": {
     "name": "GLM 5.2 Fast",
-    "input_per_1m": 2.1,
-    "output_per_1m": 6.6,
-    "context_window": 1048575,
-    "cache_read_per_1m": 0.5
-  },
-  "glm-5-2-short": {
-    "name": "GLM 5.2 short",
     "input_per_1m": 1.45,
     "output_per_1m": 4.5,
-    "context_window": 200000
+    "context_window": 1048560,
+    "cache_read_per_1m": 0.5
+  },
+  "glm-5-2-flex": {
+    "name": "GLM 5.2 Flex",
+    "input_per_1m": 0.725,
+    "output_per_1m": 2.25,
+    "context_window": 1048560,
+    "cache_read_per_1m": 0.1813
+  },
+  "glm-5-2-short": {
+    "name": "GLM 5.2 Short",
+    "input_per_1m": 1.45,
+    "output_per_1m": 4.5,
+    "context_window": 199984,
+    "cache_read_per_1m": 0.3625
+  },
+  "glm-5-2-short-fast": {
+    "name": "GLM 5.2 Short Fast",
+    "input_per_1m": 1.45,
+    "output_per_1m": 4.5,
+    "context_window": 199984,
+    "cache_read_per_1m": 0.3625
+  },
+  "glm-5-2-short-fast-flex": {
+    "name": "GLM 5.2 Short Fast Flex",
+    "input_per_1m": 0.725,
+    "output_per_1m": 2.25,
+    "context_window": 199984,
+    "cache_read_per_1m": 0.1813
+  },
+  "glm-5-2-short-flex": {
+    "name": "GLM 5.2 Short Flex",
+    "input_per_1m": 0.725,
+    "output_per_1m": 2.25,
+    "context_window": 199984,
+    "cache_read_per_1m": 0.1813
   },
   "glm-5-2-tee": {
     "name": "GLM 5.2 TEE",
@@ -3423,12 +3452,6 @@
     "output_per_1m": 4.4,
     "context_window": 1048576,
     "cache_read_per_1m": 0.7
-  },
-  "glm-5-fast": {
-    "name": "GLM 5 Fast",
-    "input_per_1m": 1.1,
-    "output_per_1m": 3.6,
-    "context_window": 202736
   },
   "glm-5-original": {
     "name": "GLM 5 Original",
@@ -4912,6 +4935,13 @@
     "context_window": 262128,
     "cache_read_per_1m": 0.3
   },
+  "kimi-k2-6-flex": {
+    "name": "Kimi K2.6 Flex",
+    "input_per_1m": 0.345,
+    "output_per_1m": 1.61,
+    "context_window": 262128,
+    "cache_read_per_1m": 0.08625
+  },
   "kimi-k2-6-tee": {
     "name": "Kimi K2.6 TEE",
     "input_per_1m": 0.66,
@@ -4945,6 +4975,13 @@
     "output_per_1m": 8,
     "context_window": 262000,
     "cache_read_per_1m": 0.38
+  },
+  "kimi-k2-7-code-flex": {
+    "name": "Kimi K2.7 Code Flex",
+    "input_per_1m": 0.475,
+    "output_per_1m": 2,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.1188
   },
   "kimi-k2-7-code-high-speed": {
     "name": "Kimi K2.7 Code High Speed",
@@ -6593,8 +6630,8 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.66,
-    "output_per_1m": 3.41,
+    "input_per_1m": 0.55,
+    "output_per_1m": 3.2,
     "context_window": 262144,
     "cache_read_per_1m": 0.14
   },
@@ -8965,7 +9002,8 @@
     "name": "Qwen3.5 397B A17B FP8",
     "input_per_1m": 0.69,
     "output_per_1m": 4.14,
-    "context_window": 262128
+    "context_window": 262128,
+    "cache_read_per_1m": 0.1725
   },
   "qwen3-5-397b-a17b-tee": {
     "name": "Qwen3.5 397B A17B TEE",
@@ -8983,7 +9021,8 @@
     "name": "Qwen3.5 397B Fast",
     "input_per_1m": 0.69,
     "output_per_1m": 4.14,
-    "context_window": 262128
+    "context_window": 262128,
+    "cache_read_per_1m": 0.1725
   },
   "qwen3-5-97b-a17b": {
     "name": "Qwen3.5-97B-A17B",
@@ -9070,7 +9109,8 @@
     "name": "Qwen3.6 35B Fast",
     "input_per_1m": 0.29,
     "output_per_1m": 1.15,
-    "context_window": 131056
+    "context_window": 131056,
+    "cache_read_per_1m": 0.0725
   },
   "qwen3-6-flash": {
     "name": "Qwen3.6 Flash",

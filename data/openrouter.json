@@ -924,10 +924,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.66,
-    "output_per_1m": 3.41,
+    "input_per_1m": 0.55,
+    "output_per_1m": 3.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.144
+    "cache_read_per_1m": 0.11
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
