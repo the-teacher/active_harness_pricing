@@ -73,13 +73,6 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.5
   },
-  "claude-opus-4-6-fast": {
-    "name": "Claude Opus 4.6 (Fast)",
-    "input_per_1m": 30.0,
-    "output_per_1m": 150.0,
-    "context_window": 1000000,
-    "cache_read_per_1m": 3.0
-  },
   "claude-opus-4-7": {
     "name": "Claude Opus 4.7",
     "input_per_1m": 5.0,
@@ -470,14 +463,13 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 0.98,
-    "output_per_1m": 3.08,
-    "context_window": 202752,
-    "cache_read_per_1m": 0.182
+    "input_per_1m": 0.975,
+    "output_per_1m": 4.3,
+    "context_window": 202752
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.95,
+    "input_per_1m": 0.94,
     "output_per_1m": 3.0,
     "context_window": 1048576,
     "cache_read_per_1m": 0.18
@@ -1821,10 +1813,9 @@
   },
   "step-3-5-flash": {
     "name": "Step 3.5 Flash",
-    "input_per_1m": 0.09,
+    "input_per_1m": 0.1,
     "output_per_1m": 0.3,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.02
+    "context_window": 262144
   },
   "step-3-7-flash": {
     "name": "Step 3.7 Flash",
