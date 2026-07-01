@@ -432,8 +432,8 @@
   },
   "anthropic-claude-sonnet": {
     "name": "Anthropic: Claude Sonnet Latest",
-    "input_per_1m": 3,
-    "output_per_1m": 15,
+    "input_per_1m": 2,
+    "output_per_1m": 10,
     "context_window": 1000000,
     "cache_read_per_1m": 0.3
   },
@@ -1439,6 +1439,48 @@
     "context_window": 200000,
     "cache_read_per_1m": 0.3
   },
+  "claude-sonnet-5": {
+    "name": "Claude Sonnet 5",
+    "input_per_1m": 2,
+    "output_per_1m": 10,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
+  },
+  "claude-sonnet-5-au": {
+    "name": "Claude Sonnet 5 (AU)",
+    "input_per_1m": 2,
+    "output_per_1m": 10,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
+  },
+  "claude-sonnet-5-eu": {
+    "name": "Claude Sonnet 5 (EU)",
+    "input_per_1m": 2.2,
+    "output_per_1m": 11,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.22
+  },
+  "claude-sonnet-5-global": {
+    "name": "Claude Sonnet 5 (Global)",
+    "input_per_1m": 2,
+    "output_per_1m": 10,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
+  },
+  "claude-sonnet-5-jp": {
+    "name": "Claude Sonnet 5 (JP)",
+    "input_per_1m": 2,
+    "output_per_1m": 10,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
+  },
+  "claude-sonnet-5-us": {
+    "name": "Claude Sonnet 5 (US)",
+    "input_per_1m": 2,
+    "output_per_1m": 10,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
+  },
   "claudinio": {
     "name": "Claudinio",
     "input_per_1m": 0.5,
@@ -1936,9 +1978,9 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.18,
-    "context_window": 1000000,
+    "input_per_1m": 0.098,
+    "output_per_1m": 0.196,
+    "context_window": 1048575,
     "cache_read_per_1m": 0.0028
   },
   "deepseek-v4-flash-6bit": {
@@ -2680,6 +2722,13 @@
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
     "context_window": 1000000,
+    "cache_read_per_1m": 0.03
+  },
+  "gemini-3-1-flash-lite-image-nano-banana-2-lite": {
+    "name": "Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite)",
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
+    "context_window": 65536,
     "cache_read_per_1m": 0.03
   },
   "gemini-3-1-flash-lite-preview": {
@@ -5967,11 +6016,11 @@
     "cache_read_per_1m": 0.06
   },
   "minimax-m3-3x-usage": {
-    "name": "MiniMax M3 (3x usage)",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
+    "name": "MiniMax-M3 (3x usage)",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.06
   },
   "minimax-m3-preview": {
     "name": "MiniMax M3 Preview",
@@ -6733,6 +6782,12 @@
     "input_per_1m": 0.5,
     "output_per_1m": 3,
     "context_window": 131072
+  },
+  "nano-banana-2-lite-gemini-3-1-flash-lite-image": {
+    "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
+    "context_window": 65536
   },
   "nano-banana-gemini-2-5-flash-image": {
     "name": "Nano Banana (Gemini 2.5 Flash Image)",

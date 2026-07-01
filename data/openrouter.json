@@ -122,6 +122,13 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.3
   },
+  "claude-sonnet-5": {
+    "name": "Claude Sonnet 5",
+    "input_per_1m": 2.0,
+    "output_per_1m": 10.0,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
+  },
   "coder-large": {
     "name": "Coder Large",
     "input_per_1m": 0.5,
@@ -220,8 +227,8 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.098,
+    "output_per_1m": 0.196,
     "context_window": 1048576,
     "cache_read_per_1m": 0.02
   },
@@ -312,6 +319,12 @@
     "output_per_1m": 1.5,
     "context_window": 1048576,
     "cache_read_per_1m": 0.025
+  },
+  "gemini-3-1-flash-lite-image": {
+    "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
+    "context_window": 65536
   },
   "gemini-3-1-flash-lite-preview": {
     "name": "Gemini 3.1 Flash Lite Preview",
@@ -469,7 +482,7 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.94,
+    "input_per_1m": 0.93,
     "output_per_1m": 3.0,
     "context_window": 1048576,
     "cache_read_per_1m": 0.18
@@ -559,7 +572,7 @@
     "cache_read_per_1m": 1.25
   },
   "gpt-4o-mini": {
-    "name": "GPT-4o-mini",
+    "name": "GPT-4o-mini (2024-07-18)",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
     "context_window": 128000,
@@ -1411,13 +1424,6 @@
     "output_per_1m": 0.14,
     "context_window": 16384
   },
-  "phi-4-mini-instruct": {
-    "name": "Phi 4 Mini Instruct",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.35,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.08
-  },
   "qwen-2-5-72b-instruct": {
     "name": "Qwen2.5 72B Instruct",
     "input_per_1m": 0.36,
@@ -1469,10 +1475,9 @@
   },
   "qwen3-235b-a22b-thinking-2507": {
     "name": "Qwen3 235B A22B Thinking 2507",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.1,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.1
+    "input_per_1m": 0.1495,
+    "output_per_1m": 1.495,
+    "context_window": 262144
   },
   "qwen3-30b-a3b": {
     "name": "Qwen3 30B A3B",
@@ -1544,8 +1549,8 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.2596,
-    "output_per_1m": 2.385,
+    "input_per_1m": 0.285,
+    "output_per_1m": 2.4,
     "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
