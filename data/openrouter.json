@@ -227,10 +227,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.098,
-    "output_per_1m": 0.196,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.018
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -946,7 +946,7 @@
     "input_per_1m": 0.6,
     "output_per_1m": 2.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.6
+    "cache_read_per_1m": 0.15
   },
   "l3-1-70b-hanami-x1": {
     "name": "Llama 3.1 70B Hanami x1",
@@ -1113,14 +1113,13 @@
   "minimax-m2": {
     "name": "MiniMax M2",
     "input_per_1m": 0.255,
-    "output_per_1m": 1.0,
-    "context_window": 204800,
-    "cache_read_per_1m": 0.03
+    "output_per_1m": 1.02,
+    "context_window": 204800
   },
   "minimax-m2-1": {
     "name": "MiniMax M2.1",
-    "input_per_1m": 0.29,
-    "output_per_1m": 0.95,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 204800,
     "cache_read_per_1m": 0.03
   },
@@ -1493,10 +1492,9 @@
   },
   "qwen3-30b-a3b-thinking-2507": {
     "name": "Qwen3 30B A3B Thinking 2507",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.4,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.08
+    "input_per_1m": 0.13,
+    "output_per_1m": 1.56,
+    "context_window": 131072
   },
   "qwen3-32b": {
     "name": "Qwen3 32B",
@@ -1593,10 +1591,9 @@
   },
   "qwen3-8b": {
     "name": "Qwen3 8B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.4,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.05
+    "input_per_1m": 0.117,
+    "output_per_1m": 0.455,
+    "context_window": 131072
   },
   "qwen3-coder": {
     "name": "Qwen3 Coder 480B A35B",
