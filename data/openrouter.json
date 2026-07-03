@@ -476,9 +476,10 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 0.975,
-    "output_per_1m": 4.3,
-    "context_window": 202752
+    "input_per_1m": 0.966,
+    "output_per_1m": 3.036,
+    "context_window": 202752,
+    "cache_read_per_1m": 0.1794
   },
   "glm-5-2": {
     "name": "GLM 5.2",
@@ -572,7 +573,7 @@
     "cache_read_per_1m": 1.25
   },
   "gpt-4o-mini": {
-    "name": "GPT-4o-mini (2024-07-18)",
+    "name": "GPT-4o-mini",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
     "context_window": 128000,
@@ -929,10 +930,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.55,
-    "output_per_1m": 3.2,
+    "input_per_1m": 0.66,
+    "output_per_1m": 3.41,
     "context_window": 262144,
-    "cache_read_per_1m": 0.11
+    "cache_read_per_1m": 0.14
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -985,6 +986,13 @@
     "output_per_1m": 0.2,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
+  },
+  "laguna-xs-2-1": {
+    "name": "Laguna XS 2.1",
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.12,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.03
   },
   "lfm-2-24b-a2b": {
     "name": "LFM2-24B-A2B",
@@ -1686,8 +1694,8 @@
   },
   "qwen3-vl-8b-instruct": {
     "name": "Qwen3 VL 8B Instruct",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.117,
+    "output_per_1m": 0.455,
     "context_window": 256000
   },
   "qwen3-vl-8b-thinking": {
