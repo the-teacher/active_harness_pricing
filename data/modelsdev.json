@@ -1978,7 +1978,7 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.089,
+    "input_per_1m": 0.09,
     "output_per_1m": 0.18,
     "context_window": 1048576,
     "cache_read_per_1m": 0.0028
@@ -3263,9 +3263,10 @@
   },
   "glm-4-7-flash-heretic": {
     "name": "GLM 4.7 Flash Heretic",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.8,
-    "context_window": 200000
+    "input_per_1m": 0.07,
+    "output_per_1m": 0.4,
+    "context_window": 200000,
+    "cache_read_per_1m": 0.035
   },
   "glm-4-7-flash-original": {
     "name": "GLM 4.7 Flash Original",
@@ -3440,11 +3441,11 @@
     "cache_read_per_1m": 0.1831
   },
   "glm-5-2": {
-    "name": "GLM 5.2",
+    "name": "GLM-5.2",
     "input_per_1m": 0.5,
     "output_per_1m": 2.2,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.275
   },
   "glm-5-2-fast": {
     "name": "GLM 5.2 Fast",
@@ -3750,9 +3751,10 @@
   },
   "google-gemma-4-26b-a4b-instruct": {
     "name": "Google Gemma 4 26B A4B Instruct",
-    "input_per_1m": 0.1625,
-    "output_per_1m": 0.5,
-    "context_window": 256000
+    "input_per_1m": 0.13,
+    "output_per_1m": 0.4,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.05
   },
   "google-gemma-4-31b": {
     "name": "Google: Gemma 4 31B",
@@ -5560,6 +5562,13 @@
     "output_per_1m": 0.74,
     "context_window": 8192
   },
+  "longcat-2-0": {
+    "name": "LongCat-2.0",
+    "input_per_1m": 0.75,
+    "output_per_1m": 2.95,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.015
+  },
   "lucidnova-rf1-100b": {
     "name": "LucidNova RF1 100B",
     "input_per_1m": 2,
@@ -6835,6 +6844,12 @@
     "context_window": 65536,
     "cache_read_per_1m": 0.006
   },
+  "nemotron-3-nano-omni-30b-a3b-reasoning": {
+    "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.8,
+    "context_window": 262144
+  },
   "nemotron-3-super": {
     "name": "Nemotron 3 Super",
     "input_per_1m": 0.2,
@@ -6849,8 +6864,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super 120B A12B",
-    "input_per_1m": 0.085,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.45,
     "context_window": 262144
   },
   "nemotron-3-ultra": {
@@ -9373,8 +9388,8 @@
   },
   "qwen3-vl-235b": {
     "name": "Qwen3-VL 235B",
-    "input_per_1m": 0.25,
-    "output_per_1m": 1.5,
+    "input_per_1m": 0.21,
+    "output_per_1m": 1.9,
     "context_window": 128000
   },
   "qwen3-vl-235b-a22b": {
