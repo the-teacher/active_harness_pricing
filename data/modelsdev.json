@@ -1043,6 +1043,13 @@
     "context_window": 200000,
     "cache_read_per_1m": 0.1
   },
+  "claude-haiku-4-5-jp": {
+    "name": "Claude Haiku 4.5 (JP)",
+    "input_per_1m": 1,
+    "output_per_1m": 5,
+    "context_window": 200000,
+    "cache_read_per_1m": 0.1
+  },
   "claude-haiku-4-5-latest": {
     "name": "Claude Haiku 4.5 (latest)",
     "input_per_1m": 1,
@@ -5347,8 +5354,8 @@
   },
   "llama-3-3-70b": {
     "name": "Llama 3.3 70B",
-    "input_per_1m": 0.49,
-    "output_per_1m": 0.71,
+    "input_per_1m": 0.53,
+    "output_per_1m": 0.76,
     "context_window": 128000
   },
   "llama-3-3-70b-cu-mai": {

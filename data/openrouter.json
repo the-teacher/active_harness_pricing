@@ -483,10 +483,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.728,
-    "output_per_1m": 2.288,
+    "input_per_1m": 0.686,
+    "output_per_1m": 2.156,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1352
+    "cache_read_per_1m": 0.1274
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
