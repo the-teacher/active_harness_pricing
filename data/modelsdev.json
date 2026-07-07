@@ -4700,6 +4700,13 @@
     "output_per_1m": 0.374,
     "context_window": 24000
   },
+  "hy3": {
+    "name": "Hy3",
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.58,
+    "context_window": 202752,
+    "cache_read_per_1m": 0.035
+  },
   "hy3-preview": {
     "name": "Hy3 preview",
     "input_per_1m": 0.063,
@@ -6938,6 +6945,13 @@
     "input_per_1m": 0.27,
     "output_per_1m": 1,
     "context_window": 131072
+  },
+  "nex-n2-mini": {
+    "name": "Nex-N2-Mini",
+    "input_per_1m": 0.025,
+    "output_per_1m": 0.1,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.0025
   },
   "nex-n2-pro": {
     "name": "Nex-N2-Pro",
@@ -10027,6 +10041,13 @@
     "input_per_1m": 0.4,
     "output_per_1m": 0.4,
     "context_window": 32768
+  },
+  "tim-qwen3-6-27b": {
+    "name": "TIM-Qwen3.6 27B",
+    "input_per_1m": 0.3,
+    "output_per_1m": 3,
+    "context_window": 8192,
+    "cache_read_per_1m": 0.15
   },
   "tongyi-deepresearch-30b-a3b": {
     "name": "Tongyi DeepResearch 30B A3B",
