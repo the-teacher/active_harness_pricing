@@ -147,16 +147,10 @@
     "context_window": 256000
   },
   "aion-1-0": {
-    "name": "Aion-1.0",
+    "name": "Aion 1.0",
     "input_per_1m": 3.995,
     "output_per_1m": 7.99,
     "context_window": 65536
-  },
-  "aion-1-0-mini": {
-    "name": "Aion-1.0-Mini",
-    "input_per_1m": 0.7,
-    "output_per_1m": 1.4,
-    "context_window": 131072
   },
   "aion-1-0-mini-deepseek": {
     "name": "Aion 1.0 mini (DeepSeek)",
@@ -170,6 +164,20 @@
     "output_per_1m": 1.6,
     "context_window": 131072,
     "cache_read_per_1m": 0.25
+  },
+  "aion-3-0": {
+    "name": "Aion-3.0",
+    "input_per_1m": 3,
+    "output_per_1m": 6,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.75
+  },
+  "aion-3-0-mini": {
+    "name": "Aion-3.0-Mini",
+    "input_per_1m": 0.7,
+    "output_per_1m": 1.4,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.18
   },
   "aion-rp-1-0-8b": {
     "name": "Aion-RP 1.0 (8B)",
@@ -961,8 +969,8 @@
   },
   "claude-fable-5": {
     "name": "Claude Fable 5",
-    "input_per_1m": 10,
-    "output_per_1m": 50,
+    "input_per_1m": 3,
+    "output_per_1m": 18,
     "context_window": 1000000,
     "cache_read_per_1m": 1
   },
@@ -4702,10 +4710,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.58,
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.8,
     "context_window": 202752,
-    "cache_read_per_1m": 0.035
+    "cache_read_per_1m": 0.5
   },
   "hy3-preview": {
     "name": "Hy3 preview",
@@ -4974,8 +4982,8 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 262144,
     "cache_read_per_1m": 0.16
   },
@@ -5309,12 +5317,6 @@
     "input_per_1m": 0.198,
     "output_per_1m": 0.198,
     "context_window": 131072
-  },
-  "llama-3-1-nemotron-safety-guard": {
-    "name": "Llama 3.1 Nemotron Safety Guard",
-    "input_per_1m": 0.01,
-    "output_per_1m": 0.01,
-    "context_window": 8192
   },
   "llama-3-1-nemotron-ultra-253b": {
     "name": "Llama-3.1-Nemotron-Ultra-253B-v1",
@@ -6111,6 +6113,13 @@
     "input_per_1m": 0.3,
     "output_per_1m": 1.2,
     "context_window": 65536
+  },
+  "minimax-minimax-m3": {
+    "name": "MiniMax: MiniMax M3",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.06
   },
   "minimax-text-01": {
     "name": "MiniMax Text 01",
@@ -9630,7 +9639,7 @@
     "name": "Rocinante 12B",
     "input_per_1m": 0.25,
     "output_per_1m": 0.5,
-    "context_window": 32768
+    "context_window": 65536
   },
   "route-llm": {
     "name": "Route LLM",

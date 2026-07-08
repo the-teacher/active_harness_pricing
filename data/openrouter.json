@@ -1,22 +1,24 @@
 {
-  "aion-1-0": {
-    "name": "Aion-1.0",
-    "input_per_1m": 4.0,
-    "output_per_1m": 8.0,
-    "context_window": 131072
-  },
-  "aion-1-0-mini": {
-    "name": "Aion-1.0-Mini",
-    "input_per_1m": 0.7,
-    "output_per_1m": 1.4,
-    "context_window": 131072
-  },
   "aion-2-0": {
     "name": "Aion-2.0",
     "input_per_1m": 0.8,
     "output_per_1m": 1.6,
     "context_window": 131072,
     "cache_read_per_1m": 0.2
+  },
+  "aion-3-0": {
+    "name": "Aion-3.0",
+    "input_per_1m": 3.0,
+    "output_per_1m": 6.0,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.75
+  },
+  "aion-3-0-mini": {
+    "name": "Aion-3.0-Mini",
+    "input_per_1m": 0.7,
+    "output_per_1m": 1.4,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.18
   },
   "aion-rp-llama-3-1-8b": {
     "name": "Aion-RP 1.0 (8B)",
@@ -483,10 +485,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.9086,
-    "output_per_1m": 2.8556,
+    "input_per_1m": 0.93,
+    "output_per_1m": 3.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.16874
+    "cache_read_per_1m": 0.18
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -573,7 +575,7 @@
     "cache_read_per_1m": 1.25
   },
   "gpt-4o-mini": {
-    "name": "GPT-4o-mini (2024-07-18)",
+    "name": "GPT-4o-mini",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
     "context_window": 128000,
@@ -1763,7 +1765,7 @@
     "name": "Rocinante 12B",
     "input_per_1m": 0.25,
     "output_per_1m": 0.5,
-    "context_window": 32768
+    "context_window": 65536
   },
   "router": {
     "name": "Switchpoint Router",
