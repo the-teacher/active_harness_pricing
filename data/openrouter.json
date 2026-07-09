@@ -485,8 +485,8 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.93,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.9,
+    "output_per_1m": 3.08,
     "context_window": 1048576,
     "cache_read_per_1m": 0.18
   },
@@ -575,7 +575,7 @@
     "cache_read_per_1m": 1.25
   },
   "gpt-4o-mini": {
-    "name": "GPT-4o-mini",
+    "name": "GPT-4o-mini (2024-07-18)",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
     "context_window": 128000,
@@ -843,6 +843,13 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.2
   },
+  "grok-4-5": {
+    "name": "Grok 4.5",
+    "input_per_1m": 2.0,
+    "output_per_1m": 6.0,
+    "context_window": 500000,
+    "cache_read_per_1m": 0.5
+  },
   "grok-build-0-1": {
     "name": "Grok Build 0.1",
     "input_per_1m": 1.0,
@@ -882,10 +889,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.2,
-    "output_per_1m": 0.8,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.58,
     "context_window": 262144,
-    "cache_read_per_1m": 0.5
+    "cache_read_per_1m": 0.035
   },
   "hy3-preview": {
     "name": "Hy3 preview",
@@ -940,7 +947,7 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.66,
+    "input_per_1m": 0.65,
     "output_per_1m": 3.41,
     "context_window": 262144,
     "cache_read_per_1m": 0.14
@@ -1003,12 +1010,6 @@
     "output_per_1m": 0.12,
     "context_window": 262144,
     "cache_read_per_1m": 0.03
-  },
-  "lfm-2-24b-a2b": {
-    "name": "LFM2-24B-A2B",
-    "input_per_1m": 0.03,
-    "output_per_1m": 0.12,
-    "context_window": 128000
   },
   "ling-2-6-1t": {
     "name": "Ling-2.6-1T",
@@ -1766,12 +1767,6 @@
     "input_per_1m": 0.25,
     "output_per_1m": 0.5,
     "context_window": 65536
-  },
-  "router": {
-    "name": "Switchpoint Router",
-    "input_per_1m": 0.85,
-    "output_per_1m": 3.4,
-    "context_window": 131072
   },
   "seed-1-6": {
     "name": "Seed 1.6",

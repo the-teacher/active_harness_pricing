@@ -166,18 +166,18 @@
     "cache_read_per_1m": 0.25
   },
   "aion-3-0": {
-    "name": "Aion-3.0",
+    "name": "Aion 3.0",
     "input_per_1m": 3,
     "output_per_1m": 6,
     "context_window": 131072,
-    "cache_read_per_1m": 0.75
+    "cache_read_per_1m": 0.9375
   },
   "aion-3-0-mini": {
-    "name": "Aion-3.0-Mini",
+    "name": "Aion 3.0 Mini",
     "input_per_1m": 0.7,
     "output_per_1m": 1.4,
     "context_window": 131072,
-    "cache_read_per_1m": 0.18
+    "cache_read_per_1m": 0.225
   },
   "aion-rp-1-0-8b": {
     "name": "Aion-RP 1.0 (8B)",
@@ -349,6 +349,13 @@
   },
   "anthropic-claude-4-7-opus": {
     "name": "anthropic--claude-4.7-opus",
+    "input_per_1m": 5,
+    "output_per_1m": 25,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.5
+  },
+  "anthropic-claude-4-8-opus": {
+    "name": "anthropic--claude-4.8-opus",
     "input_per_1m": 5,
     "output_per_1m": 25,
     "context_window": 1000000,
@@ -2879,6 +2886,12 @@
     "output_per_1m": 10.51,
     "context_window": 32767
   },
+  "gemini-omni-flash-preview": {
+    "name": "Gemini Omni Flash Preview",
+    "input_per_1m": 1.5,
+    "output_per_1m": 9,
+    "context_window": 1000000
+  },
   "gemini-pro": {
     "name": "Gemini Pro Latest",
     "input_per_1m": 2,
@@ -4411,7 +4424,7 @@
     "input_per_1m": 1.25,
     "output_per_1m": 2.5,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.5
   },
   "grok-3": {
     "name": "Grok 3",
@@ -4552,6 +4565,13 @@
     "output_per_1m": 2.5,
     "context_window": 1000000,
     "cache_read_per_1m": 0.2
+  },
+  "grok-4-5": {
+    "name": "Grok 4.5",
+    "input_per_1m": 2,
+    "output_per_1m": 6,
+    "context_window": 500000,
+    "cache_read_per_1m": 0.5
   },
   "grok-4-fast": {
     "name": "Grok 4 Fast",
@@ -4710,10 +4730,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.2,
-    "output_per_1m": 0.8,
-    "context_window": 202752,
-    "cache_read_per_1m": 0.5
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.58,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.035
   },
   "hy3-preview": {
     "name": "Hy3 preview",
@@ -5226,7 +5246,8 @@
     "name": "Llama 3.1 70B",
     "input_per_1m": 0.8,
     "output_per_1m": 0.8,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.8
   },
   "llama-3-1-70b-celeste": {
     "name": "Llama 3.1 70B Celeste v0.1",
@@ -5526,9 +5547,9 @@
   },
   "llama-4-scout-17b-16e-instruct": {
     "name": "Llama 4 Scout 17B 16E Instruct",
-    "input_per_1m": 0.17,
-    "output_per_1m": 0.66,
-    "context_window": 64000
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.78,
+    "context_window": 128000
   },
   "llama-4-scout-17b-instruct": {
     "name": "Llama 4 Scout 17B Instruct",
@@ -5694,6 +5715,13 @@
     "input_per_1m": 3,
     "output_per_1m": 5,
     "context_window": 8192
+  },
+  "mellum2-12b-a2-5b": {
+    "name": "Mellum2 12B A2.5B",
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.1,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.05
   },
   "mercury-2": {
     "name": "Mercury 2",
@@ -6711,7 +6739,7 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.66,
+    "input_per_1m": 0.65,
     "output_per_1m": 3.41,
     "context_window": 262144,
     "cache_read_per_1m": 0.14
@@ -7091,7 +7119,7 @@
     "cache_read_per_1m": 0.1
   },
   "nvidia-nemotron-3-super-120b": {
-    "name": "NVIDIA Nemotron 3 Super 120B",
+    "name": "Nvidia Nemotron 3 Super 120B",
     "input_per_1m": 0.05,
     "output_per_1m": 0.25,
     "context_window": 262144
@@ -7680,12 +7708,6 @@
     "output_per_1m": 4.4,
     "context_window": 200000
   },
-  "openpipe-qwen3-14b-instruct": {
-    "name": "OpenPipe Qwen3 14B Instruct",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.22,
-    "context_window": 32768
-  },
   "openreasoning-nemotron-32b": {
     "name": "OpenReasoning Nemotron 32B",
     "input_per_1m": 0.1,
@@ -7860,11 +7882,12 @@
     "output_per_1m": 0.3,
     "context_window": 128000
   },
-  "phi-4-mini-instruct": {
-    "name": "Phi-4-mini-instruct",
+  "phi-4-mini-3-8b": {
+    "name": "Phi 4 Mini 3.8B",
     "input_per_1m": 0.08,
     "output_per_1m": 0.35,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.08
   },
   "phi-4-mini-reasoning": {
     "name": "Phi-4-mini-reasoning",
@@ -8726,6 +8749,13 @@
     "output_per_1m": 0.28,
     "context_window": 131000
   },
+  "qwen3-14b-instruct": {
+    "name": "Qwen3 14B Instruct",
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.22,
+    "context_window": 32768,
+    "cache_read_per_1m": 0.05
+  },
   "qwen3-235b-a22b": {
     "name": "Qwen3 235B-A22B",
     "input_per_1m": 0.2,
@@ -8733,10 +8763,11 @@
     "context_window": 40960
   },
   "qwen3-235b-a22b-2507": {
-    "name": "Qwen3 235B A22B 2507",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.88,
-    "context_window": 262144
+    "name": "Qwen3 235B A22B-2507",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.1,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.1
   },
   "qwen3-235b-a22b-fp8": {
     "name": "Qwen3 235B A22B FP8",
@@ -9280,7 +9311,8 @@
     "name": "Qwen3 Coder 480B A35B",
     "input_per_1m": 0.22,
     "output_per_1m": 1.8,
-    "context_window": 262144
+    "context_window": 262144,
+    "cache_read_per_1m": 1
   },
   "qwen3-coder-480b-a35b-instruct": {
     "name": "Qwen3-Coder 480B-A35B Instruct",
