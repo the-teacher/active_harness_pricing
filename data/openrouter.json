@@ -229,10 +229,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.077,
+    "output_per_1m": 0.154,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.018
+    "cache_read_per_1m": 0.0154
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -484,10 +484,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.92,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.406,
+    "output_per_1m": 1.276,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.18
+    "cache_read_per_1m": 0.0754
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1100,12 +1100,6 @@
     "input_per_1m": 0.4,
     "output_per_1m": 0.4,
     "context_window": 131072
-  },
-  "llama-3-8b-instruct": {
-    "name": "Llama 3 8B Instruct",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.14,
-    "context_window": 8192
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
@@ -1890,12 +1884,6 @@
     "output_per_1m": 0.8,
     "context_window": 262144,
     "cache_read_per_1m": 0.06
-  },
-  "trinity-mini": {
-    "name": "Trinity Mini",
-    "input_per_1m": 0.045,
-    "output_per_1m": 0.15,
-    "context_window": 131072
   },
   "ui-tars-1-5-7b": {
     "name": "UI-TARS 7B",
