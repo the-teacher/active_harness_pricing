@@ -484,10 +484,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.406,
-    "output_per_1m": 1.276,
+    "input_per_1m": 0.42,
+    "output_per_1m": 1.32,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0754
+    "cache_read_per_1m": 0.078
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -996,9 +996,9 @@
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
     "input_per_1m": 0.72,
-    "output_per_1m": 3.49,
+    "output_per_1m": 3.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.159
+    "cache_read_per_1m": 0.15
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1505,10 +1505,9 @@
   },
   "qwen2-5-vl-72b-instruct": {
     "name": "Qwen2.5 VL 72B Instruct",
-    "input_per_1m": 0.8,
-    "output_per_1m": 1.0,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.4
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.75,
+    "context_window": 131072
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
