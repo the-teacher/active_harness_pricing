@@ -443,8 +443,8 @@
   "glm-4-6": {
     "name": "GLM 4.6",
     "input_per_1m": 0.43,
-    "output_per_1m": 1.74,
-    "context_window": 202752,
+    "output_per_1m": 1.75,
+    "context_window": 200000,
     "cache_read_per_1m": 0.08
   },
   "glm-4-6v": {
@@ -484,10 +484,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.42,
-    "output_per_1m": 1.32,
+    "input_per_1m": 0.85,
+    "output_per_1m": 2.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.078
+    "cache_read_per_1m": 0.1
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -995,10 +995,10 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.72,
-    "output_per_1m": 3.5,
+    "input_per_1m": 0.719,
+    "output_per_1m": 3.49,
     "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.149
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1103,8 +1103,8 @@
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.8,
     "context_window": 1048576
   },
   "llama-4-scout": {
@@ -1524,7 +1524,7 @@
   "qwen3-235b-a22b-2507": {
     "name": "Qwen3 235B A22B Instruct 2507",
     "input_per_1m": 0.09,
-    "output_per_1m": 0.1,
+    "output_per_1m": 0.55,
     "context_window": 262144
   },
   "qwen3-235b-a22b-thinking-2507": {

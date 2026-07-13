@@ -2712,13 +2712,6 @@
     "output_per_1m": 20,
     "context_window": 32768
   },
-  "gemini-3-1-flash-image-nano-banana-2": {
-    "name": "Gemini 3.1 Flash Image (Nano Banana 2)",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.05
-  },
   "gemini-3-1-flash-image-preview": {
     "name": "gemini-3.1-flash-image-preview",
     "input_per_1m": 0.5,
@@ -3526,8 +3519,8 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.35,
-    "output_per_1m": 1.1,
+    "input_per_1m": 0.42,
+    "output_per_1m": 1.32,
     "context_window": 1048576,
     "cache_read_per_1m": 0.275
   },
@@ -5090,8 +5083,8 @@
   "kimi-k2-5": {
     "name": "kimi/kimi-k2.5",
     "input_per_1m": 0.3,
-    "output_per_1m": 1.5,
-    "context_window": 262144,
+    "output_per_1m": 1.9,
+    "context_window": 256000,
     "cache_read_per_1m": 0.1
   },
   "kimi-k2-5-fast": {
@@ -5617,8 +5610,8 @@
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.18,
+    "output_per_1m": 0.8,
     "context_window": 1048576
   },
   "llama-4-maverick-17b-128e-instruct": {
@@ -5635,8 +5628,8 @@
   },
   "llama-4-maverick-17b-fp8": {
     "name": "Llama 4 Maverick 17B FP8",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.8,
     "context_window": 1048576
   },
   "llama-4-maverick-17b-instruct": {
@@ -6961,14 +6954,9 @@
   "nano-banana-2": {
     "name": "Nano Banana 2",
     "input_per_1m": 0.5,
-    "output_per_1m": 60,
-    "context_window": 65536
-  },
-  "nano-banana-2-gemini-3-1-flash-image": {
-    "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
-    "input_per_1m": 0.5,
     "output_per_1m": 3,
-    "context_window": 131072
+    "context_window": 131072,
+    "cache_read_per_1m": 0.05
   },
   "nano-banana-2-lite-gemini-3-1-flash-lite-image": {
     "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
@@ -6985,12 +6973,6 @@
   },
   "nano-banana-pro": {
     "name": "Nano Banana Pro",
-    "input_per_1m": 2,
-    "output_per_1m": 120,
-    "context_window": 131072
-  },
-  "nano-banana-pro-gemini-3-pro-image": {
-    "name": "Nano Banana Pro (Gemini 3 Pro Image)",
     "input_per_1m": 2,
     "output_per_1m": 12,
     "context_window": 65536,
@@ -10121,8 +10103,8 @@
   },
   "step-3-7-flash": {
     "name": "Step 3.7 Flash",
-    "input_per_1m": 0.2,
-    "output_per_1m": 1.15,
+    "input_per_1m": 0.185,
+    "output_per_1m": 1.11,
     "context_window": 256000,
     "cache_read_per_1m": 0.04
   },
