@@ -105,7 +105,7 @@
     "input_per_1m": 0.38,
     "output_per_1m": 1.98,
     "context_window": 202752,
-    "cache_read_per_1m": 0
+    "cache_read_per_1m": 2.25
   },
   "ai-glm-4-7-flash": {
     "name": "Z.ai: GLM 4.7 Flash",
@@ -263,6 +263,13 @@
     "input_per_1m": 0.799,
     "output_per_1m": 3.196,
     "context_window": 300000
+  },
+  "ambient-large": {
+    "name": "Ambient Large",
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
+    "context_window": 101376,
+    "cache_read_per_1m": 0.26
   },
   "amoral-gemma3-27b": {
     "name": "Amoral Gemma3 27B v2",
@@ -3519,9 +3526,9 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.42,
-    "output_per_1m": 1.32,
-    "context_window": 1048576,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.2,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.275
   },
   "glm-5-2-fast": {
@@ -4369,7 +4376,7 @@
     "name": "GPT Chat Latest",
     "input_per_1m": 5,
     "output_per_1m": 30,
-    "context_window": 400000,
+    "context_window": 128000,
     "cache_read_per_1m": 0.5
   },
   "gpt-image-1": {

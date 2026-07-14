@@ -190,8 +190,8 @@
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
-    "input_per_1m": 0.21,
-    "output_per_1m": 0.79,
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.95,
     "context_window": 163840,
     "cache_read_per_1m": 0.13
   },
@@ -229,10 +229,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.077,
-    "output_per_1m": 0.154,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0154
+    "cache_read_per_1m": 0.018
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -414,10 +414,9 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.12,
+    "input_per_1m": 0.06,
     "output_per_1m": 0.35,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.09
+    "context_window": 262144
   },
   "glm-4-5": {
     "name": "GLM 4.5",
@@ -484,10 +483,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.85,
-    "output_per_1m": 2.5,
+    "input_per_1m": 0.9282,
+    "output_per_1m": 2.9172,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.17238
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -574,7 +573,7 @@
     "cache_read_per_1m": 1.25
   },
   "gpt-4o-mini": {
-    "name": "GPT-4o-mini (2024-07-18)",
+    "name": "GPT-4o-mini",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
     "context_window": 128000,
@@ -604,7 +603,7 @@
     "input_per_1m": 1.25,
     "output_per_1m": 10.0,
     "context_window": 400000,
-    "cache_read_per_1m": 0.13
+    "cache_read_per_1m": 0.125
   },
   "gpt-5-1-chat": {
     "name": "GPT-5.1 Chat",
@@ -804,7 +803,7 @@
     "input_per_1m": 0.05,
     "output_per_1m": 0.4,
     "context_window": 400000,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.005
   },
   "gpt-5-pro": {
     "name": "GPT-5 Pro",
@@ -833,8 +832,8 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.036,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.15,
     "context_window": 131072
   },
   "gpt-oss-20b": {
@@ -960,12 +959,19 @@
     "output_per_1m": 8.0,
     "context_window": 256000
   },
-  "kat-coder-pro": {
-    "name": "KAT-Coder-Pro V2",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+  "kat-coder-air": {
+    "name": "KAT-Coder-Air V2.5",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.6,
     "context_window": 256000,
-    "cache_read_per_1m": 0.06
+    "cache_read_per_1m": 0.03
+  },
+  "kat-coder-pro": {
+    "name": "KAT-Coder-Pro V2.5",
+    "input_per_1m": 0.74,
+    "output_per_1m": 2.96,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.15
   },
   "kimi-k2": {
     "name": "Kimi K2 0711",
@@ -1498,7 +1504,7 @@
     "context_window": 128000
   },
   "qwen-plus": {
-    "name": "Qwen Plus 0728 (thinking)",
+    "name": "Qwen Plus 0728",
     "input_per_1m": 0.26,
     "output_per_1m": 0.78,
     "context_window": 1000000
@@ -1603,10 +1609,9 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.285,
+    "input_per_1m": 0.289,
     "output_per_1m": 2.4,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
