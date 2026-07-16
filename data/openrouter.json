@@ -131,12 +131,6 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.2
   },
-  "coder-large": {
-    "name": "Coder Large",
-    "input_per_1m": 0.5,
-    "output_per_1m": 0.8,
-    "context_window": 32768
-  },
   "codestral-2508": {
     "name": "Codestral 2508",
     "input_per_1m": 0.3,
@@ -415,9 +409,10 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.37,
-    "context_window": 262144
+    "input_per_1m": 0.22,
+    "output_per_1m": 0.55,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.12
   },
   "glm-4-5": {
     "name": "GLM 4.5",
@@ -463,9 +458,10 @@
   },
   "glm-4-7-flash": {
     "name": "GLM 4.7 Flash",
-    "input_per_1m": 0.0605,
+    "input_per_1m": 0.06,
     "output_per_1m": 0.4,
-    "context_window": 200000
+    "context_window": 202752,
+    "cache_read_per_1m": 0.01
   },
   "glm-5": {
     "name": "GLM 5",
@@ -483,10 +479,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.8946,
-    "output_per_1m": 2.8116,
+    "input_per_1m": 0.9702,
+    "output_per_1m": 3.0492,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.16614
+    "cache_read_per_1m": 0.18018
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1086,8 +1082,8 @@
   },
   "llama-3-2-3b-instruct": {
     "name": "Llama 3.2 3B Instruct",
-    "input_per_1m": 0.0509,
-    "output_per_1m": 0.335,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.33,
     "context_window": 131072
   },
   "llama-3-3-70b-instruct": {
@@ -1516,7 +1512,7 @@
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
-    "input_per_1m": 0.1,
+    "input_per_1m": 0.12,
     "output_per_1m": 0.24,
     "context_window": 131702
   },
@@ -1637,10 +1633,10 @@
   },
   "qwen3-7-max": {
     "name": "Qwen3.7 Max",
-    "input_per_1m": 1.25,
-    "output_per_1m": 3.75,
+    "input_per_1m": 1.475,
+    "output_per_1m": 4.425,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.295
   },
   "qwen3-7-plus": {
     "name": "Qwen3.7 Plus",
@@ -1677,7 +1673,7 @@
   },
   "qwen3-coder-next": {
     "name": "Qwen3 Coder Next",
-    "input_per_1m": 0.12,
+    "input_per_1m": 0.11,
     "output_per_1m": 0.8,
     "context_window": 262144,
     "cache_read_per_1m": 0.07
