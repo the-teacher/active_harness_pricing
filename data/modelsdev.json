@@ -4932,6 +4932,13 @@
     "output_per_1m": 10,
     "context_window": 8000
   },
+  "inkling": {
+    "name": "Inkling",
+    "input_per_1m": 1,
+    "output_per_1m": 4.05,
+    "context_window": 131000,
+    "cache_read_per_1m": 0.748
+  },
   "intellect-3": {
     "name": "INTELLECT 3",
     "input_per_1m": 0.2,
@@ -5163,7 +5170,7 @@
     "input_per_1m": 0.275,
     "output_per_1m": 1.1,
     "context_window": 200000,
-    "cache_read_per_1m": 0.149
+    "cache_read_per_1m": 0.16
   },
   "kimi-k2-7-code-fast": {
     "name": "Kimi K2.7 Code Fast",
@@ -5189,9 +5196,9 @@
   "kimi-k2-7-code-highspeed": {
     "name": "Kimi K2.7 Code Highspeed",
     "input_per_1m": 1.9,
-    "output_per_1m": 8,
+    "output_per_1m": 7.999,
     "context_window": 262144,
-    "cache_read_per_1m": 0.38
+    "cache_read_per_1m": 0.3217
   },
   "kimi-k2-7-code-nitro": {
     "name": "Kimi K2.7 Code Nitro",
@@ -5248,6 +5255,13 @@
     "input_per_1m": 0.15,
     "output_per_1m": 8,
     "context_window": 256000
+  },
+  "kimi-k3": {
+    "name": "Kimi K3",
+    "input_per_1m": 3,
+    "output_per_1m": 15,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.3
   },
   "kimi-thinking-preview": {
     "name": "Kimi Thinking Preview",
@@ -6833,9 +6847,9 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.66,
-    "output_per_1m": 3.41,
-    "context_window": 262144,
+    "input_per_1m": 0.74,
+    "output_per_1m": 3.49,
+    "context_window": 262142,
     "cache_read_per_1m": 0.14
   },
   "moonshotai-kimi-k2-0711": {
@@ -10090,7 +10104,7 @@
     "input_per_1m": 0.185,
     "output_per_1m": 1.11,
     "context_window": 256000,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.03
   },
   "step-3-7-flash-thinking": {
     "name": "Step 3.7 Flash Thinking",
