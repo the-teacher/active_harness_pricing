@@ -226,7 +226,7 @@
     "input_per_1m": 0.098,
     "output_per_1m": 0.196,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.0196
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -457,10 +457,9 @@
   },
   "glm-4-7-flash": {
     "name": "GLM 4.7 Flash",
-    "input_per_1m": 0.06,
+    "input_per_1m": 0.0605,
     "output_per_1m": 0.4,
-    "context_window": 202752,
-    "cache_read_per_1m": 0.01
+    "context_window": 200000
   },
   "glm-5": {
     "name": "GLM 5",
@@ -478,10 +477,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.9324,
-    "output_per_1m": 2.9304,
+    "input_per_1m": 0.343,
+    "output_per_1m": 1.078,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.17316
+    "cache_read_per_1m": 0.0637
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -949,6 +948,13 @@
     "output_per_1m": 10.0,
     "context_window": 8000
   },
+  "inkling": {
+    "name": "Inkling",
+    "input_per_1m": 1.0,
+    "output_per_1m": 4.05,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.17
+  },
   "jamba-large-1-7": {
     "name": "Jamba Large 1.7",
     "input_per_1m": 2.0,
@@ -997,16 +1003,17 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.75,
-    "output_per_1m": 3.5,
+    "input_per_1m": 1.0,
+    "output_per_1m": 4.4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.16
+    "cache_read_per_1m": 0.2
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
     "input_per_1m": 0.6,
     "output_per_1m": 2.5,
-    "context_window": 262144
+    "context_window": 262144,
+    "cache_read_per_1m": 0.15
   },
   "kimi-k3": {
     "name": "Kimi K3",
@@ -1074,12 +1081,6 @@
     "context_window": 131072,
     "cache_read_per_1m": 0.025
   },
-  "llama-3-2-11b-vision-instruct": {
-    "name": "Llama 3.2 11B Vision Instruct",
-    "input_per_1m": 0.345,
-    "output_per_1m": 0.345,
-    "context_window": 131072
-  },
   "llama-3-2-1b-instruct": {
     "name": "Llama 3.2 1B Instruct",
     "input_per_1m": 0.027,
@@ -1095,12 +1096,6 @@
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
     "input_per_1m": 0.13,
-    "output_per_1m": 0.4,
-    "context_window": 131072
-  },
-  "llama-3-3-nemotron-super-49b": {
-    "name": "Llama 3.3 Nemotron Super 49B V1.5",
-    "input_per_1m": 0.4,
     "output_per_1m": 0.4,
     "context_window": 131072
   },
@@ -1266,8 +1261,8 @@
   },
   "mistral-nemo": {
     "name": "Mistral Nemo",
-    "input_per_1m": 0.02,
-    "output_per_1m": 0.04,
+    "input_per_1m": 0.019,
+    "output_per_1m": 0.03,
     "context_window": 131072
   },
   "mistral-saba": {
@@ -1525,7 +1520,7 @@
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
-    "input_per_1m": 0.1,
+    "input_per_1m": 0.12,
     "output_per_1m": 0.24,
     "context_window": 131702
   },
@@ -1549,8 +1544,8 @@
   },
   "qwen3-30b-a3b": {
     "name": "Qwen3 30B A3B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.13,
+    "output_per_1m": 0.52,
     "context_window": 131072
   },
   "qwen3-30b-a3b-instruct-2507": {
@@ -1579,8 +1574,8 @@
   },
   "qwen3-5-27b": {
     "name": "Qwen3.5-27B",
-    "input_per_1m": 0.195,
-    "output_per_1m": 1.56,
+    "input_per_1m": 0.26,
+    "output_per_1m": 2.6,
     "context_window": 262144
   },
   "qwen3-5-35b-a3b": {
@@ -1925,8 +1920,8 @@
   },
   "weaver": {
     "name": "Weaver (alpha)",
-    "input_per_1m": 0.75,
-    "output_per_1m": 1.0,
+    "input_per_1m": 0.5,
+    "output_per_1m": 0.75,
     "context_window": 8000
   },
   "wizardlm-2-8x22b": {

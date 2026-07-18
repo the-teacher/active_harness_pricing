@@ -2025,7 +2025,7 @@
     "input_per_1m": 0.0625,
     "output_per_1m": 0.125,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.1
   },
   "deepseek-v4-flash-alibaba-cloud": {
     "name": "DeepSeek V4 Flash (Alibaba Cloud)",
@@ -2921,8 +2921,8 @@
   },
   "gemma-3-27b": {
     "name": "Gemma 3 27B",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.45,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.3,
     "context_window": 131072
   },
   "gemma-3-27b-it": {
@@ -3523,9 +3523,9 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.2,
-    "context_window": 1000000,
+    "input_per_1m": 0.4144,
+    "output_per_1m": 1.302,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
   "glm-5-2-fast": {
@@ -4936,8 +4936,8 @@
     "name": "Inkling",
     "input_per_1m": 1,
     "output_per_1m": 4.05,
-    "context_window": 131000,
-    "cache_read_per_1m": 0.748
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.2125
   },
   "intellect-3": {
     "name": "INTELLECT 3",
@@ -5170,7 +5170,7 @@
     "input_per_1m": 0.275,
     "output_per_1m": 1.1,
     "context_window": 200000,
-    "cache_read_per_1m": 0.16
+    "cache_read_per_1m": 0.2
   },
   "kimi-k2-7-code-fast": {
     "name": "Kimi K2.7 Code Fast",
@@ -5258,6 +5258,13 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
+    "input_per_1m": 3,
+    "output_per_1m": 15,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.3
+  },
+  "kimi-k3-2x-usage": {
+    "name": "Kimi K3 (2x usage)",
     "input_per_1m": 3,
     "output_per_1m": 15,
     "context_window": 1048576,
@@ -5621,7 +5628,7 @@
     "name": "Llama 4 Maverick 17B 128E Instruct FP8",
     "input_per_1m": 0.25,
     "output_per_1m": 1,
-    "context_window": 128000
+    "context_window": 1000000
   },
   "llama-4-maverick-17b-fp8": {
     "name": "Llama 4 Maverick 17B FP8",
@@ -5996,11 +6003,11 @@
     "cache_read_per_1m": 0.08
   },
   "mimo": {
-    "name": "MiMo V2.5",
+    "name": "MiMo-V2.5",
     "input_per_1m": 0.14,
     "output_per_1m": 0.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0028
+    "cache_read_per_1m": 0.08
   },
   "mimo-m2-5": {
     "name": "MiMo M2.5",
@@ -6628,7 +6635,7 @@
   },
   "mistral-nemo": {
     "name": "Mistral Nemo",
-    "input_per_1m": 0.02,
+    "input_per_1m": 0.019,
     "output_per_1m": 0.03,
     "context_window": 131072
   },
@@ -6819,7 +6826,7 @@
     "name": "Model Router",
     "input_per_1m": 0.14,
     "output_per_1m": 0,
-    "context_window": 128000
+    "context_window": 200000
   },
   "moonshot-kimi-k2-5": {
     "name": "Moonshot Kimi K2.5",
@@ -10368,8 +10375,8 @@
   },
   "weaver-alpha": {
     "name": "Weaver (alpha)",
-    "input_per_1m": 0.75,
-    "output_per_1m": 1,
+    "input_per_1m": 0.5,
+    "output_per_1m": 0.75,
     "context_window": 8000
   },
   "web-answer": {
