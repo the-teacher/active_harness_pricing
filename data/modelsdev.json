@@ -3523,9 +3523,9 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.2576,
-    "output_per_1m": 0.8096,
-    "context_window": 1048576,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.2,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.2
   },
   "glm-5-2-fast": {
@@ -7025,8 +7025,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super 120B A12B",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.45,
+    "input_per_1m": 0.085,
+    "output_per_1m": 0.4,
     "context_window": 1000000,
     "cache_read_per_1m": 0.09
   },

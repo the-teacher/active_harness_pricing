@@ -464,9 +464,9 @@
   "glm-5": {
     "name": "GLM 5",
     "input_per_1m": 0.95,
-    "output_per_1m": 3.15,
-    "context_window": 202752,
-    "cache_read_per_1m": 0.19
+    "output_per_1m": 2.55,
+    "context_window": 204800,
+    "cache_read_per_1m": 0.2
   },
   "glm-5-1": {
     "name": "GLM 5.1",
@@ -477,10 +477,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.28,
-    "output_per_1m": 0.88,
+    "input_per_1m": 0.9646,
+    "output_per_1m": 3.0316,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.052
+    "cache_read_per_1m": 0.17914
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1339,10 +1339,9 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
-    "input_per_1m": 0.21,
-    "output_per_1m": 0.455,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.06
+    "input_per_1m": 0.085,
+    "output_per_1m": 0.4,
+    "context_window": 1000000
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
@@ -1521,8 +1520,8 @@
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
-    "input_per_1m": 0.2275,
-    "output_per_1m": 0.91,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.24,
     "context_window": 131702
   },
   "qwen3-235b-a22b": {
@@ -1539,8 +1538,8 @@
   },
   "qwen3-235b-a22b-thinking-2507": {
     "name": "Qwen3 235B A22B Thinking 2507",
-    "input_per_1m": 0.1495,
-    "output_per_1m": 1.495,
+    "input_per_1m": 0.3,
+    "output_per_1m": 3.0,
     "context_window": 262144
   },
   "qwen3-30b-a3b": {
