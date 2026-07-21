@@ -223,10 +223,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.098,
-    "output_per_1m": 0.196,
+    "input_per_1m": 0.0938,
+    "output_per_1m": 0.1876,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0196
+    "cache_read_per_1m": 0.01876
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -408,10 +408,9 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.55,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.37,
+    "context_window": 262144
   },
   "glm-4-5": {
     "name": "GLM 4.5",
@@ -477,10 +476,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.9646,
-    "output_per_1m": 3.0316,
+    "input_per_1m": 0.9478,
+    "output_per_1m": 2.9788,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.17914
+    "cache_read_per_1m": 0.17602
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -924,10 +923,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.2,
-    "output_per_1m": 0.8,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.58,
     "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.035
   },
   "hy3-preview": {
     "name": "Hy3 preview",
@@ -1003,10 +1002,10 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.85,
-    "output_per_1m": 3.8,
+    "input_per_1m": 0.82,
+    "output_per_1m": 3.75,
     "context_window": 262144,
-    "cache_read_per_1m": 0.17
+    "cache_read_per_1m": 0.16
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1116,6 +1115,13 @@
     "input_per_1m": 0.18,
     "output_per_1m": 0.18,
     "context_window": 163840
+  },
+  "longcat-2-0": {
+    "name": "LongCat 2.0",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 1048756,
+    "cache_read_per_1m": 0.006
   },
   "magnum-v4-72b": {
     "name": "Magnum v4 72B",
@@ -1339,8 +1345,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
-    "input_per_1m": 0.085,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.45,
     "context_window": 1000000
   },
   "nemotron-3-ultra-550b-a55b": {
@@ -1707,10 +1713,9 @@
   },
   "qwen3-next-80b-a3b-instruct": {
     "name": "Qwen3 Next 80B A3B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 1.1,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.07
+    "input_per_1m": 0.0975,
+    "output_per_1m": 0.78,
+    "context_window": 262144
   },
   "qwen3-next-80b-a3b-thinking": {
     "name": "Qwen3 Next 80B A3B Thinking",

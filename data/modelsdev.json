@@ -5727,11 +5727,11 @@
     "context_window": 8192
   },
   "longcat-2-0": {
-    "name": "LongCat-2.0",
-    "input_per_1m": 0.75,
-    "output_per_1m": 2.95,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.015
+    "name": "LongCat 2.0",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 1048756,
+    "cache_read_per_1m": 0.006
   },
   "lucidnova-rf1-100b": {
     "name": "LucidNova RF1 100B",
