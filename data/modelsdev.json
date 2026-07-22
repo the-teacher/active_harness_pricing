@@ -2431,7 +2431,7 @@
     "name": "ERNIE 4.5 VL 424B A47B",
     "input_per_1m": 0.42,
     "output_per_1m": 1.25,
-    "context_window": 131072
+    "context_window": 123000
   },
   "ernie-5-0": {
     "name": "ERNIE 5.0",
@@ -2797,10 +2797,24 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.15
   },
+  "gemini-3-5-flash-lite": {
+    "name": "Gemini 3.5 Flash Lite",
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.5,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.03
+  },
   "gemini-3-5-flash-thinking": {
     "name": "Gemini 3.5 Flash Thinking",
     "input_per_1m": 1.5,
     "output_per_1m": 9,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.15
+  },
+  "gemini-3-6-flash": {
+    "name": "Gemini 3.6 Flash",
+    "input_per_1m": 1.5,
+    "output_per_1m": 7.5,
     "context_window": 1048576,
     "cache_read_per_1m": 0.15
   },
@@ -2923,7 +2937,7 @@
     "name": "Gemma 3 27B",
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
-    "context_window": 131072
+    "context_window": 262144
   },
   "gemma-3-27b-it": {
     "name": "Gemma 3 27B IT",
@@ -4843,10 +4857,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.2,
-    "output_per_1m": 0.8,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.58,
     "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.035
   },
   "hy3-preview": {
     "name": "Hy3 preview",
@@ -4936,7 +4950,7 @@
     "name": "Inkling",
     "input_per_1m": 1,
     "output_per_1m": 4.05,
-    "context_window": 1048576,
+    "context_window": 524288,
     "cache_read_per_1m": 0.2125
   },
   "intellect-3": {
@@ -5306,6 +5320,13 @@
     "input_per_1m": 0.2,
     "output_per_1m": 0.4,
     "context_window": 262144
+  },
+  "laguna-s-2-1": {
+    "name": "Laguna S 2.1",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.01
   },
   "laguna-xs-2": {
     "name": "Laguna XS.2",
@@ -5706,7 +5727,7 @@
     "name": "Llama Guard 4 12B",
     "input_per_1m": 0.18,
     "output_per_1m": 0.18,
-    "context_window": 163840
+    "context_window": 1048576
   },
   "llama-prompt-guard-2-22m": {
     "name": "Llama Prompt Guard 2 22M",
@@ -6722,7 +6743,7 @@
     "name": "Mistral Small 3.2 24B",
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
-    "context_window": 131072,
+    "context_window": 256000,
     "cache_read_per_1m": 0.01
   },
   "mistral-small-3-2-24b-instruct": {
@@ -7025,8 +7046,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super 120B A12B",
-    "input_per_1m": 0.085,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.45,
     "context_window": 1000000,
     "cache_read_per_1m": 0.09
   },
@@ -8225,6 +8246,13 @@
     "output_per_1m": 3.25,
     "context_window": 256000
   },
+  "qwen-3-6-35b-a3b": {
+    "name": "Qwen 3.6 35B A3B",
+    "input_per_1m": 0.15,
+    "output_per_1m": 1,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.05
+  },
   "qwen-3-6-35b-a3b-fp8": {
     "name": "Qwen 3.6 35B A3B FP8",
     "input_per_1m": 0.17,
@@ -8784,7 +8812,7 @@
     "name": "Qwen/Qwen2.5-7B-Instruct",
     "input_per_1m": 0.04,
     "output_per_1m": 0.1,
-    "context_window": 131072
+    "context_window": 32768
   },
   "qwen2-5-coder-32b-instruct": {
     "name": "Qwen2.5 Coder 32B Instruct",
@@ -8962,7 +8990,7 @@
     "name": "Qwen3 30B A3B Thinking 2507",
     "input_per_1m": 0.13,
     "output_per_1m": 1.56,
-    "context_window": 131072
+    "context_window": 81920
   },
   "qwen3-32b": {
     "name": "Qwen3 32B",
@@ -9435,7 +9463,7 @@
     "name": "Qwen3 Coder 480B A35B",
     "input_per_1m": 0.3,
     "output_per_1m": 1,
-    "context_window": 1048576,
+    "context_window": 262144,
     "cache_read_per_1m": 1
   },
   "qwen3-coder-480b-a35b-instruct": {
@@ -9588,7 +9616,7 @@
     "name": "Qwen3 VL 235B A22B Instruct",
     "input_per_1m": 0.21,
     "output_per_1m": 1.9,
-    "context_window": 131072
+    "context_window": 262144
   },
   "qwen3-vl-235b-a22b-instruct-original": {
     "name": "Qwen3 VL 235B A22B Instruct Original",
@@ -9624,13 +9652,13 @@
     "name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
     "input_per_1m": 0.13,
     "output_per_1m": 1.56,
-    "context_window": 131072
+    "context_window": 262144
   },
   "qwen3-vl-32b-instruct": {
     "name": "Qwen/Qwen3-VL-32B-Instruct",
     "input_per_1m": 0.104,
     "output_per_1m": 0.416,
-    "context_window": 262144
+    "context_window": 131072
   },
   "qwen3-vl-32b-thinking": {
     "name": "Qwen/Qwen3-VL-32B-Thinking",
@@ -9648,7 +9676,7 @@
     "name": "Qwen3 VL 8B Thinking",
     "input_per_1m": 0.117,
     "output_per_1m": 1.365,
-    "context_window": 256000
+    "context_window": 131072
   },
   "qwen3-vl-embedding-8b": {
     "name": "Qwen3-VL Embedding 8B",
@@ -9717,7 +9745,7 @@
     "name": "R1 Distill Llama 70B",
     "input_per_1m": 0.8,
     "output_per_1m": 0.8,
-    "context_window": 128000
+    "context_window": 8192
   },
   "reka-edge": {
     "name": "Reka Edge",
