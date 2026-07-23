@@ -4859,8 +4859,8 @@
     "name": "Hy3",
     "input_per_1m": 0.14,
     "output_per_1m": 0.58,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.035
+    "context_window": 256000,
+    "cache_read_per_1m": 0.103
   },
   "hy3-preview": {
     "name": "Hy3 preview",
