@@ -398,9 +398,10 @@
   },
   "gemma-3-27b-it": {
     "name": "Gemma 3 27B",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 262144
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.45,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.04
   },
   "gemma-3-4b-it": {
     "name": "Gemma 3 4B",
@@ -423,10 +424,10 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.12,
+    "input_per_1m": 0.1,
     "output_per_1m": 0.35,
     "context_window": 262144,
-    "cache_read_per_1m": 0.09
+    "cache_read_per_1m": 0.1
   },
   "glm-4-5": {
     "name": "GLM 4.5",
@@ -480,9 +481,9 @@
   "glm-5": {
     "name": "GLM 5",
     "input_per_1m": 0.95,
-    "output_per_1m": 3.15,
+    "output_per_1m": 2.55,
     "context_window": 204800,
-    "cache_read_per_1m": 0.19
+    "cache_read_per_1m": 0.2
   },
   "glm-5-1": {
     "name": "GLM 5.1",
@@ -493,10 +494,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.8148,
-    "output_per_1m": 2.5608,
+    "input_per_1m": 0.7672,
+    "output_per_1m": 2.4112,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.15132
+    "cache_read_per_1m": 0.14248
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -848,10 +849,9 @@
   },
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "input_per_1m": 0.03,
-    "output_per_1m": 0.13,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.03
+    "input_per_1m": 0.029,
+    "output_per_1m": 0.14,
+    "context_window": 131072
   },
   "gpt-oss-safeguard-20b": {
     "name": "gpt-oss-safeguard-20b",
@@ -940,10 +940,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.58,
+    "input_per_1m": 0.132,
+    "output_per_1m": 0.528,
     "context_window": 262144,
-    "cache_read_per_1m": 0.035
+    "cache_read_per_1m": 0.033
   },
   "hy3-preview": {
     "name": "Hy3 preview",
@@ -968,7 +968,7 @@
     "name": "Inkling",
     "input_per_1m": 1.0,
     "output_per_1m": 4.05,
-    "context_window": 524288,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.17
   },
   "jamba-large-1-7": {
@@ -1019,10 +1019,10 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.82,
-    "output_per_1m": 3.75,
+    "input_per_1m": 0.71,
+    "output_per_1m": 3.49,
     "context_window": 262144,
-    "cache_read_per_1m": 0.16
+    "cache_read_per_1m": 0.15
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1209,10 +1209,10 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.25,
-    "output_per_1m": 1.0,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 204800,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.06
   },
   "minimax-m2-her": {
     "name": "MiniMax M2-her",
@@ -1604,8 +1604,8 @@
   },
   "qwen3-5-27b": {
     "name": "Qwen3.5-27B",
-    "input_per_1m": 0.26,
-    "output_per_1m": 2.6,
+    "input_per_1m": 0.195,
+    "output_per_1m": 1.56,
     "context_window": 262144
   },
   "qwen3-5-35b-a3b": {
@@ -1640,10 +1640,9 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.6,
-    "output_per_1m": 3.6,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "input_per_1m": 0.288,
+    "output_per_1m": 2.4,
+    "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
@@ -1691,10 +1690,9 @@
   },
   "qwen3-coder": {
     "name": "Qwen3 Coder 480B A35B",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.0,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.1
+    "input_per_1m": 0.38,
+    "output_per_1m": 1.55,
+    "context_window": 262144
   },
   "qwen3-coder-30b-a3b-instruct": {
     "name": "Qwen3 Coder 30B A3B Instruct",
