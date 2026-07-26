@@ -237,10 +237,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.0938,
-    "output_per_1m": 0.1876,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01876
+    "cache_read_per_1m": 0.028
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -507,10 +507,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.7574,
-    "output_per_1m": 2.3804,
+    "input_per_1m": 0.707,
+    "output_per_1m": 2.222,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.14066
+    "cache_read_per_1m": 0.1313
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -863,9 +863,8 @@
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
     "input_per_1m": 0.03,
-    "output_per_1m": 0.13,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.03
+    "output_per_1m": 0.14,
+    "context_window": 131072
   },
   "gpt-oss-safeguard-20b": {
     "name": "gpt-oss-safeguard-20b",
@@ -1033,7 +1032,7 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.78,
+    "input_per_1m": 0.75,
     "output_per_1m": 3.5,
     "context_window": 262144,
     "cache_read_per_1m": 0.15
@@ -1587,14 +1586,14 @@
   },
   "qwen3-30b-a3b": {
     "name": "Qwen3 30B A3B",
-    "input_per_1m": 0.13,
-    "output_per_1m": 0.52,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.5,
     "context_window": 131072
   },
   "qwen3-30b-a3b-instruct-2507": {
     "name": "Qwen3 30B A3B Instruct 2507",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.04815,
+    "output_per_1m": 0.19305,
     "context_window": 262144
   },
   "qwen3-30b-a3b-thinking-2507": {
@@ -1653,9 +1652,10 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.289,
-    "output_per_1m": 2.4,
-    "context_window": 262144
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.0,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.15
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
@@ -1930,8 +1930,8 @@
   },
   "trinity-large-thinking": {
     "name": "Trinity Large Thinking",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.8,
+    "input_per_1m": 0.22,
+    "output_per_1m": 0.85,
     "context_window": 262144,
     "cache_read_per_1m": 0.06
   },
