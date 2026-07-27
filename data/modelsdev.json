@@ -291,10 +291,10 @@
   },
   "ambient-large": {
     "name": "Ambient Large",
-    "input_per_1m": 1.05,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.76,
+    "output_per_1m": 2.42,
     "context_window": 101376,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.14
   },
   "amoral-gemma3-27b": {
     "name": "Amoral Gemma3 27B v2",
@@ -3617,13 +3617,6 @@
     "context_window": 200000,
     "cache_read_per_1m": 0.169
   },
-  "glm-5-1-fast": {
-    "name": "GLM 5.1 Fast",
-    "input_per_1m": 2.8,
-    "output_per_1m": 8.8,
-    "context_window": 202800,
-    "cache_read_per_1m": 0.52
-  },
   "glm-5-1-fp8": {
     "name": "GLM-5.1 FP8",
     "input_per_1m": 0.85,
@@ -5062,6 +5055,13 @@
     "input_per_1m": 1,
     "output_per_1m": 4.05,
     "context_window": 1048576
+  },
+  "inkling-256k": {
+    "name": "Inkling (256K)",
+    "input_per_1m": 3.74,
+    "output_per_1m": 9.36,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.748
   },
   "intellect-3": {
     "name": "INTELLECT-3",
