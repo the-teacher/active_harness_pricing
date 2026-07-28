@@ -431,10 +431,9 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.35,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "input_per_1m": 0.07,
+    "output_per_1m": 0.34,
+    "context_window": 262144
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
@@ -507,10 +506,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.819,
-    "output_per_1m": 2.574,
+    "input_per_1m": 0.7686,
+    "output_per_1m": 2.4156,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1521
+    "cache_read_per_1m": 0.14274
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -603,12 +602,6 @@
     "context_window": 128000,
     "cache_read_per_1m": 0.075
   },
-  "gpt-4o-search-preview": {
-    "name": "GPT-4o Search Preview",
-    "input_per_1m": 2.5,
-    "output_per_1m": 10.0,
-    "context_window": 128000
-  },
   "gpt-5": {
     "name": "GPT-5",
     "input_per_1m": 1.25,
@@ -628,7 +621,7 @@
     "input_per_1m": 1.25,
     "output_per_1m": 10.0,
     "context_window": 128000,
-    "cache_read_per_1m": 0.125
+    "cache_read_per_1m": 0.13
   },
   "gpt-5-1-codex": {
     "name": "GPT-5.1-Codex",
@@ -741,17 +734,17 @@
   },
   "gpt-5-6-luna": {
     "name": "GPT-5.6 Luna",
-    "input_per_1m": 1.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.0,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.05
   },
   "gpt-5-6-luna-pro": {
     "name": "GPT-5.6 Luna Pro",
-    "input_per_1m": 1.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.0,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.05
   },
   "gpt-5-6-sol": {
     "name": "GPT-5.6 Sol",
@@ -769,23 +762,16 @@
   },
   "gpt-5-6-terra": {
     "name": "GPT-5.6 Terra",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15.0,
+    "input_per_1m": 1.25,
+    "output_per_1m": 7.5,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.125
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15.0,
-    "context_window": 1050000,
-    "cache_read_per_1m": 0.25
-  },
-  "gpt-5-chat": {
-    "name": "GPT-5 Chat",
     "input_per_1m": 1.25,
-    "output_per_1m": 10.0,
-    "context_window": 128000,
+    "output_per_1m": 7.5,
+    "context_window": 1050000,
     "cache_read_per_1m": 0.125
   },
   "gpt-5-codex": {
@@ -1369,10 +1355,10 @@
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.6,
     "context_window": 512288,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.2
   },
   "nex-n2-mini": {
     "name": "Nex-N2-Mini",
@@ -1662,6 +1648,13 @@
     "input_per_1m": 0.325,
     "output_per_1m": 1.95,
     "context_window": 1000000
+  },
+  "qwen3-7-flash": {
+    "name": "Qwen3.7 Flash",
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.13,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.006
   },
   "qwen3-7-max": {
     "name": "Qwen3.7 Max",

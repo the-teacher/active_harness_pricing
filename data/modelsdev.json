@@ -36,6 +36,12 @@
     "output_per_1m": 3,
     "context_window": 150000
   },
+  "abliterated-model-large": {
+    "name": "Abliterated Model Large",
+    "input_per_1m": 5,
+    "output_per_1m": 5,
+    "context_window": 1000000
+  },
   "agi-01-frontier": {
     "name": "AGI-01 Frontier",
     "input_per_1m": 4.5,
@@ -291,10 +297,10 @@
   },
   "ambient-large": {
     "name": "Ambient Large",
-    "input_per_1m": 0.76,
-    "output_per_1m": 2.42,
+    "input_per_1m": 1.05,
+    "output_per_1m": 4.4,
     "context_window": 101376,
-    "cache_read_per_1m": 0.14
+    "cache_read_per_1m": 0.2
   },
   "amoral-gemma3-27b": {
     "name": "Amoral Gemma3 27B v2",
@@ -4149,10 +4155,10 @@
     "context_window": 128000
   },
   "gpt-4o-mini-transcribe": {
-    "name": "GPT-4o mini Transcribe",
+    "name": "GPT-4o Mini Transcribe",
     "input_per_1m": 1.25,
     "output_per_1m": 5,
-    "context_window": 0
+    "context_window": 16000
   },
   "gpt-4o-search": {
     "name": "GPT-4o-Search",
@@ -4170,7 +4176,7 @@
     "name": "GPT-4o Transcribe",
     "input_per_1m": 2.5,
     "output_per_1m": 10,
-    "context_window": 0
+    "context_window": 16000
   },
   "gpt-5": {
     "name": "GPT-5",
@@ -4364,15 +4370,15 @@
   },
   "gpt-5-6-luna": {
     "name": "GPT-5.6 Luna",
-    "input_per_1m": 0.7,
-    "output_per_1m": 4.2,
-    "context_window": 1000000,
+    "input_per_1m": 0.5,
+    "output_per_1m": 3,
+    "context_window": 1050000,
     "cache_read_per_1m": 0.1
   },
   "gpt-5-6-luna-pro": {
     "name": "GPT-5.6 Luna Pro",
-    "input_per_1m": 1,
-    "output_per_1m": 6,
+    "input_per_1m": 0.5,
+    "output_per_1m": 3,
     "context_window": 1050000,
     "cache_read_per_1m": 0.125
   },
@@ -4392,15 +4398,15 @@
   },
   "gpt-5-6-terra": {
     "name": "GPT-5.6 Terra",
-    "input_per_1m": 1.5,
-    "output_per_1m": 9,
-    "context_window": 1000000,
+    "input_per_1m": 1.25,
+    "output_per_1m": 7.5,
+    "context_window": 1050000,
     "cache_read_per_1m": 0.25
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15,
+    "input_per_1m": 1.25,
+    "output_per_1m": 7.5,
     "context_window": 1050000,
     "cache_read_per_1m": 0.3125
   },
@@ -5381,9 +5387,9 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 3,
-    "output_per_1m": 15,
-    "context_window": 1048576,
+    "input_per_1m": 2,
+    "output_per_1m": 8,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.3
   },
   "kimi-k3-2x-usage": {
@@ -5392,6 +5398,13 @@
     "output_per_1m": 15,
     "context_window": 1048576,
     "cache_read_per_1m": 0.3
+  },
+  "kimi-k3-fast": {
+    "name": "Kimi K3 Fast",
+    "input_per_1m": 4.5,
+    "output_per_1m": 22.5,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.45
   },
   "kimi-thinking-preview": {
     "name": "Kimi Thinking Preview",
@@ -8319,7 +8332,7 @@
   },
   "qwen-3-6-35b-a3b": {
     "name": "Qwen 3.6 35B A3B",
-    "input_per_1m": 0.15,
+    "input_per_1m": 0.1,
     "output_per_1m": 1,
     "context_window": 256000,
     "cache_read_per_1m": 0.05
@@ -9486,6 +9499,13 @@
     "output_per_1m": 1.69,
     "context_window": 991000,
     "cache_read_per_1m": 0.032
+  },
+  "qwen3-7-flash": {
+    "name": "Qwen3.7 Flash",
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.13,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.006
   },
   "qwen3-7-max": {
     "name": "Qwen3.7 Max",
