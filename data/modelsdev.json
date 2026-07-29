@@ -1014,7 +1014,7 @@
   "claude-fable-5": {
     "name": "Claude Fable 5",
     "input_per_1m": 3,
-    "output_per_1m": 18,
+    "output_per_1m": 18.5,
     "context_window": 1000000,
     "cache_read_per_1m": 1
   },
@@ -1104,8 +1104,8 @@
   },
   "claude-haiku-4-5-latest": {
     "name": "Claude Haiku 4.5 (latest)",
-    "input_per_1m": 1,
-    "output_per_1m": 5,
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.7,
     "context_window": 200000,
     "cache_read_per_1m": 0.1
   },
@@ -1501,9 +1501,9 @@
   },
   "claude-sonnet-4-6": {
     "name": "Claude Sonnet 4.6",
-    "input_per_1m": 2.6,
-    "output_per_1m": 13,
-    "context_window": 983040,
+    "input_per_1m": 0.9,
+    "output_per_1m": 5.55,
+    "context_window": 200000,
     "cache_read_per_1m": 0.3
   },
   "claude-sonnet-4-6-eu": {
@@ -4309,8 +4309,8 @@
   },
   "gpt-5-4": {
     "name": "GPT-5.4",
-    "input_per_1m": 1.8,
-    "output_per_1m": 10.8,
+    "input_per_1m": 0.75,
+    "output_per_1m": 6,
     "context_window": 1050000,
     "cache_read_per_1m": 0.25
   },
@@ -4323,9 +4323,9 @@
   },
   "gpt-5-4-mini": {
     "name": "GPT-5.4 mini",
-    "input_per_1m": 0.68,
+    "input_per_1m": 0.375,
     "output_per_1m": 4,
-    "context_window": 400000,
+    "context_window": 272000,
     "cache_read_per_1m": 0.075
   },
   "gpt-5-4-nano": {
@@ -4363,9 +4363,9 @@
   },
   "gpt-5-6": {
     "name": "GPT-5.6",
-    "input_per_1m": 5,
-    "output_per_1m": 30,
-    "context_window": 1050000,
+    "input_per_1m": 1.5,
+    "output_per_1m": 12,
+    "context_window": 372000,
     "cache_read_per_1m": 0.5
   },
   "gpt-5-6-luna": {
@@ -4384,9 +4384,9 @@
   },
   "gpt-5-6-sol": {
     "name": "GPT-5.6 Sol",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15,
-    "context_window": 1000000,
+    "input_per_1m": 1.5,
+    "output_per_1m": 12,
+    "context_window": 372000,
     "cache_read_per_1m": 0.5
   },
   "gpt-5-6-sol-pro": {
@@ -7205,12 +7205,6 @@
     "output_per_1m": 0.1,
     "context_window": 131072,
     "cache_read_per_1m": 0.15
-  },
-  "nemotron-cascade-2-30b-a3b": {
-    "name": "Nemotron Cascade 2 30B A3B",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.8,
-    "context_window": 256000
   },
   "nemotron-nano-12b-v2-vl": {
     "name": "Nemotron Nano 12B v2 VL",
