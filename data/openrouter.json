@@ -631,10 +631,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.6993,
-    "output_per_1m": 2.1978,
+    "input_per_1m": 1.19,
+    "output_per_1m": 3.74,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.12987
+    "cache_read_per_1m": 0.221
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -901,17 +901,17 @@
   },
   "gpt-5-6-luna": {
     "name": "GPT-5.6 Luna",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.6,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.01
   },
   "gpt-5-6-luna-pro": {
     "name": "GPT-5.6 Luna Pro",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.6,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.01
   },
   "gpt-5-6-sol": {
     "name": "GPT-5.6 Sol",
@@ -929,17 +929,17 @@
   },
   "gpt-5-6-terra": {
     "name": "GPT-5.6 Terra",
-    "input_per_1m": 1.25,
-    "output_per_1m": 7.5,
+    "input_per_1m": 1.0,
+    "output_per_1m": 6.0,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.125
+    "cache_read_per_1m": 0.1
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
-    "input_per_1m": 1.25,
-    "output_per_1m": 7.5,
+    "input_per_1m": 1.0,
+    "output_per_1m": 6.0,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.125
+    "cache_read_per_1m": 0.1
   },
   "gpt-5-batch": {
     "name": "GPT-5 (batch)",
@@ -947,13 +947,6 @@
     "output_per_1m": 5.0,
     "context_window": 400000,
     "cache_read_per_1m": 0.0625
-  },
-  "gpt-5-codex": {
-    "name": "GPT-5 Codex",
-    "input_per_1m": 1.25,
-    "output_per_1m": 10.0,
-    "context_window": 400000,
-    "cache_read_per_1m": 0.125
   },
   "gpt-5-image": {
     "name": "GPT-5 Image",
@@ -1182,10 +1175,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.646,
-    "output_per_1m": 2.72,
+    "input_per_1m": 0.95,
+    "output_per_1m": 4.0,
     "context_window": 262144,
-    "cache_read_per_1m": 0.1088
+    "cache_read_per_1m": 0.16
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -1228,10 +1221,10 @@
   },
   "laguna-s-2-1": {
     "name": "Laguna S 2.1",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.2,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.009
   },
   "laguna-xs-2-1": {
     "name": "Laguna XS 2.1",
@@ -1535,7 +1528,7 @@
     "input_per_1m": 0.05,
     "output_per_1m": 0.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.025
+    "cache_read_per_1m": 0.03
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
@@ -1545,10 +1538,10 @@
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.6,
     "context_window": 512288,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.2
   },
   "nex-n2-mini": {
     "name": "Nex-N2-Mini",
@@ -1615,13 +1608,6 @@
     "context_window": 200000,
     "cache_read_per_1m": 0.5
   },
-  "o3-deep-research": {
-    "name": "o3 Deep Research",
-    "input_per_1m": 10.0,
-    "output_per_1m": 40.0,
-    "context_window": 200000,
-    "cache_read_per_1m": 2.5
-  },
   "o3-mini": {
     "name": "o3 Mini",
     "input_per_1m": 1.1,
@@ -1648,13 +1634,6 @@
     "output_per_1m": 4.4,
     "context_window": 200000,
     "cache_read_per_1m": 0.275
-  },
-  "o4-mini-deep-research": {
-    "name": "o4 Mini Deep Research",
-    "input_per_1m": 2.0,
-    "output_per_1m": 8.0,
-    "context_window": 200000,
-    "cache_read_per_1m": 0.5
   },
   "o4-mini-high": {
     "name": "o4 Mini High",
@@ -1738,8 +1717,8 @@
   },
   "qwen3-235b-a22b-thinking-2507": {
     "name": "Qwen3 235B A22B Thinking 2507",
-    "input_per_1m": 0.3,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.23,
+    "output_per_1m": 2.3,
     "context_window": 262144
   },
   "qwen3-30b-a3b": {
@@ -2111,7 +2090,7 @@
     "name": "UnslopNemo 12B",
     "input_per_1m": 0.4,
     "output_per_1m": 0.4,
-    "context_window": 32768
+    "context_window": 1024000
   },
   "virtuoso-large": {
     "name": "Virtuoso Large",

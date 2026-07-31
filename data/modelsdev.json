@@ -2237,12 +2237,6 @@
     "output_per_1m": 1.4,
     "context_window": 262144
   },
-  "devstral-2-123b-instruct-2512": {
-    "name": "Devstral 2 123B Instruct (2512)",
-    "input_per_1m": 0.4,
-    "output_per_1m": 2,
-    "context_window": 256000
-  },
   "devstral-2-latest": {
     "name": "Devstral 2 (latest)",
     "input_per_1m": 0.4,
@@ -4400,15 +4394,22 @@
   },
   "gpt-5-6-luna": {
     "name": "GPT-5.6 Luna",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.6,
     "context_window": 1050000,
     "cache_read_per_1m": 0.1
   },
+  "gpt-5-6-luna-2x-usage": {
+    "name": "GPT-5.6 Luna (2x usage)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.6,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.01
+  },
   "gpt-5-6-luna-pro": {
     "name": "GPT-5.6 Luna Pro",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.6,
     "context_window": 1050000,
     "cache_read_per_1m": 0.125
   },
@@ -4428,15 +4429,15 @@
   },
   "gpt-5-6-terra": {
     "name": "GPT-5.6 Terra",
-    "input_per_1m": 1.25,
-    "output_per_1m": 7.5,
+    "input_per_1m": 1,
+    "output_per_1m": 6,
     "context_window": 1050000,
     "cache_read_per_1m": 0.25
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
-    "input_per_1m": 1.25,
-    "output_per_1m": 7.5,
+    "input_per_1m": 1,
+    "output_per_1m": 6,
     "context_window": 1050000,
     "cache_read_per_1m": 0.3125
   },
@@ -5464,12 +5465,12 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.3
   },
-  "kimi-k3-2x-usage": {
-    "name": "Kimi K3 (2x usage)",
-    "input_per_1m": 3,
-    "output_per_1m": 15,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.3
+  "kimi-k3-eco": {
+    "name": "Kimi K3 Eco",
+    "input_per_1m": 1,
+    "output_per_1m": 4,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.1
   },
   "kimi-k3-fast": {
     "name": "Kimi K3 Fast",
@@ -5524,9 +5525,9 @@
   },
   "laguna-s-2-1": {
     "name": "Laguna S 2.1",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.2,
-    "context_window": 1000000,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.01
   },
   "laguna-xs-2": {
@@ -8977,9 +8978,9 @@
   },
   "qwen2-5-7b-instruct": {
     "name": "Qwen/Qwen2.5-7B-Instruct",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.1,
-    "context_window": 32768
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.05,
+    "context_window": 33000
   },
   "qwen2-5-coder-32b-instruct": {
     "name": "Qwen2.5 Coder 32B Instruct",
@@ -9539,9 +9540,9 @@
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B-A3B",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.95,
-    "context_window": 262144
+    "input_per_1m": 0.07,
+    "output_per_1m": 0.42,
+    "context_window": 131072
   },
   "qwen3-6-35b-a3b-thinking": {
     "name": "Qwen3.6 35B A3B Thinking",
@@ -9564,9 +9565,9 @@
   },
   "qwen3-6-flash": {
     "name": "Qwen3.6 Flash",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.9,
-    "context_window": 262144,
+    "input_per_1m": 0.165,
+    "output_per_1m": 0.99,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.019
   },
   "qwen3-6-max-preview": {
@@ -10521,7 +10522,7 @@
     "name": "UnslopNemo 12b v4",
     "input_per_1m": 0.4,
     "output_per_1m": 0.4,
-    "context_window": 32768
+    "context_window": 1024000
   },
   "upstage-solar-pro-3": {
     "name": "Upstage: Solar Pro 3",
