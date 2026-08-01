@@ -2129,6 +2129,13 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.028
   },
+  "deepseek-v4-flash-0731": {
+    "name": "DeepSeek V4 Flash 0731",
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0028
+  },
   "deepseek-v4-flash-alibaba-cloud": {
     "name": "DeepSeek V4 Flash (Alibaba Cloud)",
     "input_per_1m": 0.14,
@@ -2148,6 +2155,13 @@
     "input_per_1m": 0.14,
     "output_per_1m": 0.28,
     "context_window": 1000000
+  },
+  "deepseek-v4-flash-new": {
+    "name": "DeepSeek V4 Flash (New)",
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.0028
   },
   "deepseek-v4-flash-thinking": {
     "name": "DeepSeek V4 Flash (Thinking)",
@@ -4397,7 +4411,7 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.6,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.02
   },
   "gpt-5-6-luna-2x-usage": {
     "name": "GPT-5.6 Luna (2x usage)",
@@ -4432,7 +4446,7 @@
     "input_per_1m": 1,
     "output_per_1m": 6,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.2
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
@@ -5141,6 +5155,13 @@
     "output_per_1m": 9.36,
     "context_window": 262144,
     "cache_read_per_1m": 0.748
+  },
+  "inkling-small": {
+    "name": "Inkling Small",
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.2,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.1
   },
   "intellect-3": {
     "name": "INTELLECT-3",
@@ -6945,10 +6966,9 @@
   },
   "mistral-small-3-2-24b": {
     "name": "Mistral Small 3.2 24B",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.01
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.2,
+    "context_window": 256000
   },
   "mistral-small-3-2-24b-instruct": {
     "name": "Mistral Small 3.2 24b Instruct",
@@ -8412,8 +8432,7 @@
     "name": "Qwen 3.6 35B A3B",
     "input_per_1m": 0.1,
     "output_per_1m": 1,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.05
+    "context_window": 256000
   },
   "qwen-3-6-35b-a3b-fp8": {
     "name": "Qwen 3.6 35B A3B FP8",
@@ -9830,9 +9849,9 @@
   },
   "qwen3-vl-30b-a3b-instruct": {
     "name": "Qwen3-VL 30B-A3B Instruct",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.55,
-    "context_window": 256000
+    "input_per_1m": 0.13,
+    "output_per_1m": 0.52,
+    "context_window": 262144
   },
   "qwen3-vl-30b-a3b-thinking": {
     "name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
