@@ -244,10 +244,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.28,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0028
+    "cache_read_per_1m": 0.018
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -507,10 +507,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.76006,
-    "output_per_1m": 2.38876,
+    "input_per_1m": 0.343,
+    "output_per_1m": 1.078,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.141154
+    "cache_read_per_1m": 0.0637
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -830,8 +830,9 @@
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
     "input_per_1m": 0.03,
-    "output_per_1m": 0.14,
-    "context_window": 131072
+    "output_per_1m": 0.13,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.03
   },
   "gpt-oss-safeguard-20b": {
     "name": "gpt-oss-safeguard-20b",

@@ -34,13 +34,15 @@
     "name": "Abliterated Model",
     "input_per_1m": 3,
     "output_per_1m": 3,
-    "context_window": 150000
+    "context_window": 150000,
+    "cache_read_per_1m": 0.3
   },
   "abliterated-model-large": {
     "name": "Abliterated Model Large",
     "input_per_1m": 5,
     "output_per_1m": 5,
-    "context_window": 1000000
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.5
   },
   "agi-01-frontier": {
     "name": "AGI-01 Frontier",
@@ -2131,10 +2133,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.28,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0028
+    "cache_read_per_1m": 0.028
   },
   "deepseek-v4-flash-alibaba-cloud": {
     "name": "DeepSeek V4 Flash (Alibaba Cloud)",
@@ -3696,9 +3698,9 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.2,
-    "context_window": 1000000,
+    "input_per_1m": 0.4186,
+    "output_per_1m": 1.316,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
   "glm-5-2-fast": {
@@ -3772,9 +3774,9 @@
   },
   "glm-5-tee": {
     "name": "GLM 5 TEE",
-    "input_per_1m": 0.95,
-    "output_per_1m": 2.55,
-    "context_window": 202752
+    "input_per_1m": 1.2,
+    "output_per_1m": 3.5,
+    "context_window": 203000
   },
   "glm-5-thinking": {
     "name": "GLM 5 Thinking",
@@ -5160,7 +5162,7 @@
     "name": "Inkling Small",
     "input_per_1m": 0.5,
     "output_per_1m": 1.2,
-    "context_window": 1000000,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.1
   },
   "intellect-3": {
@@ -6399,8 +6401,8 @@
   },
   "minimax-m2-5-tee": {
     "name": "MiniMax M2.5 TEE",
-    "input_per_1m": 0.15,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.2,
+    "output_per_1m": 1.38,
     "context_window": 196608
   },
   "minimax-m2-7": {
@@ -9096,9 +9098,9 @@
   },
   "qwen3-235b-a22b-2507": {
     "name": "Qwen3 235B A22B-2507",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.1,
-    "context_window": 262144,
+    "input_per_1m": 0.072,
+    "output_per_1m": 0.464,
+    "context_window": 131000,
     "cache_read_per_1m": 0.1
   },
   "qwen3-235b-a22b-fp8": {
