@@ -507,10 +507,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.343,
-    "output_per_1m": 1.078,
+    "input_per_1m": 1.19,
+    "output_per_1m": 3.74,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0637
+    "cache_read_per_1m": 0.221
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1516,8 +1516,8 @@
   },
   "qwen3-235b-a22b-2507": {
     "name": "Qwen3 235B A22B Instruct 2507",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.55,
+    "input_per_1m": 0.1495,
+    "output_per_1m": 0.598,
     "context_window": 262144
   },
   "qwen3-235b-a22b-thinking-2507": {
@@ -1552,8 +1552,8 @@
   },
   "qwen3-5-122b-a10b": {
     "name": "Qwen3.5-122B-A10B",
-    "input_per_1m": 0.26,
-    "output_per_1m": 2.08,
+    "input_per_1m": 0.4,
+    "output_per_1m": 3.2,
     "context_window": 262144
   },
   "qwen3-5-27b": {
@@ -1719,8 +1719,8 @@
   },
   "qwen3-vl-235b-a22b-thinking": {
     "name": "Qwen3 VL 235B A22B Thinking",
-    "input_per_1m": 0.4,
-    "output_per_1m": 4.0,
+    "input_per_1m": 0.98,
+    "output_per_1m": 3.95,
     "context_window": 131072
   },
   "qwen3-vl-30b-a3b-instruct": {
