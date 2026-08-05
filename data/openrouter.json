@@ -1177,10 +1177,10 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.25,
-    "output_per_1m": 1.0,
+    "input_per_1m": 0.27,
+    "output_per_1m": 1.08,
     "context_window": 204800,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.054
   },
   "minimax-m2-her": {
     "name": "MiniMax M2-her",
@@ -1292,8 +1292,8 @@
   },
   "mistral-small-3-2-24b-instruct": {
     "name": "Mistral Small 3.2 24B",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.2,
+    "input_per_1m": 0.09375,
+    "output_per_1m": 0.25,
     "context_window": 256000
   },
   "mixtral-8x22b-instruct": {
@@ -1497,10 +1497,9 @@
   },
   "qwen2-5-vl-72b-instruct": {
     "name": "Qwen2.5 VL 72B Instruct",
-    "input_per_1m": 0.8,
-    "output_per_1m": 1.0,
-    "context_window": 128000,
-    "cache_read_per_1m": 0.4
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.75,
+    "context_window": 128000
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
