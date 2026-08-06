@@ -113,16 +113,16 @@
     "input_per_1m": 10.0,
     "output_per_1m": 50.0,
     "context_window": 1000000,
-    "tokens_per_second": 67.371,
-    "time_to_first_token": 55.264
+    "tokens_per_second": 71.185,
+    "time_to_first_token": 81.477
   },
   "claude-haiku-4-5": {
     "name": "Claude Haiku 4.5",
     "input_per_1m": 1.0,
     "output_per_1m": 5.0,
     "context_window": 200000,
-    "tokens_per_second": 116.028,
-    "time_to_first_token": 0.814
+    "tokens_per_second": 124.702,
+    "time_to_first_token": 0.821
   },
   "claude-instant": {
     "name": "Claude Instant",
@@ -176,8 +176,8 @@
     "input_per_1m": 5.0,
     "output_per_1m": 25.0,
     "context_window": 1000000,
-    "tokens_per_second": 55.941,
-    "time_to_first_token": 26.242
+    "tokens_per_second": 61.706,
+    "time_to_first_token": 26.977
   },
   "claude-opus-5-fast": {
     "name": "Claude Opus 5 Fast",
@@ -202,16 +202,16 @@
     "input_per_1m": 3.0,
     "output_per_1m": 15.0,
     "context_window": 1000000,
-    "tokens_per_second": 55.868,
-    "time_to_first_token": 1.152
+    "tokens_per_second": 59.2,
+    "time_to_first_token": 1.164
   },
   "claude-sonnet-5": {
     "name": "Claude Sonnet 5",
     "input_per_1m": 2.0,
     "output_per_1m": 10.0,
     "context_window": 1000000,
-    "tokens_per_second": 63.881,
-    "time_to_first_token": 0.99
+    "tokens_per_second": 74.702,
+    "time_to_first_token": 1.424
   },
   "code-llama-13b": {
     "name": "Code Llama 13B",
@@ -313,8 +313,8 @@
   },
   "codex-mini": {
     "name": "Codex Mini",
-    "input_per_1m": 0.75,
-    "output_per_1m": 3.0,
+    "input_per_1m": 1.5,
+    "output_per_1m": 6.0,
     "context_window": 200000
   },
   "cogito-v1-preview-llama-3b": {
@@ -379,8 +379,8 @@
     "input_per_1m": 2.5,
     "output_per_1m": 10.0,
     "context_window": 256000,
-    "tokens_per_second": 56.838,
-    "time_to_first_token": 0.396
+    "tokens_per_second": 56.867,
+    "time_to_first_token": 0.438
   },
   "command-light": {
     "name": "Command Light",
@@ -498,7 +498,7 @@
     "input_per_1m": 0.0881,
     "output_per_1m": 0.1761,
     "context_window": 1048576,
-    "tokens_per_second": 112.239,
+    "tokens_per_second": 121.137,
     "time_to_first_token": 1.05
   },
   "deepseek-v4-pro": {
@@ -506,8 +506,8 @@
     "input_per_1m": 0.435,
     "output_per_1m": 0.87,
     "context_window": 1048576,
-    "tokens_per_second": 66.343,
-    "time_to_first_token": 1.144
+    "tokens_per_second": 75.302,
+    "time_to_first_token": 1.127
   },
   "devstral-2-123b": {
     "name": "Devstral 2 123B",
@@ -519,8 +519,8 @@
     "input_per_1m": 0.9,
     "output_per_1m": 0.9,
     "context_window": 262144,
-    "tokens_per_second": 50.508,
-    "time_to_first_token": 0.636
+    "tokens_per_second": 55.996,
+    "time_to_first_token": 0.772
   },
   "devstral-medium": {
     "name": "Devstral Medium",
@@ -620,14 +620,14 @@
   },
   "gemini-2-5-flash": {
     "name": "Gemini 2.5 Flash",
-    "input_per_1m": 0.15,
-    "output_per_1m": 1.25,
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.5,
     "context_window": 1048576
   },
   "gemini-2-5-flash-image-nano-banana": {
     "name": "Gemini 2.5 Flash Image (Nano Banana)",
-    "input_per_1m": 0.3,
-    "output_per_1m": 2.5,
+    "input_per_1m": 0.15,
+    "output_per_1m": 1.25,
     "context_window": 32768
   },
   "gemini-2-5-flash-image-preview-nano-banana": {
@@ -636,8 +636,8 @@
   },
   "gemini-2-5-flash-lite": {
     "name": "Gemini 2.5 Flash Lite",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.2,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.4,
     "context_window": 1048576
   },
   "gemini-2-5-flash-lite-preview-09-2025": {
@@ -650,16 +650,16 @@
   },
   "gemini-2-5-pro": {
     "name": "Gemini 2.5 Pro",
-    "input_per_1m": 2.25,
-    "output_per_1m": 18.0,
+    "input_per_1m": 0.625,
+    "output_per_1m": 5.0,
     "context_window": 1048576,
-    "tokens_per_second": 138.248,
-    "time_to_first_token": 17.931
+    "tokens_per_second": 148.115,
+    "time_to_first_token": 16.012
   },
   "gemini-2-5-pro-preview": {
     "name": "Gemini 2.5 Pro Preview 06-05",
-    "input_per_1m": 2.25,
-    "output_per_1m": 18.0,
+    "input_per_1m": 0.625,
+    "output_per_1m": 5.0,
     "context_window": 1048576
   },
   "gemini-3-1-flash-lite": {
@@ -670,19 +670,19 @@
   },
   "gemini-3-1-flash-lite-preview": {
     "name": "Gemini 3.1 Flash Lite Preview",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.7,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 1048576,
-    "tokens_per_second": 303.877,
-    "time_to_first_token": 5.065
+    "tokens_per_second": 338.091,
+    "time_to_first_token": 4.945
   },
   "gemini-3-1-pro-preview": {
     "name": "Gemini 3.1 Pro Preview",
     "input_per_1m": 3.6,
     "output_per_1m": 21.6,
     "context_window": 1048576,
-    "tokens_per_second": 130.323,
-    "time_to_first_token": 28.832
+    "tokens_per_second": 141.47,
+    "time_to_first_token": 29.695
   },
   "gemini-3-1-pro-preview-custom-tools": {
     "name": "Gemini 3.1 Pro Preview Custom Tools",
@@ -692,32 +692,32 @@
   },
   "gemini-3-5-flash": {
     "name": "Gemini 3.5 Flash",
-    "input_per_1m": 1.5,
-    "output_per_1m": 9.0,
+    "input_per_1m": 0.75,
+    "output_per_1m": 4.5,
     "context_window": 1048576,
-    "tokens_per_second": 251.478,
-    "time_to_first_token": 0.711
+    "tokens_per_second": 254.607,
+    "time_to_first_token": 0.791
   },
   "gemini-3-5-flash-lite": {
     "name": "Gemini 3.5 Flash Lite",
     "input_per_1m": 0.15,
     "output_per_1m": 1.25,
     "context_window": 1048576,
-    "tokens_per_second": 395.402,
-    "time_to_first_token": 8.155
+    "tokens_per_second": 420.469,
+    "time_to_first_token": 8.807
   },
   "gemini-3-6-flash": {
     "name": "Gemini 3.6 Flash",
     "input_per_1m": 0.75,
     "output_per_1m": 3.75,
     "context_window": 1048576,
-    "tokens_per_second": 232.181,
-    "time_to_first_token": 16.928
+    "tokens_per_second": 236.441,
+    "time_to_first_token": 18.633
   },
   "gemini-3-flash-preview": {
     "name": "Gemini 3 Flash Preview",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 1048576
   },
   "gemini-3-pro-preview": {
@@ -787,15 +787,15 @@
     "input_per_1m": 0.07,
     "output_per_1m": 0.34,
     "context_window": 262144,
-    "tokens_per_second": 52.808,
-    "time_to_first_token": 0.738
+    "tokens_per_second": 53.281,
+    "time_to_first_token": 0.682
   },
   "gemma-4-31b-instruct": {
     "name": "Gemma 4 31B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.35,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.34,
     "context_window": 262144,
-    "tokens_per_second": 35.812,
+    "tokens_per_second": 35.46,
     "time_to_first_token": 1.01
   },
   "gemma-4-e2b-it": {
@@ -890,11 +890,11 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.406,
-    "output_per_1m": 1.276,
+    "input_per_1m": 0.6986,
+    "output_per_1m": 2.1956,
     "context_window": 1048576,
-    "tokens_per_second": 123.571,
-    "time_to_first_token": 1.141
+    "tokens_per_second": 113.532,
+    "time_to_first_token": 1.096
   },
   "glm-5-fp4": {
     "name": "GLM-5 FP4",
@@ -918,8 +918,8 @@
   },
   "gpt-3-5-turbo": {
     "name": "GPT-3.5 Turbo",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.75,
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.5,
     "context_window": 16385
   },
   "gpt-3-5-turbo-16k": {
@@ -954,14 +954,14 @@
   },
   "gpt-4-1-nano": {
     "name": "GPT-4.1 Nano",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.2,
     "context_window": 1047576
   },
   "gpt-4-turbo": {
     "name": "GPT-4 Turbo",
-    "input_per_1m": 5.0,
-    "output_per_1m": 15.0,
+    "input_per_1m": 10.0,
+    "output_per_1m": 30.0,
     "context_window": 128000
   },
   "gpt-4o": {
@@ -990,8 +990,8 @@
   },
   "gpt-5-1-chat": {
     "name": "GPT-5.1 Chat",
-    "input_per_1m": 0.625,
-    "output_per_1m": 5.0,
+    "input_per_1m": 1.25,
+    "output_per_1m": 10.0,
     "context_window": 128000
   },
   "gpt-5-1-codex": {
@@ -1047,19 +1047,19 @@
     "input_per_1m": 1.75,
     "output_per_1m": 14.0,
     "context_window": 400000,
-    "tokens_per_second": 121.555,
-    "time_to_first_token": 42.724
+    "tokens_per_second": 126.721,
+    "time_to_first_token": 50.228
   },
   "gpt-5-4": {
     "name": "GPT-5.4",
-    "input_per_1m": 1.25,
-    "output_per_1m": 7.5,
+    "input_per_1m": 2.5,
+    "output_per_1m": 15.0,
     "context_window": 1050000
   },
   "gpt-5-4-mini": {
     "name": "GPT-5.4 Mini",
-    "input_per_1m": 0.75,
-    "output_per_1m": 4.5,
+    "input_per_1m": 0.375,
+    "output_per_1m": 2.25,
     "context_window": 400000
   },
   "gpt-5-4-nano": {
@@ -1076,8 +1076,8 @@
   },
   "gpt-5-5": {
     "name": "GPT-5.5",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15.0,
+    "input_per_1m": 5.0,
+    "output_per_1m": 30.0,
     "context_window": 1050000
   },
   "gpt-5-5-pro": {
@@ -1096,8 +1096,8 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.6,
     "context_window": 1050000,
-    "tokens_per_second": 165.48,
-    "time_to_first_token": 0.741
+    "tokens_per_second": 172.899,
+    "time_to_first_token": 0.752
   },
   "gpt-5-6-luna-pro": {
     "name": "GPT-5.6 Luna Pro",
@@ -1110,8 +1110,8 @@
     "input_per_1m": 2.5,
     "output_per_1m": 15.0,
     "context_window": 1050000,
-    "tokens_per_second": 68.201,
-    "time_to_first_token": 0.94
+    "tokens_per_second": 69.034,
+    "time_to_first_token": 0.975
   },
   "gpt-5-6-sol-pro": {
     "name": "GPT-5.6 Sol Pro",
@@ -1121,16 +1121,16 @@
   },
   "gpt-5-6-terra": {
     "name": "GPT-5.6 Terra",
-    "input_per_1m": 2.0,
-    "output_per_1m": 12.0,
+    "input_per_1m": 1.0,
+    "output_per_1m": 6.0,
     "context_window": 1050000,
-    "tokens_per_second": 115.08,
-    "time_to_first_token": 0.717
+    "tokens_per_second": 119.116,
+    "time_to_first_token": 0.665
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
-    "input_per_1m": 1.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 12.0,
     "context_window": 1050000
   },
   "gpt-5-chat": {
@@ -1157,8 +1157,8 @@
   },
   "gpt-5-mini": {
     "name": "GPT-5 Mini",
-    "input_per_1m": 0.25,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.125,
+    "output_per_1m": 1.0,
     "context_window": 400000
   },
   "gpt-5-nano": {
@@ -1184,16 +1184,16 @@
     "input_per_1m": 0.037,
     "output_per_1m": 0.17,
     "context_window": 131072,
-    "tokens_per_second": 260.025,
-    "time_to_first_token": 0.58
+    "tokens_per_second": 238.807,
+    "time_to_first_token": 0.599
   },
   "gpt-oss-20b": {
     "name": "GPT-OSS-20b",
     "input_per_1m": 0.03,
     "output_per_1m": 0.15,
     "context_window": 131072,
-    "tokens_per_second": 241.73,
-    "time_to_first_token": 0.708
+    "tokens_per_second": 225.008,
+    "time_to_first_token": 0.68
   },
   "granite-4-0-micro": {
     "name": "Granite 4.0 Micro",
@@ -1264,8 +1264,8 @@
     "input_per_1m": 2.0,
     "output_per_1m": 6.0,
     "context_window": 500000,
-    "tokens_per_second": 58.543,
-    "time_to_first_token": 12.902
+    "tokens_per_second": 67.468,
+    "time_to_first_token": 14.197
   },
   "grok-4-fast": {
     "name": "Grok 4 Fast",
@@ -1275,8 +1275,8 @@
   },
   "grok-build-0-1": {
     "name": "Grok Build 0.1",
-    "input_per_1m": 1.0,
-    "output_per_1m": 2.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 4.0,
     "context_window": 256000
   },
   "grok-code-fast-1": {
@@ -1314,15 +1314,15 @@
     "input_per_1m": 1.0,
     "output_per_1m": 3.0,
     "context_window": 131072,
-    "tokens_per_second": 37.383,
-    "time_to_first_token": 0.829
+    "tokens_per_second": 33.071,
+    "time_to_first_token": 0.82
   },
   "hermes-4-70b": {
     "name": "Hermes 4 70B",
     "input_per_1m": 0.13,
     "output_per_1m": 0.4,
     "context_window": 131072,
-    "tokens_per_second": 93.194,
+    "tokens_per_second": 92.93,
     "time_to_first_token": 0.598
   },
   "holo3-35b-a3b": {
@@ -1360,16 +1360,16 @@
     "input_per_1m": 0.95,
     "output_per_1m": 4.05,
     "context_window": 1048576,
-    "tokens_per_second": 84.899,
-    "time_to_first_token": 2.097
+    "tokens_per_second": 84.272,
+    "time_to_first_token": 2.055
   },
   "inkling-small": {
     "name": "Inkling Small",
     "input_per_1m": 0.45,
     "output_per_1m": 1.2,
     "context_window": 524288,
-    "tokens_per_second": 130.769,
-    "time_to_first_token": 1.582
+    "tokens_per_second": 121.1,
+    "time_to_first_token": 1.471
   },
   "intellect-3": {
     "name": "INTELLECT-3",
@@ -1414,8 +1414,8 @@
     "input_per_1m": 2.0,
     "output_per_1m": 8.0,
     "context_window": 256000,
-    "tokens_per_second": 55.757,
-    "time_to_first_token": 0.878
+    "tokens_per_second": 56.317,
+    "time_to_first_token": 0.848
   },
   "jamba-mini-1-7": {
     "name": "Jamba Mini 1.7",
@@ -1475,19 +1475,19 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.000175,
-    "output_per_1m": 0.000175,
+    "input_per_1m": 0.000172,
+    "output_per_1m": 0.000172,
     "context_window": 256000,
-    "tokens_per_second": 40.68,
-    "time_to_first_token": 1.099
+    "tokens_per_second": 39.564,
+    "time_to_first_token": 1.109
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
     "input_per_1m": 0.74,
     "output_per_1m": 3.5,
     "context_window": 262144,
-    "tokens_per_second": 37.677,
-    "time_to_first_token": 1.195
+    "tokens_per_second": 38.538,
+    "time_to_first_token": 1.176
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1500,8 +1500,8 @@
     "input_per_1m": 2.9,
     "output_per_1m": 14.0,
     "context_window": 1048576,
-    "tokens_per_second": 34.672,
-    "time_to_first_token": 2.927
+    "tokens_per_second": 36.472,
+    "time_to_first_token": 3.079
   },
   "lfm2-2-6b": {
     "name": "LiquidAI/LFM2-2.6B",
@@ -1520,8 +1520,8 @@
     "input_per_1m": 0.03,
     "output_per_1m": 0.12,
     "context_window": 32768,
-    "tokens_per_second": 339.443,
-    "time_to_first_token": 1.351
+    "tokens_per_second": 341.286,
+    "time_to_first_token": 1.454
   },
   "lfm2-8b-a1b": {
     "name": "LiquidAI/LFM2-8B-A1B",
@@ -1538,7 +1538,7 @@
     "input_per_1m": 0.01,
     "output_per_1m": 0.03,
     "context_window": 262144,
-    "tokens_per_second": 95.945,
+    "tokens_per_second": 98.764,
     "time_to_first_token": 0.768
   },
   "llama-2-13b": {
@@ -1632,8 +1632,8 @@
     "input_per_1m": 0.88,
     "output_per_1m": 0.88,
     "context_window": 131072,
-    "tokens_per_second": 106.821,
-    "time_to_first_token": 3.573
+    "tokens_per_second": 116.27,
+    "time_to_first_token": 3.554
   },
   "llama-3-1-nemotron-ultra-253b": {
     "name": "Llama 3.1 Nemotron Ultra 253B v1",
@@ -1644,8 +1644,8 @@
     "input_per_1m": 0.06,
     "output_per_1m": 0.06,
     "context_window": 131072,
-    "tokens_per_second": 31.536,
-    "time_to_first_token": 0.707
+    "tokens_per_second": 19.237,
+    "time_to_first_token": 0.732
   },
   "llama-3-2-1b": {
     "name": "Llama 3.2 1B",
@@ -1680,8 +1680,8 @@
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
     "context_window": 131072,
-    "tokens_per_second": 85.013,
-    "time_to_first_token": 0.64
+    "tokens_per_second": 83.548,
+    "time_to_first_token": 0.645
   },
   "llama-3-3-70b-instruct-fp8-lora": {
     "name": "Llama 3.3 70B Instruct FP8 LoRA",
@@ -1744,16 +1744,16 @@
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
     "context_window": 1048576,
-    "tokens_per_second": 110.24,
-    "time_to_first_token": 0.629
+    "tokens_per_second": 108.447,
+    "time_to_first_token": 0.643
   },
   "llama-4-scout": {
     "name": "Llama 4 Scout",
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
     "context_window": 327680,
-    "tokens_per_second": 133.152,
-    "time_to_first_token": 0.598
+    "tokens_per_second": 130.807,
+    "time_to_first_token": 0.585
   },
   "llama-4-scout-17b-16e-instruct-fp8-lora": {
     "name": "Llama 4 Scout 17B 16E Instruct FP8 LoRA",
@@ -1768,8 +1768,8 @@
     "input_per_1m": 0.3,
     "output_per_1m": 1.2,
     "context_window": 1048756,
-    "tokens_per_second": 45.835,
-    "time_to_first_token": 1.683
+    "tokens_per_second": 46.958,
+    "time_to_first_token": 1.768
   },
   "longcat-flash-chat": {
     "name": "LongCat Flash Chat",
@@ -1814,8 +1814,8 @@
     "input_per_1m": 0.25,
     "output_per_1m": 0.75,
     "context_window": 128000,
-    "tokens_per_second": 960.31,
-    "time_to_first_token": 3.666
+    "tokens_per_second": 1111.875,
+    "time_to_first_token": 3.933
   },
   "mercury-coder": {
     "name": "Mercury Coder",
@@ -1838,8 +1838,8 @@
     "input_per_1m": 0.348,
     "output_per_1m": 0.696,
     "context_window": 1048576,
-    "tokens_per_second": 47.259,
-    "time_to_first_token": 1.621
+    "tokens_per_second": 56.711,
+    "time_to_first_token": 1.823
   },
   "mimo-v2-flash": {
     "name": "MiMo-V2-Flash",
@@ -1873,7 +1873,7 @@
   "minimax-m2-1": {
     "name": "MiniMax M2.1",
     "input_per_1m": 0.3,
-    "output_per_1m": 2.4,
+    "output_per_1m": 1.2,
     "context_window": 196608
   },
   "minimax-m2-5": {
@@ -1884,8 +1884,8 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.000175,
-    "output_per_1m": 0.000175,
+    "input_per_1m": 0.000172,
+    "output_per_1m": 0.000172,
     "context_window": 204800
   },
   "minimax-m2-her": {
@@ -1899,16 +1899,16 @@
     "input_per_1m": 0.24,
     "output_per_1m": 0.96,
     "context_window": 1048576,
-    "tokens_per_second": 85.494,
-    "time_to_first_token": 1.158
+    "tokens_per_second": 89.994,
+    "time_to_first_token": 1.23
   },
   "ministral-3-14b-2512": {
     "name": "Ministral 3 14B 2512",
     "input_per_1m": 0.2,
     "output_per_1m": 0.2,
     "context_window": 262144,
-    "tokens_per_second": 99.304,
-    "time_to_first_token": 0.548
+    "tokens_per_second": 99.356,
+    "time_to_first_token": 0.547
   },
   "ministral-3-3b-2512": {
     "name": "Ministral 3 3B 2512",
@@ -1921,7 +1921,7 @@
     "input_per_1m": 0.15,
     "output_per_1m": 0.15,
     "context_window": 262144,
-    "tokens_per_second": 126.579,
+    "tokens_per_second": 121.133,
     "time_to_first_token": 0.51
   },
   "ministral-3b": {
@@ -1929,8 +1929,8 @@
     "input_per_1m": 0.04,
     "output_per_1m": 0.04,
     "context_window": 128000,
-    "tokens_per_second": 264.074,
-    "time_to_first_token": 0.42
+    "tokens_per_second": 251.828,
+    "time_to_first_token": 0.398
   },
   "ministral-8b": {
     "name": "Ministral 8B",
@@ -1995,8 +1995,8 @@
     "input_per_1m": 1.5,
     "output_per_1m": 7.5,
     "context_window": 262144,
-    "tokens_per_second": 140.2,
-    "time_to_first_token": 0.686
+    "tokens_per_second": 149.036,
+    "time_to_first_token": 0.656
   },
   "mistral-nemo": {
     "name": "Mistral Nemo",
@@ -2114,8 +2114,8 @@
   },
   "nano-banana-pro-gemini-3-pro-image-preview": {
     "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
-    "input_per_1m": 1.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 120.0,
     "context_window": 65536
   },
   "nemotron-3-nano-30b-a3b": {
@@ -2123,8 +2123,8 @@
     "input_per_1m": 0.05,
     "output_per_1m": 0.2,
     "context_window": 262144,
-    "tokens_per_second": 223.547,
-    "time_to_first_token": 0.531
+    "tokens_per_second": 195.703,
+    "time_to_first_token": 0.536
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super 120B A12B",
@@ -2137,8 +2137,8 @@
     "input_per_1m": 0.5,
     "output_per_1m": 2.2,
     "context_window": 1000000,
-    "tokens_per_second": 140.273,
-    "time_to_first_token": 1.347
+    "tokens_per_second": 144.287,
+    "time_to_first_token": 1.521
   },
   "nemotron-nano-12b": {
     "name": "Nemotron Nano 12B V2",
@@ -2151,24 +2151,24 @@
     "input_per_1m": 0.2,
     "output_per_1m": 0.6,
     "context_window": 131072,
-    "tokens_per_second": 175.474,
-    "time_to_first_token": 1.266
+    "tokens_per_second": 188.864,
+    "time_to_first_token": 1.373
   },
   "nemotron-nano-9b": {
     "name": "Nemotron Nano 9B V2",
     "input_per_1m": 0.06,
     "output_per_1m": 0.25,
     "context_window": 131072,
-    "tokens_per_second": 173.343,
-    "time_to_first_token": 1.21
+    "tokens_per_second": 172.231,
+    "time_to_first_token": 1.683
   },
   "nex-n2-pro": {
     "name": "Nex N2 Pro",
     "input_per_1m": 0.5,
     "output_per_1m": 2.5,
     "context_window": 262144,
-    "tokens_per_second": 137.691,
-    "time_to_first_token": 0.885
+    "tokens_per_second": 137.52,
+    "time_to_first_token": 0.85
   },
   "noromaid-20b": {
     "name": "Noromaid 20B",
@@ -2215,8 +2215,8 @@
     "input_per_1m": 0.3,
     "output_per_1m": 2.5,
     "context_window": 1000000,
-    "tokens_per_second": 223.242,
-    "time_to_first_token": 0.855
+    "tokens_per_second": 235.615,
+    "time_to_first_token": 0.919
   },
   "nova-lite-1-0": {
     "name": "Nova Lite 1.0",
@@ -2229,16 +2229,16 @@
     "input_per_1m": 0.035,
     "output_per_1m": 0.14,
     "context_window": 128000,
-    "tokens_per_second": 241.33,
-    "time_to_first_token": 0.664
+    "tokens_per_second": 247.504,
+    "time_to_first_token": 0.614
   },
   "nova-premier-1-0": {
     "name": "Nova Premier 1.0",
     "input_per_1m": 2.5,
     "output_per_1m": 12.5,
     "context_window": 1000000,
-    "tokens_per_second": 64.982,
-    "time_to_first_token": 1.146
+    "tokens_per_second": 66.335,
+    "time_to_first_token": 1.315
   },
   "nova-pro-1-0": {
     "name": "Nova Pro 1.0",
@@ -2269,8 +2269,8 @@
     "input_per_1m": 2.0,
     "output_per_1m": 8.0,
     "context_window": 200000,
-    "tokens_per_second": 133.447,
-    "time_to_first_token": 7.156
+    "tokens_per_second": 124.111,
+    "time_to_first_token": 9.433
   },
   "o3-deep-research": {
     "name": "o3 Deep Research",
@@ -2394,8 +2394,8 @@
   },
   "phi-4-mini-instruct-creator-name-microsoft-azure": {
     "name": "Phi-4 Mini Instruct (creator_name=Microsoft Azure)",
-    "tokens_per_second": 44.691,
-    "time_to_first_token": 0.381
+    "tokens_per_second": 44.345,
+    "time_to_first_token": 0.366
   },
   "phi-4-multimodal-instruct": {
     "name": "Phi 4 Multimodal Instruct",
@@ -2807,8 +2807,8 @@
     "input_per_1m": 0.26,
     "output_per_1m": 2.08,
     "context_window": 262144,
-    "tokens_per_second": 151.865,
-    "time_to_first_token": 1.041
+    "tokens_per_second": 149.391,
+    "time_to_first_token": 1.174
   },
   "qwen3-5-27b": {
     "name": "Qwen3.5-27B",
@@ -2825,24 +2825,24 @@
     "input_per_1m": 0.14,
     "output_per_1m": 1.0,
     "context_window": 262144,
-    "tokens_per_second": 176.018,
-    "time_to_first_token": 1.029
+    "tokens_per_second": 176.685,
+    "time_to_first_token": 1.026
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
     "input_per_1m": 0.39,
     "output_per_1m": 2.34,
     "context_window": 262144,
-    "tokens_per_second": 66.466,
-    "time_to_first_token": 1.686
+    "tokens_per_second": 68.442,
+    "time_to_first_token": 1.707
   },
   "qwen3-5-4b-non-reasoning": {
     "name": "Qwen3.5 4B (Non-reasoning)",
     "input_per_1m": 0.2,
     "output_per_1m": 0.2,
     "context_window": 262144,
-    "tokens_per_second": 24.112,
-    "time_to_first_token": 0.646
+    "tokens_per_second": 20.587,
+    "time_to_first_token": 0.537
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5 9B",
@@ -2867,7 +2867,7 @@
     "input_per_1m": 0.289,
     "output_per_1m": 2.4,
     "context_window": 262144,
-    "tokens_per_second": 57.852,
+    "tokens_per_second": 63.104,
     "time_to_first_token": 1.527
   },
   "qwen3-6-35b-a3b": {
@@ -2875,8 +2875,8 @@
     "input_per_1m": 0.098,
     "output_per_1m": 0.95,
     "context_window": 262144,
-    "tokens_per_second": 164.229,
-    "time_to_first_token": 1.351
+    "tokens_per_second": 179.729,
+    "time_to_first_token": 1.302
   },
   "qwen3-6-flash": {
     "name": "Qwen3.6 Flash",
@@ -2901,16 +2901,16 @@
     "input_per_1m": 1.25,
     "output_per_1m": 3.75,
     "context_window": 1000000,
-    "tokens_per_second": 208.868,
-    "time_to_first_token": 1.447
+    "tokens_per_second": 213.368,
+    "time_to_first_token": 1.419
   },
   "qwen3-7-plus": {
     "name": "Qwen3.7 Plus",
     "input_per_1m": 0.32,
     "output_per_1m": 1.28,
     "context_window": 1000000,
-    "tokens_per_second": 52.768,
-    "time_to_first_token": 1.635
+    "tokens_per_second": 53.905,
+    "time_to_first_token": 1.54
   },
   "qwen3-8b": {
     "name": "Qwen3 8B",
@@ -2951,8 +2951,8 @@
     "input_per_1m": 0.12,
     "output_per_1m": 0.8,
     "context_window": 262144,
-    "tokens_per_second": 125.383,
-    "time_to_first_token": 0.904
+    "tokens_per_second": 131.285,
+    "time_to_first_token": 0.962
   },
   "qwen3-coder-plus": {
     "name": "Qwen3 Coder Plus",
@@ -2977,8 +2977,8 @@
     "input_per_1m": 0.09,
     "output_per_1m": 1.1,
     "context_window": 262144,
-    "tokens_per_second": 194.71,
-    "time_to_first_token": 1.01
+    "tokens_per_second": 201.555,
+    "time_to_first_token": 1.015
   },
   "qwen3-next-80b-a3b-thinking": {
     "name": "Qwen3 Next 80B A3B Thinking",
@@ -2991,7 +2991,7 @@
     "input_per_1m": 0.9,
     "output_per_1m": 0.9,
     "context_window": 65536,
-    "tokens_per_second": 107.263,
+    "tokens_per_second": 106.072,
     "time_to_first_token": 0.974
   },
   "qwen3-vl-235b-a22b-instruct": {
@@ -3261,8 +3261,8 @@
     "input_per_1m": 0.2,
     "output_per_1m": 1.15,
     "context_window": 256000,
-    "tokens_per_second": 276.107,
-    "time_to_first_token": 0.914
+    "tokens_per_second": 383.271,
+    "time_to_first_token": 0.897
   },
   "step3": {
     "name": "Step3",
@@ -3280,8 +3280,8 @@
   },
   "text-davinci-002": {
     "name": "text-davinci-002",
-    "input_per_1m": 20.0,
-    "output_per_1m": 20.0,
+    "input_per_1m": 10.0,
+    "output_per_1m": 10.0,
     "context_window": 4097
   },
   "text-davinci-003": {

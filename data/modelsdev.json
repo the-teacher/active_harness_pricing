@@ -475,6 +475,12 @@
     "context_window": 65536,
     "cache_read_per_1m": 0.155
   },
+  "apertus-70b": {
+    "name": "apertus-70b",
+    "input_per_1m": 1.393,
+    "output_per_1m": 2.228,
+    "context_window": 65536
+  },
   "apertus-v1-5-70b": {
     "name": "Apertus v1.5 70B",
     "input_per_1m": 0.87,
@@ -868,12 +874,6 @@
     "output_per_1m": 25,
     "context_window": 200000,
     "cache_read_per_1m": 0.5
-  },
-  "claude-4-5-sonnet": {
-    "name": "Claude 4.5 Sonnet",
-    "input_per_1m": 3.259,
-    "output_per_1m": 16.3,
-    "context_window": 200000
   },
   "claude-4-6-opus": {
     "name": "Claude 4.6 Opus",
@@ -1492,8 +1492,8 @@
   },
   "claude-sonnet-4-5-latest": {
     "name": "Claude Sonnet 4.5 (latest)",
-    "input_per_1m": 3,
-    "output_per_1m": 15,
+    "input_per_1m": 2.989,
+    "output_per_1m": 14.95,
     "context_window": 200000,
     "cache_read_per_1m": 0.3
   },
@@ -1562,9 +1562,9 @@
   },
   "claude-sonnet-4-latest": {
     "name": "Claude Sonnet 4 (latest)",
-    "input_per_1m": 3,
-    "output_per_1m": 15,
-    "context_window": 216000,
+    "input_per_1m": 2.898,
+    "output_per_1m": 14.49,
+    "context_window": 200000,
     "cache_read_per_1m": 0.3
   },
   "claude-sonnet-4-latest-eu": {
@@ -1663,6 +1663,13 @@
     "input_per_1m": 0.3,
     "output_per_1m": 0.9,
     "context_window": 256000
+  },
+  "codestral-22b": {
+    "name": "Codestral-22B-v0.1",
+    "input_per_1m": 0.3,
+    "output_per_1m": 0.9,
+    "context_window": 128000,
+    "cache_read_per_1m": 0.3
   },
   "codestral-2508": {
     "name": "Codestral 2508",
@@ -1862,6 +1869,12 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
     "context_window": 262144
+  },
+  "cosmos3-super-reasoner": {
+    "name": "cosmos3-super-reasoner",
+    "input_per_1m": 0.099,
+    "output_per_1m": 0.296,
+    "context_window": 256000
   },
   "cydonia-24b": {
     "name": "Cydonia 24B V4.1",
@@ -2183,14 +2196,14 @@
     "input_per_1m": 0.14,
     "output_per_1m": 0.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0028
+    "cache_read_per_1m": 0.014
   },
   "deepseek-v4-flash-0731-cheaper-thinking": {
     "name": "DeepSeek V4 Flash 0731 Cheaper (Thinking)",
     "input_per_1m": 0.14,
     "output_per_1m": 0.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0028
+    "cache_read_per_1m": 0.014
   },
   "deepseek-v4-flash-0731-eu": {
     "name": "DeepSeek V4 Flash 0731 (EU)",
@@ -2575,13 +2588,6 @@
     "output_per_1m": 1.1,
     "context_window": 131000
   },
-  "ernie-4-5-vl-28b": {
-    "name": "ERNIE 4.5 VL 28B",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.56,
-    "context_window": 32768,
-    "cache_read_per_1m": 0.07
-  },
   "ernie-4-5-vl-28b-a3b": {
     "name": "ERNIE 4.5 VL 28B A3B",
     "input_per_1m": 0.14,
@@ -2873,6 +2879,12 @@
     "output_per_1m": 20,
     "context_window": 32768
   },
+  "gemini-3-1-flash-image": {
+    "name": "Gemini 3.1 Flash Image",
+    "input_per_1m": 0.5,
+    "output_per_1m": 3,
+    "context_window": 32768
+  },
   "gemini-3-1-flash-image-preview": {
     "name": "gemini-3.1-flash-image-preview",
     "input_per_1m": 0.5,
@@ -3135,9 +3147,9 @@
   },
   "gemma-3-27b-it": {
     "name": "Gemma-3-27b-it",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 110000,
+    "input_per_1m": 0.099,
+    "output_per_1m": 0.299,
+    "context_window": 131000,
     "cache_read_per_1m": 0.01
   },
   "gemma-3-27b-tee": {
@@ -5125,15 +5137,15 @@
   },
   "hermes-4-405b": {
     "name": "Hermes-4-405B",
-    "input_per_1m": 1,
-    "output_per_1m": 3,
+    "input_per_1m": 0.996,
+    "output_per_1m": 2.989,
     "context_window": 128000,
     "cache_read_per_1m": 0.1
   },
   "hermes-4-70b": {
     "name": "Hermes-4-70B",
-    "input_per_1m": 0.116,
-    "output_per_1m": 0.358,
+    "input_per_1m": 0.129,
+    "output_per_1m": 0.399,
     "context_window": 128000,
     "cache_read_per_1m": 0.013
   },
@@ -5188,9 +5200,9 @@
   },
   "holo2-30b-a3b": {
     "name": "Holo2 30B A3B",
-    "input_per_1m": 0.399,
-    "output_per_1m": 0.969,
-    "context_window": 22016
+    "input_per_1m": 0.334,
+    "output_per_1m": 0.78,
+    "context_window": 22000
   },
   "holo3-35b-a3b": {
     "name": "Holo3-35B-A3B",
@@ -5797,6 +5809,12 @@
     "context_window": 16384,
     "cache_read_per_1m": 0.2465
   },
+  "llama-3-1-405b-instruct": {
+    "name": "Llama 3.1 405B Instruct",
+    "input_per_1m": 1.95,
+    "output_per_1m": 1.95,
+    "context_window": 128000
+  },
   "llama-3-1-405b-instruct-turbo": {
     "name": "Llama 3.1 405B Instruct Turbo",
     "input_per_1m": 3.5,
@@ -5904,8 +5922,8 @@
   },
   "llama-3-1-nemotron-ultra-253b": {
     "name": "Llama-3.1-Nemotron-Ultra-253B-v1",
-    "input_per_1m": 0.6,
-    "output_per_1m": 1.8,
+    "input_per_1m": 0.598,
+    "output_per_1m": 1.794,
     "context_window": 128000,
     "cache_read_per_1m": 0.06
   },
@@ -5921,6 +5939,13 @@
     "output_per_1m": 0.676,
     "context_window": 128000
   },
+  "llama-3-2-1b": {
+    "name": "Llama-3.2-1B",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.1,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.1
+  },
   "llama-3-2-1b-instruct": {
     "name": "Llama 3.2 1B Instruct",
     "input_per_1m": 0.01,
@@ -5928,10 +5953,11 @@
     "context_window": 16000
   },
   "llama-3-2-3b": {
-    "name": "Llama 3.2 3B",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 128000
+    "name": "Llama-3.2-3B",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.1,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.1
   },
   "llama-3-2-3b-instruct": {
     "name": "Llama 3.2 3b Instruct",
@@ -6083,9 +6109,9 @@
   },
   "llama-4-maverick-17b-instruct": {
     "name": "Llama 4 Maverick 17B Instruct",
-    "input_per_1m": 0.124,
-    "output_per_1m": 0.603,
-    "context_window": 1000000
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.59,
+    "context_window": 1048576
   },
   "llama-4-maverick-17b-instruct-us": {
     "name": "Llama 4 Maverick 17B Instruct (US)",
@@ -6223,7 +6249,8 @@
     "name": "Magistral Small",
     "input_per_1m": 0.5,
     "output_per_1m": 1.5,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.5
   },
   "magistral-small-1-2": {
     "name": "Magistral Small 1.2",
@@ -6429,6 +6456,13 @@
     "output_per_1m": 0.01,
     "context_window": 512
   },
+  "meta-muse-spark-1-2": {
+    "name": "Meta: Muse Spark 1.2",
+    "input_per_1m": 1.25,
+    "output_per_1m": 4.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.15
+  },
   "microsoft-phi-4": {
     "name": "Microsoft: Phi 4",
     "input_per_1m": 0.07,
@@ -6514,8 +6548,8 @@
   },
   "minicpm-v-4-5": {
     "name": "MiniCPM-V 4.5",
-    "input_per_1m": 0.658,
-    "output_per_1m": 1.11,
+    "input_per_1m": 0.651,
+    "output_per_1m": 1.097,
     "context_window": 32000
   },
   "minimax": {
@@ -6709,9 +6743,9 @@
   },
   "ministral-14b-2512": {
     "name": "ministral-14b-2512",
-    "input_per_1m": 0.33,
-    "output_per_1m": 0.33,
-    "context_window": 128000
+    "input_per_1m": 0.223,
+    "output_per_1m": 0.223,
+    "context_window": 256000
   },
   "ministral-14b-3-0": {
     "name": "Ministral 14B 3.0",
@@ -6784,6 +6818,13 @@
     "context_window": 128000,
     "cache_read_per_1m": 0.05
   },
+  "ministral-3b-2512": {
+    "name": "ministral-3b-2512",
+    "input_per_1m": 0.111,
+    "output_per_1m": 0.111,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.011
+  },
   "ministral-3b-latest": {
     "name": "Ministral 3B (latest)",
     "input_per_1m": 0.04,
@@ -6796,6 +6837,20 @@
     "output_per_1m": 0.15,
     "context_window": 262144,
     "cache_read_per_1m": 0.075
+  },
+  "ministral-8b-2512": {
+    "name": "ministral-8b-2512",
+    "input_per_1m": 0.167,
+    "output_per_1m": 0.167,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.017
+  },
+  "ministral-8b-instruct": {
+    "name": "Ministral 8B Instruct",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.15,
+    "context_window": 128000,
+    "cache_read_per_1m": 0.15
   },
   "ministral-8b-latest": {
     "name": "Ministral 8B (latest)",
@@ -6876,6 +6931,12 @@
     "output_per_1m": 6,
     "context_window": 131072
   },
+  "mistral-large-2402": {
+    "name": "mistral-large-2402",
+    "input_per_1m": 4.284,
+    "output_per_1m": 12.95,
+    "context_window": 32000
+  },
   "mistral-large-2407": {
     "name": "Mistral Large 2407",
     "input_per_1m": 2,
@@ -6902,13 +6963,6 @@
     "output_per_1m": 1.5,
     "context_window": 262144
   },
-  "mistral-large-3-2512": {
-    "name": "Mistral Large 3 2512",
-    "input_per_1m": 0.5,
-    "output_per_1m": 1.5,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.05
-  },
   "mistral-large-3-675b": {
     "name": "Mistral Large 3 675B",
     "input_per_1m": 1,
@@ -6934,6 +6988,13 @@
     "input_per_1m": 1.5,
     "output_per_1m": 7.5,
     "context_window": 256000
+  },
+  "mistral-medium-2508": {
+    "name": "mistral-medium-2508",
+    "input_per_1m": 0.446,
+    "output_per_1m": 2.228,
+    "context_window": 128000,
+    "cache_read_per_1m": 0.045
   },
   "mistral-medium-3": {
     "name": "Mistral Medium 3",
@@ -7086,6 +7147,12 @@
     "context_window": 32000,
     "cache_read_per_1m": 0.09945
   },
+  "mistral-small-2503": {
+    "name": "mistral-small-2503",
+    "input_per_1m": 0.111,
+    "output_per_1m": 0.334,
+    "context_window": 128000
+  },
   "mistral-small-3": {
     "name": "Mistral Small 3",
     "input_per_1m": 0.05,
@@ -7144,8 +7211,8 @@
   },
   "mistral-small-4": {
     "name": "Mistral Small 4",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.143,
+    "output_per_1m": 0.568,
     "context_window": 262144
   },
   "mistral-small-4-119b": {
@@ -7209,8 +7276,8 @@
   },
   "mixtral-8x7b-instruct": {
     "name": "Mixtral 8x7B Instruct v0.1",
-    "input_per_1m": 0.438,
-    "output_per_1m": 0.68,
+    "input_per_1m": 0.488,
+    "output_per_1m": 0.758,
     "context_window": 32000
   },
   "mm-poly-8b": {
@@ -7318,6 +7385,27 @@
     "output_per_1m": 4.25,
     "context_window": 1000000,
     "cache_read_per_1m": 0.15
+  },
+  "muse-spark-1-2": {
+    "name": "Muse Spark 1.2",
+    "input_per_1m": 1.25,
+    "output_per_1m": 4.25,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.15
+  },
+  "muse-spark-1-2-contributor": {
+    "name": "Muse Spark 1.2 Contributor",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.002
+  },
+  "muse-spark-1-2-contributor-data-used-for-training": {
+    "name": "Muse Spark 1.2 Contributor (Data Used for Training)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.002
   },
   "mythomax-13b": {
     "name": "MythoMax 13B",
@@ -7454,6 +7542,12 @@
     "name": "Nemotron Nano 9B",
     "input_per_1m": 0.06,
     "output_per_1m": 0.23,
+    "context_window": 128000
+  },
+  "nemotron-nano-v2-12b": {
+    "name": "nemotron-nano-v2-12b",
+    "input_per_1m": 0.24,
+    "output_per_1m": 0.707,
     "context_window": 128000
   },
   "nemotron-super": {
@@ -7607,11 +7701,17 @@
     "context_window": 128000,
     "cache_read_per_1m": 0.085
   },
+  "nvidia-nemotron-3-nano-30b-a3b": {
+    "name": "nvidia-nemotron-3-nano-30b-a3b",
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.24,
+    "context_window": 256000
+  },
   "nvidia-nemotron-3-nano-omni": {
     "name": "Nvidia Nemotron 3 Nano Omni",
-    "input_per_1m": 0.105,
-    "output_per_1m": 0.42,
-    "context_window": 256000,
+    "input_per_1m": 0.059,
+    "output_per_1m": 0.237,
+    "context_window": 300000,
     "cache_read_per_1m": 0.0525
   },
   "nvidia-nemotron-3-super-120b": {
@@ -8383,6 +8483,12 @@
     "output_per_1m": 6,
     "context_window": 128000
   },
+  "pixtral-large-2502": {
+    "name": "pixtral-large-2502",
+    "input_per_1m": 1.993,
+    "output_per_1m": 5.978,
+    "context_window": 128000
+  },
   "pixtral-large-latest": {
     "name": "Pixtral Large (latest)",
     "input_per_1m": 2,
@@ -8394,6 +8500,13 @@
     "input_per_1m": 0.019,
     "output_per_1m": 0,
     "context_window": 128000
+  },
+  "pokee-isaac-28b": {
+    "name": "Pokee-Isaac 28B",
+    "input_per_1m": 0.15,
+    "output_per_1m": 1,
+    "context_window": 10000000,
+    "cache_read_per_1m": 0.075
   },
   "poolside-laguna-s-2-1": {
     "name": "Poolside: Laguna S 2.1",
@@ -8859,7 +8972,7 @@
     "name": "Qwen: Qwen3 235B A22B Instruct 2507",
     "input_per_1m": 0.1495,
     "output_per_1m": 0.598,
-    "context_window": 131072
+    "context_window": 262144
   },
   "qwen-qwen3-235b-a22b-thinking-2507": {
     "name": "Qwen: Qwen3 235B A22B Thinking 2507",
@@ -9009,15 +9122,22 @@
   },
   "qwen2-5-72b-instruct": {
     "name": "Qwen/Qwen2.5-72B-Instruct",
-    "input_per_1m": 0.062,
-    "output_per_1m": 0.231,
-    "context_window": 33000
+    "input_per_1m": 0.36,
+    "output_per_1m": 0.4,
+    "context_window": 32768
   },
   "qwen2-5-7b-instruct": {
     "name": "Qwen/Qwen2.5-7B-Instruct",
     "input_per_1m": 0.05,
     "output_per_1m": 0.05,
     "context_window": 33000
+  },
+  "qwen2-5-coder-0-5b": {
+    "name": "Qwen2.5-Coder-0.5B",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.1,
+    "context_window": 32768,
+    "cache_read_per_1m": 0.1
   },
   "qwen2-5-coder-32b-instruct": {
     "name": "Qwen2.5 Coder 32B Instruct",
@@ -9134,9 +9254,9 @@
   },
   "qwen3-235b-a22b-instruct-2507": {
     "name": "Qwen3 235B A22B Instruct 2507",
-    "input_per_1m": 0.062,
-    "output_per_1m": 0.408,
-    "context_window": 131000
+    "input_per_1m": 0.069,
+    "output_per_1m": 0.455,
+    "context_window": 262000
   },
   "qwen3-235b-a22b-instruct-2507-fp8": {
     "name": "Qwen3 235B A22B Instruct 2507 FP8",
@@ -9748,8 +9868,8 @@
   },
   "qwen3-coder-30b-a3b-instruct": {
     "name": "Qwen3-Coder 30B-A3B Instruct",
-    "input_per_1m": 0.053,
-    "output_per_1m": 0.222,
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.25,
     "context_window": 262000
   },
   "qwen3-coder-480b-a35b": {
@@ -9787,8 +9907,8 @@
   },
   "qwen3-coder-next-80b": {
     "name": "Qwen3 Coder Next 80B",
-    "input_per_1m": 0.158,
-    "output_per_1m": 0.84,
+    "input_per_1m": 0.167,
+    "output_per_1m": 0.891,
     "context_window": 256000
   },
   "qwen3-coder-next-fp8": {
@@ -10660,7 +10780,7 @@
     "name": "Upstage: Solar Pro 3",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
-    "context_window": 128000,
+    "context_window": 131072,
     "cache_read_per_1m": 0.015
   },
   "v0-1-0-md": {
@@ -10730,6 +10850,13 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
     "context_window": 32000
+  },
+  "voxtral-small-2507": {
+    "name": "voxtral-small-2507",
+    "input_per_1m": 0.111,
+    "output_per_1m": 0.334,
+    "context_window": 32000,
+    "cache_read_per_1m": 0.011
   },
   "voxtral-small-latest": {
     "name": "Voxtral Small (latest)",

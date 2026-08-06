@@ -237,10 +237,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.28,
+    "input_per_1m": 0.0882,
+    "output_per_1m": 0.1764,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.028
+    "cache_read_per_1m": 0.01764
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -500,10 +500,10 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 0.966,
-    "output_per_1m": 3.036,
+    "input_per_1m": 0.952,
+    "output_per_1m": 2.992,
     "context_window": 204800,
-    "cache_read_per_1m": 0.1794
+    "cache_read_per_1m": 0.1768
   },
   "glm-5-2": {
     "name": "GLM 5.2",
@@ -995,7 +995,7 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.73,
+    "input_per_1m": 0.7,
     "output_per_1m": 3.5,
     "context_window": 262144,
     "cache_read_per_1m": 0.15
@@ -1059,6 +1059,13 @@
     "output_per_1m": 0.03,
     "context_window": 262144,
     "cache_read_per_1m": 0.002
+  },
+  "ling-3-0-flash": {
+    "name": "Ling-3.0-flash",
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.22,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.015
   },
   "llama-3-1-70b-instruct": {
     "name": "Llama 3.1 70B Instruct",
@@ -1170,7 +1177,7 @@
   },
   "minimax-m2-5": {
     "name": "MiniMax M2.5",
-    "input_per_1m": 0.15,
+    "input_per_1m": 0.22,
     "output_per_1m": 0.9,
     "context_window": 204800,
     "cache_read_per_1m": 0.05
@@ -1317,6 +1324,13 @@
   },
   "muse-spark-1-1": {
     "name": "Muse Spark 1.1",
+    "input_per_1m": 1.25,
+    "output_per_1m": 4.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.15
+  },
+  "muse-spark-1-2": {
+    "name": "Muse Spark 1.2",
     "input_per_1m": 1.25,
     "output_per_1m": 4.25,
     "context_window": 1048576,
@@ -1515,8 +1529,8 @@
   },
   "qwen3-235b-a22b-2507": {
     "name": "Qwen3 235B A22B Instruct 2507",
-    "input_per_1m": 0.1495,
-    "output_per_1m": 0.598,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.55,
     "context_window": 262144
   },
   "qwen3-235b-a22b-thinking-2507": {
@@ -1593,9 +1607,10 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.289,
-    "output_per_1m": 2.4,
-    "context_window": 262144
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.6,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.12
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
@@ -1835,7 +1850,7 @@
     "name": "Solar Pro 3",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
-    "context_window": 128000,
+    "context_window": 131072,
     "cache_read_per_1m": 0.015
   },
   "sonar": {
