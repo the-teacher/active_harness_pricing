@@ -1940,8 +1940,8 @@
   },
   "deepseek-deepseek": {
     "name": "DeepSeek: DeepSeek V3 0324",
-    "input_per_1m": 0.269,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.27,
+    "output_per_1m": 1.12,
     "context_window": 163840,
     "cache_read_per_1m": 0.135
   },
@@ -5655,9 +5655,9 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 2,
-    "output_per_1m": 8,
-    "context_window": 1000000,
+    "input_per_1m": 0.95,
+    "output_per_1m": 4,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.3
   },
   "kimi-k3-eco": {
@@ -5778,17 +5778,17 @@
   },
   "ling-3-0-flash": {
     "name": "Ling 3.0 Flash",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.021,
+    "output_per_1m": 0.063,
     "context_window": 262144,
-    "cache_read_per_1m": 0.012
+    "cache_read_per_1m": 0.015
   },
   "ling-3-0-flash-thinking": {
     "name": "Ling 3.0 Flash Thinking",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.22,
     "context_window": 262144,
-    "cache_read_per_1m": 0.012
+    "cache_read_per_1m": 0.015
   },
   "ling-flash-2-0": {
     "name": "inclusionAI/Ling-flash-2.0",
@@ -6455,13 +6455,6 @@
     "input_per_1m": 0.01,
     "output_per_1m": 0.01,
     "context_window": 512
-  },
-  "meta-muse-spark-1-2": {
-    "name": "Meta: Muse Spark 1.2",
-    "input_per_1m": 1.25,
-    "output_per_1m": 4.25,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.15
   },
   "microsoft-phi-4": {
     "name": "Microsoft: Phi 4",
@@ -7325,7 +7318,7 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI Kimi Latest",
-    "input_per_1m": 2.9,
+    "input_per_1m": 2.5,
     "output_per_1m": 14,
     "context_window": 1048576,
     "cache_read_per_1m": 0.29
@@ -9022,12 +9015,6 @@
     "output_per_1m": 4.875,
     "context_window": 262144
   },
-  "qwen-qwen3-coder-next": {
-    "name": "Qwen: Qwen3 Coder Next",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.5,
-    "context_window": 262144
-  },
   "qwen-qwen3-max-thinking": {
     "name": "Qwen: Qwen3 Max Thinking",
     "input_per_1m": 0.78,
@@ -9086,8 +9073,9 @@
   "qwen-vl-max": {
     "name": "Qwen-VL Max",
     "input_per_1m": 0.23,
-    "output_per_1m": 0.574,
-    "context_window": 131072
+    "output_per_1m": 0.58,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.046
   },
   "qwen-vl-ocr": {
     "name": "Qwen-VL OCR",
@@ -9847,6 +9835,13 @@
     "output_per_1m": 5,
     "context_window": 991000
   },
+  "qwen3-8-max-thinking": {
+    "name": "Qwen3.8 Max Thinking",
+    "input_per_1m": 2,
+    "output_per_1m": 6,
+    "context_window": 991000,
+    "cache_read_per_1m": 0.25
+  },
   "qwen3-8b": {
     "name": "Qwen3 8B",
     "input_per_1m": 0.035,
@@ -9904,12 +9899,6 @@
     "output_per_1m": 0.675,
     "context_window": 262144,
     "cache_read_per_1m": 0.1
-  },
-  "qwen3-coder-next-80b": {
-    "name": "Qwen3 Coder Next 80B",
-    "input_per_1m": 0.167,
-    "output_per_1m": 0.891,
-    "context_window": 256000
   },
   "qwen3-coder-next-fp8": {
     "name": "Qwen3 Coder Next FP8",
@@ -10048,9 +10037,9 @@
   },
   "qwen3-vl-235b-a22b-thinking": {
     "name": "Qwen3 VL 235B A22B Thinking",
-    "input_per_1m": 0.45,
-    "output_per_1m": 3.5,
-    "context_window": 262000,
+    "input_per_1m": 0.4,
+    "output_per_1m": 4,
+    "context_window": 131072,
     "cache_read_per_1m": 0.25
   },
   "qwen3-vl-30b": {
@@ -10443,6 +10432,13 @@
     "output_per_1m": 0.6,
     "context_window": 128000,
     "cache_read_per_1m": 0.015
+  },
+  "solar-pro-4": {
+    "name": "Solar Pro 4",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 524288,
+    "cache_read_per_1m": 0.06
   },
   "solar-pro2": {
     "name": "solar-pro2",
