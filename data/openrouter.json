@@ -268,10 +268,10 @@
   },
   "deepseek": {
     "name": "DeepSeek V3.2",
-    "input_per_1m": 0.269,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.26,
+    "output_per_1m": 0.38,
     "context_window": 163840,
-    "cache_read_per_1m": 0.1345
+    "cache_read_per_1m": 0.13
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
@@ -314,10 +314,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.0882,
-    "output_per_1m": 0.1764,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01764
+    "cache_read_per_1m": 0.028
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -645,10 +645,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.6874,
-    "output_per_1m": 2.1604,
+    "input_per_1m": 0.308,
+    "output_per_1m": 0.968,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.12766
+    "cache_read_per_1m": 0.0572
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1263,10 +1263,10 @@
   },
   "inkling": {
     "name": "Inkling",
-    "input_per_1m": 1.0,
+    "input_per_1m": 0.95,
     "output_per_1m": 4.05,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.17
+    "cache_read_per_1m": 0.16
   },
   "inkling-batch": {
     "name": "Inkling (batch)",
@@ -1323,10 +1323,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.589,
-    "output_per_1m": 2.48,
+    "input_per_1m": 0.5795,
+    "output_per_1m": 2.44,
     "context_window": 262144,
-    "cache_read_per_1m": 0.0992
+    "cache_read_per_1m": 0.0976
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -1700,8 +1700,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
-    "input_per_1m": 0.3,
-    "output_per_1m": 0.9,
+    "input_per_1m": 0.085,
+    "output_per_1m": 0.4,
     "context_window": 1000000
   },
   "nemotron-3-ultra-550b-a55b": {

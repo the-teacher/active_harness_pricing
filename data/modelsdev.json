@@ -476,10 +476,10 @@
     "cache_read_per_1m": 0.155
   },
   "apertus-70b": {
-    "name": "apertus-70b",
-    "input_per_1m": 1.393,
-    "output_per_1m": 2.228,
-    "context_window": 65536
+    "name": "Apertus 70B",
+    "input_per_1m": 0.46,
+    "output_per_1m": 2.42,
+    "context_window": 30000
   },
   "apertus-v1-5-70b": {
     "name": "Apertus v1.5 70B",
@@ -733,6 +733,12 @@
     "input_per_1m": 5,
     "output_per_1m": 5,
     "context_window": 16384
+  },
+  "brick-complexity-pro": {
+    "name": "Brick Complexity Pro",
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.46,
+    "context_window": 100000
   },
   "bytedance-seed-2-0-lite": {
     "name": "ByteDance Seed 2.0 Lite",
@@ -2226,6 +2232,13 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.014
   },
+  "deepseek-v4-flash-2x-usage": {
+    "name": "DeepSeek V4 Flash (2x usage)",
+    "input_per_1m": 0.07,
+    "output_per_1m": 0.14,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.0014
+  },
   "deepseek-v4-flash-alibaba-cloud": {
     "name": "DeepSeek V4 Flash (Alibaba Cloud)",
     "input_per_1m": 0.14,
@@ -2251,7 +2264,7 @@
     "input_per_1m": 0.12,
     "output_per_1m": 0.21,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.0028
+    "cache_read_per_1m": 0.003
   },
   "deepseek-v4-flash-tee": {
     "name": "DeepSeek V4 Flash TEE",
@@ -3288,8 +3301,8 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B IT",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.34,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.35,
     "context_window": 262144
   },
   "gemma-4-31b-it-tee": {
@@ -3783,8 +3796,8 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.42,
-    "output_per_1m": 1.32,
+    "input_per_1m": 0.3318,
+    "output_per_1m": 1.043,
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
@@ -5655,9 +5668,9 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.95,
-    "output_per_1m": 4,
-    "context_window": 1048576,
+    "input_per_1m": 2,
+    "output_per_1m": 8,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.3
   },
   "kimi-k3-eco": {
@@ -5676,9 +5689,9 @@
   },
   "kimi-k3-fast": {
     "name": "Kimi K3 Fast",
-    "input_per_1m": 4.5,
-    "output_per_1m": 22.5,
-    "context_window": 1048576,
+    "input_per_1m": 3,
+    "output_per_1m": 15,
+    "context_window": 1048560,
     "cache_read_per_1m": 0.45
   },
   "kimi-k3-tee": {
@@ -6558,12 +6571,6 @@
     "output_per_1m": 1.122,
     "context_window": 1000192,
     "cache_read_per_1m": 0.0697
-  },
-  "minimax-2-5": {
-    "name": "MiniMax 2.5",
-    "input_per_1m": 0.8,
-    "output_per_1m": 3.5,
-    "context_window": 190000
   },
   "minimax-m1": {
     "name": "MiniMax M1",
