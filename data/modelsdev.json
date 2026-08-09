@@ -2192,8 +2192,8 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.252,
     "context_window": 1048576,
     "cache_read_per_1m": 0.028
   },
@@ -3796,8 +3796,8 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.3318,
-    "output_per_1m": 1.043,
+    "input_per_1m": 0.098,
+    "output_per_1m": 0.308,
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
@@ -4837,6 +4837,12 @@
     "input_per_1m": 0.017,
     "output_per_1m": 0.112,
     "context_window": 131000
+  },
+  "granite-4-0-h-small": {
+    "name": "Granite-4.0-H-Small",
+    "input_per_1m": 0.0636,
+    "output_per_1m": 0.265,
+    "context_window": 131072
   },
   "granite-4-0-micro": {
     "name": "Granite 4.0 Micro",
@@ -7167,9 +7173,9 @@
   },
   "mistral-small-3-1-24b": {
     "name": "Mistral Small 3.1 24B",
-    "input_per_1m": 0.351,
-    "output_per_1m": 0.555,
-    "context_window": 128000
+    "input_per_1m": 0.106,
+    "output_per_1m": 0.318,
+    "context_window": 131072
   },
   "mistral-small-3-1-24b-instruct": {
     "name": "Mistral Small 3.1 24B Instruct",
@@ -7325,7 +7331,7 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI Kimi Latest",
-    "input_per_1m": 2.5,
+    "input_per_1m": 2.8,
     "output_per_1m": 14,
     "context_window": 1048576,
     "cache_read_per_1m": 0.29

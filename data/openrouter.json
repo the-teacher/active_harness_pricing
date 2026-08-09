@@ -268,10 +268,10 @@
   },
   "deepseek": {
     "name": "DeepSeek V3.2",
-    "input_per_1m": 0.26,
-    "output_per_1m": 0.38,
+    "input_per_1m": 0.269,
+    "output_per_1m": 0.4,
     "context_window": 163840,
-    "cache_read_per_1m": 0.13
+    "cache_read_per_1m": 0.1345
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
@@ -645,10 +645,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.308,
-    "output_per_1m": 0.968,
+    "input_per_1m": 0.098,
+    "output_per_1m": 0.308,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0572
+    "cache_read_per_1m": 0.0182
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1526,10 +1526,10 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.27,
-    "output_per_1m": 1.08,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 204800,
-    "cache_read_per_1m": 0.054
+    "cache_read_per_1m": 0.06
   },
   "minimax-m2-her": {
     "name": "MiniMax M2-her",
@@ -1700,8 +1700,8 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
-    "input_per_1m": 0.085,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.3,
+    "output_per_1m": 0.9,
     "context_window": 1000000
   },
   "nemotron-3-ultra-550b-a55b": {
@@ -2024,7 +2024,7 @@
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
-    "input_per_1m": 0.14,
+    "input_per_1m": 0.15,
     "output_per_1m": 1.0,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
