@@ -321,17 +321,17 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.09,
+    "input_per_1m": 0.08,
     "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.018
+    "cache_read_per_1m": 0.016
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
-    "input_per_1m": 0.435,
-    "output_per_1m": 0.87,
+    "input_per_1m": 0.64144,
+    "output_per_1m": 1.28288,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.003625
+    "cache_read_per_1m": 0.054121
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -877,13 +877,6 @@
     "input_per_1m": 10.5,
     "output_per_1m": 84.0,
     "context_window": 400000
-  },
-  "gpt-5-3-chat": {
-    "name": "GPT-5.3 Chat",
-    "input_per_1m": 1.75,
-    "output_per_1m": 14.0,
-    "context_window": 128000,
-    "cache_read_per_1m": 0.175
   },
   "gpt-5-3-codex": {
     "name": "GPT-5.3-Codex",
@@ -1672,6 +1665,13 @@
     "output_per_1m": 1.9,
     "context_window": 262144
   },
+  "muse-glimmer-30b": {
+    "name": "Muse Glimmer 30B",
+    "input_per_1m": 0.35,
+    "output_per_1m": 1.5,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.04
+  },
   "muse-spark-1-1": {
     "name": "Muse Spark 1.1",
     "input_per_1m": 1.25,
@@ -1994,9 +1994,10 @@
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
-    "input_per_1m": 0.39,
-    "output_per_1m": 2.34,
-    "context_window": 262144
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.6,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.3
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5-9B",
@@ -2092,7 +2093,7 @@
   "qwen3-coder-30b-a3b-instruct": {
     "name": "Qwen3 Coder 30B A3B Instruct",
     "input_per_1m": 0.07,
-    "output_per_1m": 0.27,
+    "output_per_1m": 0.28,
     "context_window": 262144
   },
   "qwen3-coder-flash": {
@@ -2227,6 +2228,13 @@
     "output_per_1m": 0.5,
     "context_window": 65536
   },
+  "sakana-namazu": {
+    "name": "Sakana Namazu",
+    "input_per_1m": 0.95,
+    "output_per_1m": 4.0,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.15
+  },
   "seed-1-6": {
     "name": "Seed 1.6",
     "input_per_1m": 0.25,
@@ -2264,6 +2272,13 @@
     "output_per_1m": 0.6,
     "context_window": 131072,
     "cache_read_per_1m": 0.015
+  },
+  "solar-pro4": {
+    "name": "Solar Pro 4",
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.12,
+    "context_window": 524288,
+    "cache_read_per_1m": 0.006
   },
   "sonar": {
     "name": "Sonar",
