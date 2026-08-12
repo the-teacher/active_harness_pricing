@@ -302,9 +302,9 @@
   "deepseek-v3-1-terminus": {
     "name": "DeepSeek V3.1 Terminus",
     "input_per_1m": 0.27,
-    "output_per_1m": 1.0,
+    "output_per_1m": 0.95,
     "context_window": 163840,
-    "cache_read_per_1m": 0.135
+    "cache_read_per_1m": 0.13
   },
   "deepseek-v3-2": {
     "name": "DeepSeek V3.2 Exp",
@@ -328,10 +328,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
-    "input_per_1m": 0.64144,
-    "output_per_1m": 1.28288,
+    "input_per_1m": 0.63168,
+    "output_per_1m": 1.26336,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.054121
+    "cache_read_per_1m": 0.053298
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -604,10 +604,10 @@
   },
   "glm-4-6": {
     "name": "GLM 4.6",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.55,
+    "output_per_1m": 2.2,
     "context_window": 204800,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.11
   },
   "glm-4-6v": {
     "name": "GLM 4.6V",
@@ -646,10 +646,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.76,
-    "output_per_1m": 2.42,
+    "input_per_1m": 0.42,
+    "output_per_1m": 1.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.14
+    "cache_read_per_1m": 0.07
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1145,9 +1145,10 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.037,
+    "input_per_1m": 0.03,
     "output_per_1m": 0.17,
-    "context_window": 131072
+    "context_window": 131072,
+    "cache_read_per_1m": 0.03
   },
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
@@ -1692,6 +1693,13 @@
     "output_per_1m": 0.06,
     "context_window": 8192
   },
+  "nemotron-3-5-lightning": {
+    "name": "Nemotron 3.5 Lightning",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.25,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.05
+  },
   "nemotron-3-nano-30b-a3b": {
     "name": "Nemotron 3 Nano 30B A3B",
     "input_per_1m": 0.05,
@@ -2144,10 +2152,9 @@
   },
   "qwen3-vl-235b-a22b-instruct": {
     "name": "Qwen3 VL 235B A22B Instruct",
-    "input_per_1m": 0.21,
-    "output_per_1m": 1.9,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.1
+    "input_per_1m": 0.26,
+    "output_per_1m": 1.04,
+    "context_window": 262144
   },
   "qwen3-vl-235b-a22b-thinking": {
     "name": "Qwen3 VL 235B A22B Thinking",
@@ -2245,6 +2252,12 @@
     "name": "Seed 1.6 Flash",
     "input_per_1m": 0.075,
     "output_per_1m": 0.3,
+    "context_window": 262144
+  },
+  "seed-2-0-code": {
+    "name": "Seed-2.0-Code",
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.0,
     "context_window": 262144
   },
   "seed-2-0-lite": {

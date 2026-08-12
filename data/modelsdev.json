@@ -1133,6 +1133,13 @@
     "context_window": 200000,
     "cache_read_per_1m": 0.1
   },
+  "claude-mythos-5": {
+    "name": "Claude Mythos 5",
+    "input_per_1m": 10,
+    "output_per_1m": 50,
+    "context_window": 1000000,
+    "cache_read_per_1m": 1
+  },
   "claude-opus": {
     "name": "Claude Opus Latest",
     "input_per_1m": 5,
@@ -1955,7 +1962,7 @@
     "name": "DeepSeek: DeepSeek V3.1 Terminus",
     "input_per_1m": 0.27,
     "output_per_1m": 1,
-    "context_window": 131072,
+    "context_window": 163840,
     "cache_read_per_1m": 0.135
   },
   "deepseek-deepseek-v3-2": {
@@ -1989,7 +1996,7 @@
     "input_per_1m": 0.03,
     "output_per_1m": 0.03,
     "context_window": 8192,
-    "cache_read_per_1m": 0.09
+    "cache_read_per_1m": 0.0924
   },
   "deepseek-prover-v2-671b": {
     "name": "DeepSeek Prover v2 671B",
@@ -2218,6 +2225,13 @@
     "output_per_1m": 0.28,
     "context_window": 1048576,
     "cache_read_per_1m": 0.07
+  },
+  "deepseek-v4-flash-0731-fast": {
+    "name": "DeepSeek V4 Flash 0731 Fast",
+    "input_per_1m": 0.35,
+    "output_per_1m": 0.7,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.0875
   },
   "deepseek-v4-flash-0731-tee": {
     "name": "DeepSeek V4 Flash 0731 TEE",
@@ -5226,9 +5240,9 @@
   },
   "holo2-30b-a3b": {
     "name": "Holo2 30B A3B",
-    "input_per_1m": 0.334,
-    "output_per_1m": 0.78,
-    "context_window": 22000
+    "input_per_1m": 0.399,
+    "output_per_1m": 0.969,
+    "context_window": 22016
   },
   "holo3-35b-a3b": {
     "name": "Holo3-35B-A3B",
@@ -5699,6 +5713,13 @@
     "output_per_1m": 15,
     "context_window": 1048576,
     "cache_read_per_1m": 1.5
+  },
+  "kimi-latest": {
+    "name": "Kimi (latest)",
+    "input_per_1m": 1.791,
+    "output_per_1m": 8.944,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.1733
   },
   "kwaipilot-kat-coder-air": {
     "name": "Kwaipilot: KAT-Coder-Air V2.5",
@@ -7394,8 +7415,8 @@
   },
   "muse-glimmer-30b": {
     "name": "Muse Glimmer 30B",
-    "input_per_1m": 0.35,
-    "output_per_1m": 1.5,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
   },
@@ -7486,6 +7507,12 @@
     "output_per_1m": 0.25,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
+  },
+  "nemotron-3-5-lightning-30b-a3b": {
+    "name": "Nemotron 3.5 Lightning 30B A3B",
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.2,
+    "context_window": 262144
   },
   "nemotron-3-nano-30b": {
     "name": "Nemotron 3 Nano 30B",
@@ -9335,7 +9362,7 @@
     "name": "Qwen3-32B",
     "input_per_1m": 0.08,
     "output_per_1m": 0.28,
-    "context_window": 131072,
+    "context_window": 40960,
     "cache_read_per_1m": 0.01
   },
   "qwen3-32b-dense": {
@@ -9946,6 +9973,12 @@
     "output_per_1m": 0,
     "context_window": 40960
   },
+  "qwen3-embedding-4b": {
+    "name": "Qwen3-Embedding 4B",
+    "input_per_1m": 0.1502,
+    "output_per_1m": 0,
+    "context_window": 32000
+  },
   "qwen3-embedding-8b": {
     "name": "Qwen3-Embedding-8B",
     "input_per_1m": 0.01,
@@ -10281,8 +10314,8 @@
     "name": "Sakana Namazu",
     "input_per_1m": 0.95,
     "output_per_1m": 4,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "context_window": 256000,
+    "cache_read_per_1m": 0.1575
   },
   "sakana-sakana-namazu": {
     "name": "Sakana: Sakana Namazu",
@@ -10394,7 +10427,8 @@
     "name": "Seed 2.0 Code",
     "input_per_1m": 0.4,
     "output_per_1m": 2.4,
-    "context_window": 256000
+    "context_window": 256000,
+    "cache_read_per_1m": 0.4
   },
   "seed-2-0-lite": {
     "name": "Seed 2.0 Lite",
@@ -10473,7 +10507,14 @@
     "input_per_1m": 0.03,
     "output_per_1m": 0.12,
     "context_window": 524288,
-    "cache_read_per_1m": 0.06
+    "cache_read_per_1m": 0.006
+  },
+  "solar-pro-4-thinking": {
+    "name": "Solar Pro 4 Thinking",
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.12,
+    "context_window": 524288,
+    "cache_read_per_1m": 0.006
   },
   "solar-pro2": {
     "name": "solar-pro2",
@@ -10870,6 +10911,12 @@
     "input_per_1m": 0.75,
     "output_per_1m": 1.2,
     "context_window": 131072
+  },
+  "voxtral-mini-3b": {
+    "name": "Voxtral Mini 3B",
+    "input_per_1m": 0.00462,
+    "output_per_1m": 0,
+    "context_window": 32000
   },
   "voxtral-mini-3b-2507": {
     "name": "Voxtral Mini 3B 2507",
