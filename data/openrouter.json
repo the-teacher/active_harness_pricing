@@ -328,10 +328,17 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
-    "input_per_1m": 0.63168,
-    "output_per_1m": 1.26336,
+    "input_per_1m": 1.168,
+    "output_per_1m": 2.336,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.053298
+    "cache_read_per_1m": 0.09855
+  },
+  "deepseek-v4-pro-0813": {
+    "name": "DeepSeek V4 Pro 0813",
+    "input_per_1m": 0.435,
+    "output_per_1m": 0.87,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.003625
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -604,10 +611,10 @@
   },
   "glm-4-6": {
     "name": "GLM 4.6",
-    "input_per_1m": 0.55,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.0,
     "context_window": 204800,
-    "cache_read_per_1m": 0.11
+    "cache_read_per_1m": 0.1
   },
   "glm-4-6v": {
     "name": "GLM 4.6V",
@@ -646,10 +653,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.42,
-    "output_per_1m": 1.4,
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.15,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.07
+    "cache_read_per_1m": 0.1
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1205,6 +1212,13 @@
     "context_window": 500000,
     "cache_read_per_1m": 0.3
   },
+  "grok-4-6": {
+    "name": "Grok 4.6",
+    "input_per_1m": 2.0,
+    "output_per_1m": 6.0,
+    "context_window": 500000,
+    "cache_read_per_1m": 0.5
+  },
   "grok-build-0-1": {
     "name": "Grok Build 0.1",
     "input_per_1m": 1.0,
@@ -1325,8 +1339,8 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.7,
-    "output_per_1m": 3.5,
+    "input_per_1m": 0.67,
+    "output_per_1m": 3.4,
     "context_window": 262144,
     "cache_read_per_1m": 0.15
   },
@@ -1464,7 +1478,7 @@
     "name": "Magnum v4 72B",
     "input_per_1m": 3.0,
     "output_per_1m": 5.0,
-    "context_window": 16384
+    "context_window": 32768
   },
   "mercury-2": {
     "name": "Mercury 2",
@@ -1697,7 +1711,7 @@
     "name": "Nemotron 3.5 Lightning",
     "input_per_1m": 0.1,
     "output_per_1m": 0.25,
-    "context_window": 262144,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.05
   },
   "nemotron-3-nano-30b-a3b": {
@@ -1996,9 +2010,10 @@
   },
   "qwen3-5-35b-a3b": {
     "name": "Qwen3.5-35B-A3B",
-    "input_per_1m": 0.14,
-    "output_per_1m": 1.0,
-    "context_window": 262144
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.25,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.25
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
@@ -2077,6 +2092,13 @@
     "output_per_1m": 1.28,
     "context_window": 1000000,
     "cache_read_per_1m": 0.064
+  },
+  "qwen3-8-2-4t-a95b": {
+    "name": "Qwen3.8 2.4T A95B",
+    "input_per_1m": 2.0,
+    "output_per_1m": 6.0,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.2
   },
   "qwen3-8-max": {
     "name": "Qwen3.8 Max",
@@ -2270,6 +2292,12 @@
     "name": "Seed-2.0-Mini",
     "input_per_1m": 0.1,
     "output_per_1m": 0.4,
+    "context_window": 262144
+  },
+  "seed-2-1-turbo": {
+    "name": "Seed 2.1 Turbo",
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.5,
     "context_window": 262144
   },
   "skyfall-36b": {
