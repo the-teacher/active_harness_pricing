@@ -284,7 +284,7 @@
     "name": "R1",
     "input_per_1m": 0.7,
     "output_per_1m": 2.5,
-    "context_window": 163840
+    "context_window": 64000
   },
   "deepseek-r1-0528": {
     "name": "R1 0528",
@@ -321,10 +321,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.016
+    "cache_read_per_1m": 0.028
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
@@ -504,17 +504,31 @@
   },
   "gemini-3-6-flash": {
     "name": "Gemini 3.6 Flash",
-    "input_per_1m": 1.5,
-    "output_per_1m": 7.5,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.15
-  },
-  "gemini-3-6-flash-batch": {
-    "name": "Gemini 3.6 Flash (batch)",
     "input_per_1m": 0.75,
     "output_per_1m": 3.75,
     "context_window": 1048576,
     "cache_read_per_1m": 0.075
+  },
+  "gemini-3-6-flash-batch": {
+    "name": "Gemini 3.6 Flash (batch)",
+    "input_per_1m": 0.375,
+    "output_per_1m": 1.875,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0375
+  },
+  "gemini-3-7-flash": {
+    "name": "Gemini 3.7 Flash",
+    "input_per_1m": 0.375,
+    "output_per_1m": 1.875,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0375
+  },
+  "gemini-3-7-flash-batch": {
+    "name": "Gemini 3.7 Flash (batch)",
+    "input_per_1m": 0.1875,
+    "output_per_1m": 0.9375,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.01875
   },
   "gemini-3-flash-preview": {
     "name": "Gemini 3 Flash Preview",
@@ -653,10 +667,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3.15,
+    "input_per_1m": 0.63,
+    "output_per_1m": 1.98,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.0945
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1711,7 +1725,7 @@
     "name": "Nemotron 3.5 Lightning",
     "input_per_1m": 0.1,
     "output_per_1m": 0.25,
-    "context_window": 1048576,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.05
   },
   "nemotron-3-nano-30b-a3b": {
@@ -2097,8 +2111,8 @@
     "name": "Qwen3.8 2.4T A95B",
     "input_per_1m": 2.0,
     "output_per_1m": 6.0,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.2
+    "context_window": 1010000,
+    "cache_read_per_1m": 0.25
   },
   "qwen3-8-max": {
     "name": "Qwen3.8 Max",
@@ -2162,9 +2176,10 @@
   },
   "qwen3-next-80b-a3b-instruct": {
     "name": "Qwen3 Next 80B A3B Instruct",
-    "input_per_1m": 0.09,
+    "input_per_1m": 0.1,
     "output_per_1m": 1.1,
-    "context_window": 262144
+    "context_window": 262144,
+    "cache_read_per_1m": 0.07
   },
   "qwen3-next-80b-a3b-thinking": {
     "name": "Qwen3 Next 80B A3B Thinking",
@@ -2186,8 +2201,8 @@
   },
   "qwen3-vl-30b-a3b-instruct": {
     "name": "Qwen3 VL 30B A3B Instruct",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.13,
+    "output_per_1m": 0.52,
     "context_window": 262144
   },
   "qwen3-vl-30b-a3b-thinking": {
