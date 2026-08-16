@@ -314,10 +314,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.07546,
-    "output_per_1m": 0.15092,
+    "input_per_1m": 0.06146,
+    "output_per_1m": 0.12292,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.015092
+    "cache_read_per_1m": 0.012292
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -667,10 +667,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.49,
-    "output_per_1m": 1.54,
+    "input_per_1m": 0.308,
+    "output_per_1m": 0.968,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.091
+    "cache_read_per_1m": 0.0572
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1279,10 +1279,10 @@
   },
   "hy3-preview": {
     "name": "Hy3 preview",
-    "input_per_1m": 0.063,
-    "output_per_1m": 0.21,
+    "input_per_1m": 0.18,
+    "output_per_1m": 0.6,
     "context_window": 262144,
-    "cache_read_per_1m": 0.021
+    "cache_read_per_1m": 0.06
   },
   "inkling": {
     "name": "Inkling",
@@ -1523,7 +1523,7 @@
   },
   "minimax-m1": {
     "name": "MiniMax M1",
-    "input_per_1m": 0.55,
+    "input_per_1m": 0.4,
     "output_per_1m": 2.2,
     "context_window": 1000000
   },
@@ -1988,8 +1988,8 @@
   },
   "qwen3-30b-a3b": {
     "name": "Qwen3 30B A3B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.13,
+    "output_per_1m": 0.52,
     "context_window": 131072
   },
   "qwen3-30b-a3b-instruct-2507": {
@@ -2055,10 +2055,10 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.6,
-    "output_per_1m": 3.6,
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.0,
     "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "cache_read_per_1m": 0.03
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
