@@ -314,31 +314,31 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.06146,
-    "output_per_1m": 0.12292,
+    "input_per_1m": 0.0826,
+    "output_per_1m": 0.1652,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.012292
+    "cache_read_per_1m": 0.01652
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
     "input_per_1m": 0.14,
     "output_per_1m": 0.28,
-    "context_window": 1048576,
+    "context_window": 1310720,
     "cache_read_per_1m": 0.028
   },
   "deepseek-v4-pro": {
-    "name": "DeepSeek V4 Pro",
-    "input_per_1m": 1.168,
-    "output_per_1m": 2.336,
+    "name": "DeepSeek V4 Pro 0423",
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.09855
+    "cache_read_per_1m": 0.044
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.435,
-    "output_per_1m": 0.87,
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.003625
+    "cache_read_per_1m": 0.044
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -590,10 +590,9 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.4,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "input_per_1m": 0.07,
+    "output_per_1m": 0.34,
+    "context_window": 262144
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
@@ -667,10 +666,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.308,
-    "output_per_1m": 0.968,
+    "input_per_1m": 1.19,
+    "output_per_1m": 3.74,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0572
+    "cache_read_per_1m": 0.221
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1346,10 +1345,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.65,
-    "output_per_1m": 3.41,
+    "input_per_1m": 0.95,
+    "output_per_1m": 4.0,
     "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.16
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -1523,7 +1522,7 @@
   },
   "minimax-m1": {
     "name": "MiniMax M1",
-    "input_per_1m": 0.4,
+    "input_per_1m": 0.55,
     "output_per_1m": 2.2,
     "context_window": 1000000
   },
@@ -1723,17 +1722,17 @@
   },
   "nemotron-3-5-lightning": {
     "name": "Nemotron 3.5 Lightning",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.25,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.2,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.04
   },
   "nemotron-3-nano-30b-a3b": {
     "name": "Nemotron 3 Nano 30B A3B",
     "input_per_1m": 0.05,
     "output_per_1m": 0.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.025
+    "cache_read_per_1m": 0.03
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
@@ -1958,9 +1957,10 @@
   },
   "qwen2-5-vl-72b-instruct": {
     "name": "Qwen2.5 VL 72B Instruct",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.75,
-    "context_window": 128000
+    "input_per_1m": 0.8,
+    "output_per_1m": 1.0,
+    "context_window": 128000,
+    "cache_read_per_1m": 0.4
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
@@ -2062,7 +2062,7 @@
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
-    "input_per_1m": 0.15,
+    "input_per_1m": 0.14,
     "output_per_1m": 1.0,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
@@ -2117,7 +2117,8 @@
     "name": "Qwen3.8 27B",
     "input_per_1m": 0.45,
     "output_per_1m": 3.2,
-    "context_window": 262144
+    "context_window": 262144,
+    "cache_read_per_1m": 0.05
   },
   "qwen3-8-max": {
     "name": "Qwen3.8 Max",
@@ -2194,9 +2195,10 @@
   },
   "qwen3-vl-235b-a22b-instruct": {
     "name": "Qwen3 VL 235B A22B Instruct",
-    "input_per_1m": 0.26,
-    "output_per_1m": 1.04,
-    "context_window": 262144
+    "input_per_1m": 0.21,
+    "output_per_1m": 1.9,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.1
   },
   "qwen3-vl-235b-a22b-thinking": {
     "name": "Qwen3 VL 235B A22B Thinking",

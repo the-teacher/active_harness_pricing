@@ -474,6 +474,18 @@
     "output_per_1m": 2.42,
     "context_window": 30000
   },
+  "apertus-70b-instruct": {
+    "name": "Apertus 70B Instruct",
+    "input_per_1m": 0.82,
+    "output_per_1m": 2.92,
+    "context_window": 65536
+  },
+  "apertus-8b-instruct": {
+    "name": "Apertus 8B Instruct",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 65536
+  },
   "apertus-v1-5-70b": {
     "name": "Apertus v1.5 70B",
     "input_per_1m": 0.87,
@@ -2043,13 +2055,6 @@
     "output_per_1m": 1.2,
     "context_window": 130000
   },
-  "deepseek-v3-1-tee": {
-    "name": "DeepSeek V3.1 TEE",
-    "input_per_1m": 1,
-    "output_per_1m": 2.5,
-    "context_window": 164000,
-    "cache_read_per_1m": 0.5
-  },
   "deepseek-v3-1-terminus": {
     "name": "DeepSeek V3.1 Terminus",
     "input_per_1m": 0.25,
@@ -2126,9 +2131,9 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.0625,
-    "output_per_1m": 0.125,
-    "context_window": 1000000,
+    "input_per_1m": 0.0603,
+    "output_per_1m": 0.1206,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.028
   },
   "deepseek-v4-flash-0423": {
@@ -2142,20 +2147,6 @@
     "name": "DeepSeek V4 Flash 0731",
     "input_per_1m": 0.08,
     "output_per_1m": 0.18,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.014
-  },
-  "deepseek-v4-flash-0731-cheaper": {
-    "name": "DeepSeek V4 Flash 0731 Cheaper",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.28,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.014
-  },
-  "deepseek-v4-flash-0731-cheaper-thinking": {
-    "name": "DeepSeek V4 Flash 0731 Cheaper (Thinking)",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.28,
     "context_window": 1048576,
     "cache_read_per_1m": 0.014
   },
@@ -2186,13 +2177,6 @@
     "output_per_1m": 0.28,
     "context_window": 1000000,
     "cache_read_per_1m": 0.014
-  },
-  "deepseek-v4-flash-2x-usage": {
-    "name": "DeepSeek V4 Flash (2x usage)",
-    "input_per_1m": 0.07,
-    "output_per_1m": 0.14,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.0014
   },
   "deepseek-v4-flash-alibaba-cloud": {
     "name": "DeepSeek V4 Flash (Alibaba Cloud)",
@@ -2246,8 +2230,15 @@
     "name": "DeepSeek V4 Pro 0813",
     "input_per_1m": 0.435,
     "output_per_1m": 0.87,
-    "context_window": 1048576,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.044
+  },
+  "deepseek-v4-pro-0813-tee": {
+    "name": "DeepSeek V4 Pro 0813 TEE",
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.132
   },
   "deepseek-v4-pro-0813-thinking": {
     "name": "DeepSeek V4 Pro 0813 Thinking",
@@ -2256,26 +2247,19 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.04
   },
+  "deepseek-v4-pro-0813-thinking-tee": {
+    "name": "DeepSeek V4 Pro 0813 Thinking TEE",
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.132
+  },
   "deepseek-v4-pro-alibaba-cloud": {
     "name": "DeepSeek V4 Pro (Alibaba Cloud)",
     "input_per_1m": 1.69,
     "output_per_1m": 3.38,
     "context_window": 1000000,
     "cache_read_per_1m": 0.13
-  },
-  "deepseek-v4-pro-cheaper": {
-    "name": "DeepSeek V4 Pro Cheaper",
-    "input_per_1m": 0.435,
-    "output_per_1m": 0.87,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.003625
-  },
-  "deepseek-v4-pro-cheaper-thinking": {
-    "name": "DeepSeek V4 Pro Cheaper (Thinking)",
-    "input_per_1m": 0.435,
-    "output_per_1m": 0.87,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.003625
   },
   "deepseek-v4-pro-deepseek": {
     "name": "DeepSeek V4 Pro (DeepSeek)",
@@ -2299,10 +2283,10 @@
   },
   "deepseek-v4-pro-new": {
     "name": "DeepSeek V4 Pro (New)",
-    "input_per_1m": 0.435,
-    "output_per_1m": 0.87,
+    "input_per_1m": 0.66,
+    "output_per_1m": 1.98,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.003625
+    "cache_read_per_1m": 0.022
   },
   "deepseek-v4-pro-thinking": {
     "name": "DeepSeek V4 Pro (Thinking)",
@@ -2375,6 +2359,13 @@
     "input_per_1m": 0.5,
     "output_per_1m": 3,
     "context_window": 131072
+  },
+  "dots3-note-preview": {
+    "name": "Dots3-Note Preview",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 393216,
+    "cache_read_per_1m": 0.05
   },
   "doubao-1-5-pro-256k": {
     "name": "Doubao 1.5 Pro 256k",
@@ -3233,7 +3224,8 @@
     "name": "Gemma 4",
     "input_per_1m": 0.18,
     "output_per_1m": 0.5,
-    "context_window": 256000
+    "context_window": 256000,
+    "cache_read_per_1m": 0.5
   },
   "gemma-4-12b-instruct": {
     "name": "Gemma 4 12B Instruct",
@@ -3808,8 +3800,8 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.308,
-    "output_per_1m": 0.968,
+    "input_per_1m": 0.42,
+    "output_per_1m": 1.32,
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
@@ -4609,6 +4601,13 @@
     "context_window": 1050000,
     "cache_read_per_1m": 0.022
   },
+  "gpt-5-6-luna-global": {
+    "name": "GPT-5.6 Luna (Global)",
+    "input_per_1m": 0.22,
+    "output_per_1m": 1.32,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.022
+  },
   "gpt-5-6-luna-pro": {
     "name": "GPT 5.6 Luna Pro",
     "input_per_1m": 0.1,
@@ -4630,6 +4629,13 @@
     "context_window": 1050000,
     "cache_read_per_1m": 0.55
   },
+  "gpt-5-6-sol-global": {
+    "name": "GPT-5.6 Sol (Global)",
+    "input_per_1m": 5.5,
+    "output_per_1m": 33,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.55
+  },
   "gpt-5-6-sol-pro": {
     "name": "GPT 5.6 Sol Pro",
     "input_per_1m": 5,
@@ -4646,6 +4652,13 @@
   },
   "gpt-5-6-terra-eu": {
     "name": "GPT-5.6 Terra (EU)",
+    "input_per_1m": 2.2,
+    "output_per_1m": 13.2,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.22
+  },
+  "gpt-5-6-terra-global": {
+    "name": "GPT-5.6 Terra (Global)",
     "input_per_1m": 2.2,
     "output_per_1m": 13.2,
     "context_window": 1050000,
@@ -6274,6 +6287,12 @@
     "context_window": 16384,
     "cache_read_per_1m": 0.2465
   },
+  "magibu-11b": {
+    "name": "Magibu 11B v8",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 8192
+  },
   "magistral-medium-latest": {
     "name": "Magistral Medium (latest)",
     "input_per_1m": 2,
@@ -7348,8 +7367,8 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI Kimi Latest",
-    "input_per_1m": 2.8,
-    "output_per_1m": 14,
+    "input_per_1m": 2.6,
+    "output_per_1m": 13,
     "context_window": 1048576,
     "cache_read_per_1m": 0.29
   },
@@ -7421,6 +7440,13 @@
     "output_per_1m": 1.5,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
+  },
+  "muse-glimmer-30b-tr": {
+    "name": "Muse Glimmer 30B (TR)",
+    "input_per_1m": 2,
+    "output_per_1m": 5,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.5
   },
   "muse-spark-1-1": {
     "name": "Muse Spark 1.1",
@@ -7511,9 +7537,9 @@
   "nemotron-3-5-lightning-30b-a3b": {
     "name": "Nemotron 3.5 Lightning 30B A3B",
     "input_per_1m": 0.05,
-    "output_per_1m": 0.2,
+    "output_per_1m": 0.15,
     "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.04
   },
   "nemotron-3-nano-30b": {
     "name": "Nemotron 3 Nano 30B",
@@ -9016,9 +9042,10 @@
   },
   "qwen-qwen2-5-vl-72b-instruct": {
     "name": "Qwen: Qwen2.5 VL 72B Instruct",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.75,
-    "context_window": 32000
+    "input_per_1m": 0.8,
+    "output_per_1m": 1,
+    "context_window": 128000,
+    "cache_read_per_1m": 0.4
   },
   "qwen-qwen3-14b": {
     "name": "Qwen: Qwen3 14B",
@@ -9061,13 +9088,6 @@
     "input_per_1m": 0.26,
     "output_per_1m": 1.56,
     "context_window": 1000000
-  },
-  "qwen-qwen3-8-2-4t-a95b": {
-    "name": "Qwen: Qwen3.8 2.4T A95B",
-    "input_per_1m": 2,
-    "output_per_1m": 6,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.25
   },
   "qwen-qwen3-8b": {
     "name": "Qwen: Qwen3 8B",
@@ -9406,6 +9426,13 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.2
   },
+  "qwen3-5-0-8b": {
+    "name": "Qwen3.5 0.8B",
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.12,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.03
+  },
   "qwen3-5-122b": {
     "name": "Qwen3.5-122B",
     "input_per_1m": 0.9,
@@ -9472,6 +9499,13 @@
     "context_window": 260096,
     "cache_read_per_1m": 0.135
   },
+  "qwen3-5-2b": {
+    "name": "Qwen3.5 2B",
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.16,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.04
+  },
   "qwen3-5-35b-a3b": {
     "name": "Qwen3.5 35B A3B",
     "input_per_1m": 0.057,
@@ -9531,7 +9565,7 @@
     "input_per_1m": 0.04,
     "output_per_1m": 0.07,
     "context_window": 262144,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.05
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5 9B",
@@ -9685,17 +9719,39 @@
     "cache_read_per_1m": 0.08
   },
   "qwen3-8-2-4t-a95b": {
-    "name": "qwen3.8-2.4t-a95b",
+    "name": "Qwen3.8 2.4T A95B",
     "input_per_1m": 2,
     "output_per_1m": 6,
-    "context_window": 1048576,
+    "context_window": 262144,
     "cache_read_per_1m": 0.625
+  },
+  "qwen3-8-2-4t-a95b-nvfp4": {
+    "name": "Qwen3.8 2.4T A95B (NVFP4)",
+    "input_per_1m": 2,
+    "output_per_1m": 6,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.2
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.17,
-    "output_per_1m": 0.5,
-    "context_window": 262144
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.4,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.2
+  },
+  "qwen3-8-27b-tee": {
+    "name": "Qwen3.8 27B TEE",
+    "input_per_1m": 0.4,
+    "output_per_1m": 3,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.04
+  },
+  "qwen3-8-27b-thinking": {
+    "name": "Qwen3.8 27B Thinking",
+    "input_per_1m": 0.4,
+    "output_per_1m": 3,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.2
   },
   "qwen3-8-max": {
     "name": "Qwen3.8 Max",
@@ -10341,6 +10397,12 @@
     "output_per_1m": 0.15,
     "context_window": 32768
   },
+  "solar-pro-2": {
+    "name": "Solar Pro 2",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.6,
+    "context_window": 65536
+  },
   "solar-pro-3": {
     "name": "Solar Pro 3",
     "input_per_1m": 0.15,
@@ -10640,6 +10702,13 @@
     "input_per_1m": 0.058,
     "output_per_1m": 0.144,
     "context_window": 8192
+  },
+  "trendyol-asure-12b": {
+    "name": "Trendyol Asure 12B",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 40960,
+    "cache_read_per_1m": 0.025
   },
   "trinity-large-thinking": {
     "name": "Trinity Large Thinking",
