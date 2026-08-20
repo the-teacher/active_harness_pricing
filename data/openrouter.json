@@ -313,10 +313,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.0826,
-    "output_per_1m": 0.1652,
+    "input_per_1m": 0.088606,
+    "output_per_1m": 0.177212,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01652
+    "cache_read_per_1m": 0.017721
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -327,17 +327,17 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 1.32,
-    "output_per_1m": 3.96,
+    "input_per_1m": 1.44,
+    "output_per_1m": 2.88,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.044
+    "cache_read_per_1m": 0.1215
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 1.32,
-    "output_per_1m": 3.96,
+    "input_per_1m": 1.188,
+    "output_per_1m": 3.564,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.044
+    "cache_read_per_1m": 0.0396
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -1310,12 +1310,6 @@
     "context_window": 524288,
     "cache_read_per_1m": 0.1
   },
-  "jamba-large-1-7": {
-    "name": "Jamba Large 1.7",
-    "input_per_1m": 2.0,
-    "output_per_1m": 8.0,
-    "context_window": 256000
-  },
   "kat-coder-air": {
     "name": "KAT-Coder-Air V2.5",
     "input_per_1m": 0.15,
@@ -1547,10 +1541,10 @@
   },
   "minimax-m2-5": {
     "name": "MiniMax M2.5",
-    "input_per_1m": 0.22,
+    "input_per_1m": 0.225,
     "output_per_1m": 0.9,
     "context_window": 204800,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.06
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
@@ -2030,10 +2024,10 @@
   },
   "qwen3-5-35b-a3b": {
     "name": "Qwen3.5-35B-A3B",
-    "input_per_1m": 0.225,
-    "output_per_1m": 1.8,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.25,
     "context_window": 262144,
-    "cache_read_per_1m": 0.225
+    "cache_read_per_1m": 0.25
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
@@ -2061,10 +2055,10 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.3,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.6,
     "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.12
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
@@ -2123,7 +2117,7 @@
     "name": "Qwen3.8 27B",
     "input_per_1m": 0.45,
     "output_per_1m": 3.2,
-    "context_window": 262144,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.05
   },
   "qwen3-8-max": {
@@ -2423,12 +2417,6 @@
     "output_per_1m": 0.3,
     "context_window": 32000,
     "cache_read_per_1m": 0.01
-  },
-  "weaver": {
-    "name": "Weaver (alpha)",
-    "input_per_1m": 0.5,
-    "output_per_1m": 0.75,
-    "context_window": 8000
   },
   "wizardlm-2-8x22b": {
     "name": "WizardLM-2 8x22B",
