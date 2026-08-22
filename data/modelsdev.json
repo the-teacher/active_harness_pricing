@@ -1934,7 +1934,7 @@
     "name": "Cogito v2.1 671B",
     "input_per_1m": 1.25,
     "output_per_1m": 1.25,
-    "context_window": 128000
+    "context_window": 163840
   },
   "cohere-command-a": {
     "name": "Cohere: Command A",
@@ -2053,12 +2053,6 @@
     "context_window": 131072,
     "cache_read_per_1m": 0.15
   },
-  "deep-cogito-cogito-v2-1-671b": {
-    "name": "Deep Cogito: Cogito v2.1 671B",
-    "input_per_1m": 1.25,
-    "output_per_1m": 1.25,
-    "context_window": 128000
-  },
   "deep-research-max-preview-apr-21-2026": {
     "name": "Deep Research Max Preview (Apr-21-2026)",
     "input_per_1m": 2,
@@ -2111,7 +2105,7 @@
     "name": "DeepSeek: DeepSeek V3.1",
     "input_per_1m": 0.27,
     "output_per_1m": 1,
-    "context_window": 163840,
+    "context_window": 161000,
     "cache_read_per_1m": 0.135
   },
   "deepseek-deepseek-v3-1-terminus": {
@@ -2361,9 +2355,9 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.18,
-    "context_window": 1048576,
+    "input_per_1m": 0.076,
+    "output_per_1m": 0.153,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.014
   },
   "deepseek-v4-flash-0731-eu": {
@@ -2470,6 +2464,13 @@
     "context_window": 1050000,
     "cache_read_per_1m": 0.028
   },
+  "deepseek-v4-flash-ranoai": {
+    "name": "DeepSeek V4 Flash (RanoAI)",
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.028
+  },
   "deepseek-v4-flash-runware": {
     "name": "DeepSeek V4 Flash (Runware)",
     "input_per_1m": 0.076,
@@ -2498,12 +2499,25 @@
     "context_window": 163840,
     "cache_read_per_1m": 0.03
   },
+  "deepseek-v4-flash-vision": {
+    "name": "DeepSeek V4 Flash Vision Exp",
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.007
+  },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
     "input_per_1m": 0.348,
     "output_per_1m": 0.696,
     "context_window": 1000000,
     "cache_read_per_1m": 0.145
+  },
+  "deepseek-v4-pro-0423": {
+    "name": "DeepSeek V4 Pro 0423",
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
+    "context_window": 1000000
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -3793,7 +3807,7 @@
     "input_per_1m": 0.05,
     "output_per_1m": 0.29,
     "context_window": 262144,
-    "cache_read_per_1m": 0.065
+    "cache_read_per_1m": 0.04
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B IT",
@@ -3829,8 +3843,8 @@
   },
   "gemma-4-31b": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.35,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.33,
     "context_window": 262144,
     "cache_read_per_1m": 0.036
   },
@@ -5911,10 +5925,10 @@
   },
   "gpt-5-6-sol-50-off": {
     "name": "GPT-5.6 Sol (50% Off)",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15,
+    "input_per_1m": 2,
+    "output_per_1m": 10,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.2
   },
   "gpt-5-6-sol-aws-mantle": {
     "name": "GPT-5.6 Sol (AWS Mantle)",
@@ -5939,10 +5953,10 @@
   },
   "gpt-5-6-sol-fast": {
     "name": "GPT 5.6 Sol (Fast)",
-    "input_per_1m": 5,
-    "output_per_1m": 30,
+    "input_per_1m": 4,
+    "output_per_1m": 20,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.5
+    "cache_read_per_1m": 0.4
   },
   "gpt-5-6-sol-global": {
     "name": "GPT-5.6 Sol (Global)",
@@ -5960,8 +5974,8 @@
   },
   "gpt-5-6-sol-pro": {
     "name": "GPT 5.6 Sol Pro",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15,
+    "input_per_1m": 2,
+    "output_per_1m": 10,
     "context_window": 1050000,
     "cache_read_per_1m": 0.25
   },
@@ -6689,6 +6703,13 @@
   },
   "grok-4-6-aws-bedrock": {
     "name": "Grok 4.6 (AWS Bedrock)",
+    "input_per_1m": 2,
+    "output_per_1m": 6,
+    "context_window": 500000,
+    "cache_read_per_1m": 0.5
+  },
+  "grok-4-6-vertex-ai-openai-compatible": {
+    "name": "Grok 4.6 (Vertex AI (OpenAI-compatible))",
     "input_per_1m": 2,
     "output_per_1m": 6,
     "context_window": 500000,
@@ -8427,6 +8448,13 @@
     "output_per_1m": 0.01,
     "context_window": 512
   },
+  "meta-muse-spark-1-2-contributor": {
+    "name": "Meta: Muse Spark 1.2 Contributor",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.002
+  },
   "microsoft-phi-4": {
     "name": "Microsoft: Phi 4",
     "input_per_1m": 0.07,
@@ -9220,9 +9248,9 @@
   },
   "mistral-mistral-small-3-2-24b": {
     "name": "Mistral: Mistral Small 3.2 24B",
-    "input_per_1m": 0.09375,
-    "output_per_1m": 0.25,
-    "context_window": 256000
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.2,
+    "context_window": 128000
   },
   "mistral-mixtral-8x22b-instruct": {
     "name": "Mistral: Mixtral 8x22B Instruct",
@@ -9315,9 +9343,9 @@
   },
   "mistral-small-3-2-24b": {
     "name": "Mistral Small 3.2 24B",
-    "input_per_1m": 0.09375,
-    "output_per_1m": 0.25,
-    "context_window": 256000
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.2,
+    "context_window": 131072
   },
   "mistral-small-3-2-24b-instruct": {
     "name": "Mistral Small 3.2 24b Instruct",
@@ -10251,10 +10279,10 @@
   },
   "openai-gpt": {
     "name": "OpenAI GPT Latest",
-    "input_per_1m": 2.5,
-    "output_per_1m": 15,
+    "input_per_1m": 2,
+    "output_per_1m": 10,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.2
   },
   "openai-gpt-120b": {
     "name": "OpenAI GPT 120B",
@@ -10676,6 +10704,13 @@
     "output_per_1m": 0.5,
     "context_window": 4000
   },
+  "ox-alpha": {
+    "name": "Ox Alpha",
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.05,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.025
+  },
   "paddleocr-vl": {
     "name": "PaddleOCR-VL",
     "input_per_1m": 0.02,
@@ -11044,6 +11079,13 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.056
   },
+  "qwen-3-6-35b-a3b-uncensored": {
+    "name": "Qwen 3.6 35B A3B Uncensored",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.5,
+    "context_window": 65536,
+    "cache_read_per_1m": 0.075
+  },
   "qwen-3-6-max-preview": {
     "name": "Qwen 3.6 Max Preview",
     "input_per_1m": 1.3,
@@ -11098,6 +11140,13 @@
     "input_per_1m": 0.45,
     "output_per_1m": 3.2,
     "context_window": 262144
+  },
+  "qwen-3-8-27b-uncensored": {
+    "name": "Qwen 3.8 27B Uncensored",
+    "input_per_1m": 0.18,
+    "output_per_1m": 0.5,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.075
   },
   "qwen-3-8-max": {
     "name": "Qwen 3.8 Max",
@@ -11356,7 +11405,7 @@
     "name": "Qwen: Qwen3 14B",
     "input_per_1m": 0.2275,
     "output_per_1m": 0.91,
-    "context_window": 131072
+    "context_window": 40960
   },
   "qwen-qwen3-235b-a22b-instruct-2507": {
     "name": "Qwen: Qwen3 235B A22B Instruct 2507",
