@@ -178,11 +178,10 @@
     "context_window": 128000
   },
   "amazon-nova-micro-1-0": {
-    "name": "Amazon Nova Micro 1.0",
+    "name": "Amazon: Nova Micro 1.0",
     "input_per_1m": 0.035,
     "output_per_1m": 0.14,
-    "context_window": 128000,
-    "cache_read_per_1m": 0.01785
+    "context_window": 128000
   },
   "amazon-nova-premier-1-0": {
     "name": "Amazon: Nova Premier 1.0",
@@ -2341,9 +2340,9 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.05306,
-    "output_per_1m": 0.1061,
-    "context_window": 1048576,
+    "input_per_1m": 0.04,
+    "output_per_1m": 0.08,
+    "context_window": 1310720,
     "cache_read_per_1m": 0.028
   },
   "deepseek-v4-flash-0423": {
@@ -2355,8 +2354,8 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.076,
-    "output_per_1m": 0.153,
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.07,
     "context_window": 1000000,
     "cache_read_per_1m": 0.014
   },
@@ -2647,7 +2646,7 @@
     "name": "Devstral 2",
     "input_per_1m": 0.4,
     "output_per_1m": 2,
-    "context_window": 256000,
+    "context_window": 262144,
     "cache_read_per_1m": 0.045
   },
   "devstral-2-123b": {
@@ -3548,7 +3547,7 @@
     "input_per_1m": 0.66,
     "output_per_1m": 3.3,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.066
+    "cache_read_per_1m": 0.075
   },
   "gemini-3-7-flash-google-ai-studio": {
     "name": "Gemini 3.7 Flash (Google AI Studio)",
@@ -3938,6 +3937,13 @@
     "input_per_1m": 0.39,
     "output_per_1m": 0.97,
     "context_window": 262144
+  },
+  "gemma-4-31b-meromero": {
+    "name": "Gemma 4 31B MeroMero v2",
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.33,
+    "context_window": 65536,
+    "cache_read_per_1m": 0.04
   },
   "gemma-4-31b-queen": {
     "name": "Gemma 4 31B Queen",
@@ -10713,6 +10719,13 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.01
   },
+  "ornith-1-5-9b": {
+    "name": "Ornith 1.5 9B",
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.1,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.025
+  },
   "osmosis-structure-0-6b": {
     "name": "Osmosis Structure 0.6B",
     "input_per_1m": 0.1,
@@ -12237,10 +12250,10 @@
   },
   "qwen3-8-27b-tee": {
     "name": "Qwen3.8 27B TEE",
-    "input_per_1m": 0.4,
-    "output_per_1m": 3,
+    "input_per_1m": 0.35,
+    "output_per_1m": 2.75,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.035
   },
   "qwen3-8-27b-thinking": {
     "name": "Qwen3.8 27B Thinking",
@@ -13387,7 +13400,7 @@
     "name": "TheDrummer: UnslopNemo 12B",
     "input_per_1m": 0.4,
     "output_per_1m": 0.4,
-    "context_window": 1024000
+    "context_window": 32768
   },
   "thinkingcap-qwen3-6-27b": {
     "name": "thinkingcap-qwen3.6-27b",
