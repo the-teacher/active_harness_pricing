@@ -308,10 +308,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.0574,
-    "output_per_1m": 0.1148,
+    "input_per_1m": 0.088606,
+    "output_per_1m": 0.177212,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01148
+    "cache_read_per_1m": 0.017721
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -322,17 +322,17 @@
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.66,
+    "input_per_1m": 0.44,
+    "output_per_1m": 1.32,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.007
+    "cache_read_per_1m": 0.014
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.526176,
-    "output_per_1m": 1.052352,
+    "input_per_1m": 0.790308,
+    "output_per_1m": 1.580616,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.043848
+    "cache_read_per_1m": 0.065859
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -340,6 +340,13 @@
     "output_per_1m": 3.366,
     "context_window": 1048576,
     "cache_read_per_1m": 0.0374
+  },
+  "devstral-2512": {
+    "name": "Devstral 2 2512",
+    "input_per_1m": 0.44,
+    "output_per_1m": 2.2,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.044
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -660,17 +667,17 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 0.966,
-    "output_per_1m": 3.036,
+    "input_per_1m": 1.26,
+    "output_per_1m": 3.96,
     "context_window": 204800,
-    "cache_read_per_1m": 0.1794
+    "cache_read_per_1m": 0.234
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.966,
-    "output_per_1m": 3.036,
+    "input_per_1m": 1.19,
+    "output_per_1m": 3.74,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1932
+    "cache_read_per_1m": 0.221
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1310,10 +1317,10 @@
   },
   "inkling": {
     "name": "Inkling",
-    "input_per_1m": 1.0,
+    "input_per_1m": 0.95,
     "output_per_1m": 4.05,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.17
+    "cache_read_per_1m": 0.16
   },
   "inkling-batch": {
     "name": "Inkling (batch)",
@@ -1357,10 +1364,10 @@
   },
   "kimi-k2-5": {
     "name": "Kimi K2.5",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.25,
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.0,
     "context_window": 262144,
-    "cache_read_per_1m": 0.07
+    "cache_read_per_1m": 0.1
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
@@ -1374,7 +1381,7 @@
     "input_per_1m": 0.67,
     "output_per_1m": 3.4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.17
+    "cache_read_per_1m": 0.19
   },
   "kimi-k2-7-code-batch": {
     "name": "Kimi K2.7 Code (batch)",
@@ -1428,20 +1435,6 @@
     "output_per_1m": 0.12,
     "context_window": 262144,
     "cache_read_per_1m": 0.03
-  },
-  "ling-2-6-1t": {
-    "name": "Ling-2.6-1T",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.625,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.015
-  },
-  "ling-2-6-flash": {
-    "name": "Ling-2.6-flash",
-    "input_per_1m": 0.01,
-    "output_per_1m": 0.03,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.002
   },
   "ling-3-0-flash": {
     "name": "Ling-3.0-flash",
@@ -1567,10 +1560,10 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.24,
-    "output_per_1m": 0.96,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 204800,
-    "cache_read_per_1m": 0.048
+    "cache_read_per_1m": 0.06
   },
   "minimax-m2-her": {
     "name": "MiniMax M2-her",
@@ -2016,7 +2009,7 @@
     "name": "Qwen3 235B A22B Thinking 2507",
     "input_per_1m": 0.23,
     "output_per_1m": 2.3,
-    "context_window": 262144
+    "context_window": 131072
   },
   "qwen3-30b-a3b": {
     "name": "Qwen3 30B A3B",
@@ -2297,13 +2290,6 @@
     "input_per_1m": 0.45,
     "output_per_1m": 0.65,
     "context_window": 6144
-  },
-  "ring-2-6-1t": {
-    "name": "Ring-2.6-1T",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.625,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.015
   },
   "rocinante-12b": {
     "name": "Rocinante 12B",
