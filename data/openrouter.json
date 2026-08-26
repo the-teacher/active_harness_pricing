@@ -315,10 +315,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.28,
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.12,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.028
+    "cache_read_per_1m": 0.012
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -329,10 +329,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.790308,
-    "output_per_1m": 1.580616,
+    "input_per_1m": 0.87,
+    "output_per_1m": 1.74,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.065859
+    "cache_read_per_1m": 0.0725
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -590,12 +590,6 @@
     "output_per_1m": 0.1,
     "context_window": 131072
   },
-  "gemma-3n-e4b-it": {
-    "name": "Gemma 3n 4B",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.12,
-    "context_window": 32768
-  },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
     "input_per_1m": 0.07,
@@ -604,10 +598,10 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.1,
+    "input_per_1m": 0.09,
     "output_per_1m": 0.34,
     "context_window": 262144,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.05
   },
   "glm-4-5": {
     "name": "GLM 4.5",
@@ -1470,9 +1464,10 @@
   },
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.32,
-    "context_window": 131072
+    "input_per_1m": 0.71,
+    "output_per_1m": 0.71,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.71
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
@@ -1482,15 +1477,16 @@
   },
   "llama-4-scout": {
     "name": "Llama 4 Scout",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
-    "context_window": 1310720
+    "input_per_1m": 0.11,
+    "output_per_1m": 0.34,
+    "context_window": 1310720,
+    "cache_read_per_1m": 0.055
   },
   "llama-guard-4-12b": {
     "name": "Llama Guard 4 12B",
     "input_per_1m": 0.18,
     "output_per_1m": 0.18,
-    "context_window": 1048576
+    "context_window": 163840
   },
   "longcat-2-0": {
     "name": "LongCat 2.0",
@@ -1982,10 +1978,9 @@
   },
   "qwen2-5-vl-72b-instruct": {
     "name": "Qwen2.5 VL 72B Instruct",
-    "input_per_1m": 0.8,
-    "output_per_1m": 1.0,
-    "context_window": 128000,
-    "cache_read_per_1m": 0.4
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.75,
+    "context_window": 128000
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
@@ -2056,10 +2051,9 @@
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
-    "input_per_1m": 0.5,
-    "output_per_1m": 3.6,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.3
+    "input_per_1m": 0.39,
+    "output_per_1m": 2.34,
+    "context_window": 262144
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5-9B",
@@ -2081,9 +2075,10 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.32,
-    "output_per_1m": 3.2,
-    "context_window": 262144
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.6,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.12
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
@@ -2140,10 +2135,10 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.4,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.425,
+    "output_per_1m": 2.55,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.085
   },
   "qwen3-8-max": {
     "name": "Qwen3.8 Max",
