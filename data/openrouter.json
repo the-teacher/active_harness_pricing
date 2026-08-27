@@ -308,10 +308,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.088606,
-    "output_per_1m": 0.177212,
+    "input_per_1m": 0.07952,
+    "output_per_1m": 0.15904,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.017721
+    "cache_read_per_1m": 0.015904
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -626,10 +626,10 @@
   },
   "glm-4-6": {
     "name": "GLM 4.6",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.43,
+    "output_per_1m": 1.75,
     "context_window": 204800,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.08
   },
   "glm-4-6v": {
     "name": "GLM 4.6V",
@@ -673,19 +673,19 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.221
   },
-  "glm-5-2-batch": {
-    "name": "GLM 5.2 (batch)",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
-    "context_window": 1048575,
-    "cache_read_per_1m": 0.26
-  },
   "glm-5-3": {
     "name": "GLM 5.3",
     "input_per_1m": 1.4,
     "output_per_1m": 4.4,
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
+  },
+  "glm-5-3-flash": {
+    "name": "GLM 5.3 Flash",
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.25,
+    "context_window": 1310720,
+    "cache_read_per_1m": 0.015
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1753,7 +1753,7 @@
     "input_per_1m": 0.05,
     "output_per_1m": 0.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.025
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
@@ -1996,9 +1996,10 @@
   },
   "qwen3-235b-a22b-2507": {
     "name": "Qwen3 235B A22B Instruct 2507",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.55,
-    "context_window": 262144
+    "input_per_1m": 0.0875,
+    "output_per_1m": 0.35,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.0175
   },
   "qwen3-235b-a22b-thinking-2507": {
     "name": "Qwen3 235B A22B Thinking 2507",
@@ -2075,15 +2076,14 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.6,
-    "output_per_1m": 3.6,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "input_per_1m": 0.32,
+    "output_per_1m": 3.2,
+    "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
-    "input_per_1m": 0.14,
-    "output_per_1m": 1.0,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.9,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
   },
@@ -2139,6 +2139,13 @@
     "output_per_1m": 2.55,
     "context_window": 1000000,
     "cache_read_per_1m": 0.085
+  },
+  "qwen3-8-flash": {
+    "name": "Qwen3.8 Flash",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.47,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.016
   },
   "qwen3-8-max": {
     "name": "Qwen3.8 Max",
