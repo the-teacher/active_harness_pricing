@@ -269,10 +269,10 @@
   },
   "deepseek": {
     "name": "DeepSeek V3.2",
-    "input_per_1m": 0.26,
-    "output_per_1m": 0.38,
+    "input_per_1m": 0.269,
+    "output_per_1m": 0.4,
     "context_window": 163840,
-    "cache_read_per_1m": 0.13
+    "cache_read_per_1m": 0.1345
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
@@ -315,17 +315,17 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.08484,
-    "output_per_1m": 0.16968,
+    "input_per_1m": 0.08064,
+    "output_per_1m": 0.16128,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.016968
+    "cache_read_per_1m": 0.016128
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.045,
-    "output_per_1m": 0.09,
+    "input_per_1m": 0.065,
+    "output_per_1m": 0.18,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.009
+    "cache_read_per_1m": 0.016
   },
   "deepseek-v4-flash-0731-batch": {
     "name": "DeepSeek V4 Flash 0731 (batch)",
@@ -343,10 +343,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.680862,
-    "output_per_1m": 1.361724,
+    "input_per_1m": 0.477978,
+    "output_per_1m": 0.955956,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.056739
+    "cache_read_per_1m": 0.039832
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -688,10 +688,10 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 1.26,
-    "output_per_1m": 3.96,
+    "input_per_1m": 0.966,
+    "output_per_1m": 3.036,
     "context_window": 204800,
-    "cache_read_per_1m": 0.234
+    "cache_read_per_1m": 0.1794
   },
   "glm-5-2": {
     "name": "GLM 5.2",
@@ -1181,10 +1181,10 @@
   },
   "inkling": {
     "name": "Inkling",
-    "input_per_1m": 0.95,
+    "input_per_1m": 1.0,
     "output_per_1m": 4.05,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.16
+    "cache_read_per_1m": 0.17
   },
   "inkling-batch": {
     "name": "Inkling (batch)",
@@ -2075,10 +2075,9 @@
   },
   "qwen3-next-80b-a3b-instruct": {
     "name": "Qwen3 Next 80B A3B Instruct",
-    "input_per_1m": 0.1,
+    "input_per_1m": 0.09,
     "output_per_1m": 1.1,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.07
+    "context_window": 262144
   },
   "qwen3-next-80b-a3b-thinking": {
     "name": "Qwen3 Next 80B A3B Thinking",
@@ -2268,8 +2267,8 @@
   },
   "trinity-large-thinking": {
     "name": "Trinity Large Thinking",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.85,
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.8,
     "context_window": 262144,
     "cache_read_per_1m": 0.06
   },
