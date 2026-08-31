@@ -763,10 +763,10 @@
   },
   "chimera-x": {
     "name": "Chimera X",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "claude-3-5-haiku": {
     "name": "Claude 3.5 Haiku",
@@ -2084,17 +2084,17 @@
   },
   "dark-soul": {
     "name": "Dark Soul",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "darkidol": {
     "name": "DarkIdol",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "deep-research-max-preview-apr-21-2026": {
     "name": "Deep Research Max Preview (Apr-21-2026)",
@@ -3081,10 +3081,10 @@
   },
   "fabled": {
     "name": "Fabled",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "flux-2-klein-4b": {
     "name": "FLUX.2 Klein 4B",
@@ -3108,17 +3108,17 @@
   },
   "garnet": {
     "name": "Garnet",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "gembrain": {
     "name": "Gembrain",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "gemini-2-0-flash": {
     "name": "Gemini-2.0-Flash",
@@ -3856,7 +3856,7 @@
     "input_per_1m": 0.05,
     "output_per_1m": 0.29,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B IT",
@@ -3878,17 +3878,17 @@
   },
   "gemma-4-26b-a4b-meromero": {
     "name": "Gemma 4 26B A4B MeroMero",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "gemma-4-26b-a4b-meromero-thinking": {
     "name": "Gemma 4 26B A4B MeroMero Thinking",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "gemma-4-26b-a4b-thinking": {
     "name": "Gemma 4 26B A4B Thinking",
@@ -3899,10 +3899,10 @@
   },
   "gemma-4-26b-a4b-uncensored": {
     "name": "Gemma 4 26B A4B Uncensored",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "gemma-4-26b-a4b-uncensored-tee": {
     "name": "Gemma 4 26B A4B Uncensored TEE",
@@ -3913,15 +3913,15 @@
   },
   "gemma-4-26b-a4b-uncensored-thinking": {
     "name": "Gemma 4 26B A4B Uncensored Thinking",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "gemma-4-31b": {
     "name": "Gemma 4 31B",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
     "cache_read_per_1m": 0.0144
   },
@@ -4011,17 +4011,17 @@
   },
   "gemma-4-31b-meromero": {
     "name": "Gemma 4 31B MeroMero v2",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "gemma-4-31b-meromero-v2-thinking": {
     "name": "Gemma 4 31B MeroMero v2 Thinking",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "gemma-4-31b-queen": {
     "name": "Gemma 4 31B Queen",
@@ -4098,10 +4098,10 @@
   },
   "gemsicle": {
     "name": "Gemsicle",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "gliguard-llm-guardrails-300m": {
     "name": "GLiGuard LLM Guardrails 300M",
@@ -4899,11 +4899,11 @@
     "cache_read_per_1m": 0.26
   },
   "glm-5-3": {
-    "name": "GLM-5.3",
+    "name": "GLM 5.3",
     "input_per_1m": 0.4,
     "output_per_1m": 1.4,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.208
+    "cache_read_per_1m": 0.145
   },
   "glm-5-3-baidu": {
     "name": "GLM-5.3 (Baidu)",
@@ -4949,10 +4949,10 @@
   },
   "glm-5-3-flash-uncensored": {
     "name": "GLM 5.3 Flash Uncensored",
-    "input_per_1m": 0.125,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.35,
+    "output_per_1m": 1.4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.0625
+    "cache_read_per_1m": 0.175
   },
   "glm-5-3-flash-z-ai": {
     "name": "GLM-5.3 Flash (Z AI)",
@@ -7198,10 +7198,10 @@
   },
   "isometry": {
     "name": "Isometry",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "k2-think": {
     "name": "K2-Think",
@@ -7818,7 +7818,7 @@
     "name": "Llama 3.1 70B Dracarys 2",
     "input_per_1m": 0.493,
     "output_per_1m": 0.493,
-    "context_window": 16384,
+    "context_window": 32768,
     "cache_read_per_1m": 0.2465
   },
   "llama-3-1-70b-euryale": {
@@ -8274,10 +8274,10 @@
   },
   "luminous-mirror": {
     "name": "Luminous Mirror",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "mag-mell-r1": {
     "name": "Mag Mell R1",
@@ -8477,7 +8477,7 @@
     "name": "Meta: Llama 4 Maverick",
     "input_per_1m": 0.2,
     "output_per_1m": 0.696,
-    "context_window": 1048576
+    "context_window": 128000
   },
   "meta-llama-4-maverick-17b-128e": {
     "name": "Meta Llama 4 Maverick 17B 128E",
@@ -9338,10 +9338,9 @@
   },
   "mistral-mistral-small-3-2-24b": {
     "name": "Mistral: Mistral Small 3.2 24B",
-    "input_per_1m": 0.11,
-    "output_per_1m": 0.33,
-    "context_window": 128000,
-    "cache_read_per_1m": 0.011
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.2,
+    "context_window": 128000
   },
   "mistral-mixtral-8x22b-instruct": {
     "name": "Mistral: Mixtral 8x22B Instruct",
@@ -9563,10 +9562,10 @@
   },
   "moonlight-dusk": {
     "name": "Moonlight Dusk",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "moonshot-kimi-k2-5": {
     "name": "Moonshot Kimi K2.5",
@@ -9719,10 +9718,10 @@
   },
   "musica": {
     "name": "Musica",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "mythomax-13b": {
     "name": "MythoMax 13B",
@@ -10105,10 +10104,10 @@
   },
   "novelist": {
     "name": "Novelist",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.45,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.05
   },
   "nvidia-llama-3-2-nv-embedqa-1b": {
     "name": "nvidia--llama-3.2-nv-embedqa-1b",
@@ -10814,10 +10813,10 @@
   },
   "opus-distill": {
     "name": "Opus Distill",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "ornith-1-5-35b": {
     "name": "Ornith 1.5 35B",
@@ -10842,17 +10841,17 @@
   },
   "ornith-1-5-9b": {
     "name": "Ornith 1.5 9B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.1,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.025
+    "cache_read_per_1m": 0.05
   },
   "ornith-1-5-9b-thinking": {
     "name": "Ornith 1.5 9B Thinking",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.1,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.025
+    "cache_read_per_1m": 0.05
   },
   "osmosis-structure-0-6b": {
     "name": "Osmosis Structure 0.6B",
@@ -11231,14 +11230,14 @@
   "qwen-3-6-35b-a3b-uncensored": {
     "name": "Qwen 3.6 35B A3B Uncensored",
     "input_per_1m": 0.15,
-    "output_per_1m": 0.5,
+    "output_per_1m": 0.95,
     "context_window": 262144,
     "cache_read_per_1m": 0.075
   },
   "qwen-3-6-35b-a3b-uncensored-thinking": {
     "name": "Qwen 3.6 35B A3B Uncensored Thinking",
     "input_per_1m": 0.15,
-    "output_per_1m": 0.5,
+    "output_per_1m": 0.95,
     "context_window": 262144,
     "cache_read_per_1m": 0.075
   },
@@ -11299,38 +11298,38 @@
   },
   "qwen-3-8-27b-fable": {
     "name": "Qwen 3.8 27B Fable",
-    "input_per_1m": 0.2,
-    "output_per_1m": 1.4,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-obliterated": {
     "name": "Qwen 3.8 27B Obliterated",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.075
+    "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-obliterated-thinking": {
     "name": "Qwen 3.8 27B Obliterated Thinking",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.075
+    "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-uncensored": {
     "name": "Qwen 3.8 27B Uncensored",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.075
+    "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-uncensored-thinking": {
     "name": "Qwen 3.8 27B Uncensored Thinking",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.075
+    "cache_read_per_1m": 0.125
   },
   "qwen-3-8-flash": {
     "name": "Qwen 3.8 Flash",
@@ -13229,10 +13228,10 @@
   },
   "shadow-siren": {
     "name": "Shadow Siren",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.33,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.38,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.06
   },
   "shisa-v2-1-llama-3-3-70b": {
     "name": "Shisa V2.1 Llama 3.3 70B",

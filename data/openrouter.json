@@ -315,10 +315,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.08064,
-    "output_per_1m": 0.16128,
+    "input_per_1m": 0.088606,
+    "output_per_1m": 0.177212,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.016128
+    "cache_read_per_1m": 0.017721
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -336,24 +336,24 @@
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.66,
+    "input_per_1m": 0.44,
+    "output_per_1m": 1.32,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.007
+    "cache_read_per_1m": 0.014
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.477978,
-    "output_per_1m": 0.955956,
+    "input_per_1m": 1.6,
+    "output_per_1m": 3.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.039832
+    "cache_read_per_1m": 0.135
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.66,
-    "output_per_1m": 1.98,
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.022
+    "cache_read_per_1m": 0.044
   },
   "deepseek-v4-pro-0813-batch": {
     "name": "DeepSeek V4 Pro 0813 (batch)",
@@ -364,10 +364,10 @@
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
-    "input_per_1m": 0.44,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.4,
+    "output_per_1m": 2.0,
     "context_window": 262144,
-    "cache_read_per_1m": 0.044
+    "cache_read_per_1m": 0.04
   },
   "dolphin-mistral-24b-venice-edition": {
     "name": "Uncensored",
@@ -784,7 +784,7 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.4,
     "context_window": 1047576,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.025
   },
   "gpt-4-turbo": {
     "name": "GPT-4 Turbo",
@@ -1235,10 +1235,10 @@
   },
   "kimi-k2-5": {
     "name": "Kimi K2.5",
-    "input_per_1m": 0.6,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.45,
+    "output_per_1m": 2.25,
     "context_window": 262144,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.07
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
@@ -1349,7 +1349,7 @@
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
     "input_per_1m": 0.2,
-    "output_per_1m": 0.8,
+    "output_per_1m": 0.696,
     "context_window": 1048576
   },
   "llama-4-scout": {
