@@ -262,10 +262,10 @@
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.95,
+    "input_per_1m": 0.55,
+    "output_per_1m": 1.65,
     "context_window": 163840,
-    "cache_read_per_1m": 0.13
+    "cache_read_per_1m": 0.55
   },
   "deepseek-r1": {
     "name": "R1",
@@ -705,7 +705,7 @@
     "input_per_1m": 1.4,
     "output_per_1m": 4.4,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.14
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
@@ -1272,6 +1272,13 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.2
   },
+  "grok-4-3-batch": {
+    "name": "Grok 4.3 (batch)",
+    "input_per_1m": 1.0,
+    "output_per_1m": 2.0,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.16
+  },
   "grok-4-5": {
     "name": "Grok 4.5",
     "input_per_1m": 2.0,
@@ -1490,6 +1497,13 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.0042
   },
+  "ling-3-0-flash-fin": {
+    "name": "Ling 3.0 Flash Fin",
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.18,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.012
+  },
   "llama-3-1-70b-instruct": {
     "name": "Llama 3.1 70B Instruct",
     "input_per_1m": 0.4,
@@ -1706,7 +1720,7 @@
     "name": "Mistral Medium 3.5 (batch)",
     "input_per_1m": 0.75,
     "output_per_1m": 3.75,
-    "context_window": 262144
+    "context_window": 32768
   },
   "mistral-nemo": {
     "name": "Mistral Nemo",
@@ -1820,6 +1834,12 @@
     "output_per_1m": 0.06,
     "context_window": 8192
   },
+  "nemotron-3-5-content-safety": {
+    "name": "Nemotron 3.5 Content Safety",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.2,
+    "context_window": 131072
+  },
   "nemotron-3-5-lightning": {
     "name": "Nemotron 3.5 Lightning",
     "input_per_1m": 0.08,
@@ -1842,10 +1862,10 @@
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
-    "input_per_1m": 0.6,
-    "output_per_1m": 2.4,
+    "input_per_1m": 0.625,
+    "output_per_1m": 3.125,
     "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "cache_read_per_1m": 0.1875
   },
   "nex-n2-mini": {
     "name": "Nex-N2-Mini",
@@ -2011,14 +2031,15 @@
   },
   "qwen2-5-vl-72b-instruct": {
     "name": "Qwen2.5 VL 72B Instruct",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.75,
-    "context_window": 128000
+    "input_per_1m": 0.8,
+    "output_per_1m": 1.0,
+    "context_window": 128000,
+    "cache_read_per_1m": 0.4
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
-    "input_per_1m": 0.2275,
-    "output_per_1m": 0.91,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.24,
     "context_window": 131072
   },
   "qwen3-235b-a22b": {
@@ -2183,8 +2204,8 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.425,
-    "output_per_1m": 2.55,
+    "input_per_1m": 0.42,
+    "output_per_1m": 3.0,
     "context_window": 1000000,
     "cache_read_per_1m": 0.085
   },
@@ -2337,7 +2358,7 @@
   },
   "remm-slerp-l2-13b": {
     "name": "ReMM SLERP 13B",
-    "input_per_1m": 0.45,
+    "input_per_1m": 0.35,
     "output_per_1m": 0.65,
     "context_window": 6144
   },
