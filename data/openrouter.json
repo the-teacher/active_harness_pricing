@@ -301,10 +301,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.0861,
-    "output_per_1m": 0.1722,
+    "input_per_1m": 0.08162,
+    "output_per_1m": 0.16324,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01722
+    "cache_read_per_1m": 0.016324
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -329,10 +329,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.941166,
-    "output_per_1m": 1.882332,
+    "input_per_1m": 0.738282,
+    "output_per_1m": 1.476564,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.078431
+    "cache_read_per_1m": 0.061524
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -2119,9 +2119,10 @@
   },
   "qwen3-5-35b-a3b": {
     "name": "Qwen3.5-35B-A3B",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.75,
-    "context_window": 262144
+    "input_per_1m": 0.3125,
+    "output_per_1m": 1.25,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.15625
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
