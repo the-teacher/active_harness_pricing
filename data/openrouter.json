@@ -308,24 +308,24 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.003
+    "cache_read_per_1m": 0.006
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.04984,
-    "output_per_1m": 0.09968,
+    "input_per_1m": 0.088606,
+    "output_per_1m": 0.177212,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.009968
+    "cache_read_per_1m": 0.017721
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.08,
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.12,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.008
+    "cache_read_per_1m": 0.012
   },
   "deepseek-v4-flash-0731-batch": {
     "name": "DeepSeek V4 Flash 0731 (batch)",
@@ -357,10 +357,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.57816,
-    "output_per_1m": 1.73448,
+    "input_per_1m": 0.9834,
+    "output_per_1m": 2.9502,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.018396
+    "cache_read_per_1m": 0.03278
   },
   "deepseek-v4-pro-0813-batch": {
     "name": "DeepSeek V4 Pro 0813 (batch)",
@@ -723,10 +723,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.6,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.6832,
+    "output_per_1m": 2.1472,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.12688
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -737,10 +737,10 @@
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 1.092,
-    "output_per_1m": 3.432,
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.2028
+    "cache_read_per_1m": 0.26
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
@@ -1954,10 +1954,10 @@
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
-    "input_per_1m": 0.625,
-    "output_per_1m": 3.125,
+    "input_per_1m": 0.6,
+    "output_per_1m": 2.4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.1875
+    "cache_read_per_1m": 0.12
   },
   "nova-2-lite": {
     "name": "Nova 2 Lite",
@@ -2116,8 +2116,8 @@
   },
   "qwen3-14b": {
     "name": "Qwen3 14B",
-    "input_per_1m": 0.2275,
-    "output_per_1m": 0.91,
+    "input_per_1m": 0.12,
+    "output_per_1m": 0.24,
     "context_window": 131072
   },
   "qwen3-235b-a22b": {
@@ -2450,13 +2450,15 @@
     "name": "Schematron V2 Small",
     "input_per_1m": 0.05,
     "output_per_1m": 0.23,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.05
   },
   "schematron-v2-turbo": {
     "name": "Schematron V2 Turbo",
     "input_per_1m": 0.03,
     "output_per_1m": 0.15,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.03
   },
   "seed-1-6": {
     "name": "Seed 1.6",

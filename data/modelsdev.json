@@ -80,10 +80,10 @@
   },
   "ai-glm": {
     "name": "Z.ai: GLM Latest",
-    "input_per_1m": 0.8727,
-    "output_per_1m": 3.36,
+    "input_per_1m": 0.92,
+    "output_per_1m": 3.137,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1639
+    "cache_read_per_1m": 0.184
   },
   "ai-glm-5-1": {
     "name": "Z.AI GLM-5.1",
@@ -2424,8 +2424,28 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.01278
   },
+  "deepseek-v4-1-flash-alibaba": {
+    "name": "DeepSeek V4.1 Flash (Alibaba)",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 1000000
+  },
+  "deepseek-v4-1-flash-consensus-protocol": {
+    "name": "DeepSeek V4.1 Flash (Consensus Protocol)",
+    "input_per_1m": 0.2,
+    "output_per_1m": 1,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.005
+  },
   "deepseek-v4-1-flash-deep-infra": {
     "name": "DeepSeek V4.1 Flash (Deep Infra)",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.6,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.006
+  },
+  "deepseek-v4-1-flash-deepinfra": {
+    "name": "DeepSeek V4.1 Flash (DeepInfra)",
     "input_per_1m": 0.2,
     "output_per_1m": 0.6,
     "context_window": 1048576,
@@ -2444,6 +2464,27 @@
     "output_per_1m": 1.5,
     "context_window": 1048576,
     "cache_read_per_1m": 0.05
+  },
+  "deepseek-v4-1-flash-fireworks-ai": {
+    "name": "DeepSeek V4.1 Flash (Fireworks AI)",
+    "input_per_1m": 0.22,
+    "output_per_1m": 0.66,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.007
+  },
+  "deepseek-v4-1-flash-novitaai": {
+    "name": "DeepSeek V4.1 Flash (NovitaAI)",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.006
+  },
+  "deepseek-v4-1-flash-tensorx": {
+    "name": "DeepSeek V4.1 Flash (TensorX)",
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.5,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.125
   },
   "deepseek-v4-1-flash-thinking": {
     "name": "DeepSeek V4.1 Flash Thinking",
@@ -4609,8 +4650,8 @@
   },
   "glm": {
     "name": "GLM Latest",
-    "input_per_1m": 0.8727,
-    "output_per_1m": 3.36,
+    "input_per_1m": 0.92,
+    "output_per_1m": 3.137,
     "context_window": 1310720,
     "cache_read_per_1m": 0.2
   },
@@ -10592,7 +10633,8 @@
     "name": "MoonshotAI: Kimi Latest",
     "input_per_1m": 2.1,
     "output_per_1m": 10.95,
-    "context_window": 1048576
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.23
   },
   "moonshotai-kimi-k2-0711": {
     "name": "MoonshotAI: Kimi K2 0711",
@@ -11093,13 +11135,15 @@
     "name": "Inference.net: Schematron V2 Small",
     "input_per_1m": 0.05,
     "output_per_1m": 0.23,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.05
   },
   "net-schematron-v2-turbo": {
     "name": "Inference.net: Schematron V2 Turbo",
     "input_per_1m": 0.03,
     "output_per_1m": 0.15,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.03
   },
   "neural-daredevil-8b-abliterated": {
     "name": "Neural Daredevil 8B abliterated",
@@ -12807,7 +12851,7 @@
     "name": "Qwen: Qwen3 14B",
     "input_per_1m": 0.2275,
     "output_per_1m": 0.91,
-    "context_window": 131072
+    "context_window": 40960
   },
   "qwen-qwen3-235b-a22b-instruct-2507": {
     "name": "Qwen: Qwen3 235B A22B Instruct 2507",
@@ -14315,13 +14359,15 @@
     "name": "Schematron V2 Small",
     "input_per_1m": 0.05,
     "output_per_1m": 0.23,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.05
   },
   "schematron-v2-turbo": {
     "name": "Schematron V2 Turbo",
     "input_per_1m": 0.03,
     "output_per_1m": 0.15,
-    "context_window": 128000
+    "context_window": 128000,
+    "cache_read_per_1m": 0.03
   },
   "seed-1-6": {
     "name": "Seed 1.6",
