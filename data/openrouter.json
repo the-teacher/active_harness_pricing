@@ -357,10 +357,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.9834,
-    "output_per_1m": 2.9502,
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.03278
+    "cache_read_per_1m": 0.044
   },
   "deepseek-v4-pro-0813-batch": {
     "name": "DeepSeek V4 Pro 0813 (batch)",
@@ -745,10 +745,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3333,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.3,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.018
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -1478,10 +1478,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 2.648138,
-    "output_per_1m": 13.282724,
+    "input_per_1m": 3.0,
+    "output_per_1m": 15.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.302644
+    "cache_read_per_1m": 0.3
   },
   "kimi-k3-batch": {
     "name": "Kimi K3 (batch)",
@@ -1897,8 +1897,8 @@
   },
   "mythomax-l2-13b": {
     "name": "MythoMax 13B",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.06,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.11,
     "context_window": 8192
   },
   "nemotron-3-5-content-safety": {
@@ -1916,10 +1916,9 @@
   },
   "nemotron-3-nano-30b-a3b": {
     "name": "Nemotron 3 Nano 30B A3B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.2,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.24,
+    "context_window": 262144
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
