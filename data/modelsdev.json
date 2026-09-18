@@ -2199,10 +2199,10 @@
   },
   "deepseek-deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash Latest",
-    "input_per_1m": 0.03,
-    "output_per_1m": 0.13,
+    "input_per_1m": 0.0558,
+    "output_per_1m": 0.1767,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.0088
   },
   "deepseek-flash": {
     "name": "DeepSeek Flash Latest",
@@ -2562,9 +2562,9 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.03,
-    "output_per_1m": 0.13,
-    "context_window": 1310720,
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.07,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.028
   },
   "deepseek-v4-flash-0423": {
@@ -2644,8 +2644,8 @@
   },
   "deepseek-v4-flash-0731-scaleway": {
     "name": "DeepSeek V4 Flash 0731 (Scaleway)",
-    "input_per_1m": 0.4615,
-    "output_per_1m": 0.923,
+    "input_per_1m": 0.4592,
+    "output_per_1m": 0.9185,
     "context_window": 256000
   },
   "deepseek-v4-flash-0731-tee": {
@@ -4453,26 +4453,12 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.065
   },
-  "gemma-4-26b-a4b-uncensored": {
-    "name": "Gemma 4 26B A4B Uncensored",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.38,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.06
-  },
   "gemma-4-26b-a4b-uncensored-tee": {
     "name": "Gemma 4 26B A4B Uncensored TEE",
     "input_per_1m": 0.15,
     "output_per_1m": 0.7,
     "context_window": 65536,
     "cache_read_per_1m": 0.075
-  },
-  "gemma-4-26b-a4b-uncensored-thinking": {
-    "name": "Gemma 4 26B A4B Uncensored Thinking",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.38,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.06
   },
   "gemma-4-31b": {
     "name": "Gemma 4 31B",
@@ -4587,6 +4573,13 @@
     "output_per_1m": 0.306,
     "context_window": 262144,
     "cache_read_per_1m": 0.153
+  },
+  "gemma-4-31b-split-untied": {
+    "name": "Gemma 4 31B Split-Untied",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.3,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.05
   },
   "gemma-4-31b-thinking": {
     "name": "Gemma 4 31B Thinking",
@@ -5978,8 +5971,8 @@
   },
   "gpt-4-1": {
     "name": "GPT 4.1",
-    "input_per_1m": 1.8,
-    "output_per_1m": 7.2,
+    "input_per_1m": 1.6,
+    "output_per_1m": 6.4,
     "context_window": 1047576,
     "cache_read_per_1m": 0.5
   },
@@ -6006,8 +5999,8 @@
   },
   "gpt-4-1-mini": {
     "name": "GPT 4.1 Mini",
-    "input_per_1m": 0.36,
-    "output_per_1m": 1.4,
+    "input_per_1m": 0.32,
+    "output_per_1m": 1.28,
     "context_window": 1047576,
     "cache_read_per_1m": 0.1
   },
@@ -6230,15 +6223,15 @@
   },
   "gpt-5": {
     "name": "GPT 5",
-    "input_per_1m": 1.07,
-    "output_per_1m": 8.5,
+    "input_per_1m": 1,
+    "output_per_1m": 8,
     "context_window": 400000,
     "cache_read_per_1m": 0.125
   },
   "gpt-5-1": {
     "name": "GPT-5.1 (2025-11-13)",
-    "input_per_1m": 1.07,
-    "output_per_1m": 8.5,
+    "input_per_1m": 1,
+    "output_per_1m": 8,
     "context_window": 400000,
     "cache_read_per_1m": 0.125
   },
@@ -6271,9 +6264,9 @@
   },
   "gpt-5-1-codex-max": {
     "name": "GPT 5.1 Codex Max",
-    "input_per_1m": 1.1,
-    "output_per_1m": 9,
-    "context_window": 400000,
+    "input_per_1m": 1,
+    "output_per_1m": 8,
+    "context_window": 256000,
     "cache_read_per_1m": 0.25
   },
   "gpt-5-1-codex-max-azure": {
@@ -6285,9 +6278,9 @@
   },
   "gpt-5-1-codex-mini": {
     "name": "GPT 5.1 Codex Mini",
-    "input_per_1m": 0.22,
-    "output_per_1m": 1.8,
-    "context_window": 400000,
+    "input_per_1m": 0.2,
+    "output_per_1m": 1.6,
+    "context_window": 256000,
     "cache_read_per_1m": 0.025
   },
   "gpt-5-1-codex-mini-azure": {
@@ -6422,8 +6415,8 @@
   },
   "gpt-5-3-codex": {
     "name": "GPT 5.3 Codex",
-    "input_per_1m": 1.6,
-    "output_per_1m": 13,
+    "input_per_1m": 1.4,
+    "output_per_1m": 11.2,
     "context_window": 400000,
     "cache_read_per_1m": 0.175
   },
@@ -6533,8 +6526,8 @@
   },
   "gpt-5-4-nano": {
     "name": "GPT 5.4 Nano",
-    "input_per_1m": 0.18,
-    "output_per_1m": 1.1,
+    "input_per_1m": 0.16,
+    "output_per_1m": 1,
     "context_window": 400000,
     "cache_read_per_1m": 0.02
   },
@@ -6561,8 +6554,8 @@
   },
   "gpt-5-4-pro": {
     "name": "GPT-5.4 Pro",
-    "input_per_1m": 27,
-    "output_per_1m": 160,
+    "input_per_1m": 24,
+    "output_per_1m": 144,
     "context_window": 1050000,
     "cache_read_per_1m": 3
   },
@@ -6949,8 +6942,8 @@
   },
   "gpt-5-nano": {
     "name": "GPT 5 Nano",
-    "input_per_1m": 0.045,
-    "output_per_1m": 0.36,
+    "input_per_1m": 0.04,
+    "output_per_1m": 0.32,
     "context_window": 400000,
     "cache_read_per_1m": 0.005
   },
@@ -7003,8 +6996,8 @@
   },
   "gpt-6-astra": {
     "name": "GPT 6 Astra",
-    "input_per_1m": 10,
-    "output_per_1m": 50,
+    "input_per_1m": 8,
+    "output_per_1m": 40,
     "context_window": 1050000,
     "cache_read_per_1m": 1
   },
@@ -7250,8 +7243,8 @@
   },
   "gpt-oss-120b-ionos": {
     "name": "GPT OSS 120B (IONOS)",
-    "input_per_1m": 0.1731,
-    "output_per_1m": 0.7499,
+    "input_per_1m": 0.1722,
+    "output_per_1m": 0.7463,
     "context_window": 131072
   },
   "gpt-oss-120b-nebius": {
@@ -7276,8 +7269,8 @@
   },
   "gpt-oss-120b-scaleway": {
     "name": "GPT OSS 120B (Scaleway)",
-    "input_per_1m": 0.1731,
-    "output_per_1m": 0.6922,
+    "input_per_1m": 0.1722,
+    "output_per_1m": 0.6889,
     "context_window": 128000
   },
   "gpt-oss-120b-scx-ai-turbo": {
@@ -7360,19 +7353,6 @@
     "name": "GPT OSS 20B (OVHcloud)",
     "input_per_1m": 0.05,
     "output_per_1m": 0.18,
-    "context_window": 131072
-  },
-  "gpt-oss-20b-tee": {
-    "name": "GPT-OSS 20B TEE",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.15,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.02
-  },
-  "gpt-oss-20b-together-ai": {
-    "name": "GPT OSS 20B (Together AI)",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.2,
     "context_window": 131072
   },
   "gpt-oss-safeguard-120b": {
@@ -8187,13 +8167,6 @@
     "context_window": 524288,
     "cache_read_per_1m": 0.1
   },
-  "inkling-small-together-ai": {
-    "name": "Inkling Small (Together AI)",
-    "input_per_1m": 0.5,
-    "output_per_1m": 1.2,
-    "context_window": 524288,
-    "cache_read_per_1m": 0.1
-  },
   "inkling-thinking": {
     "name": "Inkling Thinking",
     "input_per_1m": 1,
@@ -8232,6 +8205,12 @@
     "input_per_1m": 0.2,
     "output_per_1m": 0.4,
     "context_window": 256000
+  },
+  "jev": {
+    "name": "Jev",
+    "input_per_1m": 0.042,
+    "output_per_1m": 0,
+    "context_window": 64000
   },
   "k2-think": {
     "name": "K2-Think",
@@ -8864,18 +8843,6 @@
     "context_window": 16384,
     "cache_read_per_1m": 0.2465
   },
-  "llama-3-1-405b": {
-    "name": "Llama 3.1 405B",
-    "input_per_1m": 2.027,
-    "output_per_1m": 2.027,
-    "context_window": 131072
-  },
-  "llama-3-1-405b-instruct": {
-    "name": "Llama 3.1 405B Instruct",
-    "input_per_1m": 1.95,
-    "output_per_1m": 1.95,
-    "context_window": 128000
-  },
   "llama-3-1-405b-instruct-turbo": {
     "name": "Llama 3.1 405B Instruct Turbo",
     "input_per_1m": 3.5,
@@ -9117,16 +9084,9 @@
   },
   "llama-3-3-70b-instruct-ionos": {
     "name": "Llama-3.3-70B-Instruct (IONOS)",
-    "input_per_1m": 0.7499,
-    "output_per_1m": 0.7499,
+    "input_per_1m": 0.7463,
+    "output_per_1m": 0.7463,
     "context_window": 128000
-  },
-  "llama-3-3-70b-instruct-nebius": {
-    "name": "Llama-3.3-70B-Instruct (Nebius)",
-    "input_per_1m": 0.13,
-    "output_per_1m": 0.4,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.13
   },
   "llama-3-3-70b-instruct-novitaai": {
     "name": "Llama 3.3 70B Instruct (NovitaAI)",
@@ -9136,8 +9096,8 @@
   },
   "llama-3-3-70b-instruct-scaleway": {
     "name": "Llama-3.3-70B-Instruct (Scaleway)",
-    "input_per_1m": 1.038,
-    "output_per_1m": 1.038,
+    "input_per_1m": 1.033,
+    "output_per_1m": 1.033,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-us": {
@@ -10131,8 +10091,8 @@
   },
   "ministral-3-14b-infomaniak": {
     "name": "Ministral 3 14B (Infomaniak)",
-    "input_per_1m": 0.3461,
-    "output_per_1m": 0.4615,
+    "input_per_1m": 0.3444,
+    "output_per_1m": 0.4592,
     "context_window": 100000
   },
   "ministral-3-14b-instruct": {
@@ -10740,10 +10700,10 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 2,
-    "output_per_1m": 11.2,
+    "input_per_1m": 2.1,
+    "output_per_1m": 10.95,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.232
+    "cache_read_per_1m": 0.23
   },
   "moonshotai-kimi-k2-0711": {
     "name": "MoonshotAI: Kimi K2 0711",
@@ -11119,12 +11079,6 @@
     "name": "Nemotron-3-Super-120B-A12B",
     "input_per_1m": 0.08,
     "output_per_1m": 0.45,
-    "context_window": 262144
-  },
-  "nemotron-3-super-120b-a12b-flexai": {
-    "name": "Nemotron 3 Super 120B A12B (FlexAI)",
-    "input_per_1m": 0.085,
-    "output_per_1m": 0.4,
     "context_window": 262144
   },
   "nemotron-3-super-120b-a12b-nebius": {
@@ -12239,6 +12193,13 @@
     "output_per_1m": 6,
     "context_window": 1040000
   },
+  "pareto": {
+    "name": "Pareto",
+    "input_per_1m": 2.5,
+    "output_per_1m": 7.5,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.25
+  },
   "pearl-ai-gemma-4-31b-instruct": {
     "name": "Pearl AI Gemma 4 31B Instruct",
     "input_per_1m": 0.28,
@@ -12624,42 +12585,42 @@
     "name": "Qwen 3.8 27B Fable",
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
-    "context_window": 262144,
+    "context_window": 524288,
     "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-obliterated": {
     "name": "Qwen 3.8 27B Obliterated",
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
-    "context_window": 262144,
+    "context_window": 524288,
     "cache_read_per_1m": 0.2
   },
   "qwen-3-8-27b-obliterated-thinking": {
     "name": "Qwen 3.8 27B Obliterated Thinking",
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
-    "context_window": 262144,
+    "context_window": 524288,
     "cache_read_per_1m": 0.2
   },
   "qwen-3-8-27b-queen": {
     "name": "Qwen 3.8 27B Queen",
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
-    "context_window": 262144,
+    "context_window": 524288,
     "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-uncensored": {
     "name": "Qwen 3.8 27B Uncensored",
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
-    "context_window": 262144,
+    "context_window": 524288,
     "cache_read_per_1m": 0.125
   },
   "qwen-3-8-27b-uncensored-thinking": {
     "name": "Qwen 3.8 27B Uncensored Thinking",
     "input_per_1m": 0.25,
     "output_per_1m": 1.5,
-    "context_window": 262144,
+    "context_window": 524288,
     "cache_read_per_1m": 0.125
   },
   "qwen-3-8-flash": {
@@ -12675,6 +12636,13 @@
     "output_per_1m": 6,
     "context_window": 262144,
     "cache_read_per_1m": 0.275
+  },
+  "qwen-3-8-omni-flash": {
+    "name": "Qwen 3.8 Omni Flash",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.47,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.016
   },
   "qwen-3-8b": {
     "name": "Qwen 3 8B",
@@ -13542,13 +13510,6 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.056
   },
-  "qwen3-6-35b-a3b-uncensored-tee": {
-    "name": "Qwen3.6 35B A3B Uncensored TEE",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.5,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.15
-  },
   "qwen3-6-35b-fast": {
     "name": "Qwen3.6 35B Fast",
     "input_per_1m": 0.29,
@@ -13804,6 +13765,13 @@
     "output_per_1m": 6,
     "context_window": 991000,
     "cache_read_per_1m": 0.25
+  },
+  "qwen3-8-omni-flash": {
+    "name": "Qwen3.8 Omni Flash",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.47,
+    "context_window": 991808,
+    "cache_read_per_1m": 0.016
   },
   "qwen3-8b": {
     "name": "Qwen/Qwen3-8B",

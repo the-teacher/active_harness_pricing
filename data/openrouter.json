@@ -336,10 +336,10 @@
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.66,
+    "input_per_1m": 0.2156,
+    "output_per_1m": 0.6468,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.007
+    "cache_read_per_1m": 0.00686
   },
   "deepseek-v4-flash-vision-exp-batch": {
     "name": "DeepSeek V4 Flash Vision Exp (batch)",
@@ -350,10 +350,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 1.6,
-    "output_per_1m": 3.2,
+    "input_per_1m": 0.94336,
+    "output_per_1m": 1.88672,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.135
+    "cache_read_per_1m": 0.079596
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -717,10 +717,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.4875,
+    "output_per_1m": 1.56,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.14
+    "cache_read_per_1m": 0.091
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -1259,9 +1259,10 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.037,
-    "output_per_1m": 0.17,
-    "context_window": 131072
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.6,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.075
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1478,10 +1479,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 3.0,
-    "output_per_1m": 15.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 11.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.3
+    "cache_read_per_1m": 0.232
   },
   "kimi-k3-batch": {
     "name": "Kimi K3 (batch)",
@@ -1735,13 +1736,6 @@
     "context_window": 131072,
     "cache_read_per_1m": 0.2
   },
-  "mistral-large-2512": {
-    "name": "Mistral Large 3 2512",
-    "input_per_1m": 0.5,
-    "output_per_1m": 1.5,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.05
-  },
   "mistral-large-2512-batch": {
     "name": "Mistral Large 3 2512 (batch)",
     "input_per_1m": 0.25,
@@ -1848,8 +1842,8 @@
   },
   "muse-glimmer-30b": {
     "name": "Muse Glimmer 30B",
-    "input_per_1m": 0.35,
-    "output_per_1m": 1.5,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.1,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
   },
@@ -2044,6 +2038,13 @@
     "input_per_1m": 0.6,
     "output_per_1m": 6.0,
     "context_window": 1040000
+  },
+  "pareto": {
+    "name": "Pareto",
+    "input_per_1m": 2.5,
+    "output_per_1m": 7.5,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.25
   },
   "perceptron-mk1": {
     "name": "Perceptron Mk1",
