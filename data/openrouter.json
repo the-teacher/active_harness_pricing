@@ -308,24 +308,24 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.6,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.006
+    "cache_read_per_1m": 0.003
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.088606,
-    "output_per_1m": 0.177212,
+    "input_per_1m": 0.04732,
+    "output_per_1m": 0.09464,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.017721
+    "cache_read_per_1m": 0.009464
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.12,
+    "input_per_1m": 0.065,
+    "output_per_1m": 0.18,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.012
+    "cache_read_per_1m": 0.016
   },
   "deepseek-v4-flash-0731-batch": {
     "name": "DeepSeek V4 Flash 0731 (batch)",
@@ -350,17 +350,17 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.94336,
-    "output_per_1m": 1.88672,
+    "input_per_1m": 0.564282,
+    "output_per_1m": 1.128564,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.079596
+    "cache_read_per_1m": 0.047023
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 1.32,
-    "output_per_1m": 3.96,
+    "input_per_1m": 0.57816,
+    "output_per_1m": 1.73448,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.044
+    "cache_read_per_1m": 0.018396
   },
   "deepseek-v4-pro-0813-batch": {
     "name": "DeepSeek V4 Pro 0813 (batch)",
@@ -717,10 +717,10 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.4875,
-    "output_per_1m": 1.56,
+    "input_per_1m": 0.5544,
+    "output_per_1m": 1.7424,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.091
+    "cache_read_per_1m": 0.10296
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
@@ -731,10 +731,10 @@
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.91,
+    "output_per_1m": 2.86,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.169
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
@@ -756,6 +756,13 @@
     "output_per_1m": 0.25,
     "context_window": 1048576,
     "cache_read_per_1m": 0.015
+  },
+  "glm-5-3-flashx": {
+    "name": "GLM 5.3 FlashX",
+    "input_per_1m": 0.37,
+    "output_per_1m": 1.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.075
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1479,10 +1486,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 2.0,
-    "output_per_1m": 11.2,
+    "input_per_1m": 1.875,
+    "output_per_1m": 10.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.232
+    "cache_read_per_1m": 0.2175
   },
   "kimi-k3-batch": {
     "name": "Kimi K3 (batch)",
@@ -1842,8 +1849,8 @@
   },
   "muse-glimmer-30b": {
     "name": "Muse Glimmer 30B",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.1,
+    "input_per_1m": 0.35,
+    "output_per_1m": 1.5,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
   },
@@ -1903,7 +1910,7 @@
   },
   "nemotron-3-5-lightning": {
     "name": "Nemotron 3.5 Lightning",
-    "input_per_1m": 0.08,
+    "input_per_1m": 0.07,
     "output_per_1m": 0.2,
     "context_window": 262144,
     "cache_read_per_1m": 0.04
@@ -1922,10 +1929,10 @@
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
-    "input_per_1m": 0.625,
-    "output_per_1m": 3.125,
+    "input_per_1m": 0.6,
+    "output_per_1m": 2.4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.1875
+    "cache_read_per_1m": 0.12
   },
   "nova-2-lite": {
     "name": "Nova 2 Lite",
@@ -2355,8 +2362,8 @@
   },
   "qwen3-vl-30b-a3b-instruct": {
     "name": "Qwen3 VL 30B A3B Instruct",
-    "input_per_1m": 0.13,
-    "output_per_1m": 0.52,
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.7,
     "context_window": 262144
   },
   "qwen3-vl-30b-a3b-thinking": {
@@ -2533,6 +2540,12 @@
     "output_per_1m": 1.15,
     "context_window": 262144,
     "cache_read_per_1m": 0.04
+  },
+  "ternary-bonsai-2-27b": {
+    "name": "Ternary Bonsai 2 27B",
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.5,
+    "context_window": 262144
   },
   "trinity-large-thinking": {
     "name": "Trinity Large Thinking",
