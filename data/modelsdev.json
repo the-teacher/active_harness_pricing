@@ -80,10 +80,10 @@
   },
   "ai-glm": {
     "name": "Z.ai: GLM Latest",
-    "input_per_1m": 0.5614,
-    "output_per_1m": 1.764,
+    "input_per_1m": 0.4746,
+    "output_per_1m": 1.492,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1043
+    "cache_read_per_1m": 0.08814
   },
   "ai-glm-5-1": {
     "name": "Z.AI GLM-5.1",
@@ -108,10 +108,10 @@
   },
   "ai-glm-flash": {
     "name": "Z.ai: GLM Flash Latest",
-    "input_per_1m": 0.045,
-    "output_per_1m": 0.14,
+    "input_per_1m": 0.04,
+    "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.015
   },
   "aion-2-0": {
     "name": "Aion-2.0",
@@ -295,7 +295,7 @@
     "cache_read_per_1m": 0.3
   },
   "anthropic-claude-3-haiku": {
-    "name": "Anthropic: Claude 3 Haiku",
+    "name": "anthropic--claude-3-haiku",
     "input_per_1m": 0.25,
     "output_per_1m": 1.25,
     "context_window": 200000,
@@ -659,6 +659,12 @@
     "output_per_1m": 0.138,
     "context_window": 65536
   },
+  "aya-expanse-32b": {
+    "name": "Aya Expanse 32B",
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.5,
+    "context_window": 128000
+  },
   "baichuan-m2-32b": {
     "name": "baichuan-m2-32b",
     "input_per_1m": 0.07,
@@ -806,13 +812,6 @@
     "output_per_1m": 15,
     "context_window": 200000,
     "cache_read_per_1m": 0.3
-  },
-  "claude-3-haiku": {
-    "name": "Claude 3 Haiku",
-    "input_per_1m": 0.25,
-    "output_per_1m": 1.25,
-    "context_window": 200000,
-    "cache_read_per_1m": 0.03
   },
   "claude-3-opus": {
     "name": "Claude 3 Opus",
@@ -1566,7 +1565,7 @@
     "input_per_1m": 4.4,
     "output_per_1m": 22,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.55
+    "cache_read_per_1m": 0.22
   },
   "claude-opus-5-5-fast": {
     "name": "Claude Opus 5.5 (Fast)",
@@ -2305,17 +2304,17 @@
   },
   "deepseek-deepseek-flash": {
     "name": "DeepSeek: DeepSeek Flash Latest",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.49,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.29,
+    "context_window": 1040000,
+    "cache_read_per_1m": 0.001
   },
   "deepseek-deepseek-pro": {
     "name": "DeepSeek: DeepSeek Pro Latest",
-    "input_per_1m": 0.26,
+    "input_per_1m": 0.25,
     "output_per_1m": 3.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.249
   },
   "deepseek-deepseek-v3-1-terminus-retires-sep-28": {
     "name": "DeepSeek: DeepSeek V3.1 Terminus (retires Sep 28)",
@@ -2332,17 +2331,17 @@
   },
   "deepseek-deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash Latest",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.021,
     "output_per_1m": 0.32,
     "context_window": 1048576,
     "cache_read_per_1m": 0.016
   },
   "deepseek-flash": {
     "name": "DeepSeek Flash Latest",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.49,
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.29,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.001
   },
   "deepseek-ocr": {
     "name": "DeepSeek-OCR",
@@ -2359,10 +2358,10 @@
   },
   "deepseek-pro": {
     "name": "DeepSeek Pro Latest",
-    "input_per_1m": 0.26,
+    "input_per_1m": 0.25,
     "output_per_1m": 3.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.25
+    "cache_read_per_1m": 0.249
   },
   "deepseek-prover-v2-671b": {
     "name": "Deepseek Prover V2 671B",
@@ -2730,7 +2729,7 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.021,
     "output_per_1m": 0.32,
     "context_window": 1310720,
     "cache_read_per_1m": 0.018
@@ -2744,7 +2743,7 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.021,
     "output_per_1m": 0.32,
     "context_window": 1310720,
     "cache_read_per_1m": 0.015
@@ -2814,10 +2813,10 @@
   },
   "deepseek-v4-flash-0731-scaleway": {
     "name": "DeepSeek V4 Flash 0731 (Scaleway)",
-    "input_per_1m": 0.4547,
-    "output_per_1m": 0.9094,
+    "input_per_1m": 0.4561,
+    "output_per_1m": 0.9122,
     "context_window": 256000,
-    "cache_read_per_1m": 0.09094
+    "cache_read_per_1m": 0.09122
   },
   "deepseek-v4-flash-0731-tee": {
     "name": "DeepSeek V4 Flash 0731 TEE",
@@ -3002,9 +3001,9 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.35,
-    "output_per_1m": 0.8,
-    "context_window": 1000000,
+    "input_per_1m": 0.264,
+    "output_per_1m": 0.792,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.1
   },
   "deepseek-v4-pro-0813-alibaba": {
@@ -4923,8 +4922,8 @@
   },
   "glm": {
     "name": "GLM Latest",
-    "input_per_1m": 0.5614,
-    "output_per_1m": 1.764,
+    "input_per_1m": 0.4746,
+    "output_per_1m": 1.492,
     "context_window": 1310720,
     "cache_read_per_1m": 0.2
   },
@@ -6006,10 +6005,10 @@
   },
   "glm-flash": {
     "name": "GLM Flash Latest",
-    "input_per_1m": 0.045,
-    "output_per_1m": 0.14,
+    "input_per_1m": 0.04,
+    "output_per_1m": 0.5,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.015
   },
   "glm-flash-latest": {
     "name": "GLM Flash (latest)",
@@ -7600,8 +7599,8 @@
   },
   "gpt-oss-120b-ionos": {
     "name": "GPT OSS 120B (IONOS)",
-    "input_per_1m": 0.1705,
-    "output_per_1m": 0.7389,
+    "input_per_1m": 0.171,
+    "output_per_1m": 0.7412,
     "context_window": 131072
   },
   "gpt-oss-120b-nebius": {
@@ -7626,8 +7625,8 @@
   },
   "gpt-oss-120b-scaleway": {
     "name": "GPT OSS 120B (Scaleway)",
-    "input_per_1m": 0.1705,
-    "output_per_1m": 0.682,
+    "input_per_1m": 0.171,
+    "output_per_1m": 0.6842,
     "context_window": 128000
   },
   "gpt-oss-120b-scx-ai-turbo": {
@@ -8406,6 +8405,13 @@
     "context_window": 1024000,
     "cache_read_per_1m": 0.042
   },
+  "hy4-preview-deep-infra": {
+    "name": "Hy4 preview (Deep Infra)",
+    "input_per_1m": 0.834,
+    "output_per_1m": 2.501,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.042
+  },
   "hy4-preview-tencent-cloud": {
     "name": "Hy4 Preview (Tencent Cloud)",
     "input_per_1m": 0.834,
@@ -8472,7 +8478,7 @@
     "name": "inclusionAI: Ling 3.0 Flash VL",
     "input_per_1m": 0.075,
     "output_per_1m": 0.22,
-    "context_window": 131072,
+    "context_window": 262144,
     "cache_read_per_1m": 0.015
   },
   "inclusionai-ring-2-6-1t": {
@@ -8613,8 +8619,8 @@
   },
   "kimi": {
     "name": "Kimi Latest",
-    "input_per_1m": 0.8845,
-    "output_per_1m": 10.53,
+    "input_per_1m": 1.03,
+    "output_per_1m": 9.043,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
@@ -8952,8 +8958,8 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.8845,
-    "output_per_1m": 10.53,
+    "input_per_1m": 2,
+    "output_per_1m": 10,
     "context_window": 1048576,
     "cache_read_per_1m": 0.285
   },
@@ -9217,8 +9223,8 @@
   },
   "ling-3-0-flash-vl": {
     "name": "Ling 3.0 Flash VL",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.021,
+    "output_per_1m": 0.0616,
     "context_window": 262144,
     "cache_read_per_1m": 0.012
   },
@@ -9473,8 +9479,8 @@
   },
   "llama-3-3-70b-instruct-ionos": {
     "name": "Llama-3.3-70B-Instruct (IONOS)",
-    "input_per_1m": 0.7389,
-    "output_per_1m": 0.7389,
+    "input_per_1m": 0.7412,
+    "output_per_1m": 0.7412,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-novitaai": {
@@ -9485,8 +9491,8 @@
   },
   "llama-3-3-70b-instruct-scaleway": {
     "name": "Llama-3.3-70B-Instruct (Scaleway)",
-    "input_per_1m": 1.023,
-    "output_per_1m": 1.023,
+    "input_per_1m": 1.026,
+    "output_per_1m": 1.026,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-us": {
@@ -10119,6 +10125,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.0028
   },
+  "mimo-v2-6-flash-uncensored": {
+    "name": "MiMo V2.6 Flash Uncensored",
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.5,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.275
+  },
   "mimo-v2-6-flash-xiaomi": {
     "name": "MiMo V2.6 Flash (Xiaomi)",
     "input_per_1m": 0.14,
@@ -10515,8 +10528,8 @@
   },
   "ministral-3-14b-infomaniak": {
     "name": "Ministral 3 14B (Infomaniak)",
-    "input_per_1m": 0.341,
-    "output_per_1m": 0.4547,
+    "input_per_1m": 0.3421,
+    "output_per_1m": 0.4561,
     "context_window": 100000
   },
   "ministral-3-14b-instruct": {
@@ -11125,10 +11138,10 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.8845,
-    "output_per_1m": 10.53,
+    "input_per_1m": 1.03,
+    "output_per_1m": 9.043,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.33
+    "cache_read_per_1m": 0.3
   },
   "moonshotai-kimi-k2-0711": {
     "name": "MoonshotAI: Kimi K2 0711",
@@ -12682,11 +12695,23 @@
     "context_window": 32768,
     "cache_read_per_1m": 0.075
   },
+  "perceptron-mk1-5": {
+    "name": "Perceptron Mk1.5",
+    "input_per_1m": 0.15,
+    "output_per_1m": 1.5,
+    "context_window": 36864
+  },
   "perceptron-perceptron-mk1": {
     "name": "Perceptron: Perceptron Mk1",
     "input_per_1m": 0.15,
     "output_per_1m": 1.5,
     "context_window": 32768
+  },
+  "perceptron-perceptron-mk1-5": {
+    "name": "Perceptron: Perceptron Mk1.5",
+    "input_per_1m": 0.15,
+    "output_per_1m": 1.5,
+    "context_window": 36864
   },
   "perplexity-sonar": {
     "name": "Perplexity: Sonar",
@@ -13362,8 +13387,8 @@
     "context_window": 128000,
     "cache_read_per_1m": 0.6
   },
-  "qwen-qwen-plus-0728": {
-    "name": "Qwen: Qwen Plus 0728",
+  "qwen-qwen-plus-0728-retires-oct-9": {
+    "name": "Qwen: Qwen Plus 0728 (retires Oct 9)",
     "input_per_1m": 0.26,
     "output_per_1m": 0.78,
     "context_window": 1000000
@@ -13393,8 +13418,8 @@
     "output_per_1m": 0.598,
     "context_window": 262144
   },
-  "qwen-qwen3-235b-a22b-thinking-2507": {
-    "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+  "qwen-qwen3-235b-a22b-thinking-2507-retires-oct-9": {
+    "name": "Qwen: Qwen3 235B A22B Thinking 2507 (retires Oct 9)",
     "input_per_1m": 0.23,
     "output_per_1m": 2.3,
     "context_window": 131072
@@ -13405,8 +13430,8 @@
     "output_per_1m": 0.52,
     "context_window": 262144
   },
-  "qwen-qwen3-30b-a3b-thinking-2507": {
-    "name": "Qwen: Qwen3 30B A3B Thinking 2507",
+  "qwen-qwen3-30b-a3b-thinking-2507-retires-oct-9": {
+    "name": "Qwen: Qwen3 30B A3B Thinking 2507 (retires Oct 9)",
     "input_per_1m": 0.2,
     "output_per_1m": 2.4,
     "context_window": 81920
@@ -13423,8 +13448,8 @@
     "output_per_1m": 1.56,
     "context_window": 1000000
   },
-  "qwen-qwen3-8b": {
-    "name": "Qwen: Qwen3 8B",
+  "qwen-qwen3-8b-retires-oct-9": {
+    "name": "Qwen: Qwen3 8B (retires Oct 9)",
     "input_per_1m": 0.117,
     "output_per_1m": 0.455,
     "context_window": 131072
@@ -13435,8 +13460,8 @@
     "output_per_1m": 4.875,
     "context_window": 262144
   },
-  "qwen-qwen3-max-thinking": {
-    "name": "Qwen: Qwen3 Max Thinking",
+  "qwen-qwen3-max-thinking-retires-oct-9": {
+    "name": "Qwen: Qwen3 Max Thinking (retires Oct 9)",
     "input_per_1m": 0.78,
     "output_per_1m": 3.9,
     "context_window": 262144
@@ -13447,26 +13472,26 @@
     "output_per_1m": 0.52,
     "context_window": 262144
   },
-  "qwen-qwen3-vl-30b-a3b-thinking": {
-    "name": "Qwen: Qwen3 VL 30B A3B Thinking",
+  "qwen-qwen3-vl-30b-a3b-thinking-retires-oct-9": {
+    "name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Oct 9)",
     "input_per_1m": 0.2,
     "output_per_1m": 2.4,
     "context_window": 131072
   },
-  "qwen-qwen3-vl-32b-instruct": {
-    "name": "Qwen: Qwen3 VL 32B Instruct",
+  "qwen-qwen3-vl-32b-instruct-retires-oct-9": {
+    "name": "Qwen: Qwen3 VL 32B Instruct (retires Oct 9)",
     "input_per_1m": 0.104,
     "output_per_1m": 0.416,
     "context_window": 131072
   },
-  "qwen-qwen3-vl-8b-instruct": {
-    "name": "Qwen: Qwen3 VL 8B Instruct",
+  "qwen-qwen3-vl-8b-instruct-retires-oct-9": {
+    "name": "Qwen: Qwen3 VL 8B Instruct (retires Oct 9)",
     "input_per_1m": 0.117,
     "output_per_1m": 0.455,
     "context_window": 131072
   },
-  "qwen-qwen3-vl-8b-thinking": {
-    "name": "Qwen: Qwen3 VL 8B Thinking",
+  "qwen-qwen3-vl-8b-thinking-retires-oct-9": {
+    "name": "Qwen: Qwen3 VL 8B Thinking (retires Oct 9)",
     "input_per_1m": 0.18,
     "output_per_1m": 2.1,
     "context_window": 131072
@@ -14217,6 +14242,12 @@
     "output_per_1m": 0.7,
     "context_window": 262144,
     "cache_read_per_1m": 0.04
+  },
+  "qwen3-8-27b-uncensored-tee": {
+    "name": "Qwen3.8 27B Uncensored TEE",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.5,
+    "context_window": 262144
   },
   "qwen3-8-flash": {
     "name": "Qwen3.8 Flash",
