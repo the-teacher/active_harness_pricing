@@ -80,10 +80,10 @@
   },
   "ai-glm": {
     "name": "Z.ai: GLM Latest",
-    "input_per_1m": 0.4746,
-    "output_per_1m": 1.492,
+    "input_per_1m": 0.378,
+    "output_per_1m": 1.188,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.08814
+    "cache_read_per_1m": 0.0702
   },
   "ai-glm-5-1": {
     "name": "Z.AI GLM-5.1",
@@ -108,10 +108,10 @@
   },
   "ai-glm-flash": {
     "name": "Z.ai: GLM Flash Latest",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.045,
+    "output_per_1m": 0.14,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.015
+    "cache_read_per_1m": 0.01
   },
   "aion-2-0": {
     "name": "Aion-2.0",
@@ -2311,10 +2311,10 @@
   },
   "deepseek-deepseek-pro": {
     "name": "DeepSeek: DeepSeek Pro Latest",
-    "input_per_1m": 0.25,
-    "output_per_1m": 3.5,
+    "input_per_1m": 0.2442,
+    "output_per_1m": 0.7326,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.249
+    "cache_read_per_1m": 0.00777
   },
   "deepseek-deepseek-v3-1-terminus-retires-sep-28": {
     "name": "DeepSeek: DeepSeek V3.1 Terminus (retires Sep 28)",
@@ -2358,10 +2358,10 @@
   },
   "deepseek-pro": {
     "name": "DeepSeek Pro Latest",
-    "input_per_1m": 0.25,
-    "output_per_1m": 3.5,
+    "input_per_1m": 0.2442,
+    "output_per_1m": 0.7326,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.249
+    "cache_read_per_1m": 0.00777
   },
   "deepseek-prover-v2-671b": {
     "name": "Deepseek Prover V2 671B",
@@ -2589,9 +2589,9 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.13,
-    "output_per_1m": 0.52,
-    "context_window": 1000000,
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.29,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.006
   },
   "deepseek-v4-1-flash-alibaba": {
@@ -2989,7 +2989,7 @@
     "name": "DeepSeek V4 Pro",
     "input_per_1m": 0.348,
     "output_per_1m": 0.696,
-    "context_window": 1000000,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.1
   },
   "deepseek-v4-pro-0423": {
@@ -3001,8 +3001,8 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.264,
-    "output_per_1m": 0.792,
+    "input_per_1m": 0.245,
+    "output_per_1m": 3.5,
     "context_window": 1048576,
     "cache_read_per_1m": 0.1
   },
@@ -4715,8 +4715,8 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B IT",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.34,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.3,
     "context_window": 262144
   },
   "gemma-4-31b-it-cerebras": {
@@ -4922,8 +4922,8 @@
   },
   "glm": {
     "name": "GLM Latest",
-    "input_per_1m": 0.4746,
-    "output_per_1m": 1.492,
+    "input_per_1m": 0.378,
+    "output_per_1m": 1.188,
     "context_window": 1310720,
     "cache_read_per_1m": 0.2
   },
@@ -5671,9 +5671,9 @@
   },
   "glm-5-3": {
     "name": "GLM-5.3",
-    "input_per_1m": 0.4,
-    "output_per_1m": 1.4,
-    "context_window": 1000000,
+    "input_per_1m": 0.378,
+    "output_per_1m": 1.188,
+    "context_window": 1310720,
     "cache_read_per_1m": 0.2
   },
   "glm-5-3-alibaba-cloud": {
@@ -5885,6 +5885,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
+  "glm-5-3-uncensored": {
+    "name": "GLM 5.3 Uncensored",
+    "input_per_1m": 1.25,
+    "output_per_1m": 2.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.3
+  },
   "glm-5-3-z-ai": {
     "name": "GLM-5.3 (Z AI)",
     "input_per_1m": 1.4,
@@ -6005,10 +6012,10 @@
   },
   "glm-flash": {
     "name": "GLM Flash Latest",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.045,
+    "output_per_1m": 0.14,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.015
+    "cache_read_per_1m": 0.01
   },
   "glm-flash-latest": {
     "name": "GLM Flash (latest)",
@@ -8619,8 +8626,8 @@
   },
   "kimi": {
     "name": "Kimi Latest",
-    "input_per_1m": 1.03,
-    "output_per_1m": 9.043,
+    "input_per_1m": 1,
+    "output_per_1m": 9,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
@@ -10130,7 +10137,14 @@
     "input_per_1m": 0.5,
     "output_per_1m": 1.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.275
+    "cache_read_per_1m": 0.00903
+  },
+  "mimo-v2-6-flash-uncensored-thinking": {
+    "name": "MiMo V2.6 Flash Uncensored Thinking",
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.5,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.00903
   },
   "mimo-v2-6-flash-xiaomi": {
     "name": "MiMo V2.6 Flash (Xiaomi)",
@@ -11138,8 +11152,8 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 1.03,
-    "output_per_1m": 9.043,
+    "input_per_1m": 1,
+    "output_per_1m": 9,
     "context_window": 1048576,
     "cache_read_per_1m": 0.3
   },
@@ -11454,8 +11468,8 @@
   },
   "nemotron-3-5-lightning-30b-a3b": {
     "name": "Nemotron 3.5 Lightning 30B A3B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.2,
+    "input_per_1m": 0.039,
+    "output_per_1m": 0.18,
     "context_window": 262144
   },
   "nemotron-3-5-lightning-deepinfra": {

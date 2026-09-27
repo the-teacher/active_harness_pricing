@@ -329,10 +329,10 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.42,
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.29,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0042
+    "cache_read_per_1m": 0.001
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
@@ -357,24 +357,24 @@
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.66,
+    "input_per_1m": 0.2156,
+    "output_per_1m": 0.6468,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.007
+    "cache_read_per_1m": 0.00686
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.418818,
-    "output_per_1m": 0.837636,
+    "input_per_1m": 0.348,
+    "output_per_1m": 0.696,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.034902
+    "cache_read_per_1m": 0.029
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.264,
-    "output_per_1m": 0.792,
+    "input_per_1m": 0.24502,
+    "output_per_1m": 3.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0088
+    "cache_read_per_1m": 0.24452
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -738,10 +738,10 @@
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.2737,
+    "output_per_1m": 0.8602,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.044965
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
@@ -752,10 +752,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.045,
+    "output_per_1m": 0.14,
     "context_window": 1310720,
-    "cache_read_per_1m": 0.015
+    "cache_read_per_1m": 0.01
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -1751,8 +1751,8 @@
   },
   "minimax-m2": {
     "name": "MiniMax M2",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.255,
+    "output_per_1m": 1.02,
     "context_window": 204800
   },
   "minimax-m2-1": {
@@ -1771,10 +1771,10 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.21,
+    "output_per_1m": 0.84,
     "context_window": 204800,
-    "cache_read_per_1m": 0.06
+    "cache_read_per_1m": 0.042
   },
   "minimax-m2-her": {
     "name": "MiniMax M2-her",
