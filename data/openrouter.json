@@ -358,10 +358,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.018,
-    "output_per_1m": 0.32,
-    "context_window": 1310720,
-    "cache_read_per_1m": 0.018
+    "input_per_1m": 0.01,
+    "output_per_1m": 1.28,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.01
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -379,10 +379,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.4,
-    "output_per_1m": 4.2,
+    "input_per_1m": 1.32,
+    "output_per_1m": 3.96,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.32
+    "cache_read_per_1m": 0.044
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -708,7 +708,7 @@
     "input_per_1m": 0.3,
     "output_per_1m": 0.9,
     "context_window": 131072,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.055
   },
   "glm-4-7": {
     "name": "GLM 4.7",
@@ -739,16 +739,16 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.3249,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.3,
+    "output_per_1m": 3.99,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.2599
+    "cache_read_per_1m": 0.24
   },
   "glm-5-3": {
     "name": "GLM 5.3",
     "input_per_1m": 1.4,
     "output_per_1m": 4.4,
-    "context_window": 1310720,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
   "glm-5-3-batch": {
@@ -762,7 +762,7 @@
     "name": "GLM 5.3 Flash",
     "input_per_1m": 0.15,
     "output_per_1m": 0.5,
-    "context_window": 1310720,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.03
   },
   "glm-5-3-flash-batch": {
@@ -1239,6 +1239,34 @@
     "output_per_1m": 60.0,
     "context_window": 400000
   },
+  "gpt-6-1-sol": {
+    "name": "GPT-6.1 Sol",
+    "input_per_1m": 2.0,
+    "output_per_1m": 10.0,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.1
+  },
+  "gpt-6-1-sol-batch": {
+    "name": "GPT-6.1 Sol (batch)",
+    "input_per_1m": 1.0,
+    "output_per_1m": 5.0,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.05
+  },
+  "gpt-6-1-sol-pro": {
+    "name": "GPT-6.1 Sol Pro",
+    "input_per_1m": 2.0,
+    "output_per_1m": 10.0,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.1
+  },
+  "gpt-6-1-sol-pro-batch": {
+    "name": "GPT-6.1 Sol Pro (batch)",
+    "input_per_1m": 1.0,
+    "output_per_1m": 5.0,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.05
+  },
   "gpt-6-astra": {
     "name": "GPT-6 Astra",
     "input_per_1m": 10.0,
@@ -1344,10 +1372,9 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.075
+    "input_per_1m": 0.037,
+    "output_per_1m": 0.17,
+    "context_window": 131072
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1556,8 +1583,8 @@
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
-    "input_per_1m": 0.6562,
-    "output_per_1m": 3.3,
+    "input_per_1m": 0.6712,
+    "output_per_1m": 3.35,
     "context_window": 262144,
     "cache_read_per_1m": 0.18
   },
@@ -1954,8 +1981,8 @@
   },
   "muse-glimmer-30b": {
     "name": "Muse Glimmer 30B",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.35,
+    "output_per_1m": 1.5,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
   },
@@ -2010,7 +2037,7 @@
     "name": "Nemotron 3.5 Lightning",
     "input_per_1m": 0.06,
     "output_per_1m": 0.16,
-    "context_window": 1000000,
+    "context_window": 262144,
     "cache_read_per_1m": 0.03
   },
   "nemotron-3-nano-30b-a3b": {
@@ -2368,10 +2395,10 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.0647,
-    "output_per_1m": 4.4,
+    "input_per_1m": 0.42,
+    "output_per_1m": 3.0,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.0517
+    "cache_read_per_1m": 0.085
   },
   "qwen3-8-flash": {
     "name": "Qwen3.8 Flash",
