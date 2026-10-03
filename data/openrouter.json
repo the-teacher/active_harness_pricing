@@ -324,10 +324,9 @@
   },
   "deepseek-v3-1-terminus": {
     "name": "DeepSeek V3.1 Terminus",
-    "input_per_1m": 0.3,
+    "input_per_1m": 0.27,
     "output_per_1m": 1.0,
-    "context_window": 163840,
-    "cache_read_per_1m": 0.135
+    "context_window": 163840
   },
   "deepseek-v3-2": {
     "name": "DeepSeek V3.2 Exp",
@@ -337,10 +336,10 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.015,
-    "output_per_1m": 0.75,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.015
+    "cache_read_per_1m": 0.006
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
@@ -351,17 +350,17 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.042,
-    "output_per_1m": 0.084,
+    "input_per_1m": 0.028,
+    "output_per_1m": 0.056,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0084
+    "cache_read_per_1m": 0.0056
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0115,
+    "input_per_1m": 0.0162,
     "output_per_1m": 1.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0115
+    "cache_read_per_1m": 0.0146
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -379,10 +378,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 1.32,
-    "output_per_1m": 3.96,
+    "input_per_1m": 0.66,
+    "output_per_1m": 1.98,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.044
+    "cache_read_per_1m": 0.022
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -663,10 +662,10 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.0765,
-    "output_per_1m": 0.255,
+    "input_per_1m": 0.0675,
+    "output_per_1m": 0.225,
     "context_window": 262144,
-    "cache_read_per_1m": 0.0425
+    "cache_read_per_1m": 0.0375
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
@@ -732,10 +731,10 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 0.9646,
-    "output_per_1m": 3.0316,
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
     "context_window": 204800,
-    "cache_read_per_1m": 0.17914
+    "cache_read_per_1m": 0.26
   },
   "glm-5-2": {
     "name": "GLM 5.2",
@@ -1562,10 +1561,10 @@
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
-    "input_per_1m": 0.43415,
-    "output_per_1m": 1.828,
+    "input_per_1m": 0.95,
+    "output_per_1m": 4.0,
     "context_window": 262144,
-    "cache_read_per_1m": 0.07312
+    "cache_read_per_1m": 0.16
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -1578,8 +1577,7 @@
     "name": "Kimi K2 Thinking",
     "input_per_1m": 0.6,
     "output_per_1m": 2.5,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "context_window": 262144
   },
   "kimi-k3": {
     "name": "Kimi K3",
@@ -1636,10 +1634,10 @@
   },
   "ling-3-0-flash-fin": {
     "name": "Ling 3.0 Flash Fin",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.042,
+    "output_per_1m": 0.1232,
     "context_window": 262144,
-    "cache_read_per_1m": 0.012
+    "cache_read_per_1m": 0.0084
   },
   "ling-3-0-flash-vl": {
     "name": "Ling 3.0 Flash VL",
@@ -2021,10 +2019,10 @@
   },
   "nemotron-3-5-lightning": {
     "name": "Nemotron 3.5 Lightning",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.16,
+    "input_per_1m": 0.0595,
+    "output_per_1m": 0.17,
     "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.02975
   },
   "nemotron-3-nano-30b-a3b": {
     "name": "Nemotron 3 Nano 30B A3B",
@@ -2268,8 +2266,8 @@
   },
   "qwen3-30b-a3b-instruct-2507": {
     "name": "Qwen3 30B A3B Instruct 2507",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.04815,
+    "output_per_1m": 0.19305,
     "context_window": 262144
   },
   "qwen3-30b-a3b-thinking-2507": {
