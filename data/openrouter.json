@@ -336,10 +336,10 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.003,
+    "output_per_1m": 2.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.006
+    "cache_read_per_1m": 0.003
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
@@ -350,17 +350,17 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.028,
-    "output_per_1m": 0.056,
+    "input_per_1m": 0.0224,
+    "output_per_1m": 1.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0056
+    "cache_read_per_1m": 0.0224
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0162,
+    "input_per_1m": 0.0152,
     "output_per_1m": 1.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0146
+    "cache_read_per_1m": 0.0152
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -378,10 +378,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.66,
-    "output_per_1m": 1.98,
+    "input_per_1m": 0.33,
+    "output_per_1m": 4.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.022
+    "cache_read_per_1m": 0.26
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -738,8 +738,8 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.41,
-    "output_per_1m": 3.99,
+    "input_per_1m": 0.38,
+    "output_per_1m": 3.49,
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
@@ -1581,10 +1581,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 2.7,
-    "output_per_1m": 13.5,
+    "input_per_1m": 0.72,
+    "output_per_1m": 13.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.27
+    "cache_read_per_1m": 0.7
   },
   "kimi-k3-batch": {
     "name": "Kimi K3 (batch)",
@@ -1673,9 +1673,10 @@
   },
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.32,
-    "context_window": 131072
+    "input_per_1m": 0.22,
+    "output_per_1m": 0.5,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.11
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",

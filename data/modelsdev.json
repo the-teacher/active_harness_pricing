@@ -87,10 +87,10 @@
   },
   "ai-glm": {
     "name": "Z.ai: GLM Latest",
-    "input_per_1m": 0.12,
-    "output_per_1m": 4,
+    "input_per_1m": 0.05,
+    "output_per_1m": 5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.08
+    "cache_read_per_1m": 0.04
   },
   "ai-glm-5-1": {
     "name": "Z.AI GLM-5.1",
@@ -115,10 +115,10 @@
   },
   "ai-glm-flash": {
     "name": "Z.ai: GLM Flash Latest",
-    "input_per_1m": 0.035,
+    "input_per_1m": 0.0352,
     "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.035
+    "cache_read_per_1m": 0.0352
   },
   "aion-2-0": {
     "name": "Aion-2.0",
@@ -2007,6 +2007,13 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.2
   },
+  "claude-sonnet-5-5-us": {
+    "name": "Claude Sonnet 5.5 (US)",
+    "input_per_1m": 2.2,
+    "output_per_1m": 11,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.22
+  },
   "claude-sonnet-5-anthropic": {
     "name": "Claude Sonnet 5 (Anthropic)",
     "input_per_1m": 2,
@@ -2125,12 +2132,6 @@
     "output_per_1m": 3.2,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
-  },
-  "clover-1-150b-preview": {
-    "name": "Clover 1 150B Preview",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.8,
-    "context_window": 200000
   },
   "codestral": {
     "name": "Codestral 25.01",
@@ -2426,17 +2427,17 @@
   },
   "deepseek-deepseek-flash": {
     "name": "DeepSeek: DeepSeek Flash Latest",
-    "input_per_1m": 0.02,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.003,
+    "output_per_1m": 2.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.003
   },
   "deepseek-deepseek-pro": {
     "name": "DeepSeek: DeepSeek Pro Latest",
-    "input_per_1m": 0.11,
-    "output_per_1m": 2.7,
+    "input_per_1m": 0.1901,
+    "output_per_1m": 4.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.099
+    "cache_read_per_1m": 0.19
   },
   "deepseek-deepseek-v3-1-terminus": {
     "name": "DeepSeek: DeepSeek V3.1 Terminus",
@@ -2452,17 +2453,17 @@
   },
   "deepseek-deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash Latest",
-    "input_per_1m": 0.0139,
+    "input_per_1m": 0.0152,
     "output_per_1m": 1.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0125
+    "cache_read_per_1m": 0.0152
   },
   "deepseek-flash": {
     "name": "DeepSeek Flash Latest",
-    "input_per_1m": 0.02,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.003,
+    "output_per_1m": 2.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.003
   },
   "deepseek-ocr": {
     "name": "DeepSeek-OCR",
@@ -2479,10 +2480,10 @@
   },
   "deepseek-pro": {
     "name": "DeepSeek Pro Latest",
-    "input_per_1m": 0.11,
-    "output_per_1m": 2.7,
+    "input_per_1m": 0.136,
+    "output_per_1m": 4.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.099
+    "cache_read_per_1m": 0.14
   },
   "deepseek-prover-v2-671b": {
     "name": "Deepseek Prover V2 671B",
@@ -2704,9 +2705,9 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.08,
-    "context_window": 327680,
+    "input_per_1m": 0.003,
+    "output_per_1m": 2.4,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.006
   },
   "deepseek-v4-1-flash-alibaba": {
@@ -2767,8 +2768,8 @@
   },
   "deepseek-v4-1-flash-fast": {
     "name": "deepseek-ai/DeepSeek-V4.1-Flash-Fast",
-    "input_per_1m": 0.6,
-    "output_per_1m": 2.4,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 1048576
   },
   "deepseek-v4-1-flash-fireworks-ai": {
@@ -2857,7 +2858,7 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.0139,
+    "input_per_1m": 0.0152,
     "output_per_1m": 1.28,
     "context_window": 1048576,
     "cache_read_per_1m": 0.018
@@ -2871,7 +2872,7 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0139,
+    "input_per_1m": 0.0152,
     "output_per_1m": 1.28,
     "context_window": 1048576,
     "cache_read_per_1m": 0.015
@@ -3122,9 +3123,9 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.35,
-    "output_per_1m": 0.8,
-    "context_window": 1000000,
+    "input_per_1m": 0.17,
+    "output_per_1m": 4.2,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.1
   },
   "deepseek-v4-pro-0813-alibaba": {
@@ -5043,8 +5044,8 @@
   },
   "glm": {
     "name": "GLM Latest",
-    "input_per_1m": 0.12,
-    "output_per_1m": 4,
+    "input_per_1m": 0.05,
+    "output_per_1m": 4.4,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
@@ -6154,10 +6155,10 @@
   },
   "glm-flash": {
     "name": "GLM Flash Latest",
-    "input_per_1m": 0.035,
+    "input_per_1m": 0.0352,
     "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.035
+    "cache_read_per_1m": 0.0352
   },
   "glm-flash-latest": {
     "name": "GLM Flash (latest)",
@@ -8835,7 +8836,7 @@
   },
   "kimi": {
     "name": "Kimi Latest",
-    "input_per_1m": 0.69,
+    "input_per_1m": 0.576,
     "output_per_1m": 13,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
@@ -9174,9 +9175,9 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 1.95,
-    "output_per_1m": 9.75,
-    "context_window": 1113088,
+    "input_per_1m": 0.72,
+    "output_per_1m": 13,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.285
   },
   "kimi-k3-alibaba-cloud": {
@@ -11402,10 +11403,10 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.69,
+    "input_per_1m": 0.576,
     "output_per_1m": 13,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.45
+    "cache_read_per_1m": 0.3
   },
   "moonshotai-kimi-k2-0711": {
     "name": "MoonshotAI: Kimi K2 0711",
@@ -15687,6 +15688,13 @@
     "output_per_1m": 1.15,
     "context_window": 262144,
     "cache_read_per_1m": 0.04
+  },
+  "step-3-7-flash-flexai": {
+    "name": "Step 3.7 Flash (FlexAI)",
+    "input_per_1m": 0.2,
+    "output_per_1m": 1.15,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.03
   },
   "step-3-7-flash-novitaai": {
     "name": "Step 3.7 Flash (NovitaAI)",
