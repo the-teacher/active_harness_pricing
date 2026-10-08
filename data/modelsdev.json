@@ -87,10 +87,10 @@
   },
   "ai-glm": {
     "name": "Z.ai: GLM Latest",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.0392,
     "output_per_1m": 12,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.0365
   },
   "ai-glm-5-1": {
     "name": "Z.AI GLM-5.1",
@@ -115,10 +115,10 @@
   },
   "ai-glm-flash": {
     "name": "Z.ai: GLM Flash Latest",
-    "input_per_1m": 0.036,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.032,
+    "output_per_1m": 0.9663,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.036
+    "cache_read_per_1m": 0.02
   },
   "aion-2-0": {
     "name": "Aion-2.0",
@@ -415,10 +415,10 @@
   },
   "anthropic-claude-haiku": {
     "name": "Anthropic: Claude Haiku Latest",
-    "input_per_1m": 1,
-    "output_per_1m": 5,
-    "context_window": 200000,
-    "cache_read_per_1m": 0.1
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
   },
   "anthropic-claude-haiku-4-5": {
     "name": "Anthropic Claude Haiku 4.5",
@@ -495,7 +495,7 @@
     "input_per_1m": 2,
     "output_per_1m": 10,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.1
   },
   "anthropic-claude-sonnet-4": {
     "name": "Anthropic: Claude Sonnet 4",
@@ -1144,9 +1144,9 @@
   },
   "claude-haiku": {
     "name": "Claude Haiku Latest",
-    "input_per_1m": 1,
-    "output_per_1m": 5,
-    "context_window": 200000,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.1
   },
   "claude-haiku-3": {
@@ -1253,6 +1253,62 @@
     "output_per_1m": 5,
     "context_window": 200000,
     "cache_read_per_1m": 0.1
+  },
+  "claude-haiku-5-5": {
+    "name": "Claude Haiku 5.5",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
+  },
+  "claude-haiku-5-5-anthropic": {
+    "name": "Claude Haiku 5.5 (Anthropic)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
+  },
+  "claude-haiku-5-5-au": {
+    "name": "Claude Haiku 5.5 (AU)",
+    "input_per_1m": 0.11,
+    "output_per_1m": 0.55,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.011
+  },
+  "claude-haiku-5-5-aws-bedrock": {
+    "name": "Claude Haiku 5.5 (AWS Bedrock)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
+  },
+  "claude-haiku-5-5-eu": {
+    "name": "Claude Haiku 5.5 (EU)",
+    "input_per_1m": 0.11,
+    "output_per_1m": 0.55,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.02
+  },
+  "claude-haiku-5-5-global": {
+    "name": "Claude Haiku 5.5 (Global)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
+  },
+  "claude-haiku-5-5-jp": {
+    "name": "Claude Haiku 5.5 (JP)",
+    "input_per_1m": 0.11,
+    "output_per_1m": 0.55,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.011
+  },
+  "claude-haiku-5-5-us": {
+    "name": "Claude Haiku 5.5 (US)",
+    "input_per_1m": 0.11,
+    "output_per_1m": 0.55,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.011
   },
   "claude-mythos-5": {
     "name": "Claude Mythos 5",
@@ -2012,7 +2068,7 @@
     "input_per_1m": 2,
     "output_per_1m": 10,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.1
   },
   "claude-sonnet-5-5-thinking": {
     "name": "Claude Sonnet 5.5 Thinking",
@@ -2026,7 +2082,7 @@
     "input_per_1m": 2.2,
     "output_per_1m": 11,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.22
+    "cache_read_per_1m": 0.11
   },
   "claude-sonnet-5-anthropic": {
     "name": "Claude Sonnet 5 (Anthropic)",
@@ -2110,7 +2166,7 @@
     "input_per_1m": 2,
     "output_per_1m": 10,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.1
   },
   "claudinio": {
     "name": "Claudinio",
@@ -2148,10 +2204,11 @@
     "cache_read_per_1m": 0.2
   },
   "codestral": {
-    "name": "Codestral 25.01",
+    "name": "Codestral 25.08",
     "input_per_1m": 0.3,
     "output_per_1m": 0.9,
-    "context_window": 256000
+    "context_window": 256000,
+    "cache_read_per_1m": 0.03
   },
   "codestral-22b": {
     "name": "Codestral-22B-v0.1",
@@ -2447,17 +2504,17 @@
   },
   "deepseek-deepseek-flash": {
     "name": "DeepSeek: DeepSeek Flash Latest",
-    "input_per_1m": 0.05,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.0184,
+    "output_per_1m": 1,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.01
   },
   "deepseek-deepseek-pro": {
     "name": "DeepSeek: DeepSeek Pro Latest",
-    "input_per_1m": 0.3,
-    "output_per_1m": 4.2,
+    "input_per_1m": 0.15,
+    "output_per_1m": 3.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.3
+    "cache_read_per_1m": 0.14
   },
   "deepseek-deepseek-v3-1-terminus": {
     "name": "DeepSeek: DeepSeek V3.1 Terminus",
@@ -2473,17 +2530,17 @@
   },
   "deepseek-deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash Latest",
-    "input_per_1m": 0.018,
-    "output_per_1m": 1.28,
+    "input_per_1m": 0.00832,
+    "output_per_1m": 1.008,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.018
+    "cache_read_per_1m": 0.00832
   },
   "deepseek-flash": {
     "name": "DeepSeek Flash Latest",
-    "input_per_1m": 0.05,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.0184,
+    "output_per_1m": 1,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.01
   },
   "deepseek-ocr": {
     "name": "DeepSeek-OCR",
@@ -2500,10 +2557,10 @@
   },
   "deepseek-pro": {
     "name": "DeepSeek Pro Latest",
-    "input_per_1m": 0.3,
-    "output_per_1m": 4.2,
+    "input_per_1m": 0.15,
+    "output_per_1m": 3.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.3
+    "cache_read_per_1m": 0.14
   },
   "deepseek-prover-v2-671b": {
     "name": "Deepseek Prover V2 671B",
@@ -2795,8 +2852,8 @@
   },
   "deepseek-v4-1-flash-fast": {
     "name": "deepseek-ai/DeepSeek-V4.1-Flash-Fast",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.6,
+    "output_per_1m": 2.4,
     "context_window": 1048576
   },
   "deepseek-v4-1-flash-fireworks-ai": {
@@ -2913,8 +2970,8 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.018,
-    "output_per_1m": 1.28,
+    "input_per_1m": 0.00832,
+    "output_per_1m": 1.008,
     "context_window": 1048576,
     "cache_read_per_1m": 0.018
   },
@@ -2923,11 +2980,18 @@
     "input_per_1m": 0.138,
     "output_per_1m": 0.275,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.028
+    "cache_read_per_1m": 0.03
+  },
+  "deepseek-v4-flash-0423-thinking": {
+    "name": "DeepSeek V4 Flash 0423 (Thinking)",
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.28,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.03
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.018,
+    "input_per_1m": 0.0104,
     "output_per_1m": 1.28,
     "context_window": 1048576,
     "cache_read_per_1m": 0.015
@@ -2990,10 +3054,10 @@
   },
   "deepseek-v4-flash-0731-scaleway": {
     "name": "DeepSeek V4 Flash 0731 (Scaleway)",
-    "input_per_1m": 0.4508,
-    "output_per_1m": 0.9015,
+    "input_per_1m": 0.4471,
+    "output_per_1m": 0.8942,
     "context_window": 256000,
-    "cache_read_per_1m": 0.09015
+    "cache_read_per_1m": 0.08942
   },
   "deepseek-v4-flash-0731-tee": {
     "name": "DeepSeek V4 Flash 0731 TEE",
@@ -3164,9 +3228,9 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
-    "input_per_1m": 0.2088,
-    "output_per_1m": 0.4176,
-    "context_window": 1048576,
+    "input_per_1m": 0.348,
+    "output_per_1m": 0.696,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.1
   },
   "deepseek-v4-pro-0423": {
@@ -3456,20 +3520,6 @@
     "context_window": 32000,
     "cache_read_per_1m": 0.2295
   },
-  "doubao-seed-1-6": {
-    "name": "Doubao Seed 1.6",
-    "input_per_1m": 0.204,
-    "output_per_1m": 0.51,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.102
-  },
-  "doubao-seed-1-6-flash": {
-    "name": "Doubao Seed 1.6 Flash",
-    "input_per_1m": 0.0374,
-    "output_per_1m": 0.374,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.0187
-  },
   "doubao-seed-1-6-thinking-250715": {
     "name": "doubao-seed-1-6-thinking-250715",
     "input_per_1m": 0.121,
@@ -3688,13 +3738,6 @@
     "output_per_1m": 3,
     "context_window": 119000,
     "cache_read_per_1m": 0.75
-  },
-  "ernie-x1-1": {
-    "name": "ERNIE X1.1",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 64000,
-    "cache_read_per_1m": 0.075
   },
   "eva-llama-3-33-70b": {
     "name": "EVA Llama 3.33 70B",
@@ -5112,7 +5155,7 @@
   },
   "glm": {
     "name": "GLM Latest",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.0392,
     "output_per_1m": 12,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
@@ -5631,8 +5674,8 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.0616,
-    "output_per_1m": 12,
+    "input_per_1m": 0.03,
+    "output_per_1m": 10,
     "context_window": 1048576,
     "cache_read_per_1m": 0.14
   },
@@ -5854,8 +5897,8 @@
   },
   "glm-5-3": {
     "name": "GLM-5.3",
-    "input_per_1m": 0.07,
-    "output_per_1m": 7,
+    "input_per_1m": 0.049,
+    "output_per_1m": 3.39,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
@@ -5893,6 +5936,13 @@
     "context_window": 1048572,
     "cache_read_per_1m": 0.39
   },
+  "glm-5-3-fast-scx-ai": {
+    "name": "GLM 5.3 Fast (SCX.ai)",
+    "input_per_1m": 2.8,
+    "output_per_1m": 8.8,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.56
+  },
   "glm-5-3-fireworks-ai": {
     "name": "GLM-5.3 (Fireworks AI)",
     "input_per_1m": 1.4,
@@ -5921,6 +5971,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.075
   },
+  "glm-5-3-flash-entrim": {
+    "name": "GLM-5.3 Flash (entrim)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.35,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0175
+  },
   "glm-5-3-flash-eu": {
     "name": "GLM-5.3-Flash (EU)",
     "input_per_1m": 0.2,
@@ -5941,13 +5998,6 @@
     "output_per_1m": 0.325,
     "context_window": 1048560,
     "cache_read_per_1m": 0.0195
-  },
-  "glm-5-3-flash-fp4": {
-    "name": "GLM 5.3 Flash FP4",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.5,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0
   },
   "glm-5-3-flash-gonka24": {
     "name": "GLM-5.3 Flash (Gonka24)",
@@ -6244,10 +6294,10 @@
   },
   "glm-flash": {
     "name": "GLM Flash Latest",
-    "input_per_1m": 0.0214,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.032,
+    "output_per_1m": 0.9663,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0214
+    "cache_read_per_1m": 0.02
   },
   "glm-flash-latest": {
     "name": "GLM Flash (latest)",
@@ -7876,8 +7926,8 @@
   },
   "gpt-oss-120b-ionos": {
     "name": "GPT OSS 120B (IONOS)",
-    "input_per_1m": 0.169,
-    "output_per_1m": 0.7325,
+    "input_per_1m": 0.1677,
+    "output_per_1m": 0.7265,
     "context_window": 131072
   },
   "gpt-oss-120b-nebius": {
@@ -7902,8 +7952,8 @@
   },
   "gpt-oss-120b-scaleway": {
     "name": "GPT OSS 120B (Scaleway)",
-    "input_per_1m": 0.169,
-    "output_per_1m": 0.6761,
+    "input_per_1m": 0.1677,
+    "output_per_1m": 0.6706,
     "context_window": 128000
   },
   "gpt-oss-120b-scx-ai-turbo": {
@@ -8396,9 +8446,9 @@
   },
   "grok-4-6": {
     "name": "Grok 4.6",
-    "input_per_1m": 1.25,
+    "input_per_1m": 2,
     "output_per_1m": 6,
-    "context_window": 200000,
+    "context_window": 500000,
     "cache_read_per_1m": 0.5
   },
   "grok-4-6-aws-bedrock": {
@@ -8668,13 +8718,6 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.033
   },
-  "hy3-deepinfra": {
-    "name": "Hy3 (DeepInfra)",
-    "input_per_1m": 0.14,
-    "output_per_1m": 0.58,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.035
-  },
   "hy3-novitaai": {
     "name": "Hy3 (NovitaAI)",
     "input_per_1m": 0.14,
@@ -8924,7 +8967,7 @@
   },
   "kimi": {
     "name": "Kimi Latest",
-    "input_per_1m": 0.615,
+    "input_per_1m": 0.67,
     "output_per_1m": 13,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
@@ -9263,7 +9306,7 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.69,
+    "input_per_1m": 0.72,
     "output_per_1m": 15,
     "context_window": 1048576,
     "cache_read_per_1m": 0.285
@@ -9804,8 +9847,8 @@
   },
   "llama-3-3-70b-instruct-ionos": {
     "name": "Llama-3.3-70B-Instruct (IONOS)",
-    "input_per_1m": 0.7325,
-    "output_per_1m": 0.7325,
+    "input_per_1m": 0.7265,
+    "output_per_1m": 0.7265,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-novitaai": {
@@ -9816,8 +9859,8 @@
   },
   "llama-3-3-70b-instruct-scaleway": {
     "name": "Llama-3.3-70B-Instruct (Scaleway)",
-    "input_per_1m": 1.014,
-    "output_per_1m": 1.014,
+    "input_per_1m": 1.006,
+    "output_per_1m": 1.006,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-us": {
@@ -10568,7 +10611,7 @@
     "input_per_1m": 0.27,
     "output_per_1m": 1.1,
     "context_window": 204800,
-    "cache_read_per_1m": 0.165
+    "cache_read_per_1m": 0.03
   },
   "minimax-m2-1-lightning": {
     "name": "MiniMax M2.1 Lightning",
@@ -10862,8 +10905,8 @@
   },
   "ministral-3-14b-infomaniak": {
     "name": "Ministral 3 14B (Infomaniak)",
-    "input_per_1m": 0.3381,
-    "output_per_1m": 0.4508,
+    "input_per_1m": 0.3353,
+    "output_per_1m": 0.4471,
     "context_window": 100000
   },
   "ministral-3-14b-instruct": {
@@ -10882,7 +10925,8 @@
     "name": "Ministral 3 3B",
     "input_per_1m": 0.1,
     "output_per_1m": 0.1,
-    "context_window": 256000
+    "context_window": 131072,
+    "cache_read_per_1m": 0.01
   },
   "ministral-3-3b-2512": {
     "name": "Ministral 3 3B 2512",
@@ -10901,7 +10945,8 @@
     "name": "Ministral 3 8B",
     "input_per_1m": 0.15,
     "output_per_1m": 0.15,
-    "context_window": 128000
+    "context_window": 262144,
+    "cache_read_per_1m": 0.015
   },
   "ministral-3-8b-2512": {
     "name": "Ministral 3 8B 2512",
@@ -10996,13 +11041,6 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.2
   },
-  "mistral-codestral-2508": {
-    "name": "Mistral: Codestral 2508",
-    "input_per_1m": 0.3,
-    "output_per_1m": 0.9,
-    "context_window": 256000,
-    "cache_read_per_1m": 0.03
-  },
   "mistral-devstral-small-2505": {
     "name": "Mistral Devstral Small 2505",
     "input_per_1m": 0.06,
@@ -11085,7 +11123,7 @@
     "name": "Mistral Large 4 (EU)",
     "input_per_1m": 0.68,
     "output_per_1m": 2.09,
-    "context_window": 1000000,
+    "context_window": 524288,
     "cache_read_per_1m": 0.07
   },
   "mistral-large-4-mistral-ai": {
@@ -11512,7 +11550,7 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.615,
+    "input_per_1m": 0.67,
     "output_per_1m": 13,
     "context_window": 1048576,
     "cache_read_per_1m": 0.45
@@ -15889,13 +15927,6 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.05
   },
-  "stepfun-3-5-flash": {
-    "name": "StepFun 3.5 Flash",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.3,
-    "context_window": 262114,
-    "cache_read_per_1m": 0.02
-  },
   "tencent-hunyuan-a13b-instruct": {
     "name": "Tencent: Hunyuan A13B Instruct",
     "input_per_1m": 0.14,
@@ -16197,6 +16228,12 @@
     "input_per_1m": 0.04,
     "output_per_1m": 0.04,
     "context_window": 128000
+  },
+  "voxtral-small": {
+    "name": "Voxtral Small",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.4,
+    "context_window": 32768
   },
   "voxtral-small-24b": {
     "name": "Voxtral Small 24B",

@@ -82,6 +82,20 @@
     "context_window": 200000,
     "cache_read_per_1m": 0.05
   },
+  "claude-haiku-5-5": {
+    "name": "Claude Haiku 5.5",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
+  },
+  "claude-haiku-5-5-batch": {
+    "name": "Claude Haiku 5.5 (batch)",
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.25,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.005
+  },
   "claude-opus-4-1": {
     "name": "Claude Opus 4.1",
     "input_per_1m": 15.0,
@@ -227,14 +241,14 @@
     "input_per_1m": 2.0,
     "output_per_1m": 10.0,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.1
   },
   "claude-sonnet-5-5-batch": {
     "name": "Claude Sonnet 5.5 (batch)",
     "input_per_1m": 1.0,
     "output_per_1m": 5.0,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.05
   },
   "claude-sonnet-5-batch": {
     "name": "Claude Sonnet 5 (batch)",
@@ -297,10 +311,10 @@
   },
   "deepseek": {
     "name": "DeepSeek V3.2",
-    "input_per_1m": 0.28,
+    "input_per_1m": 0.259,
     "output_per_1m": 0.42,
     "context_window": 163840,
-    "cache_read_per_1m": 0.028
+    "cache_read_per_1m": 0.135
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
@@ -350,17 +364,17 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.0072,
     "output_per_1m": 1.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.0072
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.018,
+    "input_per_1m": 0.006,
     "output_per_1m": 1.28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.018
+    "cache_read_per_1m": 0.006
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -371,10 +385,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.2088,
-    "output_per_1m": 0.4176,
+    "input_per_1m": 0.95526,
+    "output_per_1m": 1.91052,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0174
+    "cache_read_per_1m": 0.079605
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -713,7 +727,7 @@
     "input_per_1m": 0.3,
     "output_per_1m": 0.9,
     "context_window": 131072,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.055
   },
   "glm-4-7": {
     "name": "GLM 4.7",
@@ -744,17 +758,17 @@
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.0744,
-    "output_per_1m": 12.0,
+    "input_per_1m": 0.03,
+    "output_per_1m": 10.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0744
+    "cache_read_per_1m": 0.03
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 0.07,
-    "output_per_1m": 7.0,
+    "input_per_1m": 0.049,
+    "output_per_1m": 3.39,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.065
+    "cache_read_per_1m": 0.048
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
@@ -1580,7 +1594,7 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.62,
+    "input_per_1m": 0.72,
     "output_per_1m": 15.0,
     "context_window": 1048576,
     "cache_read_per_1m": 0.43
@@ -1672,10 +1686,9 @@
   },
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
-    "input_per_1m": 0.22,
-    "output_per_1m": 0.5,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.11
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.32,
+    "context_window": 131072
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
@@ -2027,22 +2040,21 @@
   },
   "nemotron-3-5-lightning": {
     "name": "Nemotron 3.5 Lightning",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.16,
+    "input_per_1m": 0.049,
+    "output_per_1m": 0.14,
     "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.0245
   },
   "nemotron-3-nano-30b-a3b": {
     "name": "Nemotron 3 Nano 30B A3B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.2,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.24,
+    "context_window": 262144
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.45,
+    "input_per_1m": 0.085,
+    "output_per_1m": 0.4,
     "context_window": 262144
   },
   "nemotron-3-ultra-550b-a55b": {
@@ -2297,8 +2309,8 @@
   },
   "qwen3-5-27b": {
     "name": "Qwen3.5-27B",
-    "input_per_1m": 0.195,
-    "output_per_1m": 1.56,
+    "input_per_1m": 0.26,
+    "output_per_1m": 2.6,
     "context_window": 262144
   },
   "qwen3-5-35b-a3b": {
@@ -2483,10 +2495,9 @@
   },
   "qwen3-next-80b-a3b-instruct": {
     "name": "Qwen3 Next 80B A3B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 1.1,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.07
+    "input_per_1m": 0.15,
+    "output_per_1m": 1.5,
+    "context_window": 262144
   },
   "qwen3-next-80b-a3b-thinking": {
     "name": "Qwen3 Next 80B A3B Thinking",
