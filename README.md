@@ -55,16 +55,16 @@ PR.max_cost(model_id: "gpt-4o", tokens_input: 10_000, tokens_output: 2_000, prov
 # => { cost: 0.001234, source: :provider, all: { provider: 0.001234 } }
 ```
 
-### Usage with ActiveHarness agent results
+### Usage with ActiveHarness request results
 
-Pass a result or agent object directly — all fields are extracted automatically:
+Pass a result or request object directly — all fields are extracted automatically:
 
 ```ruby
-result = MyAgent.call(input: "...")
+result = MyRequest.call(input: "...")
 
-# Short form — pass result or agent object directly
+# Short form — pass result or request object directly
 cost = ActiveHarness::Pricing::PriceResolver.max_cost(result)
-cost = ActiveHarness::Pricing::PriceResolver.max_cost(agent)
+cost = ActiveHarness::Pricing::PriceResolver.max_cost(request)
 
 # Equivalent explicit form
 cost = ActiveHarness::Pricing::PriceResolver.max_cost(
