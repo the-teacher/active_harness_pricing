@@ -87,10 +87,10 @@
   },
   "ai-glm": {
     "name": "Z.ai: GLM Latest",
-    "input_per_1m": 0.06,
+    "input_per_1m": 0.0608,
     "output_per_1m": 4.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0558
+    "cache_read_per_1m": 0.0565
   },
   "ai-glm-5-1": {
     "name": "Z.AI GLM-5.1",
@@ -115,10 +115,10 @@
   },
   "ai-glm-flash": {
     "name": "Z.ai: GLM Flash Latest",
-    "input_per_1m": 0.036,
-    "output_per_1m": 0.9,
+    "input_per_1m": 0.027,
+    "output_per_1m": 1.125,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01125
+    "cache_read_per_1m": 0.009
   },
   "aion-2-0": {
     "name": "Aion-2.0",
@@ -527,13 +527,6 @@
   },
   "anthropic-claude-sonnet-4-6": {
     "name": "Anthropic Claude Sonnet 4.6",
-    "input_per_1m": 3,
-    "output_per_1m": 15,
-    "context_window": 200000,
-    "cache_read_per_1m": 0.3
-  },
-  "anthropic-claude-sonnet-4-retires-oct-15": {
-    "name": "Anthropic: Claude Sonnet 4 (retires Oct 15)",
     "input_per_1m": 3,
     "output_per_1m": 15,
     "context_window": 200000,
@@ -1358,6 +1351,13 @@
     "output_per_1m": 0.55,
     "context_window": 1000000,
     "cache_read_per_1m": 0.011
+  },
+  "claude-haiku-latest-claude-haiku-5-5": {
+    "name": "Claude Haiku Latest (Claude Haiku 5.5)",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.01
   },
   "claude-mythos-5": {
     "name": "Claude Mythos 5",
@@ -2566,17 +2566,17 @@
   },
   "deepseek-deepseek-flash": {
     "name": "DeepSeek: DeepSeek Flash Latest",
-    "input_per_1m": 0.01368,
-    "output_per_1m": 0.891,
+    "input_per_1m": 0.036,
+    "output_per_1m": 0.7047,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0036
+    "cache_read_per_1m": 0.0054
   },
   "deepseek-deepseek-pro": {
     "name": "DeepSeek: DeepSeek Pro Latest",
-    "input_per_1m": 0.225,
-    "output_per_1m": 8,
+    "input_per_1m": 0.25,
+    "output_per_1m": 5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.23
+    "cache_read_per_1m": 0.249
   },
   "deepseek-deepseek-v3-1-terminus": {
     "name": "DeepSeek: DeepSeek V3.1 Terminus",
@@ -2592,17 +2592,17 @@
   },
   "deepseek-deepseek-v4-flash": {
     "name": "DeepSeek: DeepSeek V4 Flash Latest",
-    "input_per_1m": 0.0144,
+    "input_per_1m": 0.00441,
     "output_per_1m": 0.576,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0108
+    "cache_read_per_1m": 0.00441
   },
   "deepseek-flash": {
     "name": "DeepSeek Flash Latest",
-    "input_per_1m": 0.01368,
-    "output_per_1m": 0.891,
+    "input_per_1m": 0.036,
+    "output_per_1m": 0.7047,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0036
+    "cache_read_per_1m": 0.0054
   },
   "deepseek-ocr": {
     "name": "DeepSeek OCR",
@@ -2619,10 +2619,10 @@
   },
   "deepseek-pro": {
     "name": "DeepSeek Pro Latest",
-    "input_per_1m": 0.225,
-    "output_per_1m": 8,
+    "input_per_1m": 0.25,
+    "output_per_1m": 5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.23
+    "cache_read_per_1m": 0.249
   },
   "deepseek-r1": {
     "name": "DeepSeek R1",
@@ -2826,10 +2826,10 @@
   },
   "deepseek-v3-2-thinking": {
     "name": "DeepSeek V3.2 Thinking",
-    "input_per_1m": 0.28,
-    "output_per_1m": 0.42,
+    "input_per_1m": 0.2088,
+    "output_per_1m": 0.3096,
     "context_window": 163000,
-    "cache_read_per_1m": 0.14
+    "cache_read_per_1m": 0.0216
   },
   "deepseek-v3-2-vertex-ai-openai-compatible": {
     "name": "DeepSeek V3.2 (Vertex AI (OpenAI-compatible))",
@@ -2936,10 +2936,10 @@
   },
   "deepseek-v4-1-flash-flexai": {
     "name": "DeepSeek V4.1 Flash (FlexAI)",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.66,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0225
+    "cache_read_per_1m": 0.015
   },
   "deepseek-v4-1-flash-fp4": {
     "name": "DeepSeek V4.1 Flash FP4",
@@ -2957,10 +2957,10 @@
   },
   "deepseek-v4-1-flash-greenpt": {
     "name": "DeepSeek V4.1 Flash (Greenpt)",
-    "input_per_1m": 0.2463,
-    "output_per_1m": 1.231,
+    "input_per_1m": 0.2466,
+    "output_per_1m": 1.233,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.01231
+    "cache_read_per_1m": 0.01233
   },
   "deepseek-v4-1-flash-luminal": {
     "name": "DeepSeek V4.1 Flash (luminal)",
@@ -2999,10 +2999,10 @@
   },
   "deepseek-v4-1-flash-scaleway": {
     "name": "DeepSeek V4.1 Flash (Scaleway)",
-    "input_per_1m": 0.6717,
-    "output_per_1m": 2.015,
+    "input_per_1m": 0.6725,
+    "output_per_1m": 2.017,
     "context_window": 256000,
-    "cache_read_per_1m": 0.1343
+    "cache_read_per_1m": 0.1345
   },
   "deepseek-v4-1-flash-sciforium": {
     "name": "DeepSeek V4.1 Flash (sciforium)",
@@ -3055,7 +3055,7 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash",
-    "input_per_1m": 0.0144,
+    "input_per_1m": 0.00441,
     "output_per_1m": 0.576,
     "context_window": 1048576,
     "cache_read_per_1m": 0.018
@@ -3076,7 +3076,7 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.016,
+    "input_per_1m": 0.018,
     "output_per_1m": 0.64,
     "context_window": 1048576,
     "cache_read_per_1m": 0.015
@@ -3139,10 +3139,17 @@
   },
   "deepseek-v4-flash-0731-greenpt": {
     "name": "DeepSeek V4 Flash 0731 (Greenpt)",
-    "input_per_1m": 0.1567,
-    "output_per_1m": 0.3918,
+    "input_per_1m": 0.1569,
+    "output_per_1m": 0.3923,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.04478
+    "cache_read_per_1m": 0.04483
+  },
+  "deepseek-v4-flash-0731-legacy-alias": {
+    "name": "DeepSeek V4 Flash 0731 (legacy alias)",
+    "input_per_1m": 0.29,
+    "output_per_1m": 1.16,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0058
   },
   "deepseek-v4-flash-0731-nebius": {
     "name": "DeepSeek V4 Flash 0731 (Nebius)",
@@ -3153,10 +3160,10 @@
   },
   "deepseek-v4-flash-0731-scaleway": {
     "name": "DeepSeek V4 Flash 0731 (Scaleway)",
-    "input_per_1m": 0.4478,
-    "output_per_1m": 0.8956,
+    "input_per_1m": 0.4483,
+    "output_per_1m": 0.8966,
     "context_window": 256000,
-    "cache_read_per_1m": 0.08956
+    "cache_read_per_1m": 0.08966
   },
   "deepseek-v4-flash-0731-tee": {
     "name": "DeepSeek V4 Flash 0731 TEE",
@@ -3318,13 +3325,6 @@
     "context_window": 1000000,
     "cache_read_per_1m": 0.014
   },
-  "deepseek-v4-flash-vision-exp-cybersecurity": {
-    "name": "DeepSeek V4 Flash Vision Exp Cybersecurity",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.075
-  },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
     "input_per_1m": 0.348,
@@ -3404,10 +3404,10 @@
   },
   "deepseek-v4-pro-0813-thinking": {
     "name": "DeepSeek V4 Pro 0813 Thinking",
-    "input_per_1m": 0.8957,
-    "output_per_1m": 0.99,
+    "input_per_1m": 1.1,
+    "output_per_1m": 2.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1866
+    "cache_read_per_1m": 0.04
   },
   "deepseek-v4-pro-0813-together-ai": {
     "name": "DeepSeek V4 Pro 0813 (Together AI)",
@@ -3715,10 +3715,10 @@
   },
   "doubao-seed-character": {
     "name": "Doubao Seed Character",
-    "input_per_1m": 0.1179,
-    "output_per_1m": 0.2947,
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.37,
     "context_window": 128000,
-    "cache_read_per_1m": 0.0236
+    "cache_read_per_1m": 0.03
   },
   "doubao-seed-code": {
     "name": "Doubao-Seed-Code",
@@ -3770,7 +3770,7 @@
     "context_window": 512
   },
   "ember-1": {
-    "name": "Ember-1",
+    "name": "Ember 1",
     "input_per_1m": 3,
     "output_per_1m": 15,
     "context_window": 1048576,
@@ -3990,20 +3990,6 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.075
   },
-  "gemini-2-5-flash-google-ai-studio": {
-    "name": "Gemini 2.5 Flash (Google AI Studio)",
-    "input_per_1m": 0.3,
-    "output_per_1m": 2.5,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.03
-  },
-  "gemini-2-5-flash-google-vertex-ai": {
-    "name": "Gemini 2.5 Flash (Google Vertex AI)",
-    "input_per_1m": 0.3,
-    "output_per_1m": 2.5,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.03
-  },
   "gemini-2-5-flash-image": {
     "name": "gemini-2.5-flash-image",
     "input_per_1m": 0.3,
@@ -4018,20 +4004,6 @@
   },
   "gemini-2-5-flash-lite-eu": {
     "name": "Gemini 2.5 Flash-Lite (EU)",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.01
-  },
-  "gemini-2-5-flash-lite-google-ai-studio": {
-    "name": "Gemini 2.5 Flash Lite (Google AI Studio)",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.01
-  },
-  "gemini-2-5-flash-lite-google-vertex-ai": {
-    "name": "Gemini 2.5 Flash Lite (Google Vertex AI)",
     "input_per_1m": 0.1,
     "output_per_1m": 0.4,
     "context_window": 1048576,
@@ -4115,20 +4087,6 @@
     "output_per_1m": 10,
     "context_window": 1048576,
     "cache_read_per_1m": 0.25
-  },
-  "gemini-2-5-pro-google-ai-studio": {
-    "name": "Gemini 2.5 Pro (Google AI Studio)",
-    "input_per_1m": 1.25,
-    "output_per_1m": 10,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.125
-  },
-  "gemini-2-5-pro-google-vertex-ai": {
-    "name": "Gemini 2.5 Pro (Google Vertex AI)",
-    "input_per_1m": 1.25,
-    "output_per_1m": 10,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.125
   },
   "gemini-2-5-pro-preview": {
     "name": "Gemini 2.5 Pro Preview 06-05",
@@ -4810,17 +4768,17 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
-  "gemini-pro-latest-gemini-3-1-pro-preview": {
-    "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview)",
-    "input_per_1m": 2,
-    "output_per_1m": 12,
+  "gemini-pro-latest-gemini-4-argon": {
+    "name": "Gemini Pro Latest (Gemini 4 Argon)",
+    "input_per_1m": 4,
+    "output_per_1m": 20,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
-  "gemini-pro-latest-gemini-3-1-pro-preview-vertex-ai": {
-    "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview, Vertex AI)",
-    "input_per_1m": 2,
-    "output_per_1m": 12,
+  "gemini-pro-latest-gemini-4-argon-vertex-ai": {
+    "name": "Gemini Pro Latest (Gemini 4 Argon, Vertex AI)",
+    "input_per_1m": 4,
+    "output_per_1m": 20,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
@@ -4852,8 +4810,8 @@
   },
   "gemma-3-12b-it": {
     "name": "Gemma 3 12B IT",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.15,
+    "input_per_1m": 0.04,
+    "output_per_1m": 0.12,
     "context_window": 131072
   },
   "gemma-3-12b-it-amazon-bedrock": {
@@ -5100,8 +5058,8 @@
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B IT",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.34,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.3,
     "context_window": 262144
   },
   "gemma-4-31b-it-cerebras": {
@@ -5218,6 +5176,12 @@
     "output_per_1m": 0.5,
     "context_window": 256000
   },
+  "gemma-sea-lion-v4-27b": {
+    "name": "Gemma SEA-LION v4 27B",
+    "input_per_1m": 0.24,
+    "output_per_1m": 0.48,
+    "context_window": 131072
+  },
   "gemma-sea-lion-v4-27b-it": {
     "name": "Gemma Sea Lion V4 27B It",
     "input_per_1m": 0.351,
@@ -5322,7 +5286,7 @@
   },
   "glm": {
     "name": "GLM Latest",
-    "input_per_1m": 0.06,
+    "input_per_1m": 0.0608,
     "output_per_1m": 4.4,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
@@ -5835,9 +5799,9 @@
   },
   "glm-5-2": {
     "name": "GLM-5.2",
-    "input_per_1m": 0.037,
-    "output_per_1m": 7,
-    "context_window": 1048576,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.05,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.14
   },
   "glm-5-2-alibaba-cloud": {
@@ -6077,6 +6041,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.26
   },
+  "glm-5-3-entrim": {
+    "name": "GLM-5.3 (entrim)",
+    "input_per_1m": 0.5,
+    "output_per_1m": 2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.15
+  },
   "glm-5-3-eu": {
     "name": "GLM-5.3 (EU)",
     "input_per_1m": 1.2,
@@ -6113,9 +6084,9 @@
   },
   "glm-5-3-flash": {
     "name": "GLM-5.3-Flash",
-    "input_per_1m": 0.03,
-    "output_per_1m": 0.1,
-    "context_window": 1000000,
+    "input_per_1m": 0.027,
+    "output_per_1m": 1.125,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.03
   },
   "glm-5-3-flash-consensus-protocol": {
@@ -6123,7 +6094,7 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.25,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.01
   },
   "glm-5-3-flash-cybersecurity": {
     "name": "GLM 5.3 Flash Cybersecurity",
@@ -6455,10 +6426,10 @@
   },
   "glm-flash": {
     "name": "GLM Flash Latest",
-    "input_per_1m": 0.036,
-    "output_per_1m": 0.9,
+    "input_per_1m": 0.027,
+    "output_per_1m": 1.125,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01125
+    "cache_read_per_1m": 0.009
   },
   "glm-flash-latest": {
     "name": "GLM Flash (latest)",
@@ -7694,10 +7665,10 @@
   },
   "gpt-6-1-sol-ultrafast": {
     "name": "GPT-6.1 Sol Ultrafast",
-    "input_per_1m": 15,
-    "output_per_1m": 75,
+    "input_per_1m": 12,
+    "output_per_1m": 60,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.75
+    "cache_read_per_1m": 0.6
   },
   "gpt-6-1-sol-us": {
     "name": "GPT-6.1 Sol (US)",
@@ -7970,12 +7941,12 @@
     "context_window": 400000,
     "cache_read_per_1m": 0.075
   },
-  "gpt-mini-latest-gpt-5-4-mini": {
-    "name": "GPT Mini Latest (GPT-5.4 mini)",
-    "input_per_1m": 0.75,
-    "output_per_1m": 4.5,
-    "context_window": 400000,
-    "cache_read_per_1m": 0.075
+  "gpt-mini-latest-gpt-5-6-luna": {
+    "name": "GPT Mini Latest (GPT-5.6 Luna)",
+    "input_per_1m": 0.2,
+    "output_per_1m": 1.2,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.02
   },
   "gpt-oss-120b": {
     "name": "GPT OSS 120B",
@@ -8056,8 +8027,8 @@
   },
   "gpt-oss-120b-greenpt": {
     "name": "GPT OSS 120B (Greenpt)",
-    "input_per_1m": 0.2239,
-    "output_per_1m": 0.7837,
+    "input_per_1m": 0.2242,
+    "output_per_1m": 0.7846,
     "context_window": 128000
   },
   "gpt-oss-120b-groq": {
@@ -8074,8 +8045,8 @@
   },
   "gpt-oss-120b-ionos": {
     "name": "GPT OSS 120B (IONOS)",
-    "input_per_1m": 0.1679,
-    "output_per_1m": 0.7277,
+    "input_per_1m": 0.1681,
+    "output_per_1m": 0.7285,
     "context_window": 128000
   },
   "gpt-oss-120b-nebius": {
@@ -8100,8 +8071,8 @@
   },
   "gpt-oss-120b-scaleway": {
     "name": "GPT OSS 120B (Scaleway)",
-    "input_per_1m": 0.1679,
-    "output_per_1m": 0.6717,
+    "input_per_1m": 0.1681,
+    "output_per_1m": 0.6725,
     "context_window": 128000
   },
   "gpt-oss-120b-scx-ai-turbo": {
@@ -8164,10 +8135,10 @@
   },
   "gpt-oss-20b-flexai": {
     "name": "GPT OSS 20B (FlexAI)",
-    "input_per_1m": 0.03,
-    "output_per_1m": 0.13,
+    "input_per_1m": 0.02,
+    "output_per_1m": 0.1,
     "context_window": 131072,
-    "cache_read_per_1m": 0.0045
+    "cache_read_per_1m": 0.003
   },
   "gpt-oss-20b-govcloud": {
     "name": "gpt-oss-20b (GovCloud)",
@@ -8225,11 +8196,12 @@
     "context_window": 131072,
     "cache_read_per_1m": 0.0375
   },
-  "gpt-pro-latest-gpt-5-5-pro": {
-    "name": "GPT Pro Latest (GPT-5.5 Pro)",
-    "input_per_1m": 30,
-    "output_per_1m": 180,
-    "context_window": 1050000
+  "gpt-pro-latest-gpt-5-6-sol": {
+    "name": "GPT Pro Latest (GPT-5.6 Sol)",
+    "input_per_1m": 4,
+    "output_per_1m": 20,
+    "context_window": 1050000,
+    "cache_read_per_1m": 0.4
   },
   "gpt-realtime-1-5": {
     "name": "GPT-Realtime-1.5",
@@ -9120,8 +9092,8 @@
   },
   "kimi": {
     "name": "Kimi Latest",
-    "input_per_1m": 0.36,
-    "output_per_1m": 14,
+    "input_per_1m": 0.294,
+    "output_per_1m": 28,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
@@ -9310,10 +9282,10 @@
   },
   "kimi-k2-6-thinking": {
     "name": "Kimi K2.6 Thinking",
-    "input_per_1m": 0.441,
-    "output_per_1m": 2.45,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.6,
     "context_window": 262144,
-    "cache_read_per_1m": 0.099
+    "cache_read_per_1m": 0.125
   },
   "kimi-k2-7-code": {
     "name": "Kimi K2.7 Code",
@@ -9472,8 +9444,8 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.45,
-    "output_per_1m": 15,
+    "input_per_1m": 0.304,
+    "output_per_1m": 11.59,
     "context_window": 1048576,
     "cache_read_per_1m": 0.285
   },
@@ -10027,14 +9999,14 @@
   },
   "llama-3-3-70b-instruct-greenpt": {
     "name": "Llama-3.3-70B-Instruct (Greenpt)",
-    "input_per_1m": 1.231,
-    "output_per_1m": 1.231,
+    "input_per_1m": 1.233,
+    "output_per_1m": 1.233,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-ionos": {
     "name": "Llama-3.3-70B-Instruct (IONOS)",
-    "input_per_1m": 0.7277,
-    "output_per_1m": 0.7277,
+    "input_per_1m": 0.7285,
+    "output_per_1m": 0.7285,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-novitaai": {
@@ -10045,8 +10017,8 @@
   },
   "llama-3-3-70b-instruct-scaleway": {
     "name": "Llama-3.3-70B-Instruct (Scaleway)",
-    "input_per_1m": 1.008,
-    "output_per_1m": 1.008,
+    "input_per_1m": 1.009,
+    "output_per_1m": 1.009,
     "context_window": 128000
   },
   "llama-3-3-70b-instruct-turbo": {
@@ -10515,7 +10487,7 @@
     "name": "Meta: Llama 3.2 3B Instruct",
     "input_per_1m": 0.05,
     "output_per_1m": 0.33,
-    "context_window": 80000
+    "context_window": 131072
   },
   "meta-llama-3-3-70b-instruct": {
     "name": "Meta-Llama-3_3-70B-Instruct",
@@ -10544,8 +10516,8 @@
   },
   "meta-llama-4-scout": {
     "name": "Meta: Llama 4 Scout",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.24,
     "context_window": 131072
   },
   "meta-llama-4-scout-17b-16e": {
@@ -10556,8 +10528,8 @@
   },
   "meta-llama-guard-4-12b": {
     "name": "Meta: Llama Guard 4 12B",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.144,
+    "output_per_1m": 0.144,
     "context_window": 163840
   },
   "meta-llama-prompt-guard-2-22m": {
@@ -10595,8 +10567,8 @@
   },
   "microsoft-phi-4": {
     "name": "Microsoft: Phi 4",
-    "input_per_1m": 0.07,
-    "output_per_1m": 0.14,
+    "input_per_1m": 0.056,
+    "output_per_1m": 0.112,
     "context_window": 16384
   },
   "mimo": {
@@ -11121,8 +11093,8 @@
   },
   "ministral-3-14b-infomaniak": {
     "name": "Ministral 3 14B (Infomaniak)",
-    "input_per_1m": 0.3359,
-    "output_per_1m": 0.4478,
+    "input_per_1m": 0.3362,
+    "output_per_1m": 0.4483,
     "context_window": 100000
   },
   "ministral-3-14b-instruct": {
@@ -11537,8 +11509,8 @@
   },
   "mistral-small-3-2-24b": {
     "name": "Mistral Small 3.2 24B",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.2,
+    "input_per_1m": 0.09375,
+    "output_per_1m": 0.25,
     "context_window": 256000,
     "cache_read_per_1m": 0.01
   },
@@ -11671,6 +11643,30 @@
     "output_per_1m": 0,
     "context_window": 200000
   },
+  "moondream-3-1": {
+    "name": "Moondream 3.1",
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.5,
+    "context_window": 32000
+  },
+  "moondream-3-preview": {
+    "name": "Moondream 3 Preview",
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.5,
+    "context_window": 32000
+  },
+  "moondream-moondream-3-1": {
+    "name": "Moondream: Moondream 3.1",
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.5,
+    "context_window": 32000
+  },
+  "moondream-moondream-3-preview": {
+    "name": "Moondream: Moondream 3 Preview",
+    "input_per_1m": 0.3,
+    "output_per_1m": 2.5,
+    "context_window": 32000
+  },
   "moonlight-dusk": {
     "name": "Moonlight Dusk",
     "input_per_1m": 0.12,
@@ -11704,10 +11700,10 @@
   },
   "moonshotai-kimi": {
     "name": "MoonshotAI: Kimi Latest",
-    "input_per_1m": 0.36,
-    "output_per_1m": 14,
+    "input_per_1m": 0.294,
+    "output_per_1m": 28,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.3
+    "cache_read_per_1m": 0.284
   },
   "morph-morph-v3-fast": {
     "name": "Morph: Morph V3 Fast",
@@ -11879,12 +11875,33 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.15
   },
+  "muse-spark-open": {
+    "name": "Muse Spark Open",
+    "input_per_1m": 1.25,
+    "output_per_1m": 4.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.15
+  },
+  "muse-spark-open-fireworks-ai": {
+    "name": "Muse Spark Open (Fireworks AI)",
+    "input_per_1m": 1.25,
+    "output_per_1m": 4.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.15
+  },
+  "muse-spark-open-nebius": {
+    "name": "Muse Spark Open (Nebius)",
+    "input_per_1m": 1.25,
+    "output_per_1m": 4.25,
+    "context_window": 1048576,
+    "cache_read_per_1m": 1.25
+  },
   "muse-wonder": {
     "name": "Muse Wonder",
     "input_per_1m": 4,
     "output_per_1m": 20,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.25
   },
   "muse-wonder-1-0-meta": {
     "name": "Muse Wonder 1.0 (Meta)",
@@ -12038,6 +12055,20 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.0125
   },
+  "nemotron-3-5-super-vl": {
+    "name": "Nemotron 3.5 Super VL",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.75,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.02
+  },
+  "nemotron-3-5-super-vl-120b-a12b": {
+    "name": "Nemotron 3.5 Super VL 120B A12B",
+    "input_per_1m": 0.3,
+    "output_per_1m": 0.9,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.3
+  },
   "nemotron-3-nano-30b": {
     "name": "nemotron-3-nano:30b",
     "input_per_1m": 0.06,
@@ -12129,7 +12160,7 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.1,
     "context_window": 131072,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.08
   },
   "nemotron-3-ultra-550b-a55b-deep-infra": {
     "name": "Nemotron 3 Ultra 550B A55B (Deep Infra)",
@@ -12504,6 +12535,20 @@
     "output_per_1m": 0.2,
     "context_window": 1000000,
     "cache_read_per_1m": 0.01
+  },
+  "nvidia-nemotron-3-5-super-vl": {
+    "name": "Nvidia Nemotron 3.5 Super VL",
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.4,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.02
+  },
+  "nvidia-nemotron-3-5-super-vl-120b": {
+    "name": "NVIDIA Nemotron 3.5 Super VL 120B",
+    "input_per_1m": 0.25,
+    "output_per_1m": 1.25,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.125
   },
   "nvidia-nemotron-3-nano-30b": {
     "name": "Nvidia Nemotron 3 Nano 30B",
@@ -13179,7 +13224,7 @@
     "input_per_1m": 0.1,
     "output_per_1m": 0.4,
     "context_window": 262144,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.01
   },
   "ornith-1-5-35b-thinking": {
     "name": "Ornith 1.5 35B Thinking",
@@ -13233,13 +13278,6 @@
   },
   "pareto-26-10-preview": {
     "name": "Pareto 26.10 Preview",
-    "input_per_1m": 0.8,
-    "output_per_1m": 3.2,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.03
-  },
-  "pareto-26-10-preview-retires-oct-15": {
-    "name": "Pareto 26.10 Preview (retires Oct 15)",
     "input_per_1m": 0.8,
     "output_per_1m": 3.2,
     "context_window": 1048576,
@@ -13419,6 +13457,13 @@
     "output_per_1m": 0.2,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
+  },
+  "prism": {
+    "name": "Prism",
+    "input_per_1m": 3.266,
+    "output_per_1m": 16.33,
+    "context_window": 1000000,
+    "cache_read_per_1m": 0.3266
   },
   "prismml-ternary-bonsai-2-27b": {
     "name": "PrismML: Ternary Bonsai 2 27B",
@@ -13705,16 +13750,16 @@
   "qwen-3-8-27b-obliterated": {
     "name": "Qwen 3.8 27B Obliterated",
     "input_per_1m": 0.25,
-    "output_per_1m": 1.5,
+    "output_per_1m": 1.75,
     "context_window": 524288,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.225
   },
   "qwen-3-8-27b-obliterated-thinking": {
     "name": "Qwen 3.8 27B Obliterated Thinking",
     "input_per_1m": 0.25,
-    "output_per_1m": 1.5,
+    "output_per_1m": 1.75,
     "context_window": 524288,
-    "cache_read_per_1m": 0.2
+    "cache_read_per_1m": 0.225
   },
   "qwen-3-8-27b-queen": {
     "name": "Qwen 3.8 27B Queen",
@@ -14247,8 +14292,8 @@
   },
   "qwen3-235b-a22b-instruct-2507-greenpt": {
     "name": "Qwen3 235B-A22B Instruct 2507 (Greenpt)",
-    "input_per_1m": 1.008,
-    "output_per_1m": 3.023,
+    "input_per_1m": 1.009,
+    "output_per_1m": 3.026,
     "context_window": 250000
   },
   "qwen3-235b-a22b-instruct-2507-nebius": {
@@ -14266,8 +14311,8 @@
   },
   "qwen3-235b-a22b-instruct-2507-scaleway": {
     "name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
-    "input_per_1m": 0.8396,
-    "output_per_1m": 2.519,
+    "input_per_1m": 0.8406,
+    "output_per_1m": 2.522,
     "context_window": 250000
   },
   "qwen3-235b-a22b-instruct-2507-vertex-ai-openai-compatible": {
@@ -14736,8 +14781,8 @@
   "qwen3-8-2-4t-a95b": {
     "name": "Qwen3.8 2.4T A95B",
     "input_per_1m": 1.95,
-    "output_per_1m": 5.95,
-    "context_window": 970000,
+    "output_per_1m": 5.7,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
   "qwen3-8-2-4t-a95b-eu": {
@@ -14947,8 +14992,8 @@
   },
   "qwen3-coder-30b-a3b-instruct-scaleway": {
     "name": "Qwen3-Coder 30B-A3B Instruct (Scaleway)",
-    "input_per_1m": 0.2239,
-    "output_per_1m": 0.8956,
+    "input_per_1m": 0.2242,
+    "output_per_1m": 0.8966,
     "context_window": 128000
   },
   "qwen3-coder-480b-a35b": {
@@ -15032,8 +15077,8 @@
   },
   "qwen3-coder-next-ionos": {
     "name": "Qwen3 Coder Next (IONOS)",
-    "input_per_1m": 0.1679,
-    "output_per_1m": 0.8956,
+    "input_per_1m": 0.1681,
+    "output_per_1m": 0.8966,
     "context_window": 128000
   },
   "qwen3-coder-plus": {
@@ -15253,9 +15298,9 @@
   },
   "qwen3-vl-30b-a3b-instruct": {
     "name": "Qwen3 VL 30B A3B Instruct",
-    "input_per_1m": 0.108,
-    "output_per_1m": 0.43,
-    "context_window": 131072
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.6,
+    "context_window": 262144
   },
   "qwen3-vl-30b-a3b-instruct-deep-infra": {
     "name": "Qwen3 VL 30B A3B Instruct (Deep Infra)",
