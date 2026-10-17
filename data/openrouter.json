@@ -40,6 +40,13 @@
     "output_per_1m": 1.6,
     "context_window": 32768
   },
+  "beam-1-0-501b-a23b": {
+    "name": "Beam 1.0 501B A23B",
+    "input_per_1m": 1.0,
+    "output_per_1m": 3.0,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.1
+  },
   "claude-fable-5": {
     "name": "Claude Fable 5",
     "input_per_1m": 10.0,
@@ -304,10 +311,10 @@
   },
   "deepseek": {
     "name": "DeepSeek V3.2",
-    "input_per_1m": 0.259,
-    "output_per_1m": 0.8,
+    "input_per_1m": 0.28,
+    "output_per_1m": 0.42,
     "context_window": 163840,
-    "cache_read_per_1m": 0.14
+    "cache_read_per_1m": 0.028
   },
   "deepseek-chat": {
     "name": "DeepSeek V3.1",
@@ -343,17 +350,17 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.036,
-    "output_per_1m": 0.684,
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.6,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0054
+    "cache_read_per_1m": 0.003
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
-    "input_per_1m": 0.112,
-    "output_per_1m": 0.336,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.15,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.00336
+    "cache_read_per_1m": 0.004
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
@@ -364,10 +371,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0131,
-    "output_per_1m": 1.28,
+    "input_per_1m": 0.0171,
+    "output_per_1m": 0.9653,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0131
+    "cache_read_per_1m": 0.0034
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -378,17 +385,17 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.95526,
-    "output_per_1m": 1.91052,
+    "input_per_1m": 0.2088,
+    "output_per_1m": 0.4176,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.079605
+    "cache_read_per_1m": 0.0174
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 1.32,
-    "output_per_1m": 3.96,
+    "input_per_1m": 0.66,
+    "output_per_1m": 1.98,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.044
+    "cache_read_per_1m": 0.022
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -683,16 +690,23 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.0675,
+    "output_per_1m": 0.225,
     "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.0375
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
     "input_per_1m": 0.2,
     "output_per_1m": 0.4,
     "context_window": 262144
+  },
+  "glimpse": {
+    "name": "Glimpse",
+    "input_per_1m": 0.6,
+    "output_per_1m": 3.0,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.06
   },
   "glm-4-5": {
     "name": "GLM 4.5",
@@ -731,10 +745,10 @@
   },
   "glm-4-7": {
     "name": "GLM 4.7",
-    "input_per_1m": 0.6,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.54,
+    "output_per_1m": 1.98,
     "context_window": 204800,
-    "cache_read_per_1m": 0.11
+    "cache_read_per_1m": 0.099
   },
   "glm-4-7-flash": {
     "name": "GLM 4.7 Flash",
@@ -779,10 +793,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.02142,
-    "output_per_1m": 0.9,
+    "input_per_1m": 0.0488,
+    "output_per_1m": 0.5578,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01125
+    "cache_read_per_1m": 0.0049
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -1709,10 +1723,9 @@
   },
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
-    "input_per_1m": 0.59,
-    "output_per_1m": 0.79,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.295
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.32,
+    "context_window": 131072
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
@@ -1723,8 +1736,8 @@
   },
   "llama-4-scout": {
     "name": "Llama 4 Scout",
-    "input_per_1m": 0.18,
-    "output_per_1m": 0.59,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.3,
     "context_window": 1310720
   },
   "llama-guard-4-12b": {
@@ -2097,10 +2110,10 @@
   },
   "nemotron-3-5-super-vl": {
     "name": "Nemotron 3.5 Super VL",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.08
   },
   "nemotron-3-nano-30b-a3b": {
     "name": "Nemotron 3 Nano 30B A3B",
@@ -2430,6 +2443,12 @@
     "output_per_1m": 1.28,
     "context_window": 1000000,
     "cache_read_per_1m": 0.064
+  },
+  "qwen3-7-plus-batch": {
+    "name": "Qwen3.7 Plus (batch)",
+    "input_per_1m": 0.23,
+    "output_per_1m": 0.92,
+    "context_window": 262144
   },
   "qwen3-8-2-4t-a95b": {
     "name": "Qwen3.8 2.4T A95B",
