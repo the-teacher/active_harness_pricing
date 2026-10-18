@@ -350,6 +350,13 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
+    "input_per_1m": 0.0648,
+    "output_per_1m": 0.144,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0016
+  },
+  "deepseek-v4-1-flash-1017": {
+    "name": "DeepSeek V4.1 Flash 1017",
     "input_per_1m": 0.15,
     "output_per_1m": 0.6,
     "context_window": 1048576,
@@ -371,10 +378,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0171,
-    "output_per_1m": 0.9653,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.3,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0034
+    "cache_read_per_1m": 0.03
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
@@ -678,7 +685,7 @@
   "gemma-3-27b-it": {
     "name": "Gemma 3 27B",
     "input_per_1m": 0.08,
-    "output_per_1m": 0.45,
+    "output_per_1m": 0.35,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
   },
@@ -793,10 +800,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.0488,
-    "output_per_1m": 0.5578,
+    "input_per_1m": 0.048,
+    "output_per_1m": 0.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0049
+    "cache_read_per_1m": 0.006
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -2260,6 +2267,13 @@
     "output_per_1m": 6.0,
     "context_window": 1040000
   },
+  "pareto": {
+    "name": "Pareto 26.10",
+    "input_per_1m": 0.8,
+    "output_per_1m": 3.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.03
+  },
   "pareto-26-9": {
     "name": "Pareto 26.9",
     "input_per_1m": 2.5,
@@ -2343,7 +2357,7 @@
   },
   "qwen3-30b-a3b-instruct-2507": {
     "name": "Qwen3 30B A3B Instruct 2507",
-    "input_per_1m": 0.1,
+    "input_per_1m": 0.09,
     "output_per_1m": 0.3,
     "context_window": 262144
   },
