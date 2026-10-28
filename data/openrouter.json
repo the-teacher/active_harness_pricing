@@ -738,21 +738,21 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 0.966,
-    "output_per_1m": 3.036,
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
     "context_window": 204800,
-    "cache_read_per_1m": 0.1794
+    "cache_read_per_1m": 0.26
   },
   "glm-5-2": {
     "name": "GLM 5.2",
     "input_per_1m": 0.0341,
     "output_per_1m": 7.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.033
+    "cache_read_per_1m": 0.0331
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 0.0769,
+    "input_per_1m": 0.0699,
     "output_per_1m": 1.4,
     "context_window": 1048576,
     "cache_read_per_1m": 0.0689
@@ -1498,7 +1498,8 @@
     "name": "Hermes 4 405B",
     "input_per_1m": 1.0,
     "output_per_1m": 3.0,
-    "context_window": 131072
+    "context_window": 131072,
+    "cache_read_per_1m": 0.2
   },
   "hunyuan-a13b-instruct": {
     "name": "Hunyuan A13B Instruct",
@@ -1601,10 +1602,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.179,
-    "output_per_1m": 11.5,
+    "input_per_1m": 0.169,
+    "output_per_1m": 20.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.169
+    "cache_read_per_1m": 0.159
   },
   "kimi-k3-1-pro": {
     "name": "Kimi K3.1 Pro",
@@ -1678,7 +1679,7 @@
     "name": "Ling 3.1 Flash",
     "input_per_1m": 0.075,
     "output_per_1m": 0.225,
-    "context_window": 262144,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.015
   },
   "llama-3-1-70b-instruct": {
@@ -1689,10 +1690,9 @@
   },
   "llama-3-1-8b-instruct": {
     "name": "Llama 3.1 8B Instruct",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.08,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.025
+    "input_per_1m": 0.02,
+    "output_per_1m": 0.04,
+    "context_window": 131072
   },
   "llama-3-2-1b-instruct": {
     "name": "Llama 3.2 1B Instruct",
@@ -2090,7 +2090,8 @@
     "name": "Nemotron 3 Nano 30B A3B",
     "input_per_1m": 0.06,
     "output_per_1m": 0.24,
-    "context_window": 262144
+    "context_window": 262144,
+    "cache_read_per_1m": 0.012
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super",
@@ -2324,7 +2325,8 @@
     "name": "Qwen3 30B A3B Instruct 2507",
     "input_per_1m": 0.1,
     "output_per_1m": 0.3,
-    "context_window": 262144
+    "context_window": 262144,
+    "cache_read_per_1m": 0.1
   },
   "qwen3-32b": {
     "name": "Qwen3 32B",
@@ -2378,16 +2380,16 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.32,
-    "output_per_1m": 3.2,
+    "input_per_1m": 0.45,
+    "output_per_1m": 2.7,
     "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
     "input_per_1m": 0.1,
-    "output_per_1m": 0.95,
+    "output_per_1m": 0.9,
     "context_window": 262144,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.025
   },
   "qwen3-6-flash": {
     "name": "Qwen3.6 Flash",
@@ -2437,10 +2439,10 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.2,
-    "output_per_1m": 2.5,
+    "input_per_1m": 0.039,
+    "output_per_1m": 1.25,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.09
+    "cache_read_per_1m": 0.0039
   },
   "qwen3-8-flash": {
     "name": "Qwen3.8 Flash",
@@ -2706,6 +2708,13 @@
     "output_per_1m": 0.5,
     "context_window": 262144,
     "cache_read_per_1m": 0.0375
+  },
+  "ternary-bonsai-2-9b": {
+    "name": "Ternary Bonsai 2 9B",
+    "input_per_1m": 0.08,
+    "output_per_1m": 0.13,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.04
   },
   "ui-tars-1-5-7b": {
     "name": "UI-TARS 7B",
