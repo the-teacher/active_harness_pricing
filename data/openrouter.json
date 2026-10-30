@@ -379,10 +379,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.95526,
-    "output_per_1m": 1.91052,
+    "input_per_1m": 0.816234,
+    "output_per_1m": 1.632468,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.079605
+    "cache_read_per_1m": 0.06802
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -714,7 +714,7 @@
     "input_per_1m": 0.3,
     "output_per_1m": 0.9,
     "context_window": 131072,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.055
   },
   "glm-4-7": {
     "name": "GLM 4.7",
@@ -752,10 +752,10 @@
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 0.0699,
-    "output_per_1m": 1.4,
+    "input_per_1m": 0.08,
+    "output_per_1m": 3.6,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0689
+    "cache_read_per_1m": 0.076
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
@@ -767,7 +767,7 @@
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
     "input_per_1m": 0.0457,
-    "output_per_1m": 0.0742,
+    "output_per_1m": 0.0701,
     "context_window": 1048576,
     "cache_read_per_1m": 0.03
   },
@@ -1596,10 +1596,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.192,
+    "input_per_1m": 0.2,
     "output_per_1m": 15.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.182
+    "cache_read_per_1m": 0.19
   },
   "kimi-k3-1-pro": {
     "name": "Kimi K3.1 Pro",
@@ -1899,10 +1899,10 @@
   },
   "mistral-large-4-0": {
     "name": "Mistral Large 4",
-    "input_per_1m": 1.36,
-    "output_per_1m": 4.18,
+    "input_per_1m": 0.7,
+    "output_per_1m": 2.1,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.14
+    "cache_read_per_1m": 0.07
   },
   "mistral-medium-3": {
     "name": "Mistral Medium 3",
@@ -2206,7 +2206,7 @@
     "input_per_1m": 0.25,
     "output_per_1m": 1.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.003
   },
   "perceptron-mk1": {
     "name": "Perceptron Mk1",
@@ -2341,8 +2341,8 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.7,
+    "input_per_1m": 0.32,
+    "output_per_1m": 3.2,
     "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
@@ -2400,10 +2400,10 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.039,
-    "output_per_1m": 1.25,
+    "input_per_1m": 0.15,
+    "output_per_1m": 1.875,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.0039
+    "cache_read_per_1m": 0.0375
   },
   "qwen3-8-flash": {
     "name": "Qwen3.8 Flash",
@@ -2592,13 +2592,6 @@
     "output_per_1m": 0.2,
     "context_window": 524288,
     "cache_read_per_1m": 0.005
-  },
-  "solar-pro-3": {
-    "name": "Solar Pro 3",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.015
   },
   "solar-pro4": {
     "name": "Solar Pro 4",
