@@ -386,10 +386,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.66,
-    "output_per_1m": 1.98,
+    "input_per_1m": 0.115,
+    "output_per_1m": 4.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.022
+    "cache_read_per_1m": 0.11
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -718,10 +718,10 @@
   },
   "glm-4-7": {
     "name": "GLM 4.7",
-    "input_per_1m": 0.54,
-    "output_per_1m": 1.98,
+    "input_per_1m": 0.6,
+    "output_per_1m": 2.2,
     "context_window": 204800,
-    "cache_read_per_1m": 0.099
+    "cache_read_per_1m": 0.11
   },
   "glm-4-7-flash": {
     "name": "GLM 4.7 Flash",
@@ -746,7 +746,7 @@
   "glm-5-2": {
     "name": "GLM 5.2",
     "input_per_1m": 0.006,
-    "output_per_1m": 7.0,
+    "output_per_1m": 6.8,
     "context_window": 1048576,
     "cache_read_per_1m": 0.005
   },
@@ -766,10 +766,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.0189,
-    "output_per_1m": 0.0518,
+    "input_per_1m": 0.0098,
+    "output_per_1m": 0.1702,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0172
+    "cache_read_per_1m": 0.0098
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -1382,10 +1382,9 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.075
+    "input_per_1m": 0.028,
+    "output_per_1m": 0.102,
+    "context_window": 131072
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1395,10 +1394,10 @@
   },
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "input_per_1m": 0.018,
-    "output_per_1m": 0.09,
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.13,
     "context_window": 131072,
-    "cache_read_per_1m": 0.009
+    "cache_read_per_1m": 0.03
   },
   "gpt-oss-20b-batch": {
     "name": "gpt-oss-20b (batch)",
@@ -1626,20 +1625,6 @@
     "input_per_1m": 0.04,
     "output_per_1m": 0.05,
     "context_window": 8192
-  },
-  "laguna-s-2-1": {
-    "name": "Laguna S 2.1",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.18,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.009
-  },
-  "laguna-xs-2-1": {
-    "name": "Laguna XS 2.1",
-    "input_per_1m": 0.06,
-    "output_per_1m": 0.12,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.03
   },
   "lfm-2-5-2-6b": {
     "name": "LFM2.5-2.6B",
@@ -2400,10 +2385,10 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.04,
-    "output_per_1m": 2.3,
+    "input_per_1m": 0.15,
+    "output_per_1m": 1.875,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.0375
   },
   "qwen3-8-flash": {
     "name": "Qwen3.8 Flash",
