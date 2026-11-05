@@ -351,10 +351,10 @@
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.15,
+    "input_per_1m": 0.112,
+    "output_per_1m": 0.336,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.004
+    "cache_read_per_1m": 0.00336
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
@@ -386,10 +386,10 @@
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.115,
-    "output_per_1m": 4.6,
+    "input_per_1m": 0.107,
+    "output_per_1m": 4.278,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.11
+    "cache_read_per_1m": 0.1023
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -663,10 +663,10 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.079,
-    "output_per_1m": 0.238,
+    "input_per_1m": 0.023,
+    "output_per_1m": 0.068,
     "context_window": 262144,
-    "cache_read_per_1m": 0.04
+    "cache_read_per_1m": 0.011
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
@@ -752,10 +752,10 @@
   },
   "glm-5-3": {
     "name": "GLM 5.3",
-    "input_per_1m": 0.08,
-    "output_per_1m": 3.6,
+    "input_per_1m": 0.0699,
+    "output_per_1m": 1.4,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.076
+    "cache_read_per_1m": 0.0689
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
@@ -766,10 +766,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.0269,
-    "output_per_1m": 0.0996,
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0269
+    "cache_read_per_1m": 0.03
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -1389,10 +1389,10 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.025,
-    "output_per_1m": 0.091,
+    "input_per_1m": 0.01,
+    "output_per_1m": 0.037,
     "context_window": 131072,
-    "cache_read_per_1m": 0.022
+    "cache_read_per_1m": 0.009
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1612,10 +1612,10 @@
   },
   "kimi-k3": {
     "name": "Kimi K3",
-    "input_per_1m": 0.2,
+    "input_per_1m": 0.192,
     "output_per_1m": 16.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.19
+    "cache_read_per_1m": 0.182
   },
   "kimi-k3-1-pro": {
     "name": "Kimi K3.1 Pro",
@@ -1671,6 +1671,13 @@
     "context_window": 131072,
     "cache_read_per_1m": 0.012
   },
+  "ling-3-0-tiny": {
+    "name": "Ling 3.0 Tiny",
+    "input_per_1m": 0.015,
+    "output_per_1m": 0.045,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.003
+  },
   "ling-3-1-flash": {
     "name": "Ling 3.1 Flash",
     "input_per_1m": 0.075,
@@ -1705,16 +1712,17 @@
   },
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.32,
-    "context_window": 131072
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.52,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.1
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
-    "input_per_1m": 0.1875,
-    "output_per_1m": 0.6525,
+    "input_per_1m": 0.35,
+    "output_per_1m": 1.0,
     "context_window": 524288,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.17
   },
   "llama-4-scout": {
     "name": "Llama 4 Scout",
@@ -1766,7 +1774,7 @@
     "name": "MiMo-V2.5",
     "input_per_1m": 0.4,
     "output_per_1m": 2.0,
-    "context_window": 1050000,
+    "context_window": 1000000,
     "cache_read_per_1m": 0.08
   },
   "mimo-v2-5-pro": {
@@ -2525,6 +2533,13 @@
     "input_per_1m": 0.35,
     "output_per_1m": 0.65,
     "context_window": 6144
+  },
+  "ripple-65b-preview": {
+    "name": "ricursiveAI/Ripple-65B-Preview",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.6,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.05
   },
   "sakana-namazu": {
     "name": "Sakana Namazu",
