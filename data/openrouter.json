@@ -42,10 +42,10 @@
   },
   "beam-1-0-501b-a23b": {
     "name": "Beam 1.0 501B A23B",
-    "input_per_1m": 0.25,
+    "input_per_1m": 0.3,
     "output_per_1m": 1.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.04
   },
   "claude-fable-5": {
     "name": "Claude Fable 5",
@@ -337,8 +337,8 @@
   },
   "deepseek-v4-1-flash": {
     "name": "DeepSeek V4.1 Flash",
-    "input_per_1m": 0.045,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.0486,
+    "output_per_1m": 0.54,
     "context_window": 1048576,
     "cache_read_per_1m": 0.018
   },
@@ -372,24 +372,24 @@
   },
   "deepseek-v4-flash-vision": {
     "name": "DeepSeek V4 Flash Vision Exp",
-    "input_per_1m": 0.2156,
-    "output_per_1m": 0.6468,
+    "input_per_1m": 0.44,
+    "output_per_1m": 1.32,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.00686
+    "cache_read_per_1m": 0.014
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 1.6,
-    "output_per_1m": 3.2,
+    "input_per_1m": 0.95526,
+    "output_per_1m": 1.91052,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.135
+    "cache_read_per_1m": 0.079605
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.107,
-    "output_per_1m": 4.278,
+    "input_per_1m": 0.111,
+    "output_per_1m": 4.44,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1023
+    "cache_read_per_1m": 0.106
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -636,6 +636,18 @@
     "output_per_1m": 7.5,
     "context_window": 65536
   },
+  "gemini-omni-1-1-flash": {
+    "name": "Gemini Omni 1.1 Flash",
+    "input_per_1m": 1.5,
+    "output_per_1m": 9.0,
+    "context_window": 131072
+  },
+  "gemini-omni-1-2-flash": {
+    "name": "Gemini Omni 1.2 Flash",
+    "input_per_1m": 1.5,
+    "output_per_1m": 9.0,
+    "context_window": 131072
+  },
   "gemma-2-27b-it": {
     "name": "Gemma 2 27B",
     "input_per_1m": 0.65,
@@ -663,10 +675,10 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.023,
-    "output_per_1m": 0.068,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.3,
     "context_window": 262144,
-    "cache_read_per_1m": 0.011
+    "cache_read_per_1m": 0.05
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
@@ -1389,10 +1401,10 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.01,
-    "output_per_1m": 0.037,
+    "input_per_1m": 0.02,
+    "output_per_1m": 0.075,
     "context_window": 131072,
-    "cache_read_per_1m": 0.009
+    "cache_read_per_1m": 0.018
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1601,7 +1613,7 @@
     "input_per_1m": 0.6,
     "output_per_1m": 3.5,
     "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.16
   },
   "kimi-k2-thinking": {
     "name": "Kimi K2 Thinking",
@@ -1712,10 +1724,10 @@
   },
   "llama-3-3-70b-instruct": {
     "name": "Llama 3.3 70B Instruct",
-    "input_per_1m": 0.2,
-    "output_per_1m": 0.52,
+    "input_per_1m": 0.59,
+    "output_per_1m": 0.79,
     "context_window": 131072,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.295
   },
   "llama-4-maverick": {
     "name": "Llama 4 Maverick",
@@ -1805,30 +1817,11 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.036
   },
-  "minimax-01": {
-    "name": "MiniMax-01",
-    "input_per_1m": 0.2,
-    "output_per_1m": 1.1,
-    "context_window": 1000192
-  },
   "minimax-m1": {
     "name": "MiniMax M1",
     "input_per_1m": 0.55,
     "output_per_1m": 2.2,
     "context_window": 1000000
-  },
-  "minimax-m2": {
-    "name": "MiniMax M2",
-    "input_per_1m": 0.255,
-    "output_per_1m": 1.02,
-    "context_window": 204800
-  },
-  "minimax-m2-1": {
-    "name": "MiniMax M2.1",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
-    "context_window": 204800,
-    "cache_read_per_1m": 0.03
   },
   "minimax-m2-5": {
     "name": "MiniMax M2.5",
@@ -1839,17 +1832,10 @@
   },
   "minimax-m2-7": {
     "name": "MiniMax M2.7",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.21,
+    "output_per_1m": 0.84,
     "context_window": 204800,
-    "cache_read_per_1m": 0.06
-  },
-  "minimax-m2-her": {
-    "name": "MiniMax M2-her",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
-    "context_window": 65536,
-    "cache_read_per_1m": 0.03
+    "cache_read_per_1m": 0.042
   },
   "minimax-m3": {
     "name": "MiniMax M3",
@@ -2473,10 +2459,9 @@
   },
   "qwen3-next-80b-a3b-instruct": {
     "name": "Qwen3 Next 80B A3B Instruct",
-    "input_per_1m": 0.1,
+    "input_per_1m": 0.09,
     "output_per_1m": 1.1,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.07
+    "context_window": 262144
   },
   "qwen3-vl-235b-a22b-instruct": {
     "name": "Qwen3 VL 235B A22B Instruct",
