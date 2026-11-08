@@ -344,17 +344,24 @@
   },
   "deepseek-v4-1-flash-1017": {
     "name": "DeepSeek V4.1 Flash 1017",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.006,
+    "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.003
+    "cache_read_per_1m": 0.005
+  },
+  "deepseek-v4-1-flash-1017-batch": {
+    "name": "DeepSeek V4.1 Flash 1017 (batch)",
+    "input_per_1m": 0.011,
+    "output_per_1m": 0.2,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.002
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
-    "input_per_1m": 0.112,
-    "output_per_1m": 0.336,
+    "input_per_1m": 0.011,
+    "output_per_1m": 0.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.00336
+    "cache_read_per_1m": 0.002
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
@@ -365,7 +372,7 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0553,
+    "input_per_1m": 0.0434,
     "output_per_1m": 0.3,
     "context_window": 1048576,
     "cache_read_per_1m": 0.035
@@ -386,17 +393,17 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 0.849816,
-    "output_per_1m": 1.699632,
+    "input_per_1m": 0.393588,
+    "output_per_1m": 0.787176,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.070818
+    "cache_read_per_1m": 0.032799
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
-    "input_per_1m": 0.1165,
-    "output_per_1m": 4.66,
+    "input_per_1m": 0.111,
+    "output_per_1m": 4.44,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.111
+    "cache_read_per_1m": 0.101
   },
   "devstral-2512": {
     "name": "Devstral 2 2512",
@@ -769,6 +776,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.005
   },
+  "glm-5-2-batch": {
+    "name": "GLM 5.2 (batch)",
+    "input_per_1m": 0.37,
+    "output_per_1m": 1.5,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.125
+  },
   "glm-5-3": {
     "name": "GLM 5.3",
     "input_per_1m": 0.0699,
@@ -778,15 +792,15 @@
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.37,
+    "output_per_1m": 1.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.125
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.0335,
+    "output_per_1m": 0.083,
     "context_window": 1048576,
     "cache_read_per_1m": 0.03
   },
@@ -1408,10 +1422,10 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.01,
-    "output_per_1m": 0.038,
+    "input_per_1m": 0.021,
+    "output_per_1m": 0.077,
     "context_window": 131072,
-    "cache_read_per_1m": 0.009
+    "cache_read_per_1m": 0.019
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1610,10 +1624,10 @@
   },
   "kimi-k2-5": {
     "name": "Kimi K2.5",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.5,
+    "input_per_1m": 0.532,
+    "output_per_1m": 3.325,
     "context_window": 262144,
-    "cache_read_per_1m": 0.15
+    "cache_read_per_1m": 0.209
   },
   "kimi-k2-6": {
     "name": "Kimi K2.6",
@@ -1652,10 +1666,10 @@
   },
   "kimi-k3-batch": {
     "name": "Kimi K3 (batch)",
-    "input_per_1m": 2.28,
-    "output_per_1m": 11.4,
+    "input_per_1m": 1.084,
+    "output_per_1m": 6.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.228
+    "cache_read_per_1m": 0.267
   },
   "l3-1-euryale-70b": {
     "name": "Llama 3.1 Euryale 70B v2.2",
@@ -1739,8 +1753,8 @@
   },
   "llama-3-2-3b-instruct": {
     "name": "Llama 3.2 3B Instruct",
-    "input_per_1m": 0.0509,
-    "output_per_1m": 0.335,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.33,
     "context_window": 131072
   },
   "llama-3-3-70b-instruct": {
@@ -1782,27 +1796,6 @@
     "output_per_1m": 5.0,
     "context_window": 32768,
     "cache_read_per_1m": 2.5
-  },
-  "mercury-2": {
-    "name": "Mercury 2",
-    "input_per_1m": 0.25,
-    "output_per_1m": 0.75,
-    "context_window": 128000,
-    "cache_read_per_1m": 0.025
-  },
-  "mercury-2-5": {
-    "name": "Mercury 2.5",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.15,
-    "context_window": 260000,
-    "cache_read_per_1m": 0.004
-  },
-  "mercury-3": {
-    "name": "Mercury 3",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.35,
-    "context_window": 1000000,
-    "cache_read_per_1m": 0.01
   },
   "mimo": {
     "name": "MiMo-V2.5",
@@ -2018,10 +2011,22 @@
     "output_per_1m": 1.2,
     "context_window": 262144
   },
+  "morph-v3-fast-batch": {
+    "name": "Morph V3 Fast (batch)",
+    "input_per_1m": 0.4,
+    "output_per_1m": 0.6,
+    "context_window": 81920
+  },
   "morph-v3-large": {
     "name": "Morph V3 Large",
     "input_per_1m": 0.9,
     "output_per_1m": 1.9,
+    "context_window": 262144
+  },
+  "morph-v3-large-batch": {
+    "name": "Morph V3 Large (batch)",
+    "input_per_1m": 0.45,
+    "output_per_1m": 0.95,
     "context_window": 262144
   },
   "muse-glimmer-30b": {
@@ -2373,8 +2378,8 @@
   },
   "qwen3-6-27b": {
     "name": "Qwen3.6 27B",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.7,
+    "input_per_1m": 0.32,
+    "output_per_1m": 3.2,
     "context_window": 262144
   },
   "qwen3-6-35b-a3b": {
