@@ -379,10 +379,10 @@
   },
   "deepseek-v4-flash": {
     "name": "DeepSeek V4 Flash 0423",
-    "input_per_1m": 0.091,
-    "output_per_1m": 0.182,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.0182
+    "cache_read_per_1m": 0.018
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
@@ -438,6 +438,20 @@
     "output_per_1m": 15.0,
     "context_window": 1048576,
     "cache_read_per_1m": 0.3
+  },
+  "ernie-5-5-flash-preview": {
+    "name": "ERNIE-5.5-Flash-Preview",
+    "input_per_1m": 0.28,
+    "output_per_1m": 1.13,
+    "context_window": 1024000,
+    "cache_read_per_1m": 0.028
+  },
+  "ernie-light-dt-1-0-intl": {
+    "name": "ERNIE-Light-DT-1.0",
+    "input_per_1m": 1.13,
+    "output_per_1m": 3.94,
+    "context_window": 1024000,
+    "cache_read_per_1m": 0.113
   },
   "fugu-max": {
     "name": "Fugu Max",
@@ -658,6 +672,20 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.05
   },
+  "gemini-4-carbon": {
+    "name": "Gemini 4 Carbon",
+    "input_per_1m": 2.0,
+    "output_per_1m": 10.0,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.1
+  },
+  "gemini-4-carbon-batch": {
+    "name": "Gemini 4 Carbon (batch)",
+    "input_per_1m": 1.0,
+    "output_per_1m": 5.0,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.05
+  },
   "gemini-nano-banana-2-1": {
     "name": "Nano Banana 2.1",
     "input_per_1m": 1.5,
@@ -778,24 +806,24 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 1.4,
-    "output_per_1m": 4.4,
+    "input_per_1m": 1.33,
+    "output_per_1m": 4.18,
     "context_window": 204800,
-    "cache_read_per_1m": 0.26
+    "cache_read_per_1m": 0.247
   },
   "glm-5-2": {
     "name": "GLM 5.2",
-    "input_per_1m": 0.006,
+    "input_per_1m": 0.007,
     "output_per_1m": 6.8,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.005
+    "cache_read_per_1m": 0.006
   },
   "glm-5-2-batch": {
     "name": "GLM 5.2 (batch)",
-    "input_per_1m": 0.573,
-    "output_per_1m": 1.169,
+    "input_per_1m": 0.527,
+    "output_per_1m": 1.075,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.194
+    "cache_read_per_1m": 0.178
   },
   "glm-5-3": {
     "name": "GLM 5.3",
@@ -813,17 +841,17 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.5,
+    "input_per_1m": 0.0399,
+    "output_per_1m": 0.0784,
     "context_window": 1048576,
     "cache_read_per_1m": 0.03
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
-    "input_per_1m": 0.03,
+    "input_per_1m": 0.042,
     "output_per_1m": 0.061,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.013
+    "cache_read_per_1m": 0.018
   },
   "glm-5-3-flashx": {
     "name": "GLM 5.3 FlashX",
@@ -1810,6 +1838,13 @@
     "context_window": 32768,
     "cache_read_per_1m": 2.5
   },
+  "midm-k-3-0-pro": {
+    "name": "Mi:dm K 3.0 Pro",
+    "input_per_1m": 0.2,
+    "output_per_1m": 0.8,
+    "context_window": 261795,
+    "cache_read_per_1m": 0.04
+  },
   "mimo": {
     "name": "MiMo-V2.5",
     "input_per_1m": 0.4,
@@ -2036,6 +2071,13 @@
     "input_per_1m": 0.45,
     "output_per_1m": 0.95,
     "context_window": 262144
+  },
+  "motif-3": {
+    "name": "Motif 3",
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.06
   },
   "muse-ember": {
     "name": "Muse Ember",
@@ -2288,12 +2330,6 @@
     "name": "Qwen2.5 72B Instruct",
     "input_per_1m": 0.36,
     "output_per_1m": 0.4,
-    "context_window": 32768
-  },
-  "qwen-2-5-7b-instruct": {
-    "name": "Qwen2.5 7B Instruct",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.2,
     "context_window": 32768
   },
   "qwen-2-5-coder-32b-instruct": {
@@ -2590,10 +2626,10 @@
   },
   "remm-slerp-l2-13b": {
     "name": "ReMM SLERP 13B",
-    "input_per_1m": 0.35,
-    "output_per_1m": 0.65,
+    "input_per_1m": 0.3,
+    "output_per_1m": 0.5,
     "context_window": 6144,
-    "cache_read_per_1m": 0.35
+    "cache_read_per_1m": 0.2
   },
   "ripple-65b-preview": {
     "name": "Ripple 65B Preview",
@@ -2766,9 +2802,9 @@
   },
   "weaver": {
     "name": "Weaver (alpha)",
-    "input_per_1m": 0.4,
-    "output_per_1m": 0.75,
+    "input_per_1m": 0.3,
+    "output_per_1m": 0.5,
     "context_window": 8000,
-    "cache_read_per_1m": 0.4
+    "cache_read_per_1m": 0.3
   }
 }
