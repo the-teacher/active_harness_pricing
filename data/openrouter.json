@@ -332,10 +332,9 @@
   },
   "deepseek-r1-0528": {
     "name": "R1 0528",
-    "input_per_1m": 0.5,
-    "output_per_1m": 2.15,
-    "context_window": 163840,
-    "cache_read_per_1m": 0.35
+    "input_per_1m": 0.571,
+    "output_per_1m": 2.286,
+    "context_window": 163840
   },
   "deepseek-v3-1-terminus": {
     "name": "DeepSeek V3.1 Terminus",
@@ -365,10 +364,10 @@
   },
   "deepseek-v4-1-flash-1017-batch": {
     "name": "DeepSeek V4.1 Flash 1017 (batch)",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.15,
+    "input_per_1m": 0.045,
+    "output_per_1m": 0.25,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.004
+    "cache_read_per_1m": 0.002
   },
   "deepseek-v4-1-flash-batch": {
     "name": "DeepSeek V4.1 Flash (batch)",
@@ -386,10 +385,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0434,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.035
+    "cache_read_per_1m": 0.015
   },
   "deepseek-v4-flash-0731-batch": {
     "name": "DeepSeek V4 Flash 0731 (batch)",
@@ -793,10 +792,10 @@
   },
   "glm-4-7": {
     "name": "GLM 4.7",
-    "input_per_1m": 0.6,
-    "output_per_1m": 2.2,
+    "input_per_1m": 0.4,
+    "output_per_1m": 1.75,
     "context_window": 204800,
-    "cache_read_per_1m": 0.11
+    "cache_read_per_1m": 0.08
   },
   "glm-4-7-flash": {
     "name": "GLM 4.7 Flash",
@@ -825,13 +824,6 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.006
   },
-  "glm-5-2-batch": {
-    "name": "GLM 5.2 (batch)",
-    "input_per_1m": 0.322,
-    "output_per_1m": 0.989,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.109
-  },
   "glm-5-3": {
     "name": "GLM 5.3",
     "input_per_1m": 0.084,
@@ -841,10 +833,10 @@
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.322,
+    "output_per_1m": 0.989,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.109
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
@@ -1195,10 +1187,10 @@
   },
   "gpt-5-6-sol": {
     "name": "GPT-5.6 Sol",
-    "input_per_1m": 4.0,
-    "output_per_1m": 20.0,
+    "input_per_1m": 4.4,
+    "output_per_1m": 22.0,
     "context_window": 1050000,
-    "cache_read_per_1m": 0.4
+    "cache_read_per_1m": 0.44
   },
   "gpt-5-6-sol-batch": {
     "name": "GPT-5.6 Sol (batch)",
@@ -1484,10 +1476,10 @@
   },
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "input_per_1m": 0.018,
-    "output_per_1m": 0.09,
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.13,
     "context_window": 131072,
-    "cache_read_per_1m": 0.009
+    "cache_read_per_1m": 0.03
   },
   "gpt-oss-20b-batch": {
     "name": "gpt-oss-20b (batch)",
@@ -1715,17 +1707,17 @@
   },
   "kimi-k3-1-pro": {
     "name": "Kimi K3.1 Pro",
-    "input_per_1m": 2.0,
-    "output_per_1m": 10.0,
+    "input_per_1m": 0.2375,
+    "output_per_1m": 8.4114,
     "context_window": 1048576,
     "cache_read_per_1m": 0.2
   },
   "kimi-k3-1-pro-batch": {
     "name": "Kimi K3.1 Pro (batch)",
-    "input_per_1m": 0.7,
-    "output_per_1m": 6.0,
+    "input_per_1m": 0.346,
+    "output_per_1m": 4.41,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.111
   },
   "kimi-k3-batch": {
     "name": "Kimi K3 (batch)",
@@ -2324,7 +2316,7 @@
   },
   "particle-1": {
     "name": "Particle-1",
-    "input_per_1m": 0.05,
+    "input_per_1m": 0.06,
     "output_per_1m": 0.5,
     "context_window": 1048576,
     "cache_read_per_1m": 0.003
@@ -2439,10 +2431,10 @@
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5-9B",
-    "input_per_1m": 0.046,
-    "output_per_1m": 0.068,
+    "input_per_1m": 0.17,
+    "output_per_1m": 0.25,
     "context_window": 262144,
-    "cache_read_per_1m": 0.042
+    "cache_read_per_1m": 0.153
   },
   "qwen3-5-flash": {
     "name": "Qwen3.5-Flash",
