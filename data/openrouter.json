@@ -358,15 +358,15 @@
   },
   "deepseek-v4-1-flash-1017": {
     "name": "DeepSeek V4.1 Flash 1017",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.036,
+    "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.006
+    "cache_read_per_1m": 0.01
   },
   "deepseek-v4-1-flash-1017-batch": {
     "name": "DeepSeek V4.1 Flash 1017 (batch)",
-    "input_per_1m": 0.037,
-    "output_per_1m": 0.325,
+    "input_per_1m": 0.036,
+    "output_per_1m": 0.15,
     "context_window": 1048576,
     "cache_read_per_1m": 0.003
   },
@@ -825,6 +825,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.006
   },
+  "glm-5-2-batch": {
+    "name": "GLM 5.2 (batch)",
+    "input_per_1m": 0.322,
+    "output_per_1m": 0.989,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.109
+  },
   "glm-5-3": {
     "name": "GLM 5.3",
     "input_per_1m": 0.0699,
@@ -834,10 +841,10 @@
   },
   "glm-5-3-batch": {
     "name": "GLM 5.3 (batch)",
-    "input_per_1m": 0.45,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.281,
+    "output_per_1m": 1.25,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.1
+    "cache_read_per_1m": 0.062
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
@@ -848,8 +855,8 @@
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.18,
+    "input_per_1m": 0.024,
+    "output_per_1m": 0.069,
     "context_window": 1048576,
     "cache_read_per_1m": 0.01
   },
@@ -869,10 +876,10 @@
   },
   "glm-5-3-prime": {
     "name": "GLM 5.3 Prime",
-    "input_per_1m": 2.8,
-    "output_per_1m": 8.8,
+    "input_per_1m": 1.68,
+    "output_per_1m": 5.28,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.56
+    "cache_read_per_1m": 0.336
   },
   "glm-5-turbo": {
     "name": "GLM 5 Turbo",
@@ -1477,10 +1484,10 @@
   },
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.13,
     "context_window": 131072,
-    "cache_read_per_1m": 0.0375
+    "cache_read_per_1m": 0.03
   },
   "gpt-oss-20b-batch": {
     "name": "gpt-oss-20b (batch)",
@@ -1618,6 +1625,13 @@
     "context_window": 1048576,
     "cache_read_per_1m": 0.021
   },
+  "hy4-flash": {
+    "name": "Hy4 flash",
+    "input_per_1m": 0.035,
+    "output_per_1m": 0.1405,
+    "context_window": 1048576,
+    "cache_read_per_1m": 0.0015
+  },
   "hy4-preview": {
     "name": "Hy4 preview",
     "input_per_1m": 0.834,
@@ -1709,8 +1723,8 @@
   },
   "kimi-k3-1-pro-batch": {
     "name": "Kimi K3.1 Pro (batch)",
-    "input_per_1m": 0.7,
-    "output_per_1m": 6.0,
+    "input_per_1m": 0.372,
+    "output_per_1m": 5.583,
     "context_window": 1048576,
     "cache_read_per_1m": 0.1
   },
@@ -2089,8 +2103,8 @@
   },
   "muse-glimmer-30b": {
     "name": "Muse Glimmer 30B",
-    "input_per_1m": 0.3,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.35,
+    "output_per_1m": 1.5,
     "context_window": 131072,
     "cache_read_per_1m": 0.04
   },
@@ -2166,7 +2180,7 @@
     "name": "Nemotron 3.5 Lightning",
     "input_per_1m": 0.07,
     "output_per_1m": 0.2,
-    "context_window": 262144,
+    "context_window": 1048576,
     "cache_read_per_1m": 0.04
   },
   "nemotron-3-5-super-vl": {
@@ -2191,10 +2205,10 @@
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra",
-    "input_per_1m": 0.6,
-    "output_per_1m": 2.4,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.2,
     "context_window": 262144,
-    "cache_read_per_1m": 0.12
+    "cache_read_per_1m": 0.1
   },
   "nex-n2-5-mini": {
     "name": "Nex-N2.5-Mini",
@@ -2426,10 +2440,10 @@
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5-9B",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.11,
+    "input_per_1m": 0.17,
+    "output_per_1m": 0.25,
     "context_window": 262144,
-    "cache_read_per_1m": 0.067
+    "cache_read_per_1m": 0.153
   },
   "qwen3-5-flash": {
     "name": "Qwen3.5-Flash",
@@ -2605,10 +2619,10 @@
   },
   "qwen4-max": {
     "name": "Qwen4 Max",
-    "input_per_1m": 1.5,
-    "output_per_1m": 4.5,
+    "input_per_1m": 1.425,
+    "output_per_1m": 4.275,
     "context_window": 1000000,
-    "cache_read_per_1m": 0.075
+    "cache_read_per_1m": 0.07125
   },
   "reka-edge": {
     "name": "Reka Edge",
