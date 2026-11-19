@@ -362,8 +362,8 @@
   },
   "codex-mini": {
     "name": "Codex Mini",
-    "input_per_1m": 1.5,
-    "output_per_1m": 6.0,
+    "input_per_1m": 0.75,
+    "output_per_1m": 3.0,
     "context_window": 200000
   },
   "cogito-v1-preview-llama-3b": {
@@ -453,8 +453,8 @@
   },
   "curie": {
     "name": "curie",
-    "input_per_1m": 2.0,
-    "output_per_1m": 2.0,
+    "input_per_1m": 1.0,
+    "output_per_1m": 1.0,
     "context_window": 2048
   },
   "cydonia-24b": {
@@ -553,14 +553,14 @@
   },
   "deepseek-v4-flash-vision-experimental": {
     "name": "DeepSeek V4 Flash Vision (Experimental)",
-    "input_per_1m": 0.1725,
-    "output_per_1m": 0.5174,
+    "input_per_1m": 0.2156,
+    "output_per_1m": 0.6468,
     "context_window": 1048576
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro",
-    "input_per_1m": 0.111,
-    "output_per_1m": 4.44,
+    "input_per_1m": 0.285,
+    "output_per_1m": 4.3,
     "context_window": 1048576,
     "tokens_per_second": 75.507,
     "time_to_first_token": 1.068
@@ -713,8 +713,8 @@
   },
   "gemini-2-5-flash-lite": {
     "name": "Gemini 2.5 Flash Lite",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.2,
     "context_window": 1048576
   },
   "gemini-2-5-flash-lite-preview-09-2025": {
@@ -751,8 +751,8 @@
   },
   "gemini-3-1-pro-preview": {
     "name": "Gemini 3.1 Pro Preview",
-    "input_per_1m": 1.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 12.0,
     "context_window": 1048576
   },
   "gemini-3-1-pro-preview-custom-tools": {
@@ -763,14 +763,14 @@
   },
   "gemini-3-5-flash": {
     "name": "Gemini 3.5 Flash",
-    "input_per_1m": 0.75,
-    "output_per_1m": 4.5,
+    "input_per_1m": 1.5,
+    "output_per_1m": 9.0,
     "context_window": 1048576
   },
   "gemini-3-5-flash-lite": {
     "name": "Gemini 3.5 Flash Lite",
-    "input_per_1m": 0.15,
-    "output_per_1m": 1.25,
+    "input_per_1m": 0.54,
+    "output_per_1m": 4.5,
     "context_window": 1048576,
     "tokens_per_second": 358.382,
     "time_to_first_token": 5.146
@@ -783,14 +783,14 @@
   },
   "gemini-3-7-flash": {
     "name": "Gemini 3.7 Flash",
-    "input_per_1m": 0.375,
-    "output_per_1m": 1.875,
+    "input_per_1m": 0.825,
+    "output_per_1m": 4.125,
     "context_window": 1048576
   },
   "gemini-3-8-flash": {
     "name": "Gemini 3.8 Flash",
-    "input_per_1m": 0.825,
-    "output_per_1m": 4.125,
+    "input_per_1m": 0.75,
+    "output_per_1m": 3.75,
     "context_window": 1048576,
     "tokens_per_second": 123.06,
     "time_to_first_token": 16.434
@@ -809,8 +809,8 @@
   },
   "gemini-4-argon": {
     "name": "Gemini 4 Argon",
-    "input_per_1m": 1.0,
-    "output_per_1m": 5.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 10.0,
     "context_window": 1048576,
     "tokens_per_second": 81.713,
     "time_to_first_token": 36.311
@@ -888,8 +888,8 @@
   },
   "gemma-3-27b": {
     "name": "Gemma 3 27B",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.45,
+    "input_per_1m": 0.064,
+    "output_per_1m": 0.128,
     "context_window": 128000
   },
   "gemma-3-4b": {
@@ -988,8 +988,8 @@
   },
   "glm-4-7": {
     "name": "GLM 4.7",
-    "input_per_1m": 0.32,
-    "output_per_1m": 1.4,
+    "input_per_1m": 0.4,
+    "output_per_1m": 1.75,
     "context_window": 202752
   },
   "glm-4-7-flash": {
@@ -1022,8 +1022,8 @@
   },
   "glm-5-3": {
     "name": "GLM-5.3",
-    "input_per_1m": 0.0703,
-    "output_per_1m": 4.3843,
+    "input_per_1m": 0.0699,
+    "output_per_1m": 1.4,
     "context_window": 1048576,
     "tokens_per_second": 70.952,
     "time_to_first_token": 1.347
@@ -1074,8 +1074,8 @@
   },
   "gpt-3-5-turbo": {
     "name": "GPT-3.5 Turbo",
-    "input_per_1m": 0.5,
-    "output_per_1m": 1.5,
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.75,
     "context_window": 16385
   },
   "gpt-3-5-turbo-16k": {
@@ -1116,8 +1116,8 @@
   },
   "gpt-4-turbo": {
     "name": "GPT-4 Turbo",
-    "input_per_1m": 5.0,
-    "output_per_1m": 15.0,
+    "input_per_1m": 10.0,
+    "output_per_1m": 30.0,
     "context_window": 128000
   },
   "gpt-4o": {
@@ -1140,8 +1140,8 @@
   },
   "gpt-5-1": {
     "name": "GPT-5.1",
-    "input_per_1m": 1.25,
-    "output_per_1m": 10.0,
+    "input_per_1m": 0.625,
+    "output_per_1m": 5.0,
     "context_window": 400000
   },
   "gpt-5-1-chat": {
@@ -1164,8 +1164,8 @@
   },
   "gpt-5-1-codex-mini": {
     "name": "GPT-5.1-Codex-Mini",
-    "input_per_1m": 0.125,
-    "output_per_1m": 1.0,
+    "input_per_1m": 0.25,
+    "output_per_1m": 2.0,
     "context_window": 400000
   },
   "gpt-5-2": {
@@ -1176,8 +1176,8 @@
   },
   "gpt-5-2-chat": {
     "name": "GPT-5.2 Chat",
-    "input_per_1m": 1.75,
-    "output_per_1m": 14.0,
+    "input_per_1m": 0.875,
+    "output_per_1m": 7.0,
     "context_window": 128000
   },
   "gpt-5-2-codex": {
@@ -1216,8 +1216,8 @@
   },
   "gpt-5-4-nano": {
     "name": "GPT-5.4 Nano",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.625,
+    "input_per_1m": 0.2,
+    "output_per_1m": 1.25,
     "context_window": 400000
   },
   "gpt-5-4-pro": {
@@ -1240,8 +1240,8 @@
   },
   "gpt-5-6-luna": {
     "name": "GPT-5.6 Luna",
-    "input_per_1m": 0.2,
-    "output_per_1m": 1.2,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.6,
     "context_window": 1050000
   },
   "gpt-5-6-luna-pro": {
@@ -1270,8 +1270,8 @@
   },
   "gpt-5-6-terra-pro": {
     "name": "GPT-5.6 Terra Pro",
-    "input_per_1m": 2.2,
-    "output_per_1m": 13.2,
+    "input_per_1m": 2.0,
+    "output_per_1m": 12.0,
     "context_window": 1050000
   },
   "gpt-5-chat": {
@@ -1286,14 +1286,14 @@
   },
   "gpt-5-mini": {
     "name": "GPT-5 Mini",
-    "input_per_1m": 0.25,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.125,
+    "output_per_1m": 1.0,
     "context_window": 400000
   },
   "gpt-5-nano": {
     "name": "GPT-5 Nano",
-    "input_per_1m": 0.025,
-    "output_per_1m": 0.2,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.4,
     "context_window": 400000
   },
   "gpt-5-pro": {
@@ -1311,8 +1311,8 @@
   },
   "gpt-6-1-sol-pro": {
     "name": "GPT-6.1 Sol Pro",
-    "input_per_1m": 2.2,
-    "output_per_1m": 11.0
+    "input_per_1m": 2.4,
+    "output_per_1m": 12.0
   },
   "gpt-6-1-terra": {
     "name": "GPT-6.1 Terra",
@@ -1324,8 +1324,8 @@
   },
   "gpt-6-1-terra-pro": {
     "name": "GPT-6.1 Terra Pro",
-    "input_per_1m": 1.1,
-    "output_per_1m": 5.5
+    "input_per_1m": 1.0,
+    "output_per_1m": 5.0
   },
   "gpt-6-astra": {
     "name": "GPT-6 Astra",
@@ -1335,14 +1335,14 @@
   },
   "gpt-6-astra-pro": {
     "name": "GPT-6 Astra Pro",
-    "input_per_1m": 10.0,
-    "output_per_1m": 50.0,
+    "input_per_1m": 5.0,
+    "output_per_1m": 25.0,
     "context_window": 1050000
   },
   "gpt-6-luna": {
     "name": "GPT-6 Luna",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.25,
+    "input_per_1m": 0.1,
+    "output_per_1m": 0.5,
     "tokens_per_second": 105.562,
     "time_to_first_token": 0.887
   },
@@ -1353,8 +1353,8 @@
   },
   "gpt-6-sol": {
     "name": "GPT-6 Sol",
-    "input_per_1m": 1.0,
-    "output_per_1m": 5.0
+    "input_per_1m": 2.0,
+    "output_per_1m": 10.0
   },
   "gpt-6-sol-pro": {
     "name": "GPT-6 Sol Pro",
@@ -1433,32 +1433,32 @@
   },
   "grok-4-20-beta": {
     "name": "x-ai/grok-4.20-beta",
-    "input_per_1m": 2.5,
-    "output_per_1m": 5.0,
+    "input_per_1m": 1.25,
+    "output_per_1m": 2.5,
     "context_window": 2000000
   },
   "grok-4-20-multi-agent-beta": {
     "name": "x-ai/grok-4.20-multi-agent-beta",
-    "input_per_1m": 2.5,
-    "output_per_1m": 5.0,
+    "input_per_1m": 1.25,
+    "output_per_1m": 2.5,
     "context_window": 2000000
   },
   "grok-4-3": {
     "name": "Grok 4.3",
-    "input_per_1m": 2.5,
-    "output_per_1m": 5.0,
+    "input_per_1m": 1.25,
+    "output_per_1m": 2.5,
     "context_window": 1000000
   },
   "grok-4-5": {
     "name": "Grok 4.5",
-    "input_per_1m": 2.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 4.0,
+    "output_per_1m": 12.0,
     "context_window": 500000
   },
   "grok-4-6": {
     "name": "Grok 4.6",
-    "input_per_1m": 2.2,
-    "output_per_1m": 6.6,
+    "input_per_1m": 2.0,
+    "output_per_1m": 6.0,
     "context_window": 500000
   },
   "grok-4-7": {
@@ -1477,8 +1477,8 @@
   },
   "grok-build-0-1": {
     "name": "Grok Build 0.1",
-    "input_per_1m": 2.0,
-    "output_per_1m": 4.0,
+    "input_per_1m": 1.0,
+    "output_per_1m": 2.0,
     "context_window": 256000
   },
   "grok-code-fast-1": {
@@ -2062,8 +2062,8 @@
   },
   "mimo-v2-5-pro": {
     "name": "MiMo v2.5 Pro",
-    "input_per_1m": 0.435,
-    "output_per_1m": 0.87,
+    "input_per_1m": 0.48,
+    "output_per_1m": 1.8,
     "context_window": 1048576
   },
   "mimo-v2-6-flash": {
@@ -2211,8 +2211,8 @@
   },
   "mistral-large-2407": {
     "name": "Mistral Large 2407",
-    "input_per_1m": 2.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 2.2,
+    "output_per_1m": 6.6,
     "context_window": 131072
   },
   "mistral-large-2411": {
@@ -2227,14 +2227,14 @@
   },
   "mistral-large-4": {
     "name": "Mistral Large 4",
-    "input_per_1m": 0.77,
-    "output_per_1m": 2.31,
+    "input_per_1m": 0.7,
+    "output_per_1m": 2.1,
     "context_window": 1048576
   },
   "mistral-medium-3": {
     "name": "Mistral Medium 3",
-    "input_per_1m": 0.4,
-    "output_per_1m": 2.0,
+    "input_per_1m": 0.44,
+    "output_per_1m": 2.2,
     "context_window": 131072
   },
   "mistral-medium-3-1": {
@@ -2245,14 +2245,14 @@
   },
   "mistral-medium-3-5": {
     "name": "Mistral Medium 3.5",
-    "input_per_1m": 1.5,
-    "output_per_1m": 7.5,
+    "input_per_1m": 1.65,
+    "output_per_1m": 8.25,
     "context_window": 262144
   },
   "mistral-nemo": {
     "name": "Mistral Nemo",
-    "input_per_1m": 0.0154,
-    "output_per_1m": 0.0201,
+    "input_per_1m": 0.0166,
+    "output_per_1m": 0.0216,
     "context_window": 131072
   },
   "mistral-small": {
@@ -2263,8 +2263,8 @@
   },
   "mistral-small-24b-instruct-2501": {
     "name": "Mistral Small 24B Instruct 2501",
-    "input_per_1m": 0.04,
-    "output_per_1m": 0.064,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.08,
     "context_window": 32768
   },
   "mistral-small-2603": {
@@ -2409,8 +2409,8 @@
   },
   "nano-banana-pro-gemini-3-pro-image-preview": {
     "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
-    "input_per_1m": 1.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 2.0,
+    "output_per_1m": 120.0,
     "context_window": 65536
   },
   "nemotron-3-5-lightning": {
@@ -2436,14 +2436,14 @@
   },
   "nemotron-3-super-120b-a12b": {
     "name": "Nemotron 3 Super 120B A12B",
-    "input_per_1m": 0.075,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.32,
     "context_window": 1000000
   },
   "nemotron-3-ultra-550b-a55b": {
     "name": "Nemotron 3 Ultra 550B A55B",
-    "input_per_1m": 0.6,
-    "output_per_1m": 3.6,
+    "input_per_1m": 0.5,
+    "output_per_1m": 2.2,
     "context_window": 1000000,
     "tokens_per_second": 160.526,
     "time_to_first_token": 0.897
@@ -2589,8 +2589,8 @@
   },
   "o3-mini": {
     "name": "o3 Mini",
-    "input_per_1m": 0.55,
-    "output_per_1m": 2.2,
+    "input_per_1m": 1.1,
+    "output_per_1m": 4.4,
     "context_window": 200000
   },
   "o3-mini-high": {
@@ -2717,8 +2717,8 @@
   },
   "phi-4": {
     "name": "Phi 4",
-    "input_per_1m": 0.056,
-    "output_per_1m": 0.112,
+    "input_per_1m": 0.07,
+    "output_per_1m": 0.14,
     "context_window": 16384
   },
   "phi-4-mini-instruct-creator-name-microsoft-azure": {
@@ -3087,8 +3087,8 @@
   },
   "qwen3-30b-a3b": {
     "name": "Qwen3 30B A3B",
-    "input_per_1m": 0.096,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.18,
+    "output_per_1m": 0.75,
     "context_window": 40960
   },
   "qwen3-30b-a3b-base": {
@@ -3214,8 +3214,8 @@
   },
   "qwen3-7-max": {
     "name": "Qwen3.7 Max",
-    "input_per_1m": 2.0,
-    "output_per_1m": 6.0,
+    "input_per_1m": 1.475,
+    "output_per_1m": 4.425,
     "context_window": 1000000
   },
   "qwen3-7-plus": {
@@ -3322,8 +3322,8 @@
   },
   "qwen3-next-80b-a3b-instruct": {
     "name": "Qwen3 Next 80B A3B Instruct",
-    "input_per_1m": 0.072,
-    "output_per_1m": 0.88,
+    "input_per_1m": 0.1,
+    "output_per_1m": 1.1,
     "context_window": 262144
   },
   "qwen3-next-80b-a3b-thinking": {
@@ -3692,8 +3692,8 @@
   },
   "text-davinci-002": {
     "name": "text-davinci-002",
-    "input_per_1m": 10.0,
-    "output_per_1m": 10.0,
+    "input_per_1m": 20.0,
+    "output_per_1m": 20.0,
     "context_window": 4097
   },
   "text-davinci-003": {
