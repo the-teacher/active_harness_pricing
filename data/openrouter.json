@@ -752,9 +752,10 @@
   },
   "gemma-3-4b-it": {
     "name": "Gemma 3 4B",
-    "input_per_1m": 0.05,
-    "output_per_1m": 0.1,
-    "context_window": 131072
+    "input_per_1m": 0.04,
+    "output_per_1m": 0.05,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.02
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
@@ -1674,10 +1675,10 @@
   },
   "hy3": {
     "name": "Hy3",
-    "input_per_1m": 0.132,
-    "output_per_1m": 0.528,
+    "input_per_1m": 0.14,
+    "output_per_1m": 0.58,
     "context_window": 262144,
-    "cache_read_per_1m": 0.033
+    "cache_read_per_1m": 0.035
   },
   "hy4": {
     "name": "Hy4",
@@ -1709,10 +1710,10 @@
   },
   "inkling-2-mini": {
     "name": "Inkling 2 Mini",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.4,
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.3,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.015
   },
   "inkling-2-small": {
     "name": "Inkling 2 Small",
@@ -2219,9 +2220,10 @@
   },
   "mythomax-l2-13b": {
     "name": "MythoMax 13B",
-    "input_per_1m": 0.08,
-    "output_per_1m": 0.11,
-    "context_window": 8192
+    "input_per_1m": 0.3,
+    "output_per_1m": 0.5,
+    "context_window": 8192,
+    "cache_read_per_1m": 0.2
   },
   "nemotron-3-5-content-safety": {
     "name": "Nemotron 3.5 Content Safety",
@@ -2381,7 +2383,7 @@
     "input_per_1m": 0.07,
     "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.006
+    "cache_read_per_1m": 0.03
   },
   "perceptron-mk1": {
     "name": "Perceptron Mk1",
@@ -2479,8 +2481,8 @@
   },
   "qwen3-5-27b": {
     "name": "Qwen3.5-27B",
-    "input_per_1m": 0.195,
-    "output_per_1m": 1.56,
+    "input_per_1m": 0.26,
+    "output_per_1m": 2.6,
     "context_window": 262144
   },
   "qwen3-5-35b-a3b": {
@@ -2576,10 +2578,10 @@
   },
   "qwen3-8-27b": {
     "name": "Qwen3.8 27B",
-    "input_per_1m": 0.06,
-    "output_per_1m": 1.96,
+    "input_per_1m": 0.035,
+    "output_per_1m": 1.5,
     "context_window": 1024000,
-    "cache_read_per_1m": 0.059
+    "cache_read_per_1m": 0.0175
   },
   "qwen3-8-27b-batch": {
     "name": "Qwen3.8 27B (batch)",
