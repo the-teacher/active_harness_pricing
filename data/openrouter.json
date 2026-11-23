@@ -364,10 +364,10 @@
   },
   "deepseek-v4-1-flash-1017": {
     "name": "DeepSeek V4.1 Flash 1017",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.6,
+    "input_per_1m": 0.3,
+    "output_per_1m": 1.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.003
+    "cache_read_per_1m": 0.006
   },
   "deepseek-v4-1-flash-1017-batch": {
     "name": "DeepSeek V4.1 Flash 1017 (batch)",
@@ -392,7 +392,7 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.0443,
+    "input_per_1m": 0.0434,
     "output_per_1m": 0.3,
     "context_window": 1048576,
     "cache_read_per_1m": 0.035
@@ -746,9 +746,8 @@
   "gemma-3-27b-it": {
     "name": "Gemma 3 27B",
     "input_per_1m": 0.08,
-    "output_per_1m": 0.45,
-    "context_window": 131072,
-    "cache_read_per_1m": 0.04
+    "output_per_1m": 0.16,
+    "context_window": 131072
   },
   "gemma-3-4b-it": {
     "name": "Gemma 3 4B",
@@ -759,10 +758,10 @@
   },
   "gemma-4-26b-a4b-it": {
     "name": "Gemma 4 26B A4B",
-    "input_per_1m": 0.0675,
-    "output_per_1m": 0.225,
+    "input_per_1m": 0.09,
+    "output_per_1m": 0.3,
     "context_window": 262144,
-    "cache_read_per_1m": 0.0375
+    "cache_read_per_1m": 0.05
   },
   "gemma-4-31b-it": {
     "name": "Gemma 4 31B",
@@ -814,10 +813,10 @@
   },
   "glm-4-7": {
     "name": "GLM 4.7",
-    "input_per_1m": 0.4,
-    "output_per_1m": 1.75,
+    "input_per_1m": 0.6,
+    "output_per_1m": 2.2,
     "context_window": 204800,
-    "cache_read_per_1m": 0.08
+    "cache_read_per_1m": 0.11
   },
   "glm-4-7-flash": {
     "name": "GLM 4.7 Flash",
@@ -834,10 +833,10 @@
   },
   "glm-5-1": {
     "name": "GLM 5.1",
-    "input_per_1m": 1.19,
-    "output_per_1m": 3.74,
+    "input_per_1m": 1.4,
+    "output_per_1m": 4.4,
     "context_window": 204800,
-    "cache_read_per_1m": 0.6
+    "cache_read_per_1m": 0.26
   },
   "glm-5-2": {
     "name": "GLM 5.2",
@@ -1548,9 +1547,10 @@
   },
   "gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "input_per_1m": 0.09,
-    "output_per_1m": 0.36,
-    "context_window": 131072
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.25,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.05
   },
   "gpt-oss-120b-batch": {
     "name": "gpt-oss-120b (batch)",
@@ -1560,10 +1560,10 @@
   },
   "gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "input_per_1m": 0.017,
-    "output_per_1m": 0.085,
+    "input_per_1m": 0.03,
+    "output_per_1m": 0.13,
     "context_window": 131072,
-    "cache_read_per_1m": 0.0085
+    "cache_read_per_1m": 0.03
   },
   "gpt-oss-20b-batch": {
     "name": "gpt-oss-20b (batch)",
@@ -1785,10 +1785,10 @@
   },
   "kimi-k3-1-pro": {
     "name": "Kimi K3.1 Pro",
-    "input_per_1m": 0.253,
-    "output_per_1m": 8.8,
+    "input_per_1m": 0.2403,
+    "output_per_1m": 8.4023,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.18
+    "cache_read_per_1m": 0.2
   },
   "kimi-k3-1-pro-batch": {
     "name": "Kimi K3.1 Pro (batch)",
@@ -2525,8 +2525,8 @@
   },
   "qwen3-6-35b-a3b": {
     "name": "Qwen3.6 35B A3B",
-    "input_per_1m": 0.1,
-    "output_per_1m": 0.9,
+    "input_per_1m": 0.05,
+    "output_per_1m": 0.7,
     "context_window": 262144,
     "cache_read_per_1m": 0.025
   },
