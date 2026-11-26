@@ -42,10 +42,10 @@
   },
   "beam-1-0-501b-a23b": {
     "name": "Beam 1.0 501B A23B",
-    "input_per_1m": 0.25,
+    "input_per_1m": 0.3,
     "output_per_1m": 1.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.05
+    "cache_read_per_1m": 0.04
   },
   "claude-fable-5": {
     "name": "Claude Fable 5",
@@ -278,6 +278,13 @@
     "context_window": 256000,
     "cache_read_per_1m": 0.03
   },
+  "codestral-2508-batch": {
+    "name": "Codestral 2508 (batch)",
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.45,
+    "context_window": 256000,
+    "cache_read_per_1m": 0.015
+  },
   "command-a": {
     "name": "Command A",
     "input_per_1m": 2.5,
@@ -343,6 +350,13 @@
     "output_per_1m": 2.286,
     "context_window": 163840
   },
+  "deepseek-r1t2-chimera": {
+    "name": "DeepSeek R1T2 Chimera",
+    "input_per_1m": 1.0,
+    "output_per_1m": 2.625,
+    "context_window": 131072,
+    "cache_read_per_1m": 0.02
+  },
   "deepseek-v3-1-terminus": {
     "name": "DeepSeek V3.1 Terminus",
     "input_per_1m": 0.27,
@@ -392,10 +406,10 @@
   },
   "deepseek-v4-flash-0731": {
     "name": "DeepSeek V4 Flash 0731",
-    "input_per_1m": 0.047,
-    "output_per_1m": 0.3,
+    "input_per_1m": 0.06,
+    "output_per_1m": 0.18,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.035
+    "cache_read_per_1m": 0.015
   },
   "deepseek-v4-flash-0731-batch": {
     "name": "DeepSeek V4 Flash 0731 (batch)",
@@ -413,10 +427,10 @@
   },
   "deepseek-v4-pro": {
     "name": "DeepSeek V4 Pro 0423",
-    "input_per_1m": 1.28,
-    "output_per_1m": 2.56,
+    "input_per_1m": 0.888188,
+    "output_per_1m": 1.5082,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.108
+    "cache_read_per_1m": 0.2
   },
   "deepseek-v4-pro-0813": {
     "name": "DeepSeek V4 Pro 0813",
@@ -785,10 +799,10 @@
   },
   "glm-4-5-air": {
     "name": "GLM 4.5 Air",
-    "input_per_1m": 0.13,
-    "output_per_1m": 0.85,
+    "input_per_1m": 0.2,
+    "output_per_1m": 1.1,
     "context_window": 131072,
-    "cache_read_per_1m": 0.025
+    "cache_read_per_1m": 0.03
   },
   "glm-4-5v": {
     "name": "GLM 4.5V",
@@ -809,7 +823,7 @@
     "input_per_1m": 0.3,
     "output_per_1m": 0.9,
     "context_window": 131072,
-    "cache_read_per_1m": 0.055
+    "cache_read_per_1m": 0.05
   },
   "glm-4-7": {
     "name": "GLM 4.7",
@@ -822,7 +836,7 @@
     "name": "GLM 4.7 Flash",
     "input_per_1m": 0.0605,
     "output_per_1m": 0.4,
-    "context_window": 200000
+    "context_window": 131072
   },
   "glm-5": {
     "name": "GLM 5",
@@ -868,10 +882,10 @@
   },
   "glm-5-3-flash": {
     "name": "GLM 5.3 Flash",
-    "input_per_1m": 0.12,
-    "output_per_1m": 0.38,
+    "input_per_1m": 0.15,
+    "output_per_1m": 0.5,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.03
   },
   "glm-5-3-flash-batch": {
     "name": "GLM 5.3 Flash (batch)",
@@ -1907,10 +1921,10 @@
   },
   "mimo-v2-6-flash-mopd": {
     "name": "MiMo-V2.6-Flash-MOPD",
-    "input_per_1m": 0.15,
-    "output_per_1m": 0.42,
+    "input_per_1m": 0.5,
+    "output_per_1m": 1.0,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.02
+    "cache_read_per_1m": 0.05
   },
   "mimo-v2-6-pro": {
     "name": "MiMo-V2.6-Pro",
@@ -1981,6 +1995,13 @@
     "context_window": 262144,
     "cache_read_per_1m": 0.015
   },
+  "ministral-8b-2512-batch": {
+    "name": "Ministral 3 8B 2512 (batch)",
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.075,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.0075
+  },
   "mistral-large": {
     "name": "Mistral Large",
     "input_per_1m": 2.0,
@@ -2001,6 +2022,13 @@
     "output_per_1m": 1.5,
     "context_window": 262144,
     "cache_read_per_1m": 0.05
+  },
+  "mistral-large-2512-batch": {
+    "name": "Mistral Large 3 2512 (batch)",
+    "input_per_1m": 0.25,
+    "output_per_1m": 0.75,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.025
   },
   "mistral-large-4-0": {
     "name": "Mistral Large 4",
@@ -2046,6 +2074,13 @@
     "output_per_1m": 0.6,
     "context_window": 262144,
     "cache_read_per_1m": 0.015
+  },
+  "mistral-small-2603-batch": {
+    "name": "Mistral Small 4 (batch)",
+    "input_per_1m": 0.075,
+    "output_per_1m": 0.3,
+    "context_window": 262144,
+    "cache_read_per_1m": 0.0075
   },
   "mistral-small-3-1-24b-instruct": {
     "name": "Mistral Small 3.1 24B",
@@ -2194,10 +2229,10 @@
   },
   "nemotron-3-5-lightning": {
     "name": "Nemotron 3.5 Lightning",
-    "input_per_1m": 0.05,
+    "input_per_1m": 0.07,
     "output_per_1m": 0.2,
     "context_window": 1048576,
-    "cache_read_per_1m": 0.01
+    "cache_read_per_1m": 0.04
   },
   "nemotron-3-5-super-vl": {
     "name": "Nemotron 3.5 Super VL",
@@ -2318,27 +2353,6 @@
     "output_per_1m": 6.0,
     "context_window": 1040000
   },
-  "pareto": {
-    "name": "Pareto 26.10",
-    "input_per_1m": 0.8,
-    "output_per_1m": 3.2,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.03
-  },
-  "pareto-26-10-preview": {
-    "name": "Pareto 26.10 Preview",
-    "input_per_1m": 0.8,
-    "output_per_1m": 3.2,
-    "context_window": 1048576,
-    "cache_read_per_1m": 0.03
-  },
-  "pareto-26-9": {
-    "name": "Pareto 26.9",
-    "input_per_1m": 2.5,
-    "output_per_1m": 7.5,
-    "context_window": 262144,
-    "cache_read_per_1m": 0.25
-  },
   "particle-1": {
     "name": "Particle-1",
     "input_per_1m": 0.07,
@@ -2455,14 +2469,14 @@
   },
   "qwen3-5-397b-a17b": {
     "name": "Qwen3.5 397B A17B",
-    "input_per_1m": 0.45,
-    "output_per_1m": 3.0,
+    "input_per_1m": 0.5,
+    "output_per_1m": 3.6,
     "context_window": 262144,
-    "cache_read_per_1m": 0.22
+    "cache_read_per_1m": 0.3
   },
   "qwen3-5-9b": {
     "name": "Qwen3.5-9B",
-    "input_per_1m": 0.17,
+    "input_per_1m": 0.1,
     "output_per_1m": 0.25,
     "context_window": 262144
   },
